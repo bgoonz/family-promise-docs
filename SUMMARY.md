@@ -6,3 +6,7 @@
 
 * [Links](navigation/untitled.md)
 
+---
+
+* [Labs Learners Guide](labs-learners-guide.md)
+
