@@ -2,12 +2,10 @@
 
 * [Initial page](README.md)
 
-## BRYAN
-
 ## navigation
 
 * [Front End Engineer](navigation/front-end-engineer.md)
-* [Untitled](navigation/untitled-1.md)
+* [External Links](navigation/untitled-1.md)
 
 ## DOCS
 
@@ -51,15 +49,12 @@
 
 ## UX
 
-* [Untitled](ux/untitled/README.md)
+* [UX\_TOPICS](ux/untitled/README.md)
   * [UX-Design](ux/untitled/ux-design.md)
   * [Ant Design](ux/untitled/ant-design.md)
+  * [Examples](ux/untitled/examples.md)
 
 ## Action Items
 
 * [Trello](action-items/untitled.md)
-
-## BRYAN\_GUNER
-
-* [LINKS & NAV](bryan_guner/links-and-nav.md)
 
