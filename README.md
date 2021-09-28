@@ -6,10 +6,6 @@ description: >-
 
 # Home
 
-![](https://i.imgur.com/sQMgAxv.png)
-
-
-
 ## Contact Info:
 
 | Name | Role | Github | Linkedin | Number | Time Zone |
@@ -19,9 +15,9 @@ description: >-
 
 
 
+
+
 ![](https://i.imgur.com/sQMgAxv.png)
-
-
 
 ## Navigation:
 
@@ -88,6 +84,8 @@ description: >-
 * [DNS](https://lambda-labs.gitbook.io/lambda-labs/architecture/dns)
 * [AWS](https://lambda-labs.gitbook.io/lambda-labs/architecture/aws)
 * [Heroku](https://lambda-labs.gitbook.io/lambda-labs/architecture/heroku)
+
+## 
 
 ![](https://i.imgur.com/sQMgAxv.png)
 
