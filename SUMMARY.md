@@ -4,7 +4,6 @@
 
 ## navigation
 
-* [Front End Engineer](navigation/front-end-engineer.md)
 * [External Links](navigation/untitled-1.md)
 * [Calendar](navigation/calendar.md)
 
@@ -12,6 +11,7 @@
 
 * [Links](docs/untitled.md)
 * [Labs Engineering Docs](docs/labs-engineering-docs/README.md)
+  * [Roadmap](docs/labs-engineering-docs/roadmap.md)
   * [Repositories](docs/labs-engineering-docs/repositories.md)
 
 ---
