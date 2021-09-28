@@ -69,9 +69,15 @@ REACT\_APP\_API\_URI=[https://fp-service-tracker.herokuapp.com](https://fp-servi
 
 
 
-## Data Science Api \(Complete\):
+## Data Science API \(Complete\):
 
-[http://family-promise-dev.us-east-1.elasticbeanstalk.com/\#/Geocode/get\_latitude\_longitude\_geocode\_\_post](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get_latitude_longitude_geocode__post)
+
+
+
+
+{% embed url="http://family-promise-dev.us-east-1.elasticbeanstalk.com/" %}
+
+
 
 
 
