@@ -22,7 +22,7 @@
 
 ## MISC
 
-* [Untitled](misc/untitled.md)
+* [MISCELLANEOUS](misc/untitled.md)
 
 ## Research
 
