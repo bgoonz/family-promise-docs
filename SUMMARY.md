@@ -58,3 +58,9 @@
 
 * [Trello](action-items/untitled.md)
 
+## ARCHITECTURE
+
+* [DNS](architecture/dns.md)
+* [AWS](architecture/aws.md)
+* [Heroku](architecture/heroku.md)
+
