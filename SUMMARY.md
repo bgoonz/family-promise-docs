@@ -2,11 +2,18 @@
 
 * [Initial page](README.md)
 
+## BRYAN
+
 ## navigation
 
+* [Front End Engineer](navigation/front-end-engineer.md)
 * [Untitled](navigation/untitled-1.md)
-* [Links](navigation/untitled/README.md)
-  * [Repositories](navigation/untitled/repositories.md)
+
+## DOCS
+
+* [Links](docs/untitled.md)
+* [Labs Engineering Docs](docs/labs-engineering-docs/README.md)
+  * [Repositories](docs/labs-engineering-docs/repositories.md)
 
 ---
 
@@ -46,6 +53,7 @@
 
 * [Untitled](ux/untitled/README.md)
   * [UX-Design](ux/untitled/ux-design.md)
+  * [Ant Design](ux/untitled/ant-design.md)
 
 ## Action Items
 
