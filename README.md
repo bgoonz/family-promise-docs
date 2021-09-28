@@ -1,8 +1,15 @@
+---
+description: 'https://app.gitbook.com/invite/lambda-labs?invite=-Mki0Tg1b0WL4B6KHgL5'
+---
+
 # Initial page
 
 ## Contact Info:
 
-
+| Name | Role | Github | Linkedin | Number | Time Zone |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+|  |  |  |  |  |  |
+| Bryan Guner | UX | [https://github.com/bgoonz](https://github.com/bgoonz) | [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/) | 551-254-5505 | EST |
 
 
 
