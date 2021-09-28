@@ -6,6 +6,7 @@
 
 * [Front End Engineer](navigation/front-end-engineer.md)
 * [External Links](navigation/untitled-1.md)
+* [Calendar](navigation/calendar.md)
 
 ## DOCS
 
