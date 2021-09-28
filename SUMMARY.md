@@ -10,14 +10,11 @@
 
 ## DOCS
 
+* [Labs Learners Guide](docs/labs-learners-guide.md)
 * [Links](docs/untitled.md)
 * [Labs Engineering Docs](docs/labs-engineering-docs/README.md)
   * [Roadmap](docs/labs-engineering-docs/roadmap.md)
   * [Repositories](docs/labs-engineering-docs/repositories.md)
-
----
-
-* [Labs Learners Guide](labs-learners-guide.md)
 
 ## Front End
 
