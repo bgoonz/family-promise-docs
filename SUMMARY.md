@@ -25,7 +25,12 @@
 
 ## Research
 
-* [Untitled](research/untitled.md)
+* [Research Navigation](research/untitled/README.md)
+  * [Front End](research/untitled/front-end.md)
+  * [Back End](research/untitled/back-end.md)
+  * [UX](research/untitled/ux.md)
+  * [PTM](research/untitled/ptm.md)
+  * [General](research/untitled/general.md)
 
 ## DS\_API
 
@@ -33,7 +38,8 @@
 
 ## ROLES
 
-* [TEAM ROLES](roles/untitled.md)
+* [TEAM ROLES](roles/untitled/README.md)
+  * [Bryan Guner](roles/untitled/bryan-guner.md)
 
 ## UX
 
