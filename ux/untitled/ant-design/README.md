@@ -1,6 +1,476 @@
 # Ant Design
 
+## How to implement ANT Design with React <a id="9e25"></a>
 
+
+
+_Following the Ant Design specification, we developed a React UI library `antd` that contains a set of high quality components and demos for building rich, interactive user interfaces._
+
+_✨ Features_
+
+🌈 Enterprise-class UI designed for web applications.
+
+📦 A set of high-quality React components out of the box.
+
+🛡 Written in TypeScript with predictable static types.
+
+⚙️ Whole package of design resources and development tools.
+
+🌍 Internationalization support for dozens of languages.
+
+🎨 Powerful theme customization in every detail.
+
+_Source:_ [_Ant Design_](https://ant.design/docs/react/introduce)
+
+I have found ANT Design as the smart option to design our web applications using react. It provides us high quality components which we will be observing while developing the project, in the article later on. If you look around to the documentation provided by ANT and observe its demo of different features, you will find ANT as the better option for you application. So we will be developing a simple react application using following ANT Components. So, let’s start!
+
+### ANT Components <a id="a77d"></a>
+
+There are a lot of beautiful and useful components provided by ANT Design. But I will brief you about some of the basic components that we will be using to built a system with React and ANT in this article.
+
+**1. Layout**  
+Layout is basically a wrapper, which consist of Header, Footer, Sider, Content and layout itself. You can modify plenty of things for your layout. Please refer to [layout documentation](https://ant.design/components/layout/) of ANT for more.![](https://miro.medium.com/max/30/1*pz9xc4Vuac5z-Ls4RKaQIQ.png?q=20)![](https://miro.medium.com/max/709/1*pz9xc4Vuac5z-Ls4RKaQIQ.png)Layout given by ANT
+
+**2. Grid**  
+ANT Design is a 24 Grid System.The column Grid system in ANT Design is a value of 1–24 to represent its range spans. You can use Row for rows and Col for columns and you can have 24 columns in a row. You can define a col span lik &lt;Col span={8}&gt; for columns of three equal widths. Learn more [here](https://ant.design/components/grid/).![](https://miro.medium.com/max/30/1*IgBiC1XYroEAOrRWKJwaLg.png?q=20)![](https://miro.medium.com/max/709/1*IgBiC1XYroEAOrRWKJwaLg.png)Grid system of ANT
+
+**3. Form**  
+ANT provides high performance Form Component with data scope management which includes data collection, verification and styles. Learn more about forms [here](https://ant.design/components/form/).
+
+**4. Input**  
+It is a basic widget for getting the user input as a text field. You can use input group, text area, format tooltip input and many more from input. Learn more [here](https://ant.design/components/input/).
+
+**5. Radio**  
+Radio is used to select a single state from multiple options. You can check out different use cases of Radio in Ant from [here](https://ant.design/components/radio/).
+
+**6. Switch**  
+If you need to have switching between two states that is on-off state you can use Switch. I was really impressed with the pending state implemented in switch by ANT. For knowing more about it, please refer the document [here](https://ant.design/components/switch/).
+
+**7. Slider**  
+Slider component is used for displaying current value or the range of the value. ANT provides the better component for using Slider. Learn more [here](https://ant.design/components/slider/).
+
+**8. Select**  
+Select component allows us to select a value or set of values from the options available to us. There are many use cases of the select component defined by ANT. Learn more [here](https://ant.design/components/select/).
+
+**9. Message**  
+We use message as the feedback in response to the operations performed by the user. We use message component for displaying feedback such as success, error, warning, etc. Message is displayed at top-center and will be dismissed automatically. Learn more [here](https://ant.design/components/message/).
+
+**10. Table**  
+We can use Table to display a collection of structured data in rows. We can define dataSource and columns to display rows data and columns of the table. Learn more [here](https://ant.design/components/table/#header).
+
+**11. Empty**  
+You can use this component when there is nothing to display in your page or your component. I gives good User Experience as well. Learn more about Empty [here](https://ant.design/components/empty/).![](https://miro.medium.com/max/30/1*VYtKX_1QzcszNycjldry5A.png?q=20)![](https://miro.medium.com/max/709/1*VYtKX_1QzcszNycjldry5A.png)ANT Empty Component
+
+### Create React App <a id="2c1c"></a>
+
+We somewhat touched the basic components we will be using now. So, now let’s create a new react project named **react-ant** with typescript.
+
+```text
+npx create-react-app react-ant --template typescript
+cd react-antnpm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+
+### Install React Router <a id="594c"></a>
+
+We will be using _React Router_ to navigate to different pages of the application.  
+Let’s install them as well.
+
+```text
+npm install --save react-router-dom
+npm install @types/react-router
+```
+
+### Install ANT Design <a id="0b5d"></a>
+
+So, finally we install _ANT Design_ to our system with following command.
+
+```text
+npm install antd
+```
+
+Also import antd css to the index file, _index.tsx_.
+
+```text
+//src/index.tsximport 'antd/dist/antd.css';
+```
+
+### Create Fake Json Server <a id="4b91"></a>
+
+We will be using the Fake Json Server for storing and retrieving our data locally. I am using it because our application is small and we will be storing and retrieving the data later on. Install Json Server with following command.
+
+```text
+npm install -g json-server
+```
+
+Create a folder named _Server_ and create a file named _db.json_ to record our data. We create a users collection in db.json which will be holding our users data later on.
+
+```text
+{
+ "users": []
+}
+```
+
+Next thing you need to do is to create _json-server.json_ file to the root of the project and it will hold port for our server.
+
+```text
+{ 
+"port": 5000
+}
+```
+
+For running the json server you run following command on your terminal. Keep your server running.
+
+```text
+json-server --watch server/db.json
+```
+
+### Install Axios <a id="e9aa"></a>
+
+Axios is the promise based HTTP client for the browser and node.js. We will be using Axios as well in the application. So, lets’s install it.
+
+```text
+npm install --save axios
+```
+
+### Create Layout <a id="5e4b"></a>
+
+Now we start structuring our application with files and folder. First of all we will create two folders inside _src_ and give them the name _components_ and _config_ respectively. We will add route configuration and layout in config folder and different pages and layouts in components folder. For your easiness, I am going to provide the screen shot of files and folder that we are going to create.![](https://miro.medium.com/max/30/1*s5DGrVxqCnj7z2SBTefT0A.png?q=20)![](https://miro.medium.com/max/641/1*s5DGrVxqCnj7z2SBTefT0A.png)Project Structure of REACT-ANT
+
+Also delete the unnecessary files and logos that we will not be using from the project. So, now we will start our code with **App.tsx**.
+
+```text
+// src/App.tsximport React from 'react';
+import ApplicationRoutes from "./config/ApplicationRoutes";function App() {
+  return (
+    <ApplicationRoutes />
+  );
+}export default App;
+```
+
+Now we define our route for different pages and we define our layout on the ApplicationRoutes.tsx file. I have added all the routes, but you can add those routes after adding those components for not getting error. I have also added the header component and content here and grabbed the sider component form layout. You can separate them as well, if you want cleaner code.
+
+```text
+//src/config/ApplicationRoutes.tsximport React, {useState, useEffect} from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import List from "../components/pages/list";
+import Form from "../components/pages/form";
+import SideNav from "../components/layouts/sidebar";
+import File from "../components/pages/files";
+import Videos from "../components/pages/videos";import { Layout } from 'antd';
+import {
+    MenuUnfoldOutlined,
+    MenuFoldOutlined
+  } from '@ant-design/icons';const { Header, Sider, Content} = Layout;const ApplicationRoutes = () => {
+  const [collapse, setCollapse] = useState(false);useEffect(() => {
+    window.innerWidth <= 760 ? setCollapse(true) : setCollapse(false);
+  }, []);const handleToggle = (event: any) => {
+        event.preventDefault();
+        collapse ? setCollapse(false) : setCollapse(true);
+    }
+  return (
+      <Router>
+        <Layout>
+          <Sider trigger={null} collapsible collapsed={collapse}>
+            <SideNav />
+          </Sider>
+          <Layout>
+            <Header className="siteLayoutBackground" style={{padding: 0, background: "#001529"}}>
+                      {React.createElement(collapse ? MenuUnfoldOutlined : MenuFoldOutlined, {
+                          className: 'trigger',
+                          onClick: handleToggle,
+                          style: {color: "#fff"}
+                      })}
+            </Header>
+              <Content style={{margin: '24px 16px', padding: 24, minHeight: "calc(100vh - 114px)", background: "#fff"}}>
+                <Switch>
+                    <Route path="/list" component={List} />
+                    <Route path="/form" component={Form} />
+                    <Route path="/files" component={File} />
+                    <Route path="/videos" component={Videos} />
+                    <Redirect to="/list" from="/" />
+                </Switch>
+              </Content>
+          </Layout>
+        </Layout>
+    </Router>
+  );
+}export default ApplicationRoutes;
+```
+
+We have imported SideNav from sidebar.tsx, so we add that immediately. For that create a file named _sidebar.tsx_ inside _layouts_ folder in _components_ directory. We define menu and menu items for the sidebar and we use the awesome icons provided by Ant.
+
+```text
+import React from 'react';
+import { Menu } from 'antd';
+import {
+    UserOutlined,
+    VideoCameraOutlined,
+    UploadOutlined,
+  } from '@ant-design/icons';
+import {useHistory}  from 'react-router';const SideNav = () => {
+    const history = useHistory();const handleUserClick = () => {
+        history.push('/list');
+    }const handleVideosClick = () => {
+        history.push('/videos');
+    }const handleFileClick = () => {
+        history.push('/files');
+    }return (
+      <div>
+        <div style={{height: "32px", background: "rgba(255, 255, 255, 0.2)", margin: "16px"}}></div>
+            <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+                <Menu.Item key="1" onClick={handleUserClick}>
+                    <UserOutlined />
+                    <span> Users</span>
+                </Menu.Item>
+                <Menu.Item key="2" onClick={handleVideosClick}>
+                    <VideoCameraOutlined />
+                    <span> Videos</span>
+                </Menu.Item>
+                <Menu.Item key="3" onClick={handleFileClick}>
+                    <UploadOutlined />
+                    <span> Files</span>
+                </Menu.Item>
+            </Menu>
+        </div>
+  );
+}export default SideNav;
+```
+
+Now the missing part is our list page and the form, so we work to complete them.
+
+### Create List <a id="146a"></a>
+
+We are using table to display list of user data entered by the user. We define columns and data for the table. Moreover, we add a button to navigate to the Form to fill it up and add in the table. We grab the data from our json server using axios. So let’s see how our table is going to look like.
+
+```text
+//src/components/pages/list.tsximport React, {useEffect, useState} from 'react';
+import {Table, Row, Col, Button, Typography} from 'antd';
+import {useHistory} from 'react-router';
+import axios from 'axios';const {Title} = Typography;const List = () => {
+  const history = useHistory();
+  const [allData, setAllData] = useState([]);useEffect(() => {
+    axios.get(`http://localhost:5000/users`).then(res => {
+      setAllData(res.data);
+    });
+  }, []);const columns = [
+    {
+      title: 'Username',
+      dataIndex: 'username',
+    },
+    {
+      title: 'Email',
+      dataIndex: 'email'
+    },
+    {
+      title: 'Gender',
+      dataIndex: 'gender'
+    },
+    {
+      title: 'Review',
+      dataIndex: 'review'
+    },
+  ];const data = [{
+  }];allData.map((user: any) => {
+    data.push({
+     key: user.id,
+     username: user.username,
+     email: user.email,
+     gender: user.gender,
+     review: user.review + '%',
+   })
+   return data;
+ });const handleClick = () => {
+    history.push('/form')
+  }return (
+    <div>
+        <Row gutter={[40, 0]}>
+          <Col span={18}>
+            <Title level={2}>
+            User List
+            </Title>
+            </Col>
+          <Col span={6}>
+          <Button onClick={handleClick} block>Add User</Button>
+          </Col>
+        </Row>
+        <Row gutter={[40, 0]}>
+        <Col span={24}>
+        <Table columns={columns} dataSource={data} />
+        </Col>
+        </Row>
+    </div>
+  );
+}export default List;
+```
+
+### **Create Form** <a id="1152"></a>
+
+We are going to implement a lot of above mentioned components to design our form and obviously, we will be using json server to store the user data. We have applied basic validation for our form as well. Moreover, you can look at the code and get known to various components and their interaction in the system. So let’s create our form.
+
+```text
+//src/components/pages/form.tsximport React, {useState} from 'react';
+import {Row, Col, Typography, Input, Form, Button, 
+Radio, Switch, Slider, Select, message} from 'antd';
+import axios from 'axios';
+import {useHistory} from 'react-router';const {Title} = Typography;const layout = {
+  labelCol: { span: 8 },
+  wrapperCol: { span: 16 },
+};const FormApp = () => {
+  const [loading, setLoading] = useState(false);
+  const history = useHistory();const handleSubmit = (values: any) => {
+    setLoading(true);
+    axios.post(`http://localhost:5000/users`, 
+      values
+    )
+    .then(res => {
+      setLoading(false);
+      message.success('User Added Successfully!');
+      history.push('/list');
+    })
+    .catch(error => {
+      setLoading(false);
+      message.error(error);
+    })
+  }return (
+    <div>
+        <Row gutter={[40, 0]}>
+          <Col span={23}>
+            <Title style={{textAlign: 'center'}} level={2}>
+            Please Fill the User Form
+            </Title>
+            </Col>
+        </Row>
+        <Row gutter={[40, 0]}>
+        <Col span={18}>
+          <Form {...layout} onFinish={handleSubmit}>
+            <Form.Item name="username" label="UserName"
+            rules={[
+              {
+                required: true,
+                message: 'Please input your name',
+              }
+            ]}
+            >
+              <Input placeholder="Please Enter your username" />
+            </Form.Item>
+            <Form.Item name="email" label="Email" 
+            rules={[
+              {
+                required: true,
+                message: 'Please input your correct email',
+                type: 'email'
+              }
+            ]}
+            >
+              <Input placeholder="Please Enter your email" />
+            </Form.Item>
+            <Form.Item name="gender" label="Gender" 
+            rules={[
+              {
+                required: true,
+                message: 'Please select your gender',
+              }
+            ]}
+            >
+              <Radio.Group>
+                <Radio value="male">Male</Radio>
+                <Radio value="female">Female</Radio>
+                <Radio value="others">Others</Radio>
+              </Radio.Group>
+            </Form.Item>
+            <Form.Item name="hobbies" label="Hobbies" 
+            rules={[
+              {
+                required: true,
+                message: 'Please select your hobbies',
+                type: 'array'
+              }
+            ]}
+            >
+              <Select mode="multiple" placeholder="Please select you hobbies">
+                <Select.Option value="Reading">Reading</Select.Option>
+                <Select.Option value="Writing">Writing</Select.Option>
+                <Select.Option value="Coding">Coding</Select.Option>
+                <Select.Option value="Singing">Singing</Select.Option>
+                <Select.Option value="Dancing">Dancing</Select.Option>
+              </Select>
+            </Form.Item>
+            <Form.Item name="review" label="Review"
+            >
+              <Slider />
+            </Form.Item>
+            <Form.Item name="notificaiton" label="Notificaiton" valuePropName="checked"
+            >
+              <Switch />
+            </Form.Item>
+            <div style={{textAlign: "right"}}>
+            <Button type="primary" loading={loading} htmlType="submit">
+              Save
+            </Button>{' '}
+            <Button type="danger" htmlType="button" onClick={() => history.push('/list')}>
+              Back
+            </Button>
+              </div>
+          </Form>
+          </Col>
+        </Row>
+    </div>
+  );
+}export default FormApp;
+```
+
+For using the _Empty_ component, __we will be adding two more pages _files.tsx_ and _videos.tsx_ with no data. You can implement Empty component as given below.
+
+```text
+//src/components/pages/videos.tsximport React from 'react';
+import {Empty} from 'antd';const Videos = () => {
+  return (
+    <div>
+        <Empty />
+    </div>
+  );
+}export default Videos;
+```
+
+Also the files page looks like.
+
+```text
+//src/components/pages/files.tsximport React from 'react';
+import {Empty} from 'antd';const Files = () => {
+  return (
+    <div>
+        <Empty />
+    </div>
+  );
+}export default Files;
+```
+
+### Demo <a id="cc53"></a>
+
+For checking our system to perform as expected, please make sure that our Front end and Server is running properly. Run react project with following command if you haven’t done yet.
+
+```text
+npm start
+```
+
+Also make sure our json server is working perfectly.
+
+```text
+json-server --watch server/db.json
+```
+
+Boom! You will get the empty user list with a beautiful layout and bunch of menus on the sidebar. It looks cool!![](https://miro.medium.com/max/30/1*eYWIrq3o3UssNPe1o0oAgw.png?q=20)![](https://miro.medium.com/max/709/1*eYWIrq3o3UssNPe1o0oAgw.png)Empty Table
+
+Navigate to Add user and you will get this user form. It looks more cool!![](https://miro.medium.com/max/30/1*NdReF_IeD0jaAbByJSykng.png?q=20)![](https://miro.medium.com/max/709/1*NdReF_IeD0jaAbByJSykng.png)User Form
+
+Now fill up all the fields and click save or click back to navigate to the list page. You will see the loading on save button until the form gets submitted. Lets see how it looks like.![](https://miro.medium.com/max/30/1*tJZfdtGELSDAx10NVnWZew.png?q=20)![](https://miro.medium.com/max/709/1*tJZfdtGELSDAx10NVnWZew.png)New user added with a success message
+
+This is how you can add new users and let’s see our empty components by navigating to videos from left menu.![](https://miro.medium.com/max/30/1*xNy_OTTUEdUeBDdIlJ7uTg.png?q=20)![](https://miro.medium.com/max/709/1*xNy_OTTUEdUeBDdIlJ7uTg.png)Video page with no data
+
+We implemented some of the basic components of Ant Design with React. There are a lot more components and designs provided by Ant. It is so easy to use and much efficient for the user experience. You can add more attributes to the application we developed just now, using other Ant Components. You can refer to my github link of the project for any confusions or you can write it down on the comments below as well. I will be covering more parts of ANT Design in upcoming articles too.  
+Stay Tuned!
+
+**Github:** [https://github.com/SudeepTimalsina/ReactAnt](https://github.com/SudeepTimalsina/ReactAnt)
 
 ## Ant Design of React
 
