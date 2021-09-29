@@ -16,25 +16,7 @@ description: >-
 
 {% embed url="https://codepen.io/bgoonz/pen/QWgYoBp" %}
 
-
-
-{% embed url="https://24timezones.com/\#/map?ids=248,136,179" %}
-
-
-
-
-
-
-
 {% embed url="https://calendar.google.com/calendar/embed?src=c\_f16bvhnsdsp8epckcinsu4978g%40group.calendar.google.com&ctz=America%2FNew\_York" %}
-
-
-
-{% page-ref page="./" %}
-
-
-
-
 
 {% page-ref page="docs/untitled.md" %}
 
@@ -51,24 +33,12 @@ Pw: ILoveLambdaL4bz!Name: BG User
 Username: [bg\_user@gmail.com](mailto:bg_user@gmail.com)  
 Pw: ILoveLambdaL4bz!
 
-
-
-
-
-## 
-
 ## Contact Info:
 
 | Name | Role | Github | Linkedin | Number | Time Zone |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |  |
 | Bryan Guner | UX | [https://github.com/bgoonz](https://github.com/bgoonz) | [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/) | 551-254-5505 | EST |
-
-
-
-
-
-![](https://i.imgur.com/sQMgAxv.png)
 
 ## Navigation:
 
