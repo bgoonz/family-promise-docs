@@ -750,11 +750,3 @@ TetraLogical has a good in-depth, yet still [high-level explanation of the WCAG]
 * [Good First Issues](https://github.com/a11yproject/a11yproject.com/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+First+Issue%22)
 * [Project Roadmap](https://github.com/a11yproject/a11yproject.com/projects/1)
 
-Accessibility helps everyone.
-
-© 2013--2020 The Accessibility Project. [APLv2](https://www.apache.org/licenses/LICENSE-2.0). [Sitemap](https://www.a11yproject.com/sitemap.xml).
-
-Powered by [Eleventy](https://www.11ty.io/), [Netlify](https://www.netlify.com/), and [GitHub](https://github.com/a11yproject/a11yproject.com).
-
-[Back to top](https://www.a11yproject.com/checklist/#header)
-
