@@ -69,3 +69,8 @@
 
 * [From Previous Cohort](questions/from-previous-cohort.md)
 
+## Standup Notes
+
+* [Meeting Notes](standup-notes/meeting-notes/README.md)
+  * [9/29/2021](standup-notes/meeting-notes/9-29-2021.md)
+
