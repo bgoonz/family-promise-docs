@@ -59,6 +59,7 @@
 ## Action Items
 
 * [Trello](action-items/untitled.md)
+* [Maps](action-items/maps.md)
 
 ## ARCHITECTURE
 
