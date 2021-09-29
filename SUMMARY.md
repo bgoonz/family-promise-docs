@@ -10,6 +10,7 @@
 
 ## DOCS
 
+* [Project Docs](docs/project-docs.md)
 * [PROJECT DESCRIPTION](docs/project-description.md)
 * [Labs Learners Guide](docs/labs-learners-guide.md)
 * [Links](docs/untitled.md)
