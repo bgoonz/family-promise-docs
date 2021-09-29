@@ -16,13 +16,9 @@ description: >-
 
 ## Time Zones:
 
+
+
 {% embed url="https://codepen.io/bgoonz/pen/QWgYoBp" %}
-
-{% embed url="https://codepen.io/bgoonz/embed/QWgYoBp?default-tab=result&editable=true&theme-id=light" %}
-
-
-
-{% embed url="https://codepen.io/bgoonz/pen/rNwPRGp" %}
 
 
 
