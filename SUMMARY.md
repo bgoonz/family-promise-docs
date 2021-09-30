@@ -93,3 +93,7 @@
     * [Git Bash](background-information/background-info/github/git-bash.md)
     * [Git Prune:](background-information/background-info/github/git-prune.md)
 
+## Workflow
+
+* [Workflow](workflow/workflow.md)
+
