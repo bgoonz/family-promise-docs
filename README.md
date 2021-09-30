@@ -6,19 +6,33 @@ description: >-
 
 # Home
 
+![](https://i.imgur.com/pW28AXn.png)
+
+## Loom:
+
+{% embed url="https://loom.com/invite/0d1d8bb0f13a437e898b8a4159559ea2" %}
+
+![](https://i.imgur.com/pW28AXn.png)
+
 ## Questions:
 
 {% embed url="https://docs.google.com/spreadsheets/d/1x2TSzeIDw2-YkumhJ4F7IW2EVkA7NVeZo-pez1Fkn7s/edit?usp=sharing" %}
 
-
-
-{% page-ref page="./" %}
+{% page-ref page="docs/untitled.md" %}
 
 ## Current Deployment:
 
 {% embed url="https://a.familypromiseservicetracker.dev/dashboard" %}
 
+![](https://i.imgur.com/Tyz2jrJ.png)
+
+
+
 {% embed url="https://codepen.io/bgoonz/embed/qBjggOR?default-tab=html%2Cresult" %}
+
+
+
+![](https://i.imgur.com/pW28AXn.png)
 
 ## Time Zones:
 
@@ -26,22 +40,17 @@ description: >-
 
 {% embed url="https://calendar.google.com/calendar/embed?src=c\_f16bvhnsdsp8epckcinsu4978g%40group.calendar.google.com&ctz=America%2FNew\_York" %}
 
+![](https://i.imgur.com/pW28AXn.png)
+
 {% page-ref page="docs/untitled.md" %}
 
- **App Login Info**  
-Name: Abigail Administrator  
-Username: [fp.servicetracker+admin@gmail.com](mailto:fp.servicetracker+admin@gmail.com)  
-Pw: ILoveLambdaL4bz!Name: Sally Service  
-Username: [fp.servicetracker+service@gmail.com](mailto:fp.servicetracker+service@gmail.com)  
-Pw: ILoveLambdaL4bz!Name: Patty Program  
-Username: [fp.servicetracker+program@gmail.com](mailto:fp.servicetracker+program@gmail.com)  
-Pw: ILoveLambdaL4bz!Name: Gary Jerry  
-Username: [fp.servicetracker+unassigned@gmail.com](mailto:fp.servicetracker+unassigned@gmail.com)  
-Pw: ILoveLambdaL4bz!Name: BG User  
-Username: [bg\_user@gmail.com](mailto:bg_user@gmail.com)  
-Pw: ILoveLambdaL4bz!
+![](https://i.imgur.com/pW28AXn.png)
 
-## Contact Info:
+## **App Login Info** Name: Abigail Administrator Username: [fp.servicetracker+admin@gmail.com](mailto:fp.servicetracker+admin@gmail.com) Pw: ILoveLambdaL4bz!Name: Sally Service Username: [fp.servicetracker+service@gmail.com](mailto:fp.servicetracker+service@gmail.com) Pw: ILoveLambdaL4bz!Name: Patty Program Username: [fp.servicetracker+program@gmail.com](mailto:fp.servicetracker+program@gmail.com) Pw: ILoveLambdaL4bz!Name: Gary Jerry Username: [fp.servicetracker+unassigned@gmail.com](mailto:fp.servicetracker+unassigned@gmail.com) Pw: ILoveLambdaL4bz!Name: BG User Username: [bg\_user@gmail.com](mailto:bg_user@gmail.com) Pw: ILoveLambdaL4bz!
+
+![](https://i.imgur.com/pW28AXn.png)
+
+## Team Contact Info:
 
 | Name | Role | Github | Linkedin | Number | Time Zone |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -113,10 +122,4 @@ Pw: ILoveLambdaL4bz!
 * [DNS](https://lambda-labs.gitbook.io/lambda-labs/architecture/dns)
 * [AWS](https://lambda-labs.gitbook.io/lambda-labs/architecture/aws)
 * [Heroku](https://lambda-labs.gitbook.io/lambda-labs/architecture/heroku)
-
-## 
-
-\*\*\*\*
-
-## 
 
