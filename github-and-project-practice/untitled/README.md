@@ -1,8 +1,20 @@
 # GitHub
 
+Think of commits on GitHub as elements of a linked list. 
+
+
+
 {% embed url="https://familypromise.org/" %}
 
+## NEW GITFLOW:
 
+1. [ ] Git Status - to see what files were updated
+2. [ ] Git Add \(by filename\) - to add the files that are relevant to the push
+3. [ ] Git commit 'insert message here'
+4. [ ] Git push origin 
+5. [ ] Open the PR in github
+6. [ ] Get 2 reviews
+7. [ ] I will then watch your loom video and merge
 
 ## Pull Request Rubric
 

@@ -82,9 +82,11 @@
 
 ## GitHub & Project Practice
 
-* [GitHub](github-and-project-practice/untitled.md)
+* [GitHub](github-and-project-practice/untitled/README.md)
+  * [Untitled](github-and-project-practice/untitled/untitled.md)
 
 ## Background Information
 
-* [Background Info](background-information/background-info.md)
+* [Background Info](background-information/background-info/README.md)
+  * [GITHUB:](background-information/background-info/github.md)
 
