@@ -28,42 +28,7 @@ And 4 other properties additionally.
 Primary ButtonDefault ButtonDashed Button  
 Text ButtonLink Button[Type](https://ant.design/components/button/#components-button-demo-basic)
 
-There are `primary` button, `default` button, `dashed` button, `text` button and `link` button in antd.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)LargeDefaultSmall  
-  
-PrimaryDefaultDashed  
-Link  
-DownloadDownload[Size](https://ant.design/components/button/#components-button-demo-size)
 
-Ant Design supports a default button size as well as a large and small size.
-
-If a large or small button is desired, set the `size` property to either `large` or `small` respectively. Omit the `size` property for a button with the default size.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)LoadingLoadingClick me!Click me![Loading](https://ant.design/components/button/#components-button-demo-loading)
-
-A loading indicator can be added to a button by setting the `loading` property on the `Button`.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryDefaultDashedDanger[Ghost Button](https://ant.design/components/button/#components-button-demo-ghost)
-
-`ghost` property will make button's background transparent, it is commonly used in colored background.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryDefaultDashedLink[Block Button](https://ant.design/components/button/#components-button-demo-block)
-
-`block` property will make the button fit to its parent width.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)ASearchSearch  
-SearchSearch  
-  
-ASearchSearch  
-SearchSearch[Icon](https://ant.design/components/button/#components-button-demo-icon)
-
-`Button` components can contain an `Icon`. This is done by setting the `icon` property or placing an `Icon` component within the `Button`.
-
-If you want specific control over the positioning and placement of the `Icon`, then that should be done by placing the `Icon` component within the `Button` rather than using the `icon` property.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryPrimary\(disabled\)  
-DefaultDefault\(disabled\)  
-DashedDashed\(disabled\)  
-TextText\(disabled\)  
-LinkLink\(disabled\)  
-Danger DefaultDanger Default\(disabled\)  
-Danger TextDanger Text\(disabled\)  
-Danger LinkDanger Link\(disabled\)GhostGhost\(disabled\)[Disabled](https://ant.design/components/button/#components-button-demo-disabled)
-
-To mark a button as disabled, add the `disabled` property to the `Button`.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)primarysecondaryActions[Multiple Buttons](https://ant.design/components/button/#components-button-demo-multiple)
-
-If you need several buttons, we recommend that you use 1 primary button + n secondary buttons, and if there are more than three operations, you can group some of them into [Dropdown.Button](https://ant.design/components/dropdown/#components-dropdown-demo-dropdown-button).![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryDefaultDashedTextLink[Danger Buttons](https://ant.design/components/button/#components-button-demo-danger)
-
-`danger` is a property of button after antd 4.0.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)
 
 ### API[\#](https://ant.design/components/button/#API) <a id="API"></a>
 
