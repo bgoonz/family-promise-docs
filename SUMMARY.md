@@ -88,6 +88,7 @@
 ## Background Information
 
 * [Background Info](background-information/background-info/README.md)
+  * [Swagger OPEN API SPECIFICATION](background-information/background-info/swagger-open-api-specification.md)
   * [GITHUB:](background-information/background-info/github/README.md)
     * [Git Bash](background-information/background-info/github/git-bash.md)
     * [Git Prune:](background-information/background-info/github/git-prune.md)
