@@ -9,7 +9,10 @@
 
 ## DOCS
 
-* [Project Docs](docs/project-docs.md)
+* [Project Docs](docs/project-docs/README.md)
+  * [Basic Node API](docs/project-docs/basic-node-api.md)
+  * [Contributing to this scaffold project](docs/project-docs/contributing-to-this-scaffold-project.md)
+  * [Examples:](docs/project-docs/examples.md)
 * [PROJECT DESCRIPTION \(Feature List\)](docs/project-description.md)
 * [Labs Learners Guide](docs/labs-learners-guide.md)
 * [Links](docs/untitled.md)
