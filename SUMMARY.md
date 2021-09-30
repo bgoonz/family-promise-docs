@@ -20,6 +20,18 @@
   * [Roadmap](docs/labs-engineering-docs/roadmap.md)
   * [Repositories](docs/labs-engineering-docs/repositories.md)
 
+## UX
+
+* [UX\_TOPICS](ux/untitled/README.md)
+  * [UX-Design](ux/untitled/ux-design/README.md)
+    * [Facebook Graph API](ux/untitled/ux-design/facebook-graph-api.md)
+  * [Ant Design](ux/untitled/ant-design/README.md)
+    * [ANT Components](ux/untitled/ant-design/ant-components/README.md)
+      * [Buttons](ux/untitled/ant-design/ant-components/buttons.md)
+    * [ANT DOCS](ux/untitled/ant-design/ant-docs.md)
+    * [Application \(Codesandbox\)](ux/untitled/ant-design/application-codesandbox.md)
+  * [Examples](ux/untitled/examples.md)
+
 ## Front End
 
 * [Frontend:](front-end/untitled.md)
@@ -50,18 +62,6 @@
 
 * [TEAM ROLES](roles/untitled/README.md)
   * [Bryan Guner](roles/untitled/bryan-guner.md)
-
-## UX
-
-* [UX\_TOPICS](ux/untitled/README.md)
-  * [UX-Design](ux/untitled/ux-design/README.md)
-    * [Facebook Graph API](ux/untitled/ux-design/facebook-graph-api.md)
-  * [Ant Design](ux/untitled/ant-design/README.md)
-    * [ANT Components](ux/untitled/ant-design/ant-components/README.md)
-      * [Buttons](ux/untitled/ant-design/ant-components/buttons.md)
-    * [ANT DOCS](ux/untitled/ant-design/ant-docs.md)
-    * [Application \(Codesandbox\)](ux/untitled/ant-design/application-codesandbox.md)
-  * [Examples](ux/untitled/examples.md)
 
 ## Action Items
 
