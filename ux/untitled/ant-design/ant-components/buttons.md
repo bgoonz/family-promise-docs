@@ -1,0 +1,97 @@
+# Buttons
+
+## Button
+
+To trigger an operation.
+
+### When To Use[\#](https://ant.design/components/button/#When-To-Use) <a id="When-To-Use"></a>
+
+A button means an operation \(or a series of operations\). Clicking a button will trigger corresponding business logic.
+
+In Ant Design we provide 5 types of button.
+
+* Primary button: indicate the main action, one primary button at most in one section.
+* Default button: indicate a series of actions without priority.
+* Dashed button: used for adding action commonly.
+* Text button: used for the most secondary action.
+* Link button: used for external links.
+
+And 4 other properties additionally.
+
+* `danger`: used for actions of risk, like deletion or authorization.
+* `ghost`: used in situations with complex background, home pages usually.
+* `disabled`: when actions are not available.
+* `loading`: add loading spinner in button, avoiding multiple submits too.
+
+### Examples
+
+Primary ButtonDefault ButtonDashed Button  
+Text ButtonLink Button[Type](https://ant.design/components/button/#components-button-demo-basic)
+
+There are `primary` button, `default` button, `dashed` button, `text` button and `link` button in antd.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)LargeDefaultSmall  
+  
+PrimaryDefaultDashed  
+Link  
+DownloadDownload[Size](https://ant.design/components/button/#components-button-demo-size)
+
+Ant Design supports a default button size as well as a large and small size.
+
+If a large or small button is desired, set the `size` property to either `large` or `small` respectively. Omit the `size` property for a button with the default size.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)LoadingLoadingClick me!Click me![Loading](https://ant.design/components/button/#components-button-demo-loading)
+
+A loading indicator can be added to a button by setting the `loading` property on the `Button`.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryDefaultDashedDanger[Ghost Button](https://ant.design/components/button/#components-button-demo-ghost)
+
+`ghost` property will make button's background transparent, it is commonly used in colored background.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryDefaultDashedLink[Block Button](https://ant.design/components/button/#components-button-demo-block)
+
+`block` property will make the button fit to its parent width.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)ASearchSearch  
+SearchSearch  
+  
+ASearchSearch  
+SearchSearch[Icon](https://ant.design/components/button/#components-button-demo-icon)
+
+`Button` components can contain an `Icon`. This is done by setting the `icon` property or placing an `Icon` component within the `Button`.
+
+If you want specific control over the positioning and placement of the `Icon`, then that should be done by placing the `Icon` component within the `Button` rather than using the `icon` property.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryPrimary\(disabled\)  
+DefaultDefault\(disabled\)  
+DashedDashed\(disabled\)  
+TextText\(disabled\)  
+LinkLink\(disabled\)  
+Danger DefaultDanger Default\(disabled\)  
+Danger TextDanger Text\(disabled\)  
+Danger LinkDanger Link\(disabled\)GhostGhost\(disabled\)[Disabled](https://ant.design/components/button/#components-button-demo-disabled)
+
+To mark a button as disabled, add the `disabled` property to the `Button`.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)primarysecondaryActions[Multiple Buttons](https://ant.design/components/button/#components-button-demo-multiple)
+
+If you need several buttons, we recommend that you use 1 primary button + n secondary buttons, and if there are more than three operations, you can group some of them into [Dropdown.Button](https://ant.design/components/dropdown/#components-dropdown-demo-dropdown-button).![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)PrimaryDefaultDashedTextLink[Danger Buttons](https://ant.design/components/button/#components-button-demo-danger)
+
+`danger` is a property of button after antd 4.0.![expand code](https://gw.alipayobjects.com/zos/antfincdn/Z5c7kzvi30/expand.svg)![expand code](https://gw.alipayobjects.com/zos/antfincdn/4zAaozCvUH/unexpand.svg)
+
+### API[\#](https://ant.design/components/button/#API) <a id="API"></a>
+
+Different button styles can be generated by setting Button properties. The recommended order is: `type` -&gt; `shape` -&gt; `size` -&gt; `loading` -&gt; `disabled`.
+
+| Property | Description | Type | Default | Version |
+| :--- | :--- | :--- | :--- | :--- |
+| block | Option to fit button width to its parent width | boolean | false |  |
+| danger | Set the danger status of button | boolean | false |  |
+| disabled | Disabled state of button | boolean | false |  |
+| ghost | Make background transparent and invert text and border colors | boolean | false |  |
+| href | Redirect url of link button | string | - |  |
+| htmlType | Set the original html `type` of `button`, see: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string | `button` |  |
+| icon | Set the icon component of button | ReactNode | - |  |
+| loading | Set the loading status of button | boolean \| { delay: number } | false |  |
+| shape | Can be set button shape | `default` \| `circle` \| `round` | 'default' |  |
+| size | Set the size of button | `large` \| `middle` \| `small` | `middle` |  |
+| target | Same as target attribute of a, works when href is specified | string | - |  |
+| type | Can be set to `primary` `ghost` `dashed` `link` `text` `default` | string | `default` |  |
+| onClick | Set the handler to handle `click` event | \(event\) =&gt; void | - |  |
+
+It accepts all props which native buttons support.
+
+### FAQ[\#](https://ant.design/components/button/#FAQ) <a id="FAQ"></a>
+
+#### How to remove space between 2 chinese characters?[\#](https://ant.design/components/button/#How-to-remove-space-between-2-chinese-characters) <a id="How-to-remove-space-between-2-chinese-characters?"></a>
+
+Following the Ant Design specification, we will add one space between if Button \(exclude Text button and Link button\) contains two Chinese characters only. If you don't need that, you can use [ConfigProvider](https://ant.design/components/config-provider/#API) to set `autoInsertSpaceInButton` as `false`.
+
+![Button with two Chinese characters](https://gw.alipayobjects.com/zos/antfincdn/MY%26THAPZrW/38f06cb9-293a-4b42-b183-9f443e79ffea.png)
+
