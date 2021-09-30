@@ -84,3 +84,7 @@
 
 * [GitHub](github-and-project-practice/untitled.md)
 
+## Background Information
+
+* [Background Info](background-information/background-info.md)
+
