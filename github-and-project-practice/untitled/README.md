@@ -2,6 +2,12 @@
 
 Think of commits on GitHub as elements of a linked list. 
 
+{% embed url="https://lambdaschool.enterprise.slack.com/files/U02CA71AVQV/F02GB1KFAE8/git\_and\_trello\_walkthrough.mp4" %}
+
+
+
+
+
 
 
 {% embed url="https://familypromise.org/" %}
