@@ -6,7 +6,7 @@
 
 * [Calendar](navigation/calendar.md)
 * [Roadmap:](navigation/roadmap.md)
-* [Overview:](navigation/overview.md)
+* [Stakeholder Meeting 1](navigation/overview.md)
 
 ## DOCS
 
