@@ -88,5 +88,7 @@
 ## Background Information
 
 * [Background Info](background-information/background-info/README.md)
-  * [GITHUB:](background-information/background-info/github.md)
+  * [GITHUB:](background-information/background-info/github/README.md)
+    * [Git Bash](background-information/background-info/github/git-bash.md)
+    * [Git Prune:](background-information/background-info/github/git-prune.md)
 
