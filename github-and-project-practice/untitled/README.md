@@ -4,7 +4,13 @@ Think of commits on GitHub as elements of a linked list.
 
 {% embed url="https://lambdaschool.enterprise.slack.com/files/U02CA71AVQV/F02GB1KFAE8/git\_and\_trello\_walkthrough.mp4" %}
 
+{% embed url="https://www.loom.com/share/173f03d6a3f24925ba6c742f36f686a4" %}
 
+
+
+
+
+{% file src="../../.gitbook/assets/image \(2\).png" %}
 
 
 
