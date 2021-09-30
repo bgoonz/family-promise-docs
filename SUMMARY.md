@@ -77,3 +77,7 @@
 * [Meeting Notes](standup-notes/meeting-notes/README.md)
   * [9/29/2021](standup-notes/meeting-notes/9-29-2021.md)
 
+## GitHub & Project Practice
+
+* [Untitled](github-and-project-practice/untitled.md)
+
