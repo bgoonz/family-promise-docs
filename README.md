@@ -8,6 +8,10 @@ description: >-
 
 ![](https://i.imgur.com/pW28AXn.png)
 
+{% embed url="https://www.youtube.com/embed/d-Qad6-6ozQ" %}
+
+
+
 ## Loom:
 
 {% embed url="https://loom.com/invite/0d1d8bb0f13a437e898b8a4159559ea2" %}
