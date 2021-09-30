@@ -116,8 +116,6 @@ Pw: ILoveLambdaL4bz!
 
 ## 
 
-![](https://i.imgur.com/sQMgAxv.png)
-
 \*\*\*\*
 
 ## 
