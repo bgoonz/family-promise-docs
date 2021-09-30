@@ -62,6 +62,8 @@ description: >-
 | :--- | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |  |
 | Bryan Guner | UX | [https://github.com/bgoonz](https://github.com/bgoonz) | [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/) | 551-254-5505 | EST |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
 
 ## Navigation:
 
