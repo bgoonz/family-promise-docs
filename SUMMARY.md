@@ -79,5 +79,5 @@
 
 ## GitHub & Project Practice
 
-* [Untitled](github-and-project-practice/untitled.md)
+* [GitHub](github-and-project-practice/untitled.md)
 
