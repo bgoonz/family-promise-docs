@@ -25,6 +25,7 @@
 ## UX
 
 * [UX\_TOPICS](ux/untitled/README.md)
+  * [Figma Notes](ux/untitled/figma-notes.md)
   * [UX-Design](ux/untitled/ux-design/README.md)
     * [Facebook Graph API](ux/untitled/ux-design/facebook-graph-api.md)
   * [Ant Design](ux/untitled/ant-design/README.md)
