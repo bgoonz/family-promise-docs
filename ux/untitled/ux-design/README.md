@@ -1,5 +1,51 @@
 # UX-Design
 
+## 
+
+### Visibility of system status
+
+The system should keep users informed through appropriate feedback within reasonable time
+
+### Match between system and the real world
+
+The system should speak the users' language rather than system-oriented terms. Follow real-world conventions
+
+### User control and freedom
+
+Users often make mistakes and need 'emergency exits' to leave the unwanted state. Support undo and redo
+
+### Consistency and standards
+
+Users shouldn't have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions
+
+### Error prevention
+
+Prevent problems from occuring in the first place, or check for them and present users with a confirmation option before they commit to the action
+
+### Recognition rather than recall
+
+Minimize memory load by making objects, actions, and options visible. Instructions should be visible or easily retrievable
+
+### Flexibility and efficiency of use
+
+Accelerators - unseen by the novice user - may often speed up the interaction for the expert user. Allow users to tailor frequent actions
+
+### Aesthetic and minimalist design
+
+Dialogues should not contain information which is irrelevant or rarely needed
+
+### Help recognize & recover from errors
+
+Error messages should be expressed in plain language, indicate the problem, and suggest a solution
+
+### Help and documentation
+
+Any necessary help documentation should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large
+
+## 
+
+## 
+
 ## UX Patterns
 
 ### UX Patterns: Modeling an Experience
