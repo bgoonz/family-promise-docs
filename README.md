@@ -6,13 +6,27 @@ description: >-
 
 # Home
 
+{% page-ref page="docs/untitled.md" %}
+
 
 
 ![](https://i.imgur.com/pW28AXn.png)
 
 {% embed url="https://www.youtube.com/embed/d-Qad6-6ozQ" %}
 
+##  Team Contact Info: <a id="team-contact-info"></a>
 
+| Name | Role | Github | Linkedin | Number | Time Zone |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| ​Content | ​Content | ​Content | ​Content | ​Content | ​Content |
+| Bryan Guner | UX | ​[https://github.com/bgoonz](https://github.com/bgoonz)​ | ​[https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)​ | 551-254-5505 | EST |
+| ​Content | ​Content | ​Content | ​Content | ​Content | ​Content |
+| ​Content | ​Content | ​Content | ​Content | ​Content | ​Content |
+| ​Content | ​Content | ​Content | ​Content | ​Content | ​Content |
+| ​Content | ​Content | ​Content | ​Content | ​Content | ​Content |
+| ​Content | ​Content | ​Content | ​Content | ​Content | ​Content |
+
+‌
 
 ## Loom:
 
