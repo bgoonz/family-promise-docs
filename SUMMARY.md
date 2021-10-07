@@ -5,6 +5,7 @@
 ## navigation
 
 * [Calendar](navigation/calendar.md)
+* [Youtube:](navigation/youtube.md)
 * [Roadmap:](navigation/roadmap.md)
 * [Stakeholder Meeting 1](navigation/overview.md)
 * [TEAM MEMBERS](navigation/team-members.md)
