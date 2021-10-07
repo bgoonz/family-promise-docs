@@ -74,7 +74,7 @@
 ## GitHub & Project Practice
 
 * [GitHub](github-and-project-practice/untitled/README.md)
-  * [Untitled](github-and-project-practice/untitled/untitled.md)
+  * [Github Guide](github-and-project-practice/untitled/untitled.md)
 
 ## MISC
 
