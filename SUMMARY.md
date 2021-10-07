@@ -9,6 +9,7 @@
 * [Roadmap:](navigation/roadmap.md)
 * [Stakeholder Meeting 1](navigation/overview.md)
 * [TEAM MEMBERS](navigation/team-members.md)
+* [Running List Of Notes Links & Pertinent Info From Meetings](navigation/running-list-of-notes-links-and-pertinent-info-from-meetings.md)
 
 ## UX
 
