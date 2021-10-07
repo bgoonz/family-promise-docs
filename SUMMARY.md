@@ -9,19 +9,6 @@
 * [Stakeholder Meeting 1](navigation/overview.md)
 * [TEAM MEMBERS](navigation/team-members.md)
 
-## DOCS
-
-* [Project Docs](docs/project-docs/README.md)
-  * [Basic Node API](docs/project-docs/basic-node-api.md)
-  * [Contributing to this scaffold project](docs/project-docs/contributing-to-this-scaffold-project.md)
-  * [Examples:](docs/project-docs/examples.md)
-* [PROJECT DESCRIPTION \(Feature List\)](docs/project-description.md)
-* [Labs Learners Guide](docs/labs-learners-guide.md)
-* [Links](docs/untitled.md)
-* [Labs Engineering Docs](docs/labs-engineering-docs/README.md)
-  * [Roadmap](docs/labs-engineering-docs/roadmap.md)
-  * [Repositories](docs/labs-engineering-docs/repositories.md)
-
 ## UX
 
 * [UX\_TOPICS](ux/untitled/README.md)
@@ -44,10 +31,6 @@
 
 * [Backend:](back-end/untitled/README.md)
   * [API](back-end/untitled/api.md)
-
-## MISC
-
-* [MISCELLANEOUS](misc/untitled.md)
 
 ## Research
 
@@ -92,6 +75,10 @@
 * [GitHub](github-and-project-practice/untitled/README.md)
   * [Untitled](github-and-project-practice/untitled/untitled.md)
 
+## MISC
+
+* [MISCELLANEOUS](misc/untitled.md)
+
 ## Background Information
 
 * [Background Info](background-information/background-info/README.md)
@@ -99,6 +86,19 @@
   * [GITHUB:](background-information/background-info/github/README.md)
     * [Git Bash](background-information/background-info/github/git-bash.md)
     * [Git Prune:](background-information/background-info/github/git-prune.md)
+
+## DOCS
+
+* [Project Docs](docs/project-docs/README.md)
+  * [Basic Node API](docs/project-docs/basic-node-api.md)
+  * [Contributing to this scaffold project](docs/project-docs/contributing-to-this-scaffold-project.md)
+  * [Examples:](docs/project-docs/examples.md)
+* [PROJECT DESCRIPTION \(Feature List\)](docs/project-description.md)
+* [Labs Learners Guide](docs/labs-learners-guide.md)
+* [Links](docs/untitled.md)
+* [Labs Engineering Docs](docs/labs-engineering-docs/README.md)
+  * [Roadmap](docs/labs-engineering-docs/roadmap.md)
+  * [Repositories](docs/labs-engineering-docs/repositories.md)
 
 ## Workflow
 
