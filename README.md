@@ -14,15 +14,7 @@ description: >-
 
 {% embed url="https://www.youtube.com/embed/d-Qad6-6ozQ" %}
 
-## Ash Tilawat – Release Manager <a id="team-contact-info"></a>
 
-  – TPM
-
-  – TPM
-
-  – 
-
- – Front End
 
 ## Team Contact Info:
 
