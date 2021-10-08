@@ -10,7 +10,8 @@
 * [Stakeholder Meeting 1](navigation/overview.md)
 * [TEAM MEMBERS](navigation/team-members.md)
 * [Running List Of Notes Links & Pertinent Info From Meetings](navigation/running-list-of-notes-links-and-pertinent-info-from-meetings.md)
-* [Trello](navigation/trello.md)
+* [Trello](navigation/trello/README.md)
+  * [Github/Trello Integration](navigation/trello/github-trello-integration.md)
 
 ## UX
 
@@ -89,6 +90,7 @@
 
 * [GitHub](github-and-project-practice/untitled/README.md)
   * [Github Guide](github-and-project-practice/untitled/untitled.md)
+  * [Github Actions:](github-and-project-practice/untitled/github-actions.md)
 
 ## MISC
 
