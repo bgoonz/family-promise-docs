@@ -31,9 +31,13 @@
 
 ## CANVAS
 
+* [Design](canvas/design/README.md)
+  * [What's Inclusive Design?](canvas/design/whats-inclusive-design.md)
 * [Canvas](canvas/canvas.md)
 * [Notes](canvas/notes/README.md)
   * [User Experience Design](canvas/notes/user-experience-design.md)
+  * [User Research](canvas/notes/user-research.md)
+  * [Interaction Design](canvas/notes/interaction-design.md)
 * [UX-Engineer](canvas/ux-engineer/README.md)
   * [Design Tools](canvas/ux-engineer/design-tools.md)
   * [Design Critiques](canvas/ux-engineer/design-critiques.md)
