@@ -1,6 +1,12 @@
 # Create React App
 
 
+{% page-ref page="untitled.md" %}
+
+{% page-ref page="awesome-react.md" %}
+
+{% page-ref page="./" %}
+
 
 ## Getting Started with Create React App <a id="getting-started-with-create-react-app"></a>
 
