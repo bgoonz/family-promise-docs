@@ -44,8 +44,8 @@ A set of test users has been created that teams can use for authentication. Thes
 
 There are 8 test users, each one using a 3-digit sequence for username and password:
 
-| Username | Password | Mailbox |
-| :--- | :--- | :--- |
+| Username             | Password    | Mailbox                                                                    |
+| :------------------- | :---------- | :------------------------------------------------------------------------- |
 | llama001@maildrop.cc | Test001Test | ​[https://maildrop.cc/inbox/llama001](https://maildrop.cc/inbox/llama001)​ |
 | llama002@maildrop.cc | Test002Test | ​[https://maildrop.cc/inbox/llama002](https://maildrop.cc/inbox/llama002)​ |
 | llama003@maildrop.cc | Test003Test | ​[https://maildrop.cc/inbox/llama003](https://maildrop.cc/inbox/llama003)​ |
@@ -72,4 +72,3 @@ Products have _one_ client id that is _shared_ among all active projects working
 ### Issuer URI <a id="issuer-uri"></a>
 
 The Issuer URI is also required for Labs projects to correctly configure authentication. For Labs projects, this value will _always_ be: [`https://auth.lambdalabs.dev/oauth2/default`](https://auth.lambdalabs.dev/oauth2/default)​
-

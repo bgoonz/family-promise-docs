@@ -5,6 +5,3 @@
 {% embed url="https://codepen.io/bgoonz/full/mdwvvJp" %}
 
 {% embed url="https://www.figma.com/embed?embed\_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FiM4t3H148ndBvVf8WmkTuO%2FFamily-Promise%3Fnode-id%3D0%253A1" %}
-
-
-

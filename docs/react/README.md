@@ -2,25 +2,18 @@
 
 -
 
-
-
 {% page-ref page="untitled.md" %}
 
 {% page-ref page="awesome-react.md" %}
 
 {% page-ref page="./" %}
 
-
-
 ## **Hello World**
 
 ## The smallest React example looks like this:
 
 ```jsx
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
-);
+ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById("root"));
 ```
 
 It displays a heading saying "Hello, world!" on the page.
@@ -76,11 +69,9 @@ With that out of the way, let's get started!
 In the example below, we declare a variable called `name` and then use it inside JSX by wrapping it in curly braces:
 
 ```jsx
-const name = 'Josh Perez';const element = <h1>Hello, {name}</h1>;
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+const name = "Josh Perez";
+const element = <h1>Hello, {name}</h1>;
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
 You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2`, `user.firstName`, or `formatName(user)` are all valid JavaScript expressions.
@@ -89,21 +80,17 @@ In the example below, we embed the result of calling a JavaScript function, `for
 
 ```jsx
 function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
+  return user.firstName + " " + user.lastName;
 }
 
 const user = {
-  firstName: 'Harper',
-  lastName: 'Perez'
+  firstName: "Harper",
+  lastName: "Perez",
 };
 
-const element = (
-  <h1>    Hello, {formatName(user)}!  </h1>);
+const element = <h1> Hello, {formatName(user)}! </h1>;
 
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/introducing-jsx)
@@ -121,8 +108,10 @@ This means that you can use JSX inside of `if` statements and `for` loops, assig
 ```jsx
 function getGreeting(user) {
   if (user) {
-    return <h1>Hello, {formatName(user)}!</h1>;  }
-  return <h1>Hello, Stranger.</h1>;}
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger.</h1>;
+}
 ```
 
 ## Specifying Attributes with JSX
@@ -158,7 +147,8 @@ const element = (
   <div>
     <h1>Hello!</h1>
     <h2>Good to see you here.</h2>
-  </div>);
+  </div>
+);
 ```
 
 ## JSX Prevents Injection Attacks
@@ -180,17 +170,14 @@ Babel compiles JSX down to `React.createElement()` calls.
 These two examples are identical:
 
 ```jsx
-const element = (
-  <h1 className="greeting">
-    Hello, world!
-  </h1>);
+const element = <h1 className="greeting">Hello, world!</h1>;
 ```
 
 ```jsx
 const element = React.createElement(
-  'h1',
-  {className: 'greeting'},
-  'Hello, world!'
+  "h1",
+  { className: "greeting" },
+  "Hello, world!"
 );
 ```
 
@@ -199,11 +186,11 @@ const element = React.createElement(
 ```jsx
 // Note: this structure is simplified
 const element = {
-  type: 'h1',
+  type: "h1",
   props: {
-    className: 'greeting',
-    children: 'Hello, world!'
-  }
+    className: "greeting",
+    children: "Hello, world!",
+  },
 };
 ```
 
@@ -241,7 +228,7 @@ To render a React element into a root DOM node, pass both to `[ReactDOM.render()
 
 ```jsx
 const element = <h1>Hello, world</h1>;
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/rendering-elements/render-an-element)
@@ -261,8 +248,15 @@ Consider this ticking clock example:
 ```jsx
 function tick() {
   const element = (
-    <div>      <h1>Hello, world!</h1>      <h2>It is {new Date().toLocaleTimeString()}.</h2>    </div>);
-  ReactDOM.render(element, document.getElementById('root'));}
+    <div>
+      {" "}
+      <h1>Hello, world!</h1> <h2>
+        It is {new Date().toLocaleTimeString()}.
+      </h2>{" "}
+    </div>
+  );
+  ReactDOM.render(element, document.getElementById("root"));
+}
 
 setInterval(tick, 1000);
 ```
@@ -338,13 +332,12 @@ When React sees an element representing a user-defined component, it passes JSX 
 For example, this code renders "Hello, Sara" on the page:
 
 ```jsx
-function Welcome(props) {  return <h1>Hello, {props.name}</h1>;
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
 }
 
-const element = <Welcome name="Sara" />;ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+const element = <Welcome name="Sara" />;
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/components-and-props/rendering-a-component)
@@ -358,7 +351,7 @@ Let's recap what happens in this example:
 3. Our `Welcome` component returns a `<h1>Hello, Sara</h1>` element as the result.
 4. React DOM efficiently updates the DOM to match `<h1>Hello, Sara</h1>`.
 
-> Note: Always start component names with a capital letter.React treats components starting with lowercase letters as DOM tags. For example,  represents an HTML div tag, but  represents a component and requires Welcome to be in [scope.To](http://scope.To) learn more about the reasoning behind this convention, please read JSX In Depth.
+> Note: Always start component names with a capital letter.React treats components starting with lowercase letters as DOM tags. For example, represents an HTML div tag, but represents a component and requires Welcome to be in [scope.To](http://scope.To) learn more about the reasoning behind this convention, please read JSX In Depth.
 
 ## Composing Components
 
@@ -882,8 +875,8 @@ In React apps, whether a component is stateful or stateless is considered an imp
 
 ## Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
 
-* React events are named using camelCase, rather than lowercase.
-* With JSX you pass a function as the event handler, rather than a string.
+- React events are named using camelCase, rather than lowercase.
+- With JSX you pass a function as the event handler, rather than a string.
 
 For example, the HTML:
 
@@ -1876,14 +1869,14 @@ Now, no matter which input you edit, `this.state.temperature` and `this.state.sc
 
 Let's recap what happens when you edit an input:
 
-* React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
-* The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
-* When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
-* Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
-* React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
-* React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
-* React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
-* React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
+- React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
+- The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
+- When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
+- Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
+- React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
+- React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
+- React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
+- React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
 
 Every update goes through the same steps so the inputs stay in sync.
 
@@ -2061,11 +2054,11 @@ If you look at `ProductTable`, you'll see that the table header \(containing the
 
 Now that we've identified the components in our mock, let's arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
-* `FilterableProductTable`
-  * `SearchBar`
-  * `ProductTable`
-    * `ProductCategoryRow`
-    * `ProductRow`
+- `FilterableProductTable`
+  - `SearchBar`
+  - `ProductTable`
+    - `ProductCategoryRow`
+    - `ProductRow`
 
 ## Step 2: Build A Static Version in React
 
@@ -2093,10 +2086,10 @@ To build your app correctly, you first need to think of the minimal set of mutab
 
 Think of all the pieces of data in our example application. We have:
 
-* The original list of products
-* The search text the user has entered
-* The value of the checkbox
-* The filtered list of products
+- The original list of products
+- The search text the user has entered
+- The value of the checkbox
+- The filtered list of products
 
 Let's go through each one and figure out which one is state. Ask three questions about each piece of data:
 
@@ -2108,8 +2101,8 @@ The original list of products is passed in as props, so that's not state. The se
 
 So finally, our state is:
 
-* The search text the user has entered
-* The value of the checkbox
+- The search text the user has entered
+- The value of the checkbox
 
 ## Step 4: Identify Where Your State Should Live
 
@@ -2121,16 +2114,16 @@ Remember: React is all about one-way data flow down the component hierarchy. It 
 
 For each piece of state in your application:
 
-* Identify every component that renders something based on that state.
-* Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
-* Either the common owner or another component higher up in the hierarchy should own the state.
-* If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+- Identify every component that renders something based on that state.
+- Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
+- Either the common owner or another component higher up in the hierarchy should own the state.
+- If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Let's run through this strategy for our application:
 
-* `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
-* The common owner component is `FilterableProductTable`.
-* It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
+- `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
+- The common owner component is `FilterableProductTable`.
+- It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
 
 Cool, so we've decided that our state lives in `FilterableProductTable`. First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable`'s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar`.
 
@@ -2155,8 +2148,6 @@ Hopefully, this gives you an idea of how to think about building components and 
 [Advanced Content](https://www.notion.so/Advanced-Content-fbe1ec3ca3544951b5763b051b843949)
 
 [React Component](https://www.notion.so/React-Component-3dc17bc49a8e4d7e89efcc1281e747d9)
-
-
 
 This appendix is a non-exhaustive list of new syntactic features and methods that were added to JavaScript in ES6. These features are the most commonly used and most helpful.
 
@@ -2194,7 +2185,7 @@ If we write an arrow function that spans multiple lines, we must use braces to d
 ```javascript
 const formattedPopulations = cities.map((city) => {
   const popMM = (city.pop / 1000000).toFixed(2);
-  return popMM + ' million';
+  return popMM + " million";
 });
 console.log(formattedPopulations);
 ```
@@ -2204,9 +2195,9 @@ Note that we must also explicitly specify a `return` for the function.
 However, if we write a function body that is only a single line \(or single expression\) we can use parentheses to delimit it:
 
 ```javascript
-const formattedPopulations2 = cities.map((city) => (
-  (city.pop / 1000000).toFixed(2) + ' million'
-));
+const formattedPopulations2 = cities.map(
+  (city) => (city.pop / 1000000).toFixed(2) + " million"
+);
 ```
 
 Notably, we don't use `return` as it's implied.
@@ -2214,14 +2205,16 @@ Notably, we don't use `return` as it's implied.
 Furthermore, if your function body is terse you can write it like so:
 
 ```javascript
-const pops = cities.map(city => city.pop);
+const pops = cities.map((city) => city.pop);
 console.log(pops);
 ```
 
 The terseness of arrow functions is one of two reasons that we use them. Compare the one-liner above to this:
 
 ```javascript
-const popsNoArrow = cities.map(function(city) { return city.pop });
+const popsNoArrow = cities.map(function (city) {
+  return city.pop;
+});
 ```
 
 Of greater benefit, though, is how arrow functions bind the `this` object.
@@ -2286,18 +2279,18 @@ ES6 formally supports modules using the `import`/`export` syntax.
 Inside any file, you can use `export` to specify a variable the module should expose. Here's an example of a file that exports two functions:
 
 ```javascript
-export const sayHi = () => (console.log('Hi!'));
-export const sayBye = () => (console.log('Bye!'));
+export const sayHi = () => console.log("Hi!");
+export const sayBye = () => console.log("Bye!");
 
-const saySomething = () => (console.log('Something!'));
+const saySomething = () => console.log("Something!");
 ```
 
 Now, anywhere we wanted to use these functions we could use `import`. We need to specify which functions we want to import. A common way of doing this is using ES6's destructuring assignment syntax to list them out like this:
 
 ```javascript
-import { sayHi, sayBye } from './greetings';
+import { sayHi, sayBye } from "./greetings";
 
-sayHi(); 
+sayHi();
 sayBye();
 ```
 
@@ -2308,10 +2301,10 @@ Also note that we supply a **relative path** to `from`, indicating that the ES6 
 Instead of inserting an `export` before each variable you'd like to export, you can use this syntax to list off all the exposed variables in one area:
 
 ```javascript
-const sayHi = () => (console.log('Hi!'));
-const sayBye = () => (console.log('Bye!'));
+const sayHi = () => console.log("Hi!");
+const sayBye = () => console.log("Bye!");
 
-const saySomething = () => (console.log('Something!'));
+const saySomething = () => console.log("Something!");
 
 export { sayHi, sayBye };
 ```
@@ -2319,7 +2312,7 @@ export { sayHi, sayBye };
 We can also specify that we'd like to import all of a module's functionality underneath a given namespace with the `import * as <Namespace>` syntax:
 
 ```javascript
-import * as Greetings from './greetings';
+import * as Greetings from "./greetings";
 
 Greetings.sayHi();
 
@@ -2333,10 +2326,10 @@ Greetings.saySomething();
 The other type of export is a default export. A module can only contain one default export:
 
 ```javascript
-const sayHi = () => (console.log('Hi!'));
-const sayBye = () => (console.log('Bye!'));
+const sayHi = () => console.log("Hi!");
+const sayBye = () => console.log("Bye!");
 
-const saySomething = () => (console.log('Something!'));
+const saySomething = () => console.log("Something!");
 
 const Greetings = { sayHi, sayBye };
 
@@ -2346,42 +2339,35 @@ export default Greetings;
 This is a common pattern for libraries. It means you can easily import the library wholesale without specifying what individual functions you want:
 
 ```javascript
-import Greetings from './greetings';
+import Greetings from "./greetings";
 
-Greetings.sayHi(); 
+Greetings.sayHi();
 Greetings.sayBye();
 ```
 
 It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom`, you can import `ReactDOM` \(a default export\) like this:
 
 ```javascript
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-
-);
+ReactDOM.render();
 ```
 
 Or, if you're only going to use the `render()` function, you can import the named `render()` function like this:
 
 ```javascript
-import { render } from 'react-dom';
+import { render } from "react-dom";
 
-render(
-
-);
+render();
 ```
 
 To achieve this flexibility, the export implementation for `react-dom` looks something like this:
 
 ```javascript
-export const render = (component, target) => {
-
-};
+export const render = (component, target) => {};
 
 const ReactDOM = {
   render,
-
 };
 
 export default ReactDOM;
@@ -2417,7 +2403,7 @@ const coffeeWithMilk = Object.assign({}, coffee, { milk: true });
 In ES5 JavaScript, you'd interpolate variables into strings like this:
 
 ```javascript
-var greeting = 'Hello, ' + user + '! It is ' + degF + ' degrees outside.';
+var greeting = "Hello, " + user + "! It is " + degF + " degrees outside.";
 ```
 
 With ES6 template literals, we can create the same string like this:
@@ -2433,9 +2419,9 @@ In arrays, the ellipsis `...` operator will _expand_ the array that follows into
 Here is an example:
 
 ```javascript
-const a = [ 1, 2, 3 ];
-const b = [ 4, 5, 6 ];
-const c = [ ...a, ...b, 7, 8, 9 ];
+const a = [1, 2, 3];
+const b = [4, 5, 6];
+const c = [...a, ...b, 7, 8, 9];
 
 console.log(c);
 ```
@@ -2443,7 +2429,7 @@ console.log(c);
 Notice how this is different than if we wrote:
 
 ```javascript
-const d = [ a, b, 7, 8, 9 ];
+const d = [a, b, 7, 8, 9];
 console.log(d);
 ```
 
@@ -2523,8 +2509,8 @@ var fruit2 = fruits[1];
 In ES6, we can use the destructuring syntax to accomplish the same task like this:
 
 ```javascript
-const [ veg1, veg2 ] = [ 'asparagus', 'broccoli', 'onion' ];
-console.log(veg1); 
+const [veg1, veg2] = ["asparagus", "broccoli", "onion"];
+console.log(veg1);
 console.log(veg2);
 ```
 
@@ -2536,15 +2522,15 @@ We can do something similar for extracting object properties into variables:
 
 ```javascript
 const smoothie = {
-  fats: [ 'avocado', 'peanut butter', 'greek yogurt' ],
-  liquids: [ 'almond milk' ],
-  greens: [ 'spinach' ],
-  fruits: [ 'blueberry', 'banana' ],
+  fats: ["avocado", "peanut butter", "greek yogurt"],
+  liquids: ["almond milk"],
+  greens: ["spinach"],
+  fruits: ["blueberry", "banana"],
 };
 
 const { liquids, fruits } = smoothie;
 
-console.log(liquids); 
+console.log(liquids);
 console.log(fruits);
 ```
 
@@ -2554,7 +2540,7 @@ We can use these same principles to bind arguments inside a function to properti
 
 ```javascript
 const containsSpinach = ({ greens }) => {
-  if (greens.find(g => g === 'spinach')) {
+  if (greens.find((g) => g === "spinach")) {
     return true;
   } else {
     return false;
@@ -2568,29 +2554,17 @@ We do this often with functional React components:
 
 ```javascript
 const IngredientList = ({ ingredients, onClick }) => (
-  <ul className='IngredientList'>
-    {
-      ingredients.map(i => (
-        <li
-          key={i.id}
-          onClick={() => onClick(i.id)}
-          className='item'
-        >
-          {i.name}
-        </li>
-      ))
-    }
+  <ul className="IngredientList">
+    {ingredients.map((i) => (
+      <li key={i.id} onClick={() => onClick(i.id)} className="item">
+        {i.name}
+      </li>
+    ))}
   </ul>
-)
+);
 ```
 
 Here, we use destructuring to extract the props into variables \(`ingredients` and `onClick`\) that we then use inside the component's function body.
-
-
-
-
-
-
 
 ## React.js cheatsheet
 
@@ -2699,128 +2673,131 @@ render() {
 ### setState \(function\)
 
 ```javascript
-    // good for state transitions
+// good for state transitions
 
-    this.setState((prevState, props) => {
-      return {count: prevState.count + props.step};
-    });
+this.setState((prevState, props) => {
+  return { count: prevState.count + props.step };
+});
 ```
 
 ### setState \(object\)
 
 ```javascript
-    // good for static values
+// good for static values
 
-    this.setState({mykey: 'my new value'});
+this.setState({ mykey: "my new value" });
 ```
 
 ### setState \(optional callback\)
 
 ```javascript
-    // fires after setState
-    // prefer componentDidUpdate
+// fires after setState
+// prefer componentDidUpdate
 
-    this.setState(
-      (prevState, props) => ({ count: prevState.count + props.step }),
-      () => console.log(this.state.count)
-    );
+this.setState(
+  (prevState, props) => ({ count: prevState.count + props.step }),
+  () => console.log(this.state.count)
+);
 ```
 
 ### forceUpdate
 
 ```javascript
-    // forces a re-render; AVOID if possible
+// forces a re-render; AVOID if possible
 
-    this.forceUpdate();
+this.forceUpdate();
 ```
 
 ### displayName
 
 ```javascript
-    displayName: "MyComponent"
+displayName: "MyComponent";
 ```
 
 ### defaultProps
 
 ```javascript
-    class Greeting extends React.Component {
-          render() {
-            return <h1>Hi {this.props.name}</h1>
-          }
-        }
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hi {this.props.name}</h1>;
+  }
+}
 
-        CustomButton.defaultProps = {
-          name: 'guest'
-        };
+CustomButton.defaultProps = {
+  name: "guest",
+};
 ```
 
 ### Children.map
 
 ```javascript
-    React.Children.map(this.props.children, (child, i) => {
-        return child;
-    })
+React.Children.map(this.props.children, (child, i) => {
+  return child;
+});
 ```
 
 ### Children.forEach
 
 ```javascript
-    React.Children.forEach(this.props.children, (child, i) => {
-      console.log(child + ' at index: ' + i);
-    })
+React.Children.forEach(this.props.children, (child, i) => {
+  console.log(child + " at index: " + i);
+});
 ```
 
 ### Children.count
 
 ```javascript
-    React.Children.count(this.props.children);
+React.Children.count(this.props.children);
 ```
 
 ### Children.only
 
 ```javascript
-    React.Children.only(this.props.children);
+React.Children.only(this.props.children);
 ```
 
 ### Children.toArray
 
 ```javascript
-    React.Children.toArray(this.props.children)
+React.Children.toArray(this.props.children);
 ```
 
 ### Context \(example\)
 
 ```javascript
-    // requires 'prop-types' library
+// requires 'prop-types' library
 
-    import { string } from "prop-types";
+import { string } from "prop-types";
 
-    class Cowboy extends React.Component {
-      childContextTypes: {
-        salutation: string
-      }
+class Cowboy extends React.Component {
+  childContextTypes: {
+    salutation: string,
+  };
 
-      getChildContext() {
-        return { salutation: "Howdy" };
-      }
+  getChildContext() {
+    return { salutation: "Howdy" };
+  }
 
-      render() {
-        return React.Children.only(this.props.children);
-      }
-    }
+  render() {
+    return React.Children.only(this.props.children);
+  }
+}
 
-    const Greeting = (props, context) =>
-      <div>{context.salutation} {props.name}.</div>
+const Greeting = (props, context) => (
+  <div>
+    {context.salutation} {props.name}.
+  </div>
+);
 
-    Greeting.contextTypes = {
-      salutation: PropTypes.string
-    }
+Greeting.contextTypes = {
+  salutation: PropTypes.string,
+};
 
-    // <Greeting name="Michael" />
-    // => Michael.
+// <Greeting name="Michael" />
+// => Michael.
 
-    // <Cowboy><Greeting name="Michael" /></Cowboy>
-    // => Howdy Michael.
+// <Cowboy><Greeting name="Michael" /></Cowboy>
+// => Howdy Michael.
 ```
 
 ### contextTypes
@@ -2860,21 +2837,17 @@ render() {
 #### Components
 
 ```javascript
-    import React from 'react'
-    import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
+class Hello extends React.Component {
+  render() {
+    return <div className="message-box">Hello {this.props.name}</div>;
+  }
+}
 
-    class Hello extends React.Component {
-      render () {
-        return <div className='message-box'>
-          Hello {this.props.name}
-        </div>
-      }
-    }
-
-
-    const el = document.body
-    ReactDOM.render(<Hello name='John' />, el)
+const el = document.body;
+ReactDOM.render(<Hello name="John" />, el);
 ```
 
 Use the [React.js jsfiddle](https://jsfiddle.net/reactjs/69z2wepo/) to start hacking. \(or the unofficial [jsbin](http://jsbin.com/yafixat/edit?js,output)\)
@@ -2943,38 +2916,37 @@ See: [States](https://reactjs.org/docs/tutorial.html#reactive-state)
 #### Nesting
 
 ```javascript
-    class Info extends Component {
-      render () {
-        const { avatar, username } = this.props
+class Info extends Component {
+  render() {
+    const { avatar, username } = this.props;
 
-        return <div>
-          <UserAvatar src={avatar} />
-          <UserProfile username={username} />
-        </div>
-      }
-    }
+    return (
+      <div>
+        <UserAvatar src={avatar} />
+        <UserProfile username={username} />
+      </div>
+    );
+  }
+}
 ```
 
 As of React v16.2.0, fragments can be used to return multiple children without adding extra wrapping nodes to the DOM.
 
 ```javascript
-    import React, {
-      Component,
-      Fragment
-    } from 'react'
+import React, { Component, Fragment } from "react";
 
-    class Info extends Component {
-      render () {
-        const { avatar, username } = this.props
+class Info extends Component {
+  render() {
+    const { avatar, username } = this.props;
 
-        return (
-          <Fragment>
-            <UserAvatar src={avatar} />
-            <UserProfile username={username} />
-          </Fragment>
-        )
-      }
-    }
+    return (
+      <Fragment>
+        <UserAvatar src={avatar} />
+        <UserProfile username={username} />
+      </Fragment>
+    );
+  }
+}
 ```
 
 Nest components to separate concerns.
@@ -2984,18 +2956,15 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
 #### Children
 
 ```javascript
-    <AlertBox>
-      <h1>You have pending notifications</h1>
-    </AlertBox>
+<AlertBox>
+  <h1>You have pending notifications</h1>
+</AlertBox>;
 
-
-    class AlertBox extends Component {
-      render () {
-        return <div className='alert-box'>
-          {this.props.children}
-        </div>
-      }
-    }
+class AlertBox extends Component {
+  render() {
+    return <div className="alert-box">{this.props.children}</div>;
+  }
+}
 ```
 
 Children are passed as the `children` property.
@@ -3005,9 +2974,9 @@ Children are passed as the `children` property.
 #### Setting default props
 
 ```javascript
-    Hello.defaultProps = {
-      color: 'blue'
-    }
+Hello.defaultProps = {
+  color: "blue",
+};
 ```
 
 See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
@@ -3015,12 +2984,12 @@ See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
 #### Setting default state
 
 ```javascript
-    class Hello extends Component {
-      constructor (props) {
-        super(props)
-        this.state = { visible: true }
-      }
-    }
+class Hello extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { visible: true };
+  }
+}
 ```
 
 Set the default state in the `constructor()`.
@@ -3028,9 +2997,9 @@ Set the default state in the `constructor()`.
 And without constructor using [Babel](https://babeljs.io/) with [proposal-class-fields](https://github.com/tc39/proposal-class-fields).
 
 ```javascript
-    class Hello extends Component {
-      state = { visible: true }
-    }
+class Hello extends Component {
+  state = { visible: true };
+}
 ```
 
 See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html#setting-the-initial-state)
@@ -3040,11 +3009,9 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
 #### Functional components
 
 ```javascript
-    function MyComponent ({ name }) {
-      return <div className='message-box'>
-        Hello {name}
-      </div>
-    }
+function MyComponent({ name }) {
+  return <div className="message-box">Hello {name}</div>;
+}
 ```
 
 Functional components have no state. Also, their `props` are passed as the first parameter to a function.
@@ -3087,25 +3054,25 @@ See: [Component API](https://facebook.github.io/react/docs/component-api.html)
 
 #### Mounting
 
-| Method | Description |
-| :--- | :--- |
-| `constructor` _\(props\)_ | Before rendering [\#](https://reactjs.org/docs/react-component.html#constructor) |
-| `componentWillMount()` | _Don’t use this_ [\#](https://reactjs.org/docs/react-component.html#componentwillmount) |
-| `render()` | Render [\#](https://reactjs.org/docs/react-component.html#render) |
-| `componentDidMount()` | After rendering \(DOM available\) [\#](https://reactjs.org/docs/react-component.html#componentdidmount) |
-| `componentWillUnmount()` | Before DOM removal [\#](https://reactjs.org/docs/react-component.html#componentwillunmount) |
-| `componentDidCatch()` | Catch errors \(16+\) [\#](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html) |
+| Method                    | Description                                                                                             |
+| :------------------------ | :------------------------------------------------------------------------------------------------------ |
+| `constructor` _\(props\)_ | Before rendering [\#](https://reactjs.org/docs/react-component.html#constructor)                        |
+| `componentWillMount()`    | _Don’t use this_ [\#](https://reactjs.org/docs/react-component.html#componentwillmount)                 |
+| `render()`                | Render [\#](https://reactjs.org/docs/react-component.html#render)                                       |
+| `componentDidMount()`     | After rendering \(DOM available\) [\#](https://reactjs.org/docs/react-component.html#componentdidmount) |
+| `componentWillUnmount()`  | Before DOM removal [\#](https://reactjs.org/docs/react-component.html#componentwillunmount)             |
+| `componentDidCatch()`     | Catch errors \(16+\) [\#](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)          |
 
 Set initial the state on `constructor()`. Add DOM event handlers, timers \(etc\) on `componentDidMount()`, then remove them on `componentWillUnmount()`.
 
 #### Updating
 
-| Method | Description |
-| :--- | :--- |
+| Method                                                    | Description                                          |
+| :-------------------------------------------------------- | :--------------------------------------------------- |
 | `componentDidUpdate` _\(prevProps, prevState, snapshot\)_ | Use `setState()` here, but remember to compare props |
-| `shouldComponentUpdate` _\(newProps, newState\)_ | Skips `render()` if returns false |
-| `render()` | Render |
-| `componentDidUpdate` _\(prevProps, prevState\)_ | Operate on the DOM here |
+| `shouldComponentUpdate` _\(newProps, newState\)_          | Skips `render()` if returns false                    |
+| `render()`                                                | Render                                               |
+| `componentDidUpdate` _\(prevProps, prevState\)_           | Operate on the DOM here                              |
 
 Called when parents change properties and `.setState()`. These are not called for initial renders.
 
@@ -3116,21 +3083,18 @@ See: [Component specs](https://facebook.github.io/react/docs/component-specs.htm
 #### State Hook
 
 ```javascript
-    import React, { useState } from 'react';
+import React, { useState } from "react";
 
-    function Example() {
+function Example() {
+  const [count, setCount] = useState(0);
 
-      const [count, setCount] = useState(0);
-
-      return (
-        <div>
-          <p>You clicked {count} times</p>
-          <button onClick={() => setCount(count + 1)}>
-            Click me
-          </button>
-        </div>
-      );
-    }
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+}
 ```
 
 Hooks are a new addition in React 16.8.
@@ -3140,38 +3104,32 @@ See: [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
 #### Declaring multiple state variables
 
 ```javascript
-    function ExampleWithManyStates() {
-
-      const [age, setAge] = useState(42);
-      const [fruit, setFruit] = useState('banana');
-      const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
-
-    }
+function ExampleWithManyStates() {
+  const [age, setAge] = useState(42);
+  const [fruit, setFruit] = useState("banana");
+  const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
+}
 ```
 
 #### Effect hook
 
 ```javascript
-    import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-    function Example() {
-      const [count, setCount] = useState(0);
+function Example() {
+  const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  }, [count]);
 
-      useEffect(() => {
-
-        document.title = `You clicked ${count} times`;
-      }, [count]);
-
-      return (
-        <div>
-          <p>You clicked {count} times</p>
-          <button onClick={() => setCount(count + 1)}>
-            Click me
-          </button>
-        </div>
-      );
-    }
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+}
 ```
 
 If you’re familiar with React class lifecycle methods, you can think of `useEffect` Hook as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined.
@@ -3183,27 +3141,27 @@ By default, React runs the effects after every render — including the first re
 **Define FriendStatus**
 
 ```javascript
-    import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-    function FriendStatus(props) {
-      const [isOnline, setIsOnline] = useState(null);
+function FriendStatus(props) {
+  const [isOnline, setIsOnline] = useState(null);
 
-      useEffect(() => {
-        function handleStatusChange(status) {
-          setIsOnline(status.isOnline);
-        }
-
-        ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
-        return () => {
-          ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
-        };
-      }, [props.friend.id]);
-
-      if (isOnline === null) {
-        return 'Loading...';
-      }
-      return isOnline ? 'Online' : 'Offline';
+  useEffect(() => {
+    function handleStatusChange(status) {
+      setIsOnline(status.isOnline);
     }
+
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+    return () => {
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+    };
+  }, [props.friend.id]);
+
+  if (isOnline === null) {
+    return "Loading...";
+  }
+  return isOnline ? "Online" : "Offline";
+}
 ```
 
 Effects may also optionally specify how to “clean up” after them by returning a function.
@@ -3211,14 +3169,14 @@ Effects may also optionally specify how to “clean up” after them by returnin
 **Use FriendStatus**
 
 ```javascript
-    function FriendStatus(props) {
-      const isOnline = useFriendStatus(props.friend.id);
+function FriendStatus(props) {
+  const isOnline = useFriendStatus(props.friend.id);
 
-      if (isOnline === null) {
-        return 'Loading...';
-      }
-      return isOnline ? 'Online' : 'Offline';
-    }
+  if (isOnline === null) {
+    return "Loading...";
+  }
+  return isOnline ? "Online" : "Offline";
+}
 ```
 
 See: [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)
@@ -3229,25 +3187,25 @@ Also see: [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html)
 
 **Basic Hooks**
 
-| Hook | Description |
-| :--- | :--- |
-| `useState`_\(initialState\)_ |  |
-| `useEffect`_\(\(\) =&gt; { … }\)_ |  |
-| `useContext`_\(MyContext\)_ | value returned from `React.createContext` |
+| Hook                              | Description                               |
+| :-------------------------------- | :---------------------------------------- |
+| `useState`_\(initialState\)_      |                                           |
+| `useEffect`_\(\(\) =&gt; { … }\)_ |                                           |
+| `useContext`_\(MyContext\)_       | value returned from `React.createContext` |
 
 Full details: [Basic Hooks](https://reactjs.org/docs/hooks-reference.html#basic-hooks)
 
 **Additional Hooks**
 
-| Hook | Description |
-| :--- | :--- |
-| `useReducer`_\(reducer, initialArg, init\)_ |  |
-| `useCallback`_\(\(\) =&gt; { … }\)_ |  |
-| `useMemo`_\(\(\) =&gt; { … }\)_ |  |
-| `useRef`_\(initialValue\)_ |  |
-| `useImperativeHandle`_\(ref, \(\) =&gt; { … }\)_ |  |
-| `useLayoutEffect` | identical to `useEffect`, but it fires synchronously after all DOM mutations |
-| `useDebugValue`_\(value\)_ | display a label for custom hooks in React DevTools |
+| Hook                                             | Description                                                                  |
+| :----------------------------------------------- | :--------------------------------------------------------------------------- |
+| `useReducer`_\(reducer, initialArg, init\)_      |                                                                              |
+| `useCallback`_\(\(\) =&gt; { … }\)_              |                                                                              |
+| `useMemo`_\(\(\) =&gt; { … }\)_                  |                                                                              |
+| `useRef`_\(initialValue\)_                       |                                                                              |
+| `useImperativeHandle`_\(ref, \(\) =&gt; { … }\)_ |                                                                              |
+| `useLayoutEffect`                                | identical to `useEffect`, but it fires synchronously after all DOM mutations |
+| `useDebugValue`_\(value\)_                       | display a label for custom hooks in React DevTools                           |
 
 Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#additional-hooks)
 
@@ -3256,17 +3214,19 @@ Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#a
 #### References
 
 ```javascript
-    class MyComponent extends Component {
-      render () {
-        return <div>
-          <input ref={el => this.input = el} />
-        </div>
-      }
+class MyComponent extends Component {
+  render() {
+    return (
+      <div>
+        <input ref={(el) => (this.input = el)} />
+      </div>
+    );
+  }
 
-      componentDidMount () {
-        this.input.focus()
-      }
-    }
+  componentDidMount() {
+    this.input.focus();
+  }
+}
 ```
 
 Allows access to DOM nodes.
@@ -3276,17 +3236,19 @@ See: [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 #### DOM Events
 
 ```javascript
-    class MyComponent extends Component {
-      render () {
-        <input type="text"
-            value={this.state.value}
-            onChange={event => this.onChange(event)} />
-      }
+class MyComponent extends Component {
+  render() {
+    <input
+      type="text"
+      value={this.state.value}
+      onChange={(event) => this.onChange(event)}
+    />;
+  }
 
-      onChange (event) {
-        this.setState({ value: event.target.value })
-      }
-    }
+  onChange(event) {
+    this.setState({ value: event.target.value });
+  }
+}
 ```
 
 Pass functions to attributes like `onChange`.
@@ -3298,14 +3260,13 @@ See: [Events](https://reactjs.org/docs/events.html)
 #### Transferring props
 
 ```javascript
-    <VideoPlayer src="video.mp4" />
+<VideoPlayer src="video.mp4" />;
 
-
-    class VideoPlayer extends Component {
-      render () {
-        return <VideoEmbed {...this.props} />
-      }
-    }
+class VideoPlayer extends Component {
+  render() {
+    return <VideoEmbed {...this.props} />;
+  }
+}
 ```
 
 Propagates `src="..."` down to the sub-component.
@@ -3336,11 +3297,10 @@ See: [React top-level API](https://reactjs.org/docs/react-api.html)
 #### Style shorthand
 
 ```javascript
-    const style = { height: 10 }
-    return <div style={style}></div>
+const style = { height: 10 };
+return <div style={style}></div>;
 
-
-    return <div style={{ margin: 0, padding: 0 }}></div>
+return <div style={{ margin: 0, padding: 0 }}></div>;
 ```
 
 See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
@@ -3348,8 +3308,10 @@ See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
 #### Inner HTML
 
 ```javascript
-    function markdownify() { return "<p>...</p>"; }
-    <div dangerouslySetInnerHTML={{__html: markdownify()}} />
+function markdownify() {
+  return "<p>...</p>";
+}
+<div dangerouslySetInnerHTML={{ __html: markdownify() }} />;
 ```
 
 See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-html.html)
@@ -3357,16 +3319,19 @@ See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-
 #### Lists
 
 ```javascript
-    class TodoList extends Component {
-      render () {
-        const { items } = this.props
+class TodoList extends Component {
+  render() {
+    const { items } = this.props;
 
-        return <ul>
-          {items.map(item =>
-            <TodoItem item={item} key={item.key} />)}
-        </ul>
-      }
-    }
+    return (
+      <ul>
+        {items.map((item) => (
+          <TodoItem item={item} key={item.key} />
+        ))}
+      </ul>
+    );
+  }
+}
 ```
 
 Always supply a `key` property.
@@ -3374,20 +3339,16 @@ Always supply a `key` property.
 #### Conditionals
 
 ```javascript
-    <Fragment>
-      {showMyComponent
-        ? <MyComponent />
-        : <OtherComponent />}
-    </Fragment>
+<Fragment>{showMyComponent ? <MyComponent /> : <OtherComponent />}</Fragment>
 ```
 
 #### Short-circuit evaluation
 
 ```javascript
-    <Fragment>
-      {showPopup && <Popup />}
-      ...
-    </Fragment>
+<Fragment>
+  {showPopup && <Popup />}
+  ...
+</Fragment>
 ```
 
 ### \#New features
@@ -3469,8 +3430,8 @@ See: [Portals](https://reactjs.org/docs/portals.html)
 #### Hydration
 
 ```javascript
-    const el = document.getElementById('app')
-    ReactDOM.hydrate(<App />, el)
+const el = document.getElementById("app");
+ReactDOM.hydrate(<App />, el);
 ```
 
 Use `ReactDOM.hydrate` instead of using `ReactDOM.render` if you’re rendering over the output of [ReactDOMServer](https://reactjs.org/docs/react-dom-server.html).
@@ -3482,120 +3443,115 @@ See: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 #### PropTypes
 
 ```javascript
-    import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 ```
 
 See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
-| Key | Description |
-| :--- | :--- |
-| `any` | Anything |
+| Key   | Description |
+| :---- | :---------- |
+| `any` | Anything    |
 
 **Basic**
 
-| Key | Description |
-| :--- | :--- |
-| `string` |  |
-| `number` |  |
-| `func` | Function |
-| `bool` | True or false |
+| Key      | Description   |
+| :------- | :------------ |
+| `string` |               |
+| `number` |               |
+| `func`   | Function      |
+| `bool`   | True or false |
 
 **Enum**
 
-| Key | Description |
-| :--- | :--- |
-| `oneOf`_\(any\)_ | Enum types |
-| `oneOfType`_\(type array\)_ | Union |
+| Key                         | Description |
+| :-------------------------- | :---------- |
+| `oneOf`_\(any\)_            | Enum types  |
+| `oneOfType`_\(type array\)_ | Union       |
 
 **Array**
 
-| Key | Description |
-| :--- | :--- |
-| `array` |  |
-| `arrayOf`_\(…\)_ |  |
+| Key              | Description |
+| :--------------- | :---------- |
+| `array`          |             |
+| `arrayOf`_\(…\)_ |             |
 
 **Object**
 
-| Key | Description |
-| :--- | :--- |
-| `object` |  |
-| `objectOf`_\(…\)_ | Object with values of a certain type |
-| `instanceOf`_\(…\)_ | Instance of a class |
-| `shape`_\(…\)_ |  |
+| Key                 | Description                          |
+| :------------------ | :----------------------------------- |
+| `object`            |                                      |
+| `objectOf`_\(…\)_   | Object with values of a certain type |
+| `instanceOf`_\(…\)_ | Instance of a class                  |
+| `shape`_\(…\)_      |                                      |
 
 **Elements**
 
-| Key | Description |
-| :--- | :--- |
+| Key       | Description   |
+| :-------- | :------------ |
 | `element` | React element |
-| `node` | DOM node |
+| `node`    | DOM node      |
 
 **Required**
 
-| Key | Description |
-| :--- | :--- |
-| `(···).isRequired` | Required |
+| Key                | Description |
+| :----------------- | :---------- |
+| `(···).isRequired` | Required    |
 
 #### Basic types
 
 ```javascript
-    MyComponent.propTypes = {
-      email:      PropTypes.string,
-      seats:      PropTypes.number,
-      callback:   PropTypes.func,
-      isClosed:   PropTypes.bool,
-      any:        PropTypes.any
-    }
+MyComponent.propTypes = {
+  email: PropTypes.string,
+  seats: PropTypes.number,
+  callback: PropTypes.func,
+  isClosed: PropTypes.bool,
+  any: PropTypes.any,
+};
 ```
 
 #### Required types
 
 ```javascript
-    MyCo.propTypes = {
-      name:  PropTypes.string.isRequired
-    }
+MyCo.propTypes = {
+  name: PropTypes.string.isRequired,
+};
 ```
 
 #### Elements
 
 ```javascript
-    MyCo.propTypes = {
+MyCo.propTypes = {
+  element: PropTypes.element,
 
-      element: PropTypes.element,
-
-
-      node: PropTypes.node
-    }
+  node: PropTypes.node,
+};
 ```
 
 #### Enumerables \(oneOf\)
 
 ```javascript
-    MyCo.propTypes = {
-      direction: PropTypes.oneOf([
-        'left', 'right'
-      ])
-    }
+MyCo.propTypes = {
+  direction: PropTypes.oneOf(["left", "right"]),
+};
 ```
 
 #### Arrays and objects
 
 ```javascript
-    MyCo.propTypes = {
-      list: PropTypes.array,
-      ages: PropTypes.arrayOf(PropTypes.number),
-      user: PropTypes.object,
-      user: PropTypes.objectOf(PropTypes.number),
-      message: PropTypes.instanceOf(Message)
-    }
+MyCo.propTypes = {
+  list: PropTypes.array,
+  ages: PropTypes.arrayOf(PropTypes.number),
+  user: PropTypes.object,
+  user: PropTypes.objectOf(PropTypes.number),
+  message: PropTypes.instanceOf(Message),
+};
 
-
-    MyCo.propTypes = {
-      user: PropTypes.shape({
-        name: PropTypes.string,
-        age:  PropTypes.number
-      })
-    }
+MyCo.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string,
+    age: PropTypes.number,
+  }),
+};
 ```
 
 Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
@@ -3603,12 +3559,11 @@ Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
 #### Custom validation
 
 ```javascript
-    MyCo.propTypes = {
-      customProp: (props, key, componentName) => {
-        if (!/matchme/.test(props[key])) {
-          return new Error('Validation failed!')
-        }
-      }
+MyCo.propTypes = {
+  customProp: (props, key, componentName) => {
+    if (!/matchme/.test(props[key])) {
+      return new Error("Validation failed!");
     }
+  },
+};
 ```
-

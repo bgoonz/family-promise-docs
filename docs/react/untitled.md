@@ -476,8 +476,8 @@ In React apps, whether a component is stateful or stateless is considered an imp
 
 ## Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences: <a id="handling-events-with-react-elements-is-very-similar-to-handling-events-on-dom-elements-there-are-some-syntax-differences"></a>
 
-* React events are named using camelCase, rather than lowercase.
-* With JSX you pass a function as the event handler, rather than a string.
+- React events are named using camelCase, rather than lowercase.
+- With JSX you pass a function as the event handler, rather than a string.
 
 For example, the HTML:
 
@@ -513,7 +513,7 @@ Inside a loop, it is common to want to pass an extra parameter to an event handl
 
 &lt;button onClick={\(e\) =&gt; this.deleteRow\(id, e\)}&gt;Delete Row&lt;/button&gt;&lt;button onClick={this.deleteRow.bind\(this, id\)}&gt;Delete Row&lt;/button&gt;
 
-The above two lines are equivalent, and use [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and \[Function.prototype.bind\]\(&lt;[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_objects/Function/bind&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind%3E)\) respectively.
+The above two lines are equivalent, and use [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and \[Function.prototype.bind\]\(&lt;[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind%3E)\) respectively.
 
 In both cases, the e argument representing the React event will be passed as a second argument after the ID. With an arrow function, we have to pass it explicitly, but with bind any further arguments are automatically forwarded.
 
@@ -559,7 +559,7 @@ Note that returning a falsy expression will still cause the element after && to 
 
 ## Inline If-Else with Conditional Operator <a id="inline-if-else-with-conditional-operator"></a>
 
-Another method for conditionally rendering elements inline is to use the JavaScript conditional operator \[condition ? true : false\]\(&lt;[https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional\_Operator&gt;](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator%3E)\).
+Another method for conditionally rendering elements inline is to use the JavaScript conditional operator \[condition ? true : false\]\(&lt;[https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator&gt;](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator%3E)\).
 
 In the example below, we use it to conditionally render a small block of text.
 
@@ -581,7 +581,7 @@ Returning null from a component's render method does not affect the firing of th
 
 ## First, let's review how you transform lists in JavaScript. <a id="first-lets-review-how-you-transform-lists-in-javascript"></a>
 
-Given the code below, we use the \[map\(\)\]\(&lt;[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map%3E)\) function to take an array of numbers and double their values. We assign the new array returned by map\(\) to the variable doubled and log it:
+Given the code below, we use the \[map\(\)\]\(&lt;[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map%3E)\) function to take an array of numbers and double their values. We assign the new array returned by map\(\) to the variable doubled and log it:
 
 This code logs \[2, 4, 6, 8, 10\] to the console.
 
@@ -591,7 +591,7 @@ In React, transforming arrays into lists of [elements](https://reactjs.org/docs/
 
 You can build collections of elements and [include them in JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) using curly braces {}.
 
-Below, we loop through the numbers array using the JavaScript \[map\(\)\]\(&lt;[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map%3E)\) function. We return a &lt;li&gt; element for each item. Finally, we assign the resulting array of elements to listItems:
+Below, we loop through the numbers array using the JavaScript \[map\(\)\]\(&lt;[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map%3E)\) function. We return a &lt;li&gt; element for each item. Finally, we assign the resulting array of elements to listItems:
 
 We include the entire listItems array inside a &lt;ul&gt; element, and [render it to the DOM](https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom):
 
@@ -817,14 +817,14 @@ Now, no matter which input you edit, this.state.temperature and this.state.scale
 
 Let's recap what happens when you edit an input:
 
-* React calls the function specified as onChange on the DOM &lt;input&gt;. In our case, this is the handleChange method in the TemperatureInput component.
-* The handleChange method in the TemperatureInput component calls this.props.onTemperatureChange\(\) with the new desired value. Its props, including onTemperatureChange, were provided by its parent component, the Calculator.
-* When it previously rendered, the Calculator had specified that onTemperatureChange of the Celsius TemperatureInput is the Calculator's handleCelsiusChange method, and onTemperatureChange of the Fahrenheit TemperatureInput is the Calculator's handleFahrenheitChange method. So either of these two Calculator methods gets called depending on which input we edited.
-* Inside these methods, the Calculator component asks React to re-render itself by calling this.setState\(\) with the new input value and the current scale of the input we just edited.
-* React calls the Calculator component's render method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
-* React calls the render methods of the individual TemperatureInput components with their new props specified by the Calculator. It learns what their UI should look like.
-* React calls the render method of the BoilingVerdict component, passing the temperature in Celsius as its props.
-* React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
+- React calls the function specified as onChange on the DOM &lt;input&gt;. In our case, this is the handleChange method in the TemperatureInput component.
+- The handleChange method in the TemperatureInput component calls this.props.onTemperatureChange\(\) with the new desired value. Its props, including onTemperatureChange, were provided by its parent component, the Calculator.
+- When it previously rendered, the Calculator had specified that onTemperatureChange of the Celsius TemperatureInput is the Calculator's handleCelsiusChange method, and onTemperatureChange of the Fahrenheit TemperatureInput is the Calculator's handleFahrenheitChange method. So either of these two Calculator methods gets called depending on which input we edited.
+- Inside these methods, the Calculator component asks React to re-render itself by calling this.setState\(\) with the new input value and the current scale of the input we just edited.
+- React calls the Calculator component's render method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
+- React calls the render methods of the individual TemperatureInput components with their new props specified by the Calculator. It learns what their UI should look like.
+- React calls the render method of the BoilingVerdict component, passing the temperature in Celsius as its props.
+- React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
 
 Every update goes through the same steps so the inputs stay in sync.
 
@@ -920,11 +920,11 @@ If you look at ProductTable, you'll see that the table header \(containing the "
 
 Now that we've identified the components in our mock, let's arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
-* FilterableProductTable
-  * SearchBar
-  * ProductTable
-    * ProductCategoryRow
-    * ProductRow
+- FilterableProductTable
+  - SearchBar
+  - ProductTable
+    - ProductCategoryRow
+    - ProductRow
 
 ## Step 2: Build A Static Version in React <a id="step-2-build-a-static-version-in-react"></a>
 
@@ -952,10 +952,10 @@ To build your app correctly, you first need to think of the minimal set of mutab
 
 Think of all the pieces of data in our example application. We have:
 
-* The original list of products
-* The search text the user has entered
-* The value of the checkbox
-* The filtered list of products
+- The original list of products
+- The search text the user has entered
+- The value of the checkbox
+- The filtered list of products
 
 Let's go through each one and figure out which one is state. Ask three questions about each piece of data:
 
@@ -967,8 +967,8 @@ The original list of products is passed in as props, so that's not state. The se
 
 So finally, our state is:
 
-* The search text the user has entered
-* The value of the checkbox
+- The search text the user has entered
+- The value of the checkbox
 
 ## Step 4: Identify Where Your State Should Live <a id="step-4-identify-where-your-state-should-live"></a>
 
@@ -980,16 +980,16 @@ Remember: React is all about one-way data flow down the component hierarchy. It 
 
 For each piece of state in your application:
 
-* Identify every component that renders something based on that state.
-* Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
-* Either the common owner or another component higher up in the hierarchy should own the state.
-* If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+- Identify every component that renders something based on that state.
+- Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
+- Either the common owner or another component higher up in the hierarchy should own the state.
+- If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Let's run through this strategy for our application:
 
-* ProductTable needs to filter the product list based on state and SearchBar needs to display the search text and checked state.
-* The common owner component is FilterableProductTable.
-* It conceptually makes sense for the filter text and checked value to live in FilterableProductTable
+- ProductTable needs to filter the product list based on state and SearchBar needs to display the search text and checked state.
+- The common owner component is FilterableProductTable.
+- It conceptually makes sense for the filter text and checked value to live in FilterableProductTable
 
 Cool, so we've decided that our state lives in FilterableProductTable. First, add an instance property this.state = {filterText: '', inStockOnly: false} to FilterableProductTable's constructor to reflect the initial state of your application. Then, pass filterText and inStockOnly to ProductTable and SearchBar as a prop. Finally, use these props to filter the rows in ProductTable and set the values of the form fields in SearchBar.
 
@@ -1015,7 +1015,7 @@ Hopefully, this gives you an idea of how to think about building components and 
 
 [React Component](https://www.notion.so/React-Component-3dc17bc49a8e4d7e89efcc1281e747d9)
 
-## Getting Startednpx create-react-app my-appcd my-appnpm startnpx create-react-app my-appnpm init react-app my-appyarn create react-app my-appnpx create-react-app my-app --template \[template-name\]npx create-react-app my-app --template typescriptnpx create-react-app my-app --use-npmmy-app├── README.md├── node\_modules├── package.json├── .gitignore├── public│ ├── favicon.ico│ ├── index.html│ ├── logo192.png│ ├── logo512.png│ ├── manifest.json│ └── robots.txt└── src ├── App.css ├── App.js ├── App.test.js ├── index.css ├── index.js ├── logo.svg ├── serviceWorker.js └── setupTests.jscd my-app <a id="getting-startednpx-create-react-app-my-appcd-my-appnpm-startnpx-create-react-app-my-appnpm-init-react-app-my-appyarn-create-react-app-my-appnpx-create-react-app-my-app---template-template-namenpx-create-react-app-my-app---template-typescriptnpx-create-react-app-my-app---use-npmmy-app&#x251C;&#x2500;&#x2500;-readmemd&#x251C;&#x2500;&#x2500;-node_modules&#x251C;&#x2500;&#x2500;-packagejson&#x251C;&#x2500;&#x2500;-gitignore&#x251C;&#x2500;&#x2500;-public&#x2502;---&#x251C;&#x2500;&#x2500;-faviconico&#x2502;---&#x251C;&#x2500;&#x2500;-indexhtml&#x2502;---&#x251C;&#x2500;&#x2500;-logo192png&#x2502;---&#x251C;&#x2500;&#x2500;-logo512png&#x2502;---&#x251C;&#x2500;&#x2500;-manifestjson&#x2502;---&#x2514;&#x2500;&#x2500;-robotstxt&#x2514;&#x2500;&#x2500;-src----&#x251C;&#x2500;&#x2500;-appcss----&#x251C;&#x2500;&#x2500;-appjs----&#x251C;&#x2500;&#x2500;-apptestjs----&#x251C;&#x2500;&#x2500;-indexcss----&#x251C;&#x2500;&#x2500;-indexjs----&#x251C;&#x2500;&#x2500;-logosvg----&#x251C;&#x2500;&#x2500;-serviceworkerjs----&#x2514;&#x2500;&#x2500;-setuptestsjscd-my-app"></a>
+## Getting Startednpx create-react-app my-appcd my-appnpm startnpx create-react-app my-appnpm init react-app my-appyarn create react-app my-appnpx create-react-app my-app --template \[template-name\]npx create-react-app my-app --template typescriptnpx create-react-app my-app --use-npmmy-app├── README.md├── node_modules├── package.json├── .gitignore├── public│ ├── favicon.ico│ ├── index.html│ ├── logo192.png│ ├── logo512.png│ ├── manifest.json│ └── robots.txt└── src ├── App.css ├── App.js ├── App.test.js ├── index.css ├── index.js ├── logo.svg ├── serviceWorker.js └── setupTests.jscd my-app <a id="getting-startednpx-create-react-app-my-appcd-my-appnpm-startnpx-create-react-app-my-appnpm-init-react-app-my-appyarn-create-react-app-my-appnpx-create-react-app-my-app---template-template-namenpx-create-react-app-my-app---template-typescriptnpx-create-react-app-my-app---use-npmmy-app&#x251C;&#x2500;&#x2500;-readmemd&#x251C;&#x2500;&#x2500;-node_modules&#x251C;&#x2500;&#x2500;-packagejson&#x251C;&#x2500;&#x2500;-gitignore&#x251C;&#x2500;&#x2500;-public&#x2502;---&#x251C;&#x2500;&#x2500;-faviconico&#x2502;---&#x251C;&#x2500;&#x2500;-indexhtml&#x2502;---&#x251C;&#x2500;&#x2500;-logo192png&#x2502;---&#x251C;&#x2500;&#x2500;-logo512png&#x2502;---&#x251C;&#x2500;&#x2500;-manifestjson&#x2502;---&#x2514;&#x2500;&#x2500;-robotstxt&#x2514;&#x2500;&#x2500;-src----&#x251C;&#x2500;&#x2500;-appcss----&#x251C;&#x2500;&#x2500;-appjs----&#x251C;&#x2500;&#x2500;-apptestjs----&#x251C;&#x2500;&#x2500;-indexcss----&#x251C;&#x2500;&#x2500;-indexjs----&#x251C;&#x2500;&#x2500;-logosvg----&#x251C;&#x2500;&#x2500;-serviceworkerjs----&#x2514;&#x2500;&#x2500;-setuptestsjscd-my-app"></a>
 
 Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
 
@@ -1109,14 +1109,14 @@ The build is minified and the filenames include the hashes.
 
 Your app is ready to be deployed.
 
-## Folder Structuremy-app/ README.md node\_modules/ package.json public/ index.html favicon.ico src/ App.css App.js App.test.js index.css index.js logo.svg <a id="folder-structuremy-app--readmemd--node_modules--packagejson--public----indexhtml----faviconico--src----appcss----appjs----apptestjs----indexcss----indexjs----logosvg"></a>
+## Folder Structuremy-app/ README.md node_modules/ package.json public/ index.html favicon.ico src/ App.css App.js App.test.js index.css index.js logo.svg <a id="folder-structuremy-app--readmemd--node_modules--packagejson--public----indexhtml----faviconico--src----appcss----appjs----apptestjs----indexcss----indexjs----logosvg"></a>
 
 After creation, your project should look like this:
 
 For the project to build, **these files must exist with exact filenames**:
 
-* public/index.html is the page template;
-* src/index.js is the JavaScript entry point.
+- public/index.html is the page template;
+- src/index.js is the JavaScript entry point.
 
 You can delete or rename the other files.
 
@@ -1132,9 +1132,9 @@ If you have Git installed and your project is not part of a larger repository, t
 
 Usually, in an app, you have a lot of UI components, and each of them has many different states. For an example, a basic button component could have the following states:
 
-* In a regular state, with a text label.
-* In the disabled mode.
-* In a loading state.
+- In a regular state, with a text label.
+- In the disabled mode.
+- In a loading state.
 
 Usually, it’s hard to see these states without running a sample app or some examples.
 
@@ -1154,10 +1154,10 @@ After that, follow the instructions on the screen.
 
 Learn more about React Storybook:
 
-* [Learn Storybook \(tutorial\)](https://learnstorybook.com/)
-* [Documentation](https://storybook.js.org/basics/introduction/)
-* [GitHub Repo](https://github.com/storybooks/storybook)
-* [Snapshot Testing UI](https://github.com/storybooks/storybook/tree/master/addons/storyshots) with Storybook + addon/storyshot
+- [Learn Storybook \(tutorial\)](https://learnstorybook.com/)
+- [Documentation](https://storybook.js.org/basics/introduction/)
+- [GitHub Repo](https://github.com/storybooks/storybook)
+- [Snapshot Testing UI](https://github.com/storybooks/storybook/tree/master/addons/storyshots) with Storybook + addon/storyshot
 
 ### Getting Started with Styleguidist[\#](https://create-react-app.dev/docs/developing-components-in-isolation#getting-started-with-styleguidist) <a id="getting-started-with-styleguidist"></a>
 
@@ -1175,10 +1175,10 @@ After that, follow the instructions on the screen.
 
 Learn more about React Styleguidist:
 
-* [GitHub Repo](https://github.com/styleguidist/react-styleguidist)
-* [Documentation](https://react-styleguidist.js.org/docs/getting-started.html)
+- [GitHub Repo](https://github.com/styleguidist/react-styleguidist)
+- [Documentation](https://react-styleguidist.js.org/docs/getting-started.html)
 
-## Using HTTPS in Developmentset HTTPS=true&&npm start\($env:HTTPS = "true"\) -and \(npm start\)HTTPS=true npm startHTTPS=true SSL\_CRT\_FILE=cert.crt SSL\_KEY\_FILE=cert.key npm startCopy{ "start": "HTTPS=true react-scripts start"} <a id="using-https-in-developmentset-httpstruenpm-startenvhttps--true--and-npm-starthttpstrue-npm-starthttpstrue-ssl_crt_filecertcrt-ssl_key_filecertkey-npm-startcopy--start-httpstrue-react-scripts-start"></a>
+## Using HTTPS in Developmentset HTTPS=true&&npm start\($env:HTTPS = "true"\) -and \(npm start\)HTTPS=true npm startHTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm startCopy{ "start": "HTTPS=true react-scripts start"} <a id="using-https-in-developmentset-httpstruenpm-startenvhttps--true--and-npm-starthttpstrue-npm-starthttpstrue-ssl_crt_filecertcrt-ssl_key_filecertkey-npm-startcopy--start-httpstrue-react-scripts-start"></a>
 
 > Note: this feature is available with [react-scripts@0.4.0](mailto:react-scripts@0.4.0) and higher.
 
@@ -1198,7 +1198,7 @@ Note that the server will use a self-signed certificate, so your web browser wil
 
 ### Custom SSL certificate[\#](https://create-react-app.dev/docs/using-https-in-development#custom-ssl-certificate) <a id="custom-ssl-certificate"></a>
 
-To set a custom certificate, set the SSL\_CRT\_FILE and SSL\_KEY\_FILE environment variables to the path of the certificate and key files in the same way you do for HTTPS above. Note that you will also need to set HTTPS=true.
+To set a custom certificate, set the SSL_CRT_FILE and SSL_KEY_FILE environment variables to the path of the certificate and key files in the same way you do for HTTPS above. Note that you will also need to set HTTPS=true.
 
 #### Linux, macOS \(Bash\)[\#](https://create-react-app.dev/docs/using-https-in-development#linux-macos-bash-1) <a id="linux-macos-bash-1"></a>
 
@@ -1220,13 +1220,13 @@ In development, expressing dependencies this way allows your styles to be reload
 
 If you are concerned about using webpack-specific semantics, you can put all your CSS right into src/index.css. It would still be imported from src/index.js, but you could always remove that import if you later migrate to a different build tool.
 
-## Adding Images, Fonts, and Files_import_ React _from_ 'react';_import_ logo _from_ './logo.png'; _// Tell webpack this JS file uses this image\_console.log\(logo\);_ // /logo.84287d09.pngfunction _Header\(\) {_ // Import result is the URL of your image _\_return_ &lt;img src={logo} alt="Logo" /&gt;;}_export_ _default_ Header;.Logo { background-image: url\(./logo.png\);}_import_ { ReactComponent _as_ Logo } _from_ './logo.svg';_function_ App\(\) { _return_ \( &lt;div&gt; {_/\* Logo is an actual React component \*/_} &lt;Logo /&gt; &lt;/div&gt; \);} <a id="adding-images-fonts-and-filesimport-react-from-reactimport-logo-from-logopng--tell-webpack-this-js-file-uses-this-imageconsoleloglogo--logo84287d09pngfunction-header----import-result-is-the-url-of-your-image--return-img-srclogo-altlogo-export-default-headerlogo---background-image-urllogopngimport--reactcomponent-as-logo--from-logosvgfunction-app---return-----div-------logo-is-an-actual-react-component-------logo-----div--"></a>
+## Adding Images, Fonts, and Files*import* React _from_ 'react';_import_ logo _from_ './logo.png'; _// Tell webpack this JS file uses this image_console.log\(logo\);_ // /logo.84287d09.pngfunction _Header\(\) {_ // Import result is the URL of your image _\_return_ &lt;img src={logo} alt="Logo" /&gt;;}_export_ _default_ Header;.Logo { background-image: url\(./logo.png\);}_import_ { ReactComponent _as_ Logo } _from_ './logo.svg';_function_ App\(\) { _return_ \( &lt;div&gt; {_/\* Logo is an actual React component \*/_} &lt;Logo /&gt; &lt;/div&gt; \);} <a id="adding-images-fonts-and-filesimport-react-from-reactimport-logo-from-logopng--tell-webpack-this-js-file-uses-this-imageconsoleloglogo--logo84287d09pngfunction-header----import-result-is-the-url-of-your-image--return-img-srclogo-altlogo-export-default-headerlogo---background-image-urllogopngimport--reactcomponent-as-logo--from-logosvgfunction-app---return-----div-------logo-is-an-actual-react-component-------logo-----div--"></a>
 
 With webpack, using static assets like images and fonts works similarly to CSS.
 
 You can **import a file right in a JavaScript module**. This tells webpack to include that file in the bundle. Unlike CSS imports, importing a file gives you a string value. This value is the final path you can reference in your code, e.g. as the src attribute of an image or the href of a link to a PDF.
 
-To reduce the number of requests to the server, importing images that are less than 10,000 bytes returns a [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead of a path. This applies to the following file extensions: bmp, gif, jpg, jpeg, and png. SVG files are excluded due to [\#1153](https://github.com/facebook/create-react-app/issues/1153). You can control the 10,000 byte threshold by setting the IMAGE\_INLINE\_SIZE\_LIMIT environment variable as documented in our [advanced configuration](https://create-react-app.dev/docs/advanced-configuration).
+To reduce the number of requests to the server, importing images that are less than 10,000 bytes returns a [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead of a path. This applies to the following file extensions: bmp, gif, jpg, jpeg, and png. SVG files are excluded due to [\#1153](https://github.com/facebook/create-react-app/issues/1153). You can control the 10,000 byte threshold by setting the IMAGE_INLINE_SIZE_LIMIT environment variable as documented in our [advanced configuration](https://create-react-app.dev/docs/advanced-configuration).
 
 Here is an example:
 
@@ -1253,4 +1253,3 @@ This is handy if you don't want to load SVG as a separate file. Don't forget the
 > **Tip:** The imported SVG React Component accepts a title prop along with other props that a svg element accepts. Use this prop to add an accessible title to your svg component.
 
 My \(now\) Depreciated Blog: [https://web-dev-resource-hub.netlify.app/\[Git\]\(https://github.com/bgoonz\)\[tools\]\(https://preview--alternate-blog-theme-8d58b.stackbit.dev/posts/react/?edit=1&stackbit=false\#](https://web-dev-resource-hub.netlify.app/[Git]%28https://github.com/bgoonz%29[tools]%28https://preview--alternate-blog-theme-8d58b.stackbit.dev/posts/react/?edit=1&stackbit=false#)\)
-

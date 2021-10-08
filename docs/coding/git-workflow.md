@@ -12,13 +12,13 @@ We will walk through the basic steps of starting and finishing a feature or task
 
 **Technologies**
 
-* git cli
-* github.com Pull Requests
+- git cli
+- github.com Pull Requests
 
 **References**
 
-* [git-scm.com](https://git-scm.com/)
-* [GitHub Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+- [git-scm.com](https://git-scm.com/)
+- [GitHub Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 
 #### Getting Started
 
@@ -35,7 +35,7 @@ Obviously, you can't do anything with git until you’ve cloned the team repo. A
 
 So, to get started on your first task let’s make a branch. Making sure you are on the `main` branch, start a new branch with a name that matches or correlates to the task you are about to begin. The trick here is to think beyond yourself when naming the branch, stay aligned with your Trello board so you **AND** others can easily make sense of it.
 
-> git checkout -b \[new\_branch\_name\]
+> git checkout -b \[new_branch_name\]
 
 ![](../.gitbook/assets/git-checkout-1.png)
 
@@ -43,11 +43,11 @@ So, to get started on your first task let’s make a branch. Making sure you are
 
 Now you have a branch to make all your awesome commits to. However, since you just had your team in mind while naming the branch, let’s take a minute or two to do something extra nice for them. Let's us the “Early Pull Strategy” to allow team members to follow along but not be nagged by our ongoing commits. This is done simply by pushing our new branch to the **origin** then create a draft **PR** in GitHub.
 
-> git push -u origin ${git\_current\_branch}
+> git push -u origin ${git_current_branch}
 
 or
 
-> git push --set-upstream origin ${git\_current\_branch}
+> git push --set-upstream origin ${git_current_branch}
 
 {% hint style="info" %}
 The -u \(--set-upstream\) will save the tracking info for the remote branch to your git config. Yay. Now you can easily push your commits to the remote branch by git push. Easy.
@@ -92,4 +92,3 @@ Since you branched off of main your PR should be tested on stage prior to approv
 If you find yourself with a merge conflict there are a number of ways to solve it. The GitHub tools are very handy or you can do it locally. When going down the local path there is a good set of instructions at [About pull request merges](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges)
 
 And now your code changes are on the main branch, ready to wow users with your updates. Deploy your code \(if not automatically handled by GitHub events\) and be ready to support any issues that arise.
-

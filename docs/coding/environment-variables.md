@@ -1,7 +1,5 @@
 # Environment Variables
 
-
-
 ## Environment Variables
 
 Environment variables are used to configure your application to run in a specific environment. These environments are generally local development \(your laptop\), production \(a hosted server\), and other hosted servers related to non-production environments.
@@ -47,13 +45,12 @@ axios.defaults.baseURL = (function() {
 })();
 ```
 
-There should only be one variable for the base URL, something like REACT\_APP\_AXIOS\_BASE\_URL. The value of this environment variable will be set to a value that depends on the environment where the app is running.
+There should only be one variable for the base URL, something like REACT_APP_AXIOS_BASE_URL. The value of this environment variable will be set to a value that depends on the environment where the app is running.
 
-The environment variable REACT\_APP\_ENV probably shouldn't exist, as in general, the app doesn't need to know what environment it's running in, it just needs to know the values of the variables it requires to run.
+The environment variable REACT_APP_ENV probably shouldn't exist, as in general, the app doesn't need to know what environment it's running in, it just needs to know the values of the variables it requires to run.
 
 {% hint style="warning" %}
 Why? Because this makes your application confusing to deploy and manage. Having an extra layer of environment settings doubles the chances that something will go wrong. Keep it simple!
 
 Plus, you almost never want your application to behave differently depending on which environment it's in. If it does, how will you be sure that it'll behave properly in production?
 {% endhint %}
-

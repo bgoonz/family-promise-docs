@@ -19,15 +19,15 @@ Setting up linters and code formatters is really important to group projects. Wh
 
 **Technologies Discussed**
 
-* ESLint
-* Prettier
+- ESLint
+- Prettier
 
 **References**
 
-* [ESLint Docs](https://eslint.org/)
-* [ESLint VS Code Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-* [Prettier Docs](https://prettier.io/)
-* [Prettier VS Code Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint Docs](https://eslint.org/)
+- [ESLint VS Code Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier Docs](https://prettier.io/)
+- [Prettier VS Code Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 #### Install ESLint and Prettier VS Code Extensions
 
@@ -142,4 +142,3 @@ Then we can add some scripts to our `package.json`.
 Setting up ESLint and Prettier in your projects can go a long way in helping you write better, more readable code. Even more so when you're working in a team environment.
 
 You may have noticed that the "rules" key's where empty in the .eslintrc examples. ESLint does a lot by default but if you want more in-depth, fine grain control over the coding style for your project visit their [docs on rules here!](https://eslint.org/docs/rules/)
-
