@@ -31,6 +31,7 @@
 
 * [Canvas](canvas/canvas.md)
 * [Notes](canvas/notes.md)
+* [UX-Engineer](canvas/ux-engineer.md)
 
 ## Front End
 
@@ -116,4 +117,5 @@
 ## Workflow
 
 * [Workflow](workflow/workflow.md)
+* [Advice](workflow/advice.md)
 
