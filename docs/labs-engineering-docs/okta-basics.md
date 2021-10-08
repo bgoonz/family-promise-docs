@@ -8,8 +8,6 @@ description: >-
 
 ## Okta Basics
 
-
-
 {% hint style="info" %}
 Currently only Labs Managers have admin access to Okta administration. If you have Okta issues, please reach out to your Engineering Manager.
 {% endhint %}
