@@ -2,6 +2,7 @@
 description: A collection of awesome things regarding the React ecosystem.
 ---
 
+# Awesome React
 
 {% page-ref page="untitled.md" %}
 
@@ -9,12 +10,9 @@ description: A collection of awesome things regarding the React ecosystem.
 
 {% page-ref page="./" %}
 
+## Awesome React
 
-# Awesome React
-
-
-
-#### **Awesome React** [![Awesome](https://camo.githubusercontent.com/abb97269de2982c379cbc128bba93ba724d8822bfbe082737772bd4feb59cb54/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f643733303566333864323966656437386661383536353265336136336531353464643865383832392f6d656469612f62616467652e737667)](https://github.com/sindresorhus/awesome)
+### **Awesome React** [![Awesome](https://camo.githubusercontent.com/abb97269de2982c379cbc128bba93ba724d8822bfbe082737772bd4feb59cb54/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f643733303566333864323966656437386661383536353265336136336531353464643865383832392f6d656469612f62616467652e737667)](https://github.com/sindresorhus/awesome)
 
 A collection of awesome things regarding the React ecosystem.
 
@@ -91,7 +89,7 @@ A collection of awesome things regarding the React ecosystem.
 * [Real React Apps](https://github.com/BolajiAyodeji/awesome-react#real-react-apps)
 * [Contribution](https://github.com/BolajiAyodeji/awesome-react#contribution)
 
-#### React
+### React
 
 > JavaScript Library for building User Interfaces
 
@@ -476,7 +474,7 @@ A collection of awesome things regarding the React ecosystem.
 * [Chartify - React plugin for building charts using CSS.](https://github.com/kis/chartify)
 * [Semiotic - A data visualization framework combining React and D3.](https://github.com/nteract/semiotic)
 
-#### React Native
+### React Native
 
 > Framework for building native apps using React
 
@@ -537,7 +535,7 @@ A collection of awesome things regarding the React ecosystem.
 * [react-native-google-signin - Google Signin for React Native](https://github.com/apptailor/react-native-google-signin)
 * [react-native-picker-modal-view](https://github.com/pankod/react-native-picker-modal-view)
 
-#### Redux
+### Redux
 
 > Predictable State Container for JavaScript Apps
 
@@ -591,7 +589,7 @@ A collection of awesome things regarding the React ecosystem.
 * [Practical Redux](https://blog.isquaredsoftware.com/series/practical-redux/)
 * [A Complete React Redux Tutorial for Beginners](https://daveceddia.com/redux-tutorial/)
 
-#### MobX
+### MobX
 
 > Simple, scalable state management for JavaScript Apps
 
@@ -611,7 +609,7 @@ A collection of awesome things regarding the React ecosystem.
 * [Refactor your application from Redux to MobX](http://www.robinwieruch.de/mobx-react)
 * [Redux or MobX: An attempt to dissolve the Confusion](https://www.robinwieruch.de/redux-mobx-confusion/)
 
-#### GraphQL
+### GraphQL
 
 > Query Language
 
@@ -669,7 +667,7 @@ A collection of awesome things regarding the React ecosystem.
 * [sql-to-graphql - Generate a GraphQL API based on your SQL database structure](https://github.com/vaffel/sql-to-graphql)
 * [graphql-sequelize - GraphQL & Relay for MySQL & Postgres via Sequelize](https://github.com/mickhansen/graphql-sequelize)
 
-#### Relay
+### Relay
 
 > Data-Driven React Applications
 
@@ -692,7 +690,7 @@ A collection of awesome things regarding the React ecosystem.
 * [relay-local-schema - Use Relay without a GraphQL server](https://github.com/relay-tools/relay-local-schema)
 * [relay-codemod - Codemod scripts based for on jsodeshift to update Relay APIs](https://github.com/facebook/jscodeshift)
 
-#### Apollo
+### Apollo
 
 > Data stack based on GraphQL
 
@@ -707,7 +705,7 @@ A collection of awesome things regarding the React ecosystem.
 
 * [react-apollo-redux - A small wrapper to automatically dispatch actions in response to apollo mutations](https://github.com/Drawbotics/react-apollo-redux)
 
-#### Videos
+### Videos
 
 **reactjsvideos.com**
 
@@ -758,7 +756,7 @@ A collection of awesome things regarding the React ecosystem.
 
 * [Trying React Hooks for the first time with Dan Abramov](https://www.youtube.com/watch?v=G-aO5hzo1aw)
 
-#### Demo React Apps
+### Demo React Apps
 
 * [hackernews-react-graphql](https://github.com/clintonwoo/hackernews-react-graphql) - Hacker News clone rewritten with universal JavaScript, using React and GraphQL
 * [react-reduction](https://github.com/reduction-admin/react-reduction) - Free Admin Template Built with React and Bootstrap4
@@ -766,7 +764,7 @@ A collection of awesome things regarding the React ecosystem.
 * [react-shopping-cart](https://github.com/jeffersonRibeiro/react-shopping-cart) - Simple ecommerce cart application built with React Redux
 * [dnote](https://github.com/dnote/dnote) - A simple personal knowledge base
 
-#### Real React Apps
+### Real React Apps
 
 * [kibana](https://github.com/elastic/kibana) - Your window into the Elastic Stack
 * [firefox debugger](https://github.com/firefox-devtools/debugger) - The Firefox debugger that works anywhere

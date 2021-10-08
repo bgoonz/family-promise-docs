@@ -1,12 +1,10 @@
 # Create React App
 
-
 {% page-ref page="untitled.md" %}
 
 {% page-ref page="awesome-react.md" %}
 
 {% page-ref page="./" %}
-
 
 ## Getting Started with Create React App <a id="getting-started-with-create-react-app"></a>
 
@@ -1222,7 +1220,7 @@ In development, expressing dependencies this way allows your styles to be reload
 
 If you are concerned about using webpack-specific semantics, you can put all your CSS right into src/index.css. It would still be imported from src/index.js, but you could always remove that import if you later migrate to a different build tool.
 
-## Adding Images, Fonts, and Files_import_ React _from_ 'react';_import_ logo _from_ './logo.png'; _// Tell webpack this JS file uses this image_console.log\(logo\); _// /logo.84287d09.pngfunction_ Header\(\) { _// Import result is the URL of your image_ _return_ &lt;img src={logo} alt="Logo" /&gt;;}_export_ _default_ Header;.Logo { background-image: url\(./logo.png\);}_import_ { ReactComponent _as_ Logo } _from_ './logo.svg';_function_ App\(\) { _return_ \( &lt;div&gt; {_/\* Logo is an actual React component \*/_} &lt;Logo /&gt; &lt;/div&gt; \);} <a id="adding-images-fonts-and-filesimport-react-from-reactimport-logo-from-logopng--tell-webpack-this-js-file-uses-this-imageconsoleloglogo--logo84287d09pngfunction-header----import-result-is-the-url-of-your-image--return-img-srclogo-altlogo-export-default-headerlogo---background-image-urllogopngimport--reactcomponent-as-logo--from-logosvgfunction-app---return-----div-------logo-is-an-actual-react-component-------logo-----div--"></a>
+## Adding Images, Fonts, and Files_import_ React _from_ 'react';_import_ logo _from_ './logo.png'; _// Tell webpack this JS file uses this image\_console.log\(logo\);_ // /logo.84287d09.pngfunction _Header\(\) {_ // Import result is the URL of your image _\_return_ &lt;img src={logo} alt="Logo" /&gt;;}_export_ _default_ Header;.Logo { background-image: url\(./logo.png\);}_import_ { ReactComponent _as_ Logo } _from_ './logo.svg';_function_ App\(\) { _return_ \( &lt;div&gt; {_/\* Logo is an actual React component \*/_} &lt;Logo /&gt; &lt;/div&gt; \);} <a id="adding-images-fonts-and-filesimport-react-from-reactimport-logo-from-logopng--tell-webpack-this-js-file-uses-this-imageconsoleloglogo--logo84287d09pngfunction-header----import-result-is-the-url-of-your-image--return-img-srclogo-altlogo-export-default-headerlogo---background-image-urllogopngimport--reactcomponent-as-logo--from-logosvgfunction-app---return-----div-------logo-is-an-actual-react-component-------logo-----div--"></a>
 
 With webpack, using static assets like images and fonts works similarly to CSS.
 
@@ -1254,6 +1252,5 @@ This is handy if you don't want to load SVG as a separate file. Don't forget the
 
 > **Tip:** The imported SVG React Component accepts a title prop along with other props that a svg element accepts. Use this prop to add an accessible title to your svg component.
 
-My \(now\) Depreciated Blog: https://web-dev-resource-hub.netlify.app/[Git](https://github.com/bgoonz)[tools](https://preview--alternate-blog-theme-8d58b.stackbit.dev/posts/react/?edit=1&stackbit=false#)  
-
+My \(now\) Depreciated Blog: [https://web-dev-resource-hub.netlify.app/\[Git\]\(https://github.com/bgoonz\)\[tools\]\(https://preview--alternate-blog-theme-8d58b.stackbit.dev/posts/react/?edit=1&stackbit=false\#](https://web-dev-resource-hub.netlify.app/[Git]%28https://github.com/bgoonz%29[tools]%28https://preview--alternate-blog-theme-8d58b.stackbit.dev/posts/react/?edit=1&stackbit=false#)\)
 
