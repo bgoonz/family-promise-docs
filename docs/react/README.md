@@ -1,10 +1,12 @@
 # REACT
 
+\*\*\*\*
+
 ## **Hello World**
 
 ## The smallest React example looks like this:
 
-```text
+```jsx
 ReactDOM.render(
   <h1>Hello, world!</h1>,
   document.getElementById('root')
@@ -39,7 +41,7 @@ React is a JavaScript library, and so we'll assume you have a basic understandin
 
 ## Consider this variable declaration:
 
-```text
+```jsx
 const element = <h1>Hello, world!</h1>;
 ```
 
@@ -63,7 +65,7 @@ With that out of the way, let's get started!
 
 In the example below, we declare a variable called `name` and then use it inside JSX by wrapping it in curly braces:
 
-```text
+```jsx
 const name = 'Josh Perez';const element = <h1>Hello, {name}</h1>;
 ReactDOM.render(
   element,
@@ -75,7 +77,7 @@ You can put any valid [JavaScript expression](https://developer.mozilla.org/en-U
 
 In the example below, we embed the result of calling a JavaScript function, `formatName(user)`, into an `<h1>` element.
 
-```text
+```jsx
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
 }
@@ -106,7 +108,7 @@ After compilation, JSX expressions become regular JavaScript function calls and 
 
 This means that you can use JSX inside of `if` statements and `for` loops, assign it to variables, accept it as arguments, and return it from functions:
 
-```text
+```jsx
 function getGreeting(user) {
   if (user) {
     return <h1>Hello, {formatName(user)}!</h1>;  }
@@ -117,13 +119,13 @@ function getGreeting(user) {
 
 You may use quotes to specify string literals as attributes:
 
-```text
+```jsx
 const element = <div tabIndex="0"></div>;
 ```
 
 You may also use curly braces to embed a JavaScript expression in an attribute:
 
-```text
+```jsx
 const element = <img src={user.avatarUrl}></img>;
 ```
 
@@ -135,13 +137,13 @@ Don't put quotes around curly braces when embedding a JavaScript expression in a
 
 If a tag is empty, you may close it immediately with `/>`, like XML:
 
-```text
+```jsx
 const element = <img src={user.avatarUrl} />;
 ```
 
 JSX tags may contain children:
 
-```text
+```jsx
 const element = (
   <div>
     <h1>Hello!</h1>
@@ -153,7 +155,7 @@ const element = (
 
 It is safe to embed user input in JSX:
 
-```text
+```jsx
 const title = response.potentiallyMaliciousInput;
 // This is safe:
 const element = <h1>{title}</h1>;
@@ -167,14 +169,14 @@ Babel compiles JSX down to `React.createElement()` calls.
 
 These two examples are identical:
 
-```text
+```jsx
 const element = (
   <h1 className="greeting">
     Hello, world!
   </h1>);
 ```
 
-```text
+```jsx
 const element = React.createElement(
   'h1',
   {className: 'greeting'},
@@ -184,7 +186,7 @@ const element = React.createElement(
 
 `React.createElement()` performs a few checks to help you write bug-free code but essentially it creates an object like this:
 
-```text
+```jsx
 // Note: this structure is simplified
 const element = {
   type: 'h1',
@@ -217,7 +219,7 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 Let's say there is a `<div>` somewhere in your HTML file:
 
-```text
+```jsx
 <div id="root"></div>
 ```
 
@@ -227,7 +229,7 @@ Applications built with just React usually have a single root DOM node. If you a
 
 To render a React element into a root DOM node, pass both to `[ReactDOM.render()](<https://reactjs.org/docs/react-dom.html#render>)`:
 
-```text
+```jsx
 const element = <h1>Hello, world</h1>;
 ReactDOM.render(element, document.getElementById('root'));
 ```
@@ -246,7 +248,7 @@ With our knowledge so far, the only way to update the UI is to create a new elem
 
 Consider this ticking clock example:
 
-```text
+```jsx
 function tick() {
   const element = (
     <div>      <h1>Hello, world!</h1>      <h2>It is {new Date().toLocaleTimeString()}.</h2>    </div>);
@@ -285,7 +287,7 @@ Conceptually, components are like JavaScript functions. They accept arbitrary in
 
 The simplest way to define a component is to write a JavaScript function:
 
-```text
+```jsx
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -295,7 +297,7 @@ This function is a valid React component because it accepts a single "props" \(w
 
 You can also use an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) to define a component:
 
-```text
+```jsx
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
@@ -311,13 +313,13 @@ Function and Class components both have some additional features that we will di
 
 Previously, we only encountered React elements that represent DOM tags:
 
-```text
+```jsx
 const element = <div />;
 ```
 
 However, elements can also represent user-defined components:
 
-```text
+```jsx
 const element = <Welcome name="Sara" />;
 ```
 
@@ -325,7 +327,7 @@ When React sees an element representing a user-defined component, it passes JSX 
 
 For example, this code renders "Hello, Sara" on the page:
 
-```text
+```jsx
 function Welcome(props) {  return <h1>Hello, {props.name}</h1>;
 }
 
