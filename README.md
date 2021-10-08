@@ -20,7 +20,7 @@ description: >-
 
 | Name | Role | Github | Linkedin | Number | Time Zone |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| ​Ash Tilawat | Release Manager | [https://github.com/ashtilawat23](https://github.com/ashtilawat23) | ​[https://www.linkedin.com/in/ashtilawat23/](https://www.linkedin.com/in/ashtilawat23/) | ​Content | ​Content |
+| ​Ash Tilawat | Release Manager | [https://github.com/ashtilawat23](https://github.com/ashtilawat23) | ​[https://www.linkedin.com/in/ashtilawat23/](https://www.linkedin.com/in/ashtilawat23/) | ​Content | ​EST |
 | Jim Liberi | TPM |  |  |  |  |
 | Michael Quint | TPM |  |  |  |  |
 | Bryan Guner | UX | ​[https://github.com/bgoonz](https://github.com/bgoonz)​ | ​[https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)​ | 551-254-5505 | EST |
