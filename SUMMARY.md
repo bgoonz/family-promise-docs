@@ -37,6 +37,7 @@
   * [Design Tools](canvas/ux-engineer/design-tools.md)
   * [Design Critiques](canvas/ux-engineer/design-critiques.md)
   * [Product Review](canvas/ux-engineer/product-review.md)
+  * [Quiz](canvas/ux-engineer/quiz.md)
 
 ## Front End
 
