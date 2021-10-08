@@ -32,7 +32,8 @@
 
 * [Canvas](canvas/canvas.md)
 * [Notes](canvas/notes.md)
-* [UX-Engineer](canvas/ux-engineer.md)
+* [UX-Engineer](canvas/ux-engineer/README.md)
+  * [Design Tools](canvas/ux-engineer/design-tools.md)
 
 ## Front End
 
