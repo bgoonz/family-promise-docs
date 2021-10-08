@@ -2,13 +2,13 @@
 
 ## Feature List
 
-| Feature Name                                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :-------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Tablet-First](https://www.notion.so/Tablet-First-3cdda8c13fa14f45887330f84d7b3078)     | The application should support tablet-sized screens for data input and general application use. All users should also be able to use the application comfortably on a computer. **Work closely with the Product Manager.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [Metrics](https://www.notion.so/Metrics-31831f815c4c496dbe531243c0379e44)               | Pick up the work started by previous teams on **Metrics** that measure data of interest. We're building a "monitoring and evaluation" tool, so **Metrics** will be our users' main window into their data to do this! Default metrics should be automatically generated based on each service added to the platform. Additional metrics can also be added manually—e.g. "composite" metrics, such as: - ratio of money spent / \[set of services\] - density of \[set of services\] / \[given area\] - frequency of \[set of services\] Make metrics as generalized and composable as possible to empower users to build them based on their own use cases. **Work closely with the stakeholder and all the Labs managers.** |
-| [Goals](https://www.notion.so/Goals-54b5bceb60344faa99ef45eda48e8f8d)                   | Let Administrators and Program Managers define **Goals** based on one or more metrics. A goal might be a specific numerical target for a metric, an increase or decrease in a value for a metric, or something else. **Work closely with the stakeholder and the product manager.**                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [Analytics](https://www.notion.so/Analytics-74a611468b0b499989d87f42456dc707)           | All users should have a dashboard view containing data relevant to them along with basic analytics on metrics. **Work closely with your design lead, the Design Manager, and the Product Manager.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [Visualizations](https://www.notion.so/Visualizations-1f8f6e3a033244fab61d47388f131e14) | Create visualizations to summarize relevant data for each user group's dashboard. **Work closely with the stakeholder and the Associate Data Science Lead**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Feature Name | Description |
+| :--- | :--- |
+| [Tablet-First](https://www.notion.so/Tablet-First-3cdda8c13fa14f45887330f84d7b3078) | The application should support tablet-sized screens for data input and general application use. All users should also be able to use the application comfortably on a computer. **Work closely with the Product Manager.** |
+| [Metrics](https://www.notion.so/Metrics-31831f815c4c496dbe531243c0379e44) | Pick up the work started by previous teams on **Metrics** that measure data of interest. We're building a "monitoring and evaluation" tool, so **Metrics** will be our users' main window into their data to do this! Default metrics should be automatically generated based on each service added to the platform. Additional metrics can also be added manually—e.g. "composite" metrics, such as: - ratio of money spent / \[set of services\] - density of \[set of services\] / \[given area\] - frequency of \[set of services\] Make metrics as generalized and composable as possible to empower users to build them based on their own use cases. **Work closely with the stakeholder and all the Labs managers.** |
+| [Goals](https://www.notion.so/Goals-54b5bceb60344faa99ef45eda48e8f8d) | Let Administrators and Program Managers define **Goals** based on one or more metrics. A goal might be a specific numerical target for a metric, an increase or decrease in a value for a metric, or something else. **Work closely with the stakeholder and the product manager.** |
+| [Analytics](https://www.notion.so/Analytics-74a611468b0b499989d87f42456dc707) | All users should have a dashboard view containing data relevant to them along with basic analytics on metrics. **Work closely with your design lead, the Design Manager, and the Product Manager.** |
+| [Visualizations](https://www.notion.so/Visualizations-1f8f6e3a033244fab61d47388f131e14) | Create visualizations to summarize relevant data for each user group's dashboard. **Work closely with the stakeholder and the Associate Data Science Lead**. |
 
 ### Type
 
@@ -38,18 +38,18 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 ### Technology Stack
 
-- **BE:** Node
-- **FE:** React
-- **Auth:** Okta
+* **BE:** Node
+* **FE:** React
+* **Auth:** Okta
 
 ### User Base
 
-- **Administrators:** Manage all aspects of the application, including:
-  - Users
-  - Programs
-  - Services
-- **Program Managers:** Manage one or more programs.
-- **Service Providers:** Manage one or more services.
+* **Administrators:** Manage all aspects of the application, including:
+  * Users
+  * Programs
+  * Services
+* **Program Managers:** Manage one or more programs.
+* **Service Providers:** Manage one or more services.
 
 [Feature List](https://www.notion.so/649befae354f455abbd7b642f8f0a120)
 
@@ -65,10 +65,10 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 **Family Promise Colors:**
 
-- Purple: \#472D5B
-- Blue: \#006FBA
-- Lilac: \#8D4982
-- Yellow: \#FEC357
+* Purple: \#472D5B
+* Blue: \#006FBA
+* Lilac: \#8D4982
+* Yellow: \#FEC357
 
 #### Recordings
 
@@ -94,5 +94,6 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 #### Future Brainstorm
 
-- Let Program Managers select an area on a map and name it as a neighborhood/area
-  - Let Program Managers add in insider knowledge/community resources per neighborhood/area
+* Let Program Managers select an area on a map and name it as a neighborhood/area
+  * Let Program Managers add in insider knowledge/community resources per neighborhood/area
+

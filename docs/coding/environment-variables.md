@@ -18,13 +18,13 @@ You'll need to set up your environment variables in order to run your applicatio
 
 For more information about security and protecting your secrets, [please see our entry in the Labs Guides.](https://docs.labs.lambdaschool.com/home/#please-read-this-carefully)
 
-#### Things not to do
+### Things not to do
 
 {% hint style="danger" %}
 **Checking in files like your .env or secrets file to git and GitHub is a major security flaw**, and there are some secrets and keys you'll use in Labs that will be flagged automatically by bots scanning for such incidents. If you check in secrets to version control during Labs, expect to have to work with your engineering manager to scrub them from your git history!
 {% endhint %}
 
-#### Anti-pattern \#1
+### Anti-pattern \#1
 
 Having your application try to figure out which environment variables to use depending on the value of another environment variable.
 
@@ -45,12 +45,13 @@ axios.defaults.baseURL = (function() {
 })();
 ```
 
-There should only be one variable for the base URL, something like REACT_APP_AXIOS_BASE_URL. The value of this environment variable will be set to a value that depends on the environment where the app is running.
+There should only be one variable for the base URL, something like REACT\_APP\_AXIOS\_BASE\_URL. The value of this environment variable will be set to a value that depends on the environment where the app is running.
 
-The environment variable REACT_APP_ENV probably shouldn't exist, as in general, the app doesn't need to know what environment it's running in, it just needs to know the values of the variables it requires to run.
+The environment variable REACT\_APP\_ENV probably shouldn't exist, as in general, the app doesn't need to know what environment it's running in, it just needs to know the values of the variables it requires to run.
 
 {% hint style="warning" %}
 Why? Because this makes your application confusing to deploy and manage. Having an extra layer of environment settings doubles the chances that something will go wrong. Keep it simple!
 
 Plus, you almost never want your application to behave differently depending on which environment it's in. If it does, how will you be sure that it'll behave properly in production?
 {% endhint %}
+

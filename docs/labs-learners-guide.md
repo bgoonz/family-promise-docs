@@ -18,31 +18,31 @@ Documents to help your team succeed in Labs
 
 [Trello in Labs](https://www.notion.so/Trello-in-Labs-9ab72395ce7f46d38a65841e617271fd)
 
-- How you'll use Trello for project management
+* How you'll use Trello for project management
 
 [Stakeholder Meetings](https://www.notion.so/Stakeholder-Meetings-a20b61cd482746faaae79a0daf4f1e7d)
 
-- A guide to ensuring a productive stakeholder meeting
+* A guide to ensuring a productive stakeholder meeting
 
 [Engineering Architecture Checklist](https://www.notion.so/Engineering-Architecture-Checklist-e07ccfcf78da426493e39882cfd186d5)
 
-- A checklist to ensure your engineering architecture is sound and complete
+* A checklist to ensure your engineering architecture is sound and complete
 
 [Pull Request Template](https://www.notion.so/Pull-Request-Template-f9264f79e1b649b9845961b5aba3eaff)
 
-- A template for your team to use to create helpful pull requests
+* A template for your team to use to create helpful pull requests
 
 [Pull Request Rubric](https://www.notion.so/Pull-Request-Rubric-55e00099bb2648cdac181cbc2ca03471)
 
-- A rubric to use when evaluating how you're team is doing with pull-requests
+* A rubric to use when evaluating how you're team is doing with pull-requests
 
 [Searchlight Peer Reviews](https://www.notion.so/Searchlight-Peer-Reviews-7e9eb8be8fcd4149bd557c55f3226533)
 
-- All about the Student Peer Review program
+* All about the Student Peer Review program
 
 [Sprint Checklist](https://www.notion.so/Sprint-Checklist-2d0cc596109d42f8a39c37969d754e3d)
 
-- Crucial items when you're close to the finish line each sprint!
+* Crucial items when you're close to the finish line each sprint!
 
 ## Learner Resources
 
@@ -50,35 +50,35 @@ Documents to help _you_ succeed in Labs
 
 [Labs Learner Glossary](https://www.notion.so/Labs-Learner-Glossary-2998a19f8f47414cabe414c0464d9072)
 
-- A glossary of terms you'll hear in Labs
+* A glossary of terms you'll hear in Labs
 
 [Team Standups](https://www.notion.so/Team-Standups-da6ed10cf84b4857afd6fcfaa65ffd05)
 
-- How do I stay in the know?
+* How do I stay in the know?
 
 [Roles in Labs](https://www.notion.so/Roles-in-Labs-c452ad3c3acb4d5aaa8baae66f2db246)
 
-- Specialize in a real industry role
+* Specialize in a real industry role
 
 [Labs PR Videos](https://www.notion.so/Labs-PR-Videos-80e6166d5fb042f18410ecf152b050c6)
 
-- Walk through your work with every pull request
+* Walk through your work with every pull request
 
 [Labs Guided Projects](https://www.notion.so/Labs-Guided-Projects-f2a8c6ae4d984681ab26e020da8f51b0)
 
-- Special live sessions with staff
+* Special live sessions with staff
 
 [Job Search Learner Profile FAQ](https://www.notion.so/Job-Search-Learner-Profile-FAQ-b43022cc9bee48a89e5fc43b938238f0)
 
-- What you need to know about your Learner Profile
+* What you need to know about your Learner Profile
 
 [Labs Roundtable](https://www.notion.so/Labs-Roundtable-cba71f4d7a154444ab48147ada55f9a7)
 
-- All you need to know about Labs Roundtable
+* All you need to know about Labs Roundtable
 
 [Is my Labs project part of my professional portfolio?](https://www.notion.so/Is-my-Labs-project-part-of-my-professional-portfolio-0f5d28c2f1ed40e992ff86680ec56317)
 
-- One of our most frequently asked questions
+* One of our most frequently asked questions
 
 ## Critique Sessions
 
@@ -117,3 +117,4 @@ Note: I called them, they are here to talk, to listen, and help people find loca
 **Crisis Text Line:** Text "START" to 741-741
 
 -
+

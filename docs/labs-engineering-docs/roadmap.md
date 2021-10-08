@@ -30,18 +30,18 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 ### Technology Stack
 
-- **BE:** Node
-- **FE:** React
-- **Auth:** Okta
+* **BE:** Node
+* **FE:** React
+* **Auth:** Okta
 
 ### User Base
 
-- **Administrators:** Manage all aspects of the application, including:
-  - Users
-  - Programs
-  - Services
-- **Program Managers:** Manage one or more programs.
-- **Service Providers:** Manage one or more services.
+* **Administrators:** Manage all aspects of the application, including:
+  * Users
+  * Programs
+  * Services
+* **Program Managers:** Manage one or more programs.
+* **Service Providers:** Manage one or more services.
 
 [Feature List](https://www.notion.so/1af923be8f0b4523a7bf5e7259f028f9)
 
@@ -57,10 +57,10 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 **Family Promise Colors:**
 
-- Purple: \#472D5B
-- Blue: \#006FBA
-- Lilac: \#8D4982
-- Yellow: \#FEC357
+* Purple: \#472D5B
+* Blue: \#006FBA
+* Lilac: \#8D4982
+* Yellow: \#FEC357
 
 #### Recordings
 
@@ -86,5 +86,6 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 #### Future Brainstorm
 
-- Let Program Managers select an area on a map and name it as a neighborhood/area
-  - Let Program Managers add in insider knowledge/community resources per neighborhood/area
+* Let Program Managers select an area on a map and name it as a neighborhood/area
+  * Let Program Managers add in insider knowledge/community resources per neighborhood/area
+

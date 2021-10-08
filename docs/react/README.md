@@ -875,8 +875,8 @@ In React apps, whether a component is stateful or stateless is considered an imp
 
 ## Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
 
-- React events are named using camelCase, rather than lowercase.
-- With JSX you pass a function as the event handler, rather than a string.
+* React events are named using camelCase, rather than lowercase.
+* With JSX you pass a function as the event handler, rather than a string.
 
 For example, the HTML:
 
@@ -1869,14 +1869,14 @@ Now, no matter which input you edit, `this.state.temperature` and `this.state.sc
 
 Let's recap what happens when you edit an input:
 
-- React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
-- The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
-- When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
-- Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
-- React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
-- React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
-- React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
-- React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
+* React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
+* The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
+* When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
+* Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
+* React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
+* React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
+* React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
+* React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
 
 Every update goes through the same steps so the inputs stay in sync.
 
@@ -2054,11 +2054,11 @@ If you look at `ProductTable`, you'll see that the table header \(containing the
 
 Now that we've identified the components in our mock, let's arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
-- `FilterableProductTable`
-  - `SearchBar`
-  - `ProductTable`
-    - `ProductCategoryRow`
-    - `ProductRow`
+* `FilterableProductTable`
+  * `SearchBar`
+  * `ProductTable`
+    * `ProductCategoryRow`
+    * `ProductRow`
 
 ## Step 2: Build A Static Version in React
 
@@ -2086,10 +2086,10 @@ To build your app correctly, you first need to think of the minimal set of mutab
 
 Think of all the pieces of data in our example application. We have:
 
-- The original list of products
-- The search text the user has entered
-- The value of the checkbox
-- The filtered list of products
+* The original list of products
+* The search text the user has entered
+* The value of the checkbox
+* The filtered list of products
 
 Let's go through each one and figure out which one is state. Ask three questions about each piece of data:
 
@@ -2101,8 +2101,8 @@ The original list of products is passed in as props, so that's not state. The se
 
 So finally, our state is:
 
-- The search text the user has entered
-- The value of the checkbox
+* The search text the user has entered
+* The value of the checkbox
 
 ## Step 4: Identify Where Your State Should Live
 
@@ -2114,16 +2114,16 @@ Remember: React is all about one-way data flow down the component hierarchy. It 
 
 For each piece of state in your application:
 
-- Identify every component that renders something based on that state.
-- Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
-- Either the common owner or another component higher up in the hierarchy should own the state.
-- If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+* Identify every component that renders something based on that state.
+* Find a common owner component \(a single component above all the components that need the state in the hierarchy\).
+* Either the common owner or another component higher up in the hierarchy should own the state.
+* If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Let's run through this strategy for our application:
 
-- `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
-- The common owner component is `FilterableProductTable`.
-- It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
+* `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
+* The common owner component is `FilterableProductTable`.
+* It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
 
 Cool, so we've decided that our state lives in `FilterableProductTable`. First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable`'s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar`.
 
@@ -3054,25 +3054,25 @@ See: [Component API](https://facebook.github.io/react/docs/component-api.html)
 
 #### Mounting
 
-| Method                    | Description                                                                                             |
-| :------------------------ | :------------------------------------------------------------------------------------------------------ |
-| `constructor` _\(props\)_ | Before rendering [\#](https://reactjs.org/docs/react-component.html#constructor)                        |
-| `componentWillMount()`    | _Don’t use this_ [\#](https://reactjs.org/docs/react-component.html#componentwillmount)                 |
-| `render()`                | Render [\#](https://reactjs.org/docs/react-component.html#render)                                       |
-| `componentDidMount()`     | After rendering \(DOM available\) [\#](https://reactjs.org/docs/react-component.html#componentdidmount) |
-| `componentWillUnmount()`  | Before DOM removal [\#](https://reactjs.org/docs/react-component.html#componentwillunmount)             |
-| `componentDidCatch()`     | Catch errors \(16+\) [\#](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)          |
+| Method | Description |
+| :--- | :--- |
+| `constructor` _\(props\)_ | Before rendering [\#](https://reactjs.org/docs/react-component.html#constructor) |
+| `componentWillMount()` | _Don’t use this_ [\#](https://reactjs.org/docs/react-component.html#componentwillmount) |
+| `render()` | Render [\#](https://reactjs.org/docs/react-component.html#render) |
+| `componentDidMount()` | After rendering \(DOM available\) [\#](https://reactjs.org/docs/react-component.html#componentdidmount) |
+| `componentWillUnmount()` | Before DOM removal [\#](https://reactjs.org/docs/react-component.html#componentwillunmount) |
+| `componentDidCatch()` | Catch errors \(16+\) [\#](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html) |
 
 Set initial the state on `constructor()`. Add DOM event handlers, timers \(etc\) on `componentDidMount()`, then remove them on `componentWillUnmount()`.
 
 #### Updating
 
-| Method                                                    | Description                                          |
-| :-------------------------------------------------------- | :--------------------------------------------------- |
+| Method | Description |
+| :--- | :--- |
 | `componentDidUpdate` _\(prevProps, prevState, snapshot\)_ | Use `setState()` here, but remember to compare props |
-| `shouldComponentUpdate` _\(newProps, newState\)_          | Skips `render()` if returns false                    |
-| `render()`                                                | Render                                               |
-| `componentDidUpdate` _\(prevProps, prevState\)_           | Operate on the DOM here                              |
+| `shouldComponentUpdate` _\(newProps, newState\)_ | Skips `render()` if returns false |
+| `render()` | Render |
+| `componentDidUpdate` _\(prevProps, prevState\)_ | Operate on the DOM here |
 
 Called when parents change properties and `.setState()`. These are not called for initial renders.
 
@@ -3187,25 +3187,25 @@ Also see: [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html)
 
 **Basic Hooks**
 
-| Hook                              | Description                               |
-| :-------------------------------- | :---------------------------------------- |
-| `useState`_\(initialState\)_      |                                           |
-| `useEffect`_\(\(\) =&gt; { … }\)_ |                                           |
-| `useContext`_\(MyContext\)_       | value returned from `React.createContext` |
+| Hook | Description |
+| :--- | :--- |
+| `useState`_\(initialState\)_ |  |
+| `useEffect`_\(\(\) =&gt; { … }\)_ |  |
+| `useContext`_\(MyContext\)_ | value returned from `React.createContext` |
 
 Full details: [Basic Hooks](https://reactjs.org/docs/hooks-reference.html#basic-hooks)
 
 **Additional Hooks**
 
-| Hook                                             | Description                                                                  |
-| :----------------------------------------------- | :--------------------------------------------------------------------------- |
-| `useReducer`_\(reducer, initialArg, init\)_      |                                                                              |
-| `useCallback`_\(\(\) =&gt; { … }\)_              |                                                                              |
-| `useMemo`_\(\(\) =&gt; { … }\)_                  |                                                                              |
-| `useRef`_\(initialValue\)_                       |                                                                              |
-| `useImperativeHandle`_\(ref, \(\) =&gt; { … }\)_ |                                                                              |
-| `useLayoutEffect`                                | identical to `useEffect`, but it fires synchronously after all DOM mutations |
-| `useDebugValue`_\(value\)_                       | display a label for custom hooks in React DevTools                           |
+| Hook | Description |
+| :--- | :--- |
+| `useReducer`_\(reducer, initialArg, init\)_ |  |
+| `useCallback`_\(\(\) =&gt; { … }\)_ |  |
+| `useMemo`_\(\(\) =&gt; { … }\)_ |  |
+| `useRef`_\(initialValue\)_ |  |
+| `useImperativeHandle`_\(ref, \(\) =&gt; { … }\)_ |  |
+| `useLayoutEffect` | identical to `useEffect`, but it fires synchronously after all DOM mutations |
+| `useDebugValue`_\(value\)_ | display a label for custom hooks in React DevTools |
 
 Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#additional-hooks)
 
@@ -3448,54 +3448,54 @@ import PropTypes from "prop-types";
 
 See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
-| Key   | Description |
-| :---- | :---------- |
-| `any` | Anything    |
+| Key | Description |
+| :--- | :--- |
+| `any` | Anything |
 
 **Basic**
 
-| Key      | Description   |
-| :------- | :------------ |
-| `string` |               |
-| `number` |               |
-| `func`   | Function      |
-| `bool`   | True or false |
+| Key | Description |
+| :--- | :--- |
+| `string` |  |
+| `number` |  |
+| `func` | Function |
+| `bool` | True or false |
 
 **Enum**
 
-| Key                         | Description |
-| :-------------------------- | :---------- |
-| `oneOf`_\(any\)_            | Enum types  |
-| `oneOfType`_\(type array\)_ | Union       |
+| Key | Description |
+| :--- | :--- |
+| `oneOf`_\(any\)_ | Enum types |
+| `oneOfType`_\(type array\)_ | Union |
 
 **Array**
 
-| Key              | Description |
-| :--------------- | :---------- |
-| `array`          |             |
-| `arrayOf`_\(…\)_ |             |
+| Key | Description |
+| :--- | :--- |
+| `array` |  |
+| `arrayOf`_\(…\)_ |  |
 
 **Object**
 
-| Key                 | Description                          |
-| :------------------ | :----------------------------------- |
-| `object`            |                                      |
-| `objectOf`_\(…\)_   | Object with values of a certain type |
-| `instanceOf`_\(…\)_ | Instance of a class                  |
-| `shape`_\(…\)_      |                                      |
+| Key | Description |
+| :--- | :--- |
+| `object` |  |
+| `objectOf`_\(…\)_ | Object with values of a certain type |
+| `instanceOf`_\(…\)_ | Instance of a class |
+| `shape`_\(…\)_ |  |
 
 **Elements**
 
-| Key       | Description   |
-| :-------- | :------------ |
+| Key | Description |
+| :--- | :--- |
 | `element` | React element |
-| `node`    | DOM node      |
+| `node` | DOM node |
 
 **Required**
 
-| Key                | Description |
-| :----------------- | :---------- |
-| `(···).isRequired` | Required    |
+| Key | Description |
+| :--- | :--- |
+| `(···).isRequired` | Required |
 
 #### Basic types
 
@@ -3567,3 +3567,4 @@ MyCo.propTypes = {
   },
 };
 ```
+
