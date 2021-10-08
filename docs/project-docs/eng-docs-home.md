@@ -1,7 +1,5 @@
 # Eng-Docs-Home
 
-
-
 ## Home
 
 ### Welcome!
