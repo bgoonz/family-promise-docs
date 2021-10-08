@@ -87,7 +87,39 @@ Happy achieving! 🚀
 
 \*\*\*\*
 
-\*\*\*\*
+## UX Principles
+
+### What is UX?
+
+If the title of this module didn't already give it away, UX stands for **user experience**. UX is, ultimately, **what users experience** when using a product.
+
+We can hear you from here: "Well, that's vague." An apt observation! "UX" is a _super_ general term, and it's also constantly evolving. That's largely because user experience is a relatively new area of study, and we're learning more and more as products and the technologies used to build them evolve at an exponential pace.
+
+### UX vs. UI
+
+You've likely seen these terms bandied about, used interchangeably, or even in combination with each other: UI, UX, UI/UX, design, interaction design, UI design, UX design...
+
+UI stands for **user interface** \(though _sometimes_ it can stand for "user interaction"—this isn't helping, is it...\)
+
+Ultimately, the distinction between these terms does matter, but **it doesn't matter too much**. What matters is that you understand that they represent various areas of focus that are ultimately trying to get at the same thing from different angles—**how is a thing used**?
+
+**User experience \(UX\) design** focuses on what happens to the user when they use the thing.
+
+**User interface \(UI\) design** focuses on the pieces of the thing the user interacts with—hopefully informed by an anticipation and understanding of what their experience will or should be.
+
+### UX Principles
+
+in 2004, [Peter Morville \(Links to an external site.\)](http://semanticstudios.com/user_experience_design/) defined a core set of seven UX principles determining whether users will get value out of an experience:
+
+* useful
+* usable
+* desirable
+* valuable
+* findable
+* accessible
+* credible
+
+Like our seven principles of design, these seven principles of UX certainly aren't the only way to break up and talk about UX. But they do give us a helpful anchor for discussion!
 
 \*\*\*\*
 

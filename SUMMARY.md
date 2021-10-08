@@ -32,7 +32,8 @@
 ## CANVAS
 
 * [Canvas](canvas/canvas.md)
-* [Notes](canvas/notes.md)
+* [Notes](canvas/notes/README.md)
+  * [User Experience Design](canvas/notes/user-experience-design.md)
 * [UX-Engineer](canvas/ux-engineer/README.md)
   * [Design Tools](canvas/ux-engineer/design-tools.md)
   * [Design Critiques](canvas/ux-engineer/design-critiques.md)
