@@ -98,6 +98,7 @@
   * [Examples:](docs/project-docs/examples.md)
 * [PROJECT DESCRIPTION \(Feature List\)](docs/project-description.md)
 * [Labs Learners Guide](docs/labs-learners-guide.md)
+* [REACT](docs/react.md)
 * [Links](docs/untitled.md)
 * [Labs Engineering Docs](docs/labs-engineering-docs/README.md)
   * [Roadmap](docs/labs-engineering-docs/roadmap.md)
