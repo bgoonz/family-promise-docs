@@ -38,6 +38,7 @@
   * [Design Critiques](canvas/ux-engineer/design-critiques.md)
   * [Product Review](canvas/ux-engineer/product-review.md)
   * [Quiz](canvas/ux-engineer/quiz.md)
+  * [Seven Principles of Design](canvas/ux-engineer/seven-principles-of-design.md)
 
 ## Front End
 
