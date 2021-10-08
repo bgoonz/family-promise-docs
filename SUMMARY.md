@@ -104,6 +104,11 @@
 
 ## DOCS
 
+* [Coding](docs/coding/README.md)
+  * [Environment Variables](docs/coding/environment-variables.md)
+  * [Git Rebase:](docs/coding/git-rebase.md)
+  * [Git Workflow:](docs/coding/git-workflow.md)
+  * [Linting and Formatting](docs/coding/linting-and-formatting.md)
 * [Project Docs](docs/project-docs/README.md)
   * [Basic Node API](docs/project-docs/basic-node-api.md)
   * [Contributing to this scaffold project](docs/project-docs/contributing-to-this-scaffold-project.md)
