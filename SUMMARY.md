@@ -127,6 +127,8 @@
 ## AWS
 
 * [AWS](aws/aws/README.md)
+  * [Elastic Beanstalk](aws/aws/elastic-beanstalk/README.md)
+    * [Elastic Beanstalk DNS](aws/aws/elastic-beanstalk/elastic-beanstalk-dns.md)
   * [Amplify:](aws/aws/amplify/README.md)
     * [Amplify-DNS](aws/aws/amplify/amplify-dns.md)
 * [Account Basics](aws/untitled-1.md)
