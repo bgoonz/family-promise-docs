@@ -30,6 +30,7 @@
 ## Front End
 
 * [Frontend:](front-end/untitled.md)
+* [Redux](front-end/redux.md)
 
 ## Back End
 
