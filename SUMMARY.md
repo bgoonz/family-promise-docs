@@ -30,6 +30,7 @@
 ## CANVAS
 
 * [Canvas](canvas/canvas.md)
+* [Notes](canvas/notes.md)
 
 ## Front End
 
