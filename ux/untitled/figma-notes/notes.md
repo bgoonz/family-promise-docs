@@ -1,0 +1,1358 @@
+# Notes
+
+
+
+Introduction
+
+Welcome to Figma, the world's first collaborative interface design tool. Figma allows designers to create and prototype their digital experiences - together in real-time and in one place - helping them turn their ideas and visions into products, faster. Figma's mission is to make design accessible to everyone. The Figma API is one of the ways we aim to do that.What can I do with the Figma API?
+
+The Figma API supports read access and interactions with Figma files. This gives you the ability to view and extract any objects or layers, and their properties, so you can render them as images outside of Figma. You can then present your designs, connect them to other applications, or use them to expand on your vision. Future versions of the API will unlock even greater functionality around Files.How does it work?
+
+The Figma API is based on the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) structure. We support authentication via [access tokens](https://www.figma.com/developers/api#access-tokens) and [OAuth2](https://www.figma.com/developers/api#oauth2). Requests are made via HTTP endpoints with clear functions and appropriate response codes. Endpoints allow you to request [files](https://www.figma.com/developers/api#files), [images](https://www.figma.com/developers/api#get-images-endpoint), [file versions](https://www.figma.com/developers/api#version-history), [users](https://www.figma.com/developers/api#users), [comments](https://www.figma.com/developers/api#comments), [team projects](https://www.figma.com/developers/api#get-team-projects-endpoint) and [project files](https://www.figma.com/developers/api#get-project-files-endpoint).
+
+Once granted access, you can use the Figma API to inspect a JSON representation of the file. Every layer or object in a file will be represented within the file by a node \(subtree\). You will then be able to access and isolate the object and any properties associated with it. In addition to accessing files and layers, you will be able to GET and POST comments to files.Getting started
+
+If you’re not already using Figma, the first step is to sign up and create an account [over here.](https://www.figma.com/signup)
+
+Once you have a Figma account, the next step is to authenticate with the API. This can be done using either [OAuth2](https://www.figma.com/developers/api#oauth2) or [access tokens](https://www.figma.com/developers/api#access-tokens).
+
+You can then browse our endpoints and start making queries against the Figma API. We recommend starting with the basics by learning about [Figma files](https://www.figma.com/developers/api#files), before moving on to more advanced topics such as [comments](https://www.figma.com/developers/api#comments), [users](https://www.figma.com/developers/api#users), [version history](https://www.figma.com/developers/api#version-history), and [projects](https://www.figma.com/developers/api#projects).
+
+If you plan on building a fully-fledged app, that others can share and use, then you can register your app by heading to [My apps](https://www.figma.com/developers/apps) in your Figma account.Base URLhttps://api.figma.comAuthentication
+
+Before you can access an endpoint within Figma, you will need to provide valid authentication. You can authenticate your request to the Figma API in two ways:
+
+1. Generate a personal access token through your user profile page. This gives you access to the Figma API as if you were a single user.
+2. Recommended: register a callback via OAuth2 and collect a client secret. This allows you non-specific access to the Figma API, without having to act on behalf of a specific user.
+
+Access tokensA personal access token gives the holder access to an account through the API as if they were the user who generated the token.Generate a personal access token
+
+1. Login to your Figma account.
+2. Head to the account settings from the top-left menu inside Figma.
+3. Find the personal access tokens section.
+4. Click Create new token.
+5. A token will be generated. This will be your only chance to copy the token, so make sure you keep a copy of this in a secure place.
+
+From the account settings page, you will also be able to see when the token was last used \(give or take a few minutes\). If you see any activity on a token that you did not initiate, revoke the token immediately. Revocations are instant and can be made at any time.
+
+You can also generate an access token from this page to explore our endpoints. The token generated here functions exactly the same as a token generated from the account settings page as in the instructions above.Use the personal access token
+
+You can now use the token to make requests to the Figma API. You can do so by passing the token to the API in the header of your request. We’ve shown you an example of how this would look.
+
+The name of the token header is X-Figma-Token.+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Using the token to make requests
+
+```text
+$ curl -sH 'X-Figma-Token: 29-206...'
+    'https://api.figma.com/v1/files/...'
+    | python -m json.tool
+{
+  "components": {},
+  "document": {
+    "children": [
+      {
+        "backgroundColor": {
+          "a": 1,
+          "b": 0.8980392156862745,
+          "g": 0.8980392156862745,
+          "r": 0.8980392156862745
+        },
+        "children": [],
+        "exportSettings": [],
+        "id": "0:1",
+        "name": "Page 1",
+        "type": "CANVAS",
+        "visible": true
+      }
+    ],
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "visible": true
+  },
+  "schemaVersion": 0
+}
+```
+
+OAuth 2[OAuth 2](https://oauth.net/2/) is a web security protocol that allows 3rd party applications to establish a link between a user’s account and their access to a given API, on behalf of that user. We support OAuth 2 authentication in addition to personal access tokens. You would use OAuth 2 when you would like to access the Figma API, without having to identify yourself as a specific user.
+
+To get started with OAuth 2:
+
+1. [Register an application via your Figma account.](https://www.figma.com/developers/api#register-oauth2)
+2. [Authenticate any users.](https://www.figma.com/developers/api#auth-oauth2)
+3. [Use the OAuth 2 Token.](https://www.figma.com/developers/api#token-oauth2)
+4. [Refresh an OAuth 2 Token.](https://www.figma.com/developers/api#refresh-oauth2)
+
+Register an Application
+
+Registering an app establishes a link between your existing Figma user account\(s\) and your application, which allows you to access data via the Figma API on the user's behalf.
+
+1. Head to the [My apps](https://www.figma.com/developers/apps) tab to get started.
+2. In the Registered apps section, click Create a new app.
+3. You’ll then need to complete some details about your application:
+   1. Enter the name and website for your app.
+   2. Upload a logo for your application users will be able to see this\).
+   3. Specify the Callback. This can be any endpoint/URL of your choosing. You must specify at least one callback and only callbacks appearing in this list will be allowed to receive the access token.
+   4. 5. What is a Callback?
+   6. When a user attempts to allow your application access to the API, our authentication servers will make a request \(a Callback\) to the endpoint you specified, with the access token included.
+4. Click Save to create the app.
+5. You will be given your client ID and client secret. This will allow you to access the Figma API. The client secret will only be shown to you once! Copy it now and store it someplace safe.![](https://www.figma.com/images/developer_app/oauth2.png)
+
+You’re now ready to authenticate users via your app!
+
+Authenticate users
+
+To authenticate any users, ask them to visit the following URL:
+
+```bash
+GET https://www.figma.com/oauth?
+  client_id=:client_id&
+  redirect_uri=:callback&
+  scope=file_read&
+  state=:state&
+  response_type=code
+```
+
+Important: this URL must be accessed via the user's browser and not an embedded webview inside your application. Webview access to the Figma OAuth flow is not supported and may stop working for some or all users without an API version update.
+
+| Parameter | Description |
+| :--- | :--- |
+| client\_id | The client ID for your app. In the example Pencil app above, the client ID is fGd5TpaewrbjLdsrGO33AP. |
+| redirect\_uri | This must be one of the values you set as your callbacks in the app creation/edit screen. The auth page will call this URI if the user allows access to your app. |
+| scope | Currently this value can only be file\_read signifying read-only access to the user's files. |
+| state | This is a value that you should randomly generate and store. When we call back to your callback endpoint, you should check that the state value we pass back to you matches the state value that you initially used in your request. |
+| response\_type | Currently we only support the authorization code flow for OAuth 2, so the only valid value here is code. We may support other values in the future. |
+
+Once the user navigates to this address, they will see a screen like the following:![](https://www.figma.com/images/developer_app/oauth3.png)
+
+If the user rejects the request, no callback is triggered.
+
+At this point, the client will be redirected to the callback that was passed as redirect\_uri.If the redirect URI that was provided is https://example.com/oauth/callback, then the expected callback request would look like: https://example.com/oauth/callback?code=:code&state=:state
+
+* :code here refers to the authentication code that can be traded in for an access token.
+* :state refers to the state variable that was in the initial url given to the user.
+
+Please check that the state parameter passed back to you is the same as the one originally generated.
+
+Now the code can be passed back to the OAuth API to get the user's access token:
+
+```bash
+POST https://www.figma.com/api/oauth/token?
+  client_id=:client_id&
+  client_secret=:client_secret&
+  redirect_uri=:callback&
+  code=:code&
+  grant_type=authorization_code
+
+{
+  "access_token": <TOKEN>,
+  "expires_in": <EXPIRATION (in seconds)>,
+  "refresh_token": <REFRESH TOKEN>
+}
+```
+
+* :callback must match the redirect URI originally provided, and code must match the authentication code provided to your callback.
+* :client\_secret is the secret key that you copied when you created your application.
+
+If the parameters match, you will receive the user access token and token expiration \(in seconds\) in a JSON response.Using the OAuth 2 Token
+
+Once you have obtained the user access token, using it is very similar to the way you use [personal access tokens.](https://www.figma.com/developers/api#access-tokens)
+
+When you call the API, pass a Bearer authorization header like so:
+
+```bash
+$ curl -sH 'Authorization: Bearer <TOKEN>'
+    'https://api.figma.com/v1/files/...'
+    | python -m json.tool
+{
+  "components": {},
+  "document": {
+    "children": [
+      {
+        "backgroundColor": {
+          "a": 1,
+          "b": 0.8980392156862745,
+          "g": 0.8980392156862745,
+          "r": 0.8980392156862745
+        },
+        "children": [],
+        "exportSettings": [],
+        "id": "0:1",
+        "name": "Page 1",
+        "type": "CANVAS",
+        "visible": true
+      }
+    ],
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "visible": true
+  },
+  "schemaVersion": 0
+}
+```
+
+Refreshing OAuth tokens
+
+By default OAuth tokens expire after 90 days so you will need to refresh your stored tokens if your integration is long-lived. You do this using the refresh\_token.
+
+Your refresh\_token can be reused as many times as necessary to retrieve a new access\_token. This requires you to POST a request to refresh the token, based on its current expiry date. Here’s how that looks:
+
+```text
+POST https://www.figma.com/api/oauth/refresh?
+  client_id=:client_id&
+  client_secret=:client_secret&
+  refresh_token=:refresh_token
+
+{
+  "access_token": <TOKEN>,
+  "expires_in": <EXPIRATION (in seconds)>,
+}
+```
+
+Figma files
+
+Every file in Figma consists of a tree of nodes. At the root of every file is a DOCUMENT node, and from that node stems any CANVAS nodes. Every canvas node represents a PAGE in a Figma file. A canvas node can then have any number of nodes as its children. Each subtree stemming from a canvas node will represent a layer \(e.g an object\) on the canvas.
+
+Nodes have a number of properties associated with them. Some of these are global properties, that exist on every node, whereas other node properties will be specific to the type of node.Global propertiesThe following are properties that exist on every node. These give us some basic information about identifying and viewing the node.
+
+| Node type | Properties |
+| :--- | :--- |
+| Node | idStringA string uniquely identifying this node within the document.nameStringThe name given to the node by the user in the tool.visibleBooleandefault: trueWhether or not the node is visible on the canvas.typeStringThe type of the node, refer to table below for details.pluginDataAnyData written by plugins that is visible only to the plugin that wrote it. Requires the \`pluginData\` to include the ID of the plugin.sharedPluginDataAnyData written by plugins that is visible to all plugins. Requires the \`pluginData\` parameter to include the string "shared". |
+
+Node typesNode type indicates what kind of node you are working with: for example, a FRAME node versus a RECTANGLE node. A node can have additional properties associated with it depending on its node type. The following is a catalog of properties that can be applied to a node, grouped by node type.
+
+| Node type | Properties |
+| :--- | :--- |
+| DOCUMENT | children[Node\[\]](https://www.figma.com/developers/api#node-type)An array of canvases attached to the document |
+| CANVAS | children[Node\[\]](https://www.figma.com/developers/api#node-type)An array of top level layers on the canvasbackgroundColor[Color](https://www.figma.com/developers/api#color-type)Background color of the canvas.prototypeStartNodeIDString\[DEPRECATED\] Node ID that corresponds to the start frame for prototypes. This is deprecated with the introduction of multiple flows. Please use the flowStartingPoints field.flowStartingPoints[FlowStartingPoint\[\]](https://www.figma.com/developers/api#flowstartingpoint-type) default: \[\]A array of flow starting points sorted by its position in the prototype settings panel.exportSettings[ExportSetting\[\]](https://www.figma.com/developers/api#exportsetting-type) default: \[\]An array of export settings representing images to export from the canvas |
+| FRAME | children[Node\[\]](https://www.figma.com/developers/api#node-type)An array of nodes that are direct children of this nodelockedBoolean default: falseIf true, layer is locked and cannot be editedbackground[Paint\[\]](https://www.figma.com/developers/api#paint-type)\[DEPRECATED\] Background of the node. This is deprecated, as backgrounds for frames are now in the fills field.backgroundColor[Color](https://www.figma.com/developers/api#color-type)\[DEPRECATED\] Background color of the node. This is deprecated, as frames now support more than a solid color as a background. Please use the fills field instead.fills[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of fill paints applied to the nodestrokes[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of stroke paints applied to the nodestrokeWeightNumberThe weight of strokes on the nodestrokeAlignStringPosition of stroke relative to vector outline, as a string enumINSIDE: stroke drawn inside the shape boundaryOUTSIDE: stroke drawn outside the shape boundaryCENTER: stroke drawn centered along the shape boundarycornerRadiusNumberRadius of each corner of the frame if a single radius is set for all cornersrectangleCornerRadiiNumber\[\] default: same as cornerRadiusArray of length 4 of the radius of each corner of the frame, starting in the top left and proceeding clockwiseexportSettings[ExportSetting\[\]](https://www.figma.com/developers/api#exportsetting-type) default: \[\]An array of export settings representing images to export from the nodeblendMode[BlendMode](https://www.figma.com/developers/api#blendmode-type)How this node blends with nodes behind it in the scene \(see blend mode section for more details\)preserveRatioBoolean default: falseKeep height and width constrained to same ratioconstraints[LayoutConstraint](https://www.figma.com/developers/api#layoutconstraint-type)Horizontal and vertical layout constraints for nodelayoutAlignStringDetermines if the layer should stretch along the parent’s counter axis. This property is only provided for direct children of auto-layout frames.INHERITSTRETCHIn previous versions of auto layout, determined how the layer is aligned inside an auto-layout frame. This property is only provided for direct children of auto-layout frames.MINCENTERMAXSTRETCHIn horizontal auto-layout frames, "MIN" and "MAX" correspond to "TOP" and "BOTTOM". In vertical auto-layout frames, "MIN" and "MAX" correspond to "LEFT" and "RIGHT".transitionNodeIDString default: nullNode ID of node to transition to in prototypingtransitionDurationNumber default: nullThe duration of the prototyping transition on this node \(in milliseconds\)transitionEasing[EasingType](https://www.figma.com/developers/api#easingtype-type) default: nullThe easing curve used in the prototyping transition on this nodeopacityNumber default: 1Opacity of the nodeabsoluteBoundingBox[Rectangle](https://www.figma.com/developers/api#rectangle-type)Bounding box of the node in absolute space coordinatessize[Vector](https://www.figma.com/developers/api#vector-type)Width and height of element. This is different from the width and height of the bounding box in that the absolute bounding box represents the element after scaling and rotation. Only present if geometry=paths is passedrelativeTransform[Transform](https://www.figma.com/developers/api#transform-type)The top two rows of a matrix that represents the 2D transform of this node relative to its parent. The bottom row of the matrix is implicitly always \(0, 0, 1\). Use to transform coordinates in geometry. Only present if geometry=paths is passedclipsContentBooleanWhether or not this node clip content outside of its boundslayoutModeString default: NONEWhether this layer uses auto-layout to position its children.NONEHORIZONTALVERTICALprimaryAxisSizingModeString default: AUTOWhether the primary axis has a fixed length \(determined by the user\) or an automatic length \(determined by the layout engine\). This property is only applicable for auto-layout frames.FIXEDAUTOcounterAxisSizingModeString default: AUTOWhether the counter axis has a fixed length \(determined by the user\) or an automatic length \(determined by the layout engine\). This property is only applicable for auto-layout frames.FIXEDAUTOprimaryAxisAlignItemsString default: MINDetermines how the auto-layout frame’s children should be aligned in the primary axis direction. This property is only applicable for auto-layout frames.MINCENTERMAXSPACE\_BETWEENcounterAxisAlignItemsString default: MINDetermines how the auto-layout frame’s children should be aligned in the counter axis direction. This property is only applicable for auto-layout frames.MINCENTERMAXpaddingLeftNumber default: 0The padding betweeen the left border of the frame and its children. This property is only applicable for auto-layout frames.paddingRightNumber default: 0The padding betweeen the right border of the frame and its children. This property is only applicable for auto-layout frames.paddingTopNumber default: 0The padding betweeen the top border of the frame and its children. This property is only applicable for auto-layout frames.paddingBottomNumber default: 0The padding betweeen the bottom border of the frame and its children. This property is only applicable for auto-layout frames.horizontalPaddingNumber default: 0The horizontal padding between the borders of the frame and its children. This property is only applicable for auto-layout frames. Deprecated in favor of setting individual paddings.verticalPaddingNumber default: 0The vertical padding between the borders of the frame and its children. This property is only applicable for auto-layout frames. Deprecated in favor of setting individual paddings.itemSpacingNumber default: 0The distance between children of the frame. This property is only applicable for auto-layout frames.layoutGrids[LayoutGrid\[\]](https://www.figma.com/developers/api#layoutgrid-type)default: \[\] An array of layout grids attached to this node \(see layout grids section for more details\).GROUP nodes do not have this attributeoverflowDirectionString default: NONEDefines the scrolling behavior of the frame, if there exist contents outside of the frame boundaries. The frame can either scroll vertically, horizontally, or in both directions to the extents of the content contained within it. This behavior can be observed in a prototype.HORIZONTAL\_SCROLLINGVERTICAL\_SCROLLINGHORIZONTAL\_AND\_VERTICAL\_SCROLLINGeffects[Effect\[\]](https://www.figma.com/developers/api#effect-type) default: \[\]An array of effects attached to this node \(see effects section for more details\)isMaskBoolean default: falseDoes this node mask sibling nodes in front of it?isMaskOutlineBoolean default: falseDoes this mask ignore fill style \(like gradients\) and effects? |
+| GROUP | See properties for [FRAME](https://www.figma.com/developers/api#frame-props) |
+| VECTOR | lockedBoolean default: falseIf true, layer is locked and cannot be editedexportSettings[ExportSetting\[\]](https://www.figma.com/developers/api#exportsetting-type) default: \[\]An array of export settings representing images to export from the nodeblendMode[BlendMode](https://www.figma.com/developers/api#blendmode-type)How this node blends with nodes behind it in the scene \(see blend mode section for more details\)preserveRatioBoolean default: falseKeep height and width constrained to same ratiolayoutAlignStringDetermines if the layer should stretch along the parent’s counter axis. This property is only provided for direct children of auto-layout frames.INHERITSTRETCHIn previous versions of auto layout, determined how the layer is aligned inside an auto-layout frame.MINCENTERMAXSTRETCHIn horizontal auto-layout frames, "MIN" and "MAX" correspond to "TOP" and "BOTTOM". In vertical auto-layout frames, "MIN" and "MAX" correspond to "LEFT" and "RIGHT".layoutGrowNumber default: 0This property is applicable only for direct children of auto-layout frames, ignored otherwise. Determines whether a layer should stretch along the parent’s primary axis. A 0 corresponds to a fixed size and 1 corresponds to stretchconstraints[LayoutConstraint](https://www.figma.com/developers/api#layoutconstraint-type)Horizontal and vertical layout constraints for nodetransitionNodeIDString default: nullNode ID of node to transition to in prototypingtransitionDurationNumber default: nullThe duration of the prototyping transition on this node \(in milliseconds\)transitionEasing[EasingType](https://www.figma.com/developers/api#easingtype-type) default: nullThe easing curve used in the prototyping transition on this nodeopacityNumber default: 1Opacity of the nodeabsoluteBoundingBox[Rectangle](https://www.figma.com/developers/api#rectangle-type)Bounding box of the node in absolute space coordinateseffects[Effect\[\]](https://www.figma.com/developers/api#effect-type) default: \[\]An array of effects attached to this node \(see effects section for more details\)size[Vector](https://www.figma.com/developers/api#vector-type)Width and height of element. This is different from the width and height of the bounding box in that the absolute bounding box represents the element after scaling and rotation. Only present if geometry=paths is passedrelativeTransform[Transform](https://www.figma.com/developers/api#transform-type)The top two rows of a matrix that represents the 2D transform of this node relative to its parent. The bottom row of the matrix is implicitly always \(0, 0, 1\). Use to transform coordinates in geometry. Only present if geometry=paths is passedisMaskBoolean default: falseDoes this node mask sibling nodes in front of it?fills[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of fill paints applied to the nodefillGeometry[Path\[\]](https://www.figma.com/developers/api#path-type)Only specified if parameter geometry=paths is used. An array of paths representing the object fillstrokes[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of stroke paints applied to the nodestrokeWeightNumberThe weight of strokes on the nodestrokeCapString default: "NONE"A string enum with value of "NONE", "ROUND", "SQUARE", "LINE\_ARROW", or "TRIANGLE\_ARROW", describing the end caps of vector paths.strokeJoinString default: "MITER"A string enum with value of "MITER", "BEVEL", or "ROUND", describing how corners in vector paths are rendered.strokeDashesNumber\[\] default: \[\]An array of floating point numbers describing the pattern of dash length and gap lengths that the vector path follows. For example a value of \[1, 2\] indicates that the path has a dash of length 1 followed by a gap of length 2, repeated.strokeMiterAngleNumber default: 28.96Only valid if strokeJoin is "MITER". The corner angle, in degrees, below which strokeJoin will be set to "BEVEL" to avoid super sharp corners. By default this is 28.96 degrees.strokeGeometry[Path\[\]](https://www.figma.com/developers/api#path-type)Only specified if parameter geometry=paths is used. An array of paths representing the object strokestrokeAlignStringPosition of stroke relative to vector outline, as a string enumINSIDE: stroke drawn inside the shape boundaryOUTSIDE: stroke drawn outside the shape boundaryCENTER: stroke drawn centered along the shape boundarystyles[Map&lt;StyleType, String&gt;](https://www.figma.com/developers/api#map%3Cstyletype,%20string%3E-type)A mapping of a StyleType to style ID \(see [Style](https://www.figma.com/developers/api#style-type)\) of styles present on this node. The style ID can be used to look up more information about the style in the top-level styles field. |
+| BOOLEAN\_OPERATION | Has all the properties of [VECTOR](https://www.figma.com/developers/api#vector-props), plus:children[Node\[\]](https://www.figma.com/developers/api#node-type)An array of nodes that are being boolean operated onbooleanOperationStringA string enum with value of "UNION", "INTERSECT", "SUBTRACT", or "EXCLUDE" indicating the type of boolean operation applied |
+| STAR | See properties for [VECTOR](https://www.figma.com/developers/api#vector-props) |
+| LINE | See properties for [VECTOR](https://www.figma.com/developers/api#vector-props) |
+| ELLIPSE | Has all the properties of [VECTOR](https://www.figma.com/developers/api#vector-props), plus:arcData[ArcData](https://www.figma.com/developers/api#arcdata-type)Start and end angles of the ellipse measured clockwise from the x axis, plus the inner radius for donuts |
+| REGULAR\_POLYGON | See properties for [VECTOR](https://www.figma.com/developers/api#vector-props) |
+| RECTANGLE | Has all the properties of [VECTOR](https://www.figma.com/developers/api#vector-props), plus:cornerRadiusNumberRadius of each corner of the rectangle if a single radius is set for all cornersrectangleCornerRadiiNumber\[\]Array of length 4 of the radius of each corner of the rectangle, starting in the top left and proceeding clockwise |
+| TEXT | Has all the properties of [VECTOR](https://www.figma.com/developers/api#vector-props), plus:charactersStringText contained within a text boxstyle[TypeStyle](https://www.figma.com/developers/api#typestyle-type)Style of text including font family and weight \(see type style section for more information\)characterStyleOverridesNumber\[\]Array with same number of elements as characeters in text box, each element is a reference to the styleOverrideTable defined below and maps to the corresponding character in the characters field. Elements with value 0 have the default type stylestyleOverrideTable[Map&lt;Number,TypeStyle&gt;](https://www.figma.com/developers/api#map%3Cnumber,typestyle%3E-type)Map from ID to [TypeStyle](https://www.figma.com/developers/api#typestyle-type) for looking up style overrides |
+| SLICE | exportSettings[ExportSetting\[\]](https://www.figma.com/developers/api#exportsetting-type)An array of export settings representing images to export from this nodeabsoluteBoundingBox[Rectangle](https://www.figma.com/developers/api#rectangle-type)Bounding box of the node in absolute space coordinatessize[Vector](https://www.figma.com/developers/api#vector-type)Width and height of element. This is different from the width and height of the bounding box in that the absolute bounding box represents the element after scaling and rotation. Only present if geometry=paths is passedrelativeTransform[Transform](https://www.figma.com/developers/api#transform-type)The top two rows of a matrix that represents the 2D transform of this node relative to its parent. The bottom row of the matrix is implicitly always \(0, 0, 1\). Use to transform coordinates in geometry. Only present if geometry=paths is passed |
+| COMPONENT | See properties for [FRAME](https://www.figma.com/developers/api#frame-props) |
+| COMPONENT\_SET | See properties for [FRAME](https://www.figma.com/developers/api#frame-props) |
+| INSTANCE | Has all the properties of [FRAME](https://www.figma.com/developers/api#frame-props), plus:componentIdStringID of component that this instance came from, refers to components table \(see endpoints section below\) |
+| STICKY | FigJam Sticky node.absoluteBoundingBox[Rectangle](https://www.figma.com/developers/api#rectangle-type)Bounding box of the node in absolute space coordinatesauthorVisibleBoolean default: falseIf true, author name is visible.backgroundColor[Color](https://www.figma.com/developers/api#color-type)Background color of the canvas.blendMode[BlendMode](https://www.figma.com/developers/api#blendmode-type)How this node blends with nodes behind it in the scene \(see blend mode section for more details\)charactersStringText contained within a text boxeffects[Effect\[\]](https://www.figma.com/developers/api#effect-type) default: \[\]An array of effects attached to this node \(see effects section for more details\)exportSettings[ExportSetting\[\]](https://www.figma.com/developers/api#exportsetting-type) default: \[\]An array of export settings representing images to export from the nodefills[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of fill paints applied to the nodeisMaskBoolean default: falseDoes this node mask sibling nodes in front of it?lockedBoolean default: falseIf true, sticky is locked and cannot be editedopacityNumberOverall opacity of paint \(colors within the paint can also have opacity values which would blend with this\)relativeTransform[Transform](https://www.figma.com/developers/api#transform-type)The top two rows of a matrix that represents the 2D transform of this node relative to its parent. The bottom row of the matrix is implicitly always \(0, 0, 1\). Use to transform coordinates in geometry. Only present if geometry=paths is passed |
+| SHAPE\_WITH\_TEXT | FigJam Shape-with-text node.absoluteBoundingBox[Rectangle](https://www.figma.com/developers/api#rectangle-type)Bounding box of the node in absolute space coordinatesbackgroundColor[Color](https://www.figma.com/developers/api#color-type)Background color of the canvas.blendMode[BlendMode](https://www.figma.com/developers/api#blendmode-type)How this node blends with nodes behind it in the scene \(see blend mode section for more details\)charactersStringText contained within a text boxcornerRadiusNumberRadius of each corner of the rectangle if a single radius is set for all cornersrectangleCornerRadiiNumber\[\]Array of length 4 of the radius of each corner of the rectangle, starting in the top left and proceeding clockwiseeffects[Effect\[\]](https://www.figma.com/developers/api#effect-type) default: \[\]An array of effects attached to this node \(see effects section for more details\)exportSettings[ExportSetting\[\]](https://www.figma.com/developers/api#exportsetting-type) default: \[\]An array of export settings representing images to export from the nodefills[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of fill paints applied to the nodeisMaskBoolean default: falseDoes this node mask sibling nodes in front of it?lockedBoolean default: falseIf true, shape-with-text is locked and cannot be editedopacityNumberOverall opacity of paint \(colors within the paint can also have opacity values which would blend with this\)shapeType[ShapeType](https://www.figma.com/developers/api#shapetype-type)Shape-with-text geometric shape type.strokes[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of stroke paints applied to the nodestrokeWeightNumberThe weight of strokes on the nodestrokeCapString default: "NONE"A string enum with value of "NONE", "ROUND", "SQUARE", "LINE\_ARROW", or "TRIANGLE\_ARROW", describing the end caps of vector paths.strokeJoinString default: "MITER"A string enum with value of "MITER", "BEVEL", or "ROUND", describing how corners in vector paths are rendered.strokeDashesNumber\[\] default: \[\]An array of floating point numbers describing the pattern of dash length and gap lengths that the vector path follows. For example a value of \[1, 2\] indicates that the path has a dash of length 1 followed by a gap of length 2, repeated.strokeAlignStringPosition of stroke relative to vector outline, as a string enumINSIDE: stroke drawn inside the shape boundaryOUTSIDE: stroke drawn outside the shape boundaryCENTER: stroke drawn centered along the shape boundaryrelativeTransform[Transform](https://www.figma.com/developers/api#transform-type)The top two rows of a matrix that represents the 2D transform of this node relative to its parent. The bottom row of the matrix is implicitly always \(0, 0, 1\). Use to transform coordinates in geometry. Only present if geometry=paths is passed |
+| CONNECTOR | FigJam Connector node.absoluteBoundingBox[Rectangle](https://www.figma.com/developers/api#rectangle-type)Bounding box of the node in absolute space coordinatesbackgroundColor[Color](https://www.figma.com/developers/api#color-type)Background color of the canvas.blendMode[BlendMode](https://www.figma.com/developers/api#blendmode-type)How this node blends with nodes behind it in the scene \(see blend mode section for more details\)charactersStringText contained within a text boxconnectorStart[ConnectorEndpoint](https://www.figma.com/developers/api#connectorendpoint-type)Connector starting endpoint.connectorEnd[ConnectorEndpoint](https://www.figma.com/developers/api#connectorendpoint-type)Connector ending endpoint.connectorLineType[ConnectorLineType](https://www.figma.com/developers/api#connectorlinetype-type)Connector line type.cornerRadiusNumberRadius of each corner of the rectangle if a single radius is set for all cornersrectangleCornerRadiiNumber\[\]Array of length 4 of the radius of each corner of the rectangle, starting in the top left and proceeding clockwiseeffects[Effect\[\]](https://www.figma.com/developers/api#effect-type) default: \[\]An array of effects attached to this node \(see effects section for more details\)exportSettings[ExportSetting\[\]](https://www.figma.com/developers/api#exportsetting-type) default: \[\]An array of export settings representing images to export from the nodefills[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of fill paints applied to the nodeisMaskBoolean default: falseDoes this node mask sibling nodes in front of it?lockedBoolean default: falseIf true, connector is locked and cannot be editedopacityNumberOverall opacity of paint \(colors within the paint can also have opacity values which would blend with this\)strokes[Paint\[\]](https://www.figma.com/developers/api#paint-type) default: \[\]An array of stroke paints applied to the nodestrokeWeightNumberThe weight of strokes on the nodestrokeCapString default: "NONE"A string enum with value of "NONE", "ROUND", "SQUARE", "LINE\_ARROW", or "TRIANGLE\_ARROW", describing the end caps of vector paths.strokeJoinString default: "MITER"A string enum with value of "MITER", "BEVEL", or "ROUND", describing how corners in vector paths are rendered.strokeDashesNumber\[\] default: \[\]An array of floating point numbers describing the pattern of dash length and gap lengths that the vector path follows. For example a value of \[1, 2\] indicates that the path has a dash of length 1 followed by a gap of length 2, repeated.strokeAlignStringPosition of stroke relative to vector outline, as a string enumINSIDE: stroke drawn inside the shape boundaryOUTSIDE: stroke drawn outside the shape boundaryCENTER: stroke drawn centered along the shape boundarytextBackground[ConnectorTextBackground](https://www.figma.com/developers/api#connectortextbackground-type)Connector text background.relativeTransform[Transform](https://www.figma.com/developers/api#transform-type)The top two rows of a matrix that represents the 2D transform of this node relative to its parent. The bottom row of the matrix is implicitly always \(0, 0, 1\). Use to transform coordinates in geometry. Only present if geometry=paths is passed |
+
+Property typesIn the section above, we gave you a brief description of the Node type and properties. Some of the properties mentioned take on custom Figma types. We’ve outlined the specifics of each of these property types below.
+
+| Property type | Properties |
+| :--- | :--- |
+| ColorAn RGBA color | rNumberRed channel value, between 0 and 1gNumberGreen channel value, between 0 and 1bNumberBlue channel value, between 0 and 1aNumberAlpha channel value, between 0 and 1 |
+| ExportSettingFormat and size to export an asset at | suffixStringFile suffix to append to all filenamesformatStringImage type, string enum that supports values JPG, PNG, and SVGconstraint[Constraint](https://www.figma.com/developers/api#constraint-type)Constraint that determines sizing of exported asset |
+| ConstraintSizing constraint for exports | typeStringType of constraint to apply; string enum with potential values belowSCALE: Scale by valueWIDTH: Scale proportionally and set width to valueHEIGHT: Scale proportionally and set height to valuevalueNumberSee type property for effect of this field |
+| RectangleA rectangle that expresses a bounding box in absolute coordinates | xNumberX coordinate of top left corner of the rectangleyNumberY coordinate of top left corner of the rectanglewidthNumberWidth of the rectangleheightNumberHeight of the rectangle |
+| ArcDataInformation about the arc properties of an ellipse. 0° is the x axis and increasing angles rotate clockwise | startingAngleNumberStart of the sweep in radiansendingAngleNumberEnd of the sweep in radiansinnerRadiusNumberInner radius value between 0 and 1 |
+| BlendModeEnum describing how layer blends with layers below | This type is a string enum with the following possible valuesNormal blends:PASS\_THROUGH \(only applicable to objects with children\)NORMAL Darken:DARKENMULTIPLYLINEAR\_BURNCOLOR\_BURN Lighten:LIGHTENSCREENLINEAR\_DODGECOLOR\_DODGE Contrast:OVERLAYSOFT\_LIGHTHARD\_LIGHT Inversion:DIFFERENCEEXCLUSION Component:HUESATURATIONCOLORLUMINOSITY |
+| EasingTypeEnum describing animation easing curves | This type is a string enum with the following possible valuesEASE\_IN: Ease in with an animation curve similar to CSS ease-in.EASE\_OUT: Ease out with an animation curve similar to CSS ease-out.EASE\_IN\_AND\_OUT: Ease in and then out with an animation curve similar to CSS ease-in-out.LINEAR: No easing, similar to CSS linear. |
+| FlowStartingPointA flow starting point used when launching a prototype to enter Presentation view. | nodeIdStringUnique identifier specifying the framenameStringName of flow |
+| LayoutConstraintLayout constraint relative to containing Frame | verticalStringVertical constraint as an enumTOP: Node is laid out relative to top of the containing frameBOTTOM: Node is laid out relative to bottom of the containing frameCENTER: Node is vertically centered relative to containing frameTOP\_BOTTOM: Both top and bottom of node are constrained relative to containing frame \(node stretches with frame\)SCALE: Node scales vertically with containing framehorizontalStringHorizontal constraint as an enumLEFT: Node is laid out relative to left of the containing frameRIGHT: Node is laid out relative to right of the containing frameCENTER: Node is horizontally centered relative to containing frameLEFT\_RIGHT: Both left and right of node are constrained relative to containing frame \(node stretches with frame\)SCALE: Node scales horizontally with containing frame |
+| LayoutGridGuides to align and place objects within a frame | patternStringOrientation of the grid as a string enumCOLUMNS: Vertical gridROWS: Horizontal gridGRID: Square gridsectionSizeNumberWidth of column grid or height of row grid or square grid spacingvisibleBooleanIs the grid currently visible?color[Color](https://www.figma.com/developers/api#color-type)Color of the gridThe following properties are only meaningful for directional grids \(COLUMNS or ROWS\)alignmentStringPositioning of grid as a string enumMIN: Grid starts at the left or top of the frameSTRETCH: Grid is stretched to fit the frameCENTER: Grid is center alignedgutterSizeNumberSpacing in between columns and rowsoffsetNumberSpacing before the first column or rowcountNumberNumber of columns or rows |
+| EffectA visual effect such as a shadow or blur | typeStringType of effect as a string enumINNER\_SHADOWDROP\_SHADOWLAYER\_BLURBACKGROUND\_BLURvisibleBooleanIs the effect active?radiusNumberRadius of the blur effect \(applies to shadows as well\)The following properties are for shadows only:color[Color](https://www.figma.com/developers/api#color-type)The color of the shadowblendMode[BlendMode](https://www.figma.com/developers/api#blendmode-type)Blend mode of the shadowoffset[Vector](https://www.figma.com/developers/api#vector-type)How far the shadow is projected in the x and y directionsspreadNumber default: 0How far the shadow spreadsshowShadowBehindNodeBooleanWhether to show the shadow behind translucent or transparent pixels \(applies only to drop shadows\) |
+| HyperlinkA link to either a URL or another frame \(node\) in the document | typeStringType of hyperlinkURLNODEurlStringURL being linked to, if URL typenodeIDStringID of frame hyperlink points to, if NODE type |
+| DocumentationLinkRepresents a link to documentation for a component. | uriStringShould be a valid URI \(e.g. https://www.figma.com\). |
+| PaintA solid color, gradient, or image texture that can be applied as fills or strokes | typeStringType of paint as a string enumSOLIDGRADIENT\_LINEARGRADIENT\_RADIALGRADIENT\_ANGULARGRADIENT\_DIAMONDIMAGEEMOJIvisibleBoolean default: trueIs the paint enabled?opacityNumber default: 1Overall opacity of paint \(colors within the paint can also have opacity values which would blend with this\)For solid paints:color[Color](https://www.figma.com/developers/api#color-type)Solid color of the paintFor gradient paints:blendMode[BlendMode](https://www.figma.com/developers/api#blendmode-type)How this node blends with nodes behind it in the scene \(see blend mode section for more details\)gradientHandlePositions[Vector\[\]](https://www.figma.com/developers/api#vector-type)This field contains three vectors, each of which are a position in normalized object space \(normalized object space is if the top left corner of the bounding box of the object is \(0, 0\) and the bottom right is \(1,1\)\). The first position corresponds to the start of the gradient \(value 0 for the purposes of calculating gradient stops\), the second position is the end of the gradient \(value 1\), and the third handle position determines the width of the gradient. See image examples below:![](https://www.figma.com/images/developer_app/linear.png)![](https://www.figma.com/images/developer_app/angular.png)![](https://www.figma.com/images/developer_app/diamond.png)![](https://www.figma.com/images/developer_app/radial.png)gradientStops[ColorStop\[\]](https://www.figma.com/developers/api#colorstop-type)Positions of key points along the gradient axis with the colors anchored there. Colors along the gradient are interpolated smoothly between neighboring gradient stops.For image paints:scaleModeStringImage scaling modeFILLFITTILESTRETCHimageTransform[Transform](https://www.figma.com/developers/api#transform-type)Affine transform applied to the image, only present if scaleMode is STRETCHscalingFactorNumberAmount image is scaled by in tiling, only present if scaleMode is TILErotationNumberImage rotation, in degrees.imageRefStringA reference to an image embedded in this node. To download the image using this reference, use the [GET file images](https://www.figma.com/developers/api#get-images-endpoint) endpoint to retrieve the mapping from image references to image URLsfilters[ImageFilters](https://www.figma.com/developers/api#imagefilters-type) default: {}Defines what image filters have been applied to this paint, if any. If this property is not defined, no filters have been applied.gifRefStringA reference to the GIF embedded in this node, if the image is a GIF. To download the image using this reference, use the [GET file images](https://www.figma.com/developers/api#get-images-endpoint) endpoint to retrieve the mapping from image references to image URLs |
+| VectorA 2d vector | xNumberX coordinate of the vectoryNumberY coordinate of the vector |
+| SizeA width and a height | widthNumberthe width of a sizeheightNumberthe height of a size |
+| TransformA 2x3 affine transformation matrix | A 2D affine transformation matrix that can be used to calculate the affine transforms applied to a layer, including scaling, rotation, shearing, and translation.The form of the matrix is given as an array of 2 arrays of 3 numbers each. E.g. the identity matrix would be \[\[1, 0, 0\], \[0, 1, 0\]\]. |
+| ImageFiltersDefines the image filters applied to an image paint. All values are from -1 to 1. | exposureNumber default: 0contrastNumber default: 0saturationNumber default: 0temperatureNumber default: 0tintNumber default: 0highlightsNumber default: 0shadowsNumber default: 0 |
+| FrameOffsetA relative offset within a frame | node\_idStringUnique id specifying the frame.node\_offset[Vector](https://www.figma.com/developers/api#vector-type)2d vector offset within the frame. |
+| ColorStopA position color pair representing a gradient stop | positionNumberValue between 0 and 1 representing position along gradient axiscolor[Color](https://www.figma.com/developers/api#color-type)Color attached to corresponding position |
+| TypeStyleMetadata for character formatting | fontFamilyStringFont family of text \(standard name\)fontPostScriptNameStringPostScript font nameparagraphSpacingNumber default: 0Space between paragraphs in px, 0 if not presentparagraphIndentNumber default: 0Paragraph indentation in px, 0 if not presentlistSpacingNumber default: 0Space between list items in px, 0 if not presentitalicBooleanWhether or not text is italicizedfontWeightNumberNumeric font weightfontSizeNumberFont size in pxtextCaseString default: ORIGINALText casing applied to the node, default is the original casingUPPERLOWERTITLESMALL\_CAPSSMALL\_CAPS\_FORCEDtextDecorationString default: NONEText decoration applied to the node, default is noneSTRIKETHROUGHUNDERLINEtextAutoResizeString default: NONEDimensions along which text will auto resize, default is that the text does not auto-resize.HEIGHTWIDTH\_AND\_HEIGHTtextAlignHorizontalStringHorizontal text alignment as string enumLEFTRIGHTCENTERJUSTIFIEDtextAlignVerticalStringVertical text alignment as string enumTOPCENTERBOTTOMletterSpacingNumberSpace between characters in pxfills[Paint\[\]](https://www.figma.com/developers/api#paint-type)Paints applied to charactershyperlink[Hyperlink](https://www.figma.com/developers/api#hyperlink-type)Link to a URL or frameopentypeFlags[Map&lt;String, Number&gt;](https://www.figma.com/developers/api#map%3Cstring,%20number%3E-type) default: {}A map of OpenType feature flags to 1 or 0, 1 if it is enabled and 0 if it is disabled. Note that some flags aren't reflected here. For example, SMCP \(small caps\) is still represented by the textCase field.lineHeightPxNumberLine height in pxlineHeightPercentNumber default: 100Line height as a percentage of normal line height. This is deprecated; in a future version of the API only lineHeightPx and lineHeightPercentFontSize will be returned.lineHeightPercentFontSizeNumberLine height as a percentage of the font size. Only returned when lineHeightPercent is not 100.lineHeightUnitStringThe unit of the line height value specified by the user.PIXELSFONT\_SIZE\_%INTRINSIC\_% |
+| ComponentA description of a main component. Helps you identify which component instances are attached to | keyStringThe key of the componentnameStringThe name of the componentdescriptionStringThe description of the component as entered in the editordocumentationLinks[DocumentationLink\[\]](https://www.figma.com/developers/api#documentationlink-type)The documentation links for this component. |
+| StyleA set of properties that can be applied to nodes and published. Styles for a property can be created in the corresponding property's panel while editing a file. | keyStringThe key of the stylenameStringThe name of the styledescriptionStringThe description of the stylestyle\_type[StyleType](https://www.figma.com/developers/api#styletype-type)The type of style as string enumFILLTEXTEFFECTGRID |
+| ShapeTypeGeometric shape type | SQUAREStringELLIPSEStringROUNDED\_RECTANGLEStringDIAMONDStringTRIANGLE\_DOWNStringPARALLELOGRAM\_RIGHTStringPARALLELOGRAM\_LEFTString |
+| ConnectorEndpointStores canvas location for a connector start/end point. | ConnectorEndpoint with endpointNodeId and position only:endpointNodeIdStringNode ID this endpoint attaches to.position[Vector](https://www.figma.com/developers/api#vector-type)Canvas location as x & y coordinate.ConnectorEndpoint with endpointNodeId and magnet only:endpointNodeIdStringNode ID this endpoint attaches to.magnet[ConnectorMagnet](https://www.figma.com/developers/api#connectormagnet-type)The magnet type is a string enumAUTOTOPBOTTOMLEFTRIGHT |
+| ConnectorLineTypeConnector line type | ELBOWEDStringSTRAIGHTString |
+| ConnectorTextBackgroundConnector text background. | cornerRadius[CornerRadius](https://www.figma.com/developers/api#cornerradius-type)Radius of each corner of the rectangle if a single radius is set for all cornersfills[Paint\[\]](https://www.figma.com/developers/api#paint-type)An array of fill paints applied to the node |
+
+EndpointsFiles endpoints allow for a wide range of functionality to get information about files. With a specific file key, you can get the JSON and image representations of the whole file or individual nodes within the file.GET file
+
+Returns the document refered to by :key as a JSON object. The file key can be parsed from any Figma file url: https://www.figma.com/file/:key/:title. The name, lastModified, thumbnailUrl, editorType, and version attributes are all metadata of the retrieved file. The document attribute contains a Node of type [DOCUMENT](https://www.figma.com/developers/api#document-props).  
+  
+The components key contains a mapping from node IDs to component metadata. This is to help you determine which components each instance comes from.
+
+HTTP Endpoint
+
+GET/v1/files/:key
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringFile to export JSON from |
+
+| Query parameters | Description |
+| :--- | :--- |
+| version | StringoptionalA specific version ID to get. Omitting this will get the current version of the file |
+| ids | StringoptionalComma separated list of nodes that you care about in the document. If specified, only a subset of the document will be returned corresponding to the nodes listed, their children, and everything between the root node and the listed nodes |
+| depth | NumberoptionalPositive integer representing how deep into the document tree to traverse. For example, setting this to 1 returns only Pages, setting it to 2 returns Pages and all top level objects on each page. Not setting this parameter returns all nodes |
+| geometry | StringoptionalSet to "paths" to export vector data |
+| plugin\_data | StringoptionalA comma separated list of plugin IDs and/or the string "shared". Any data present in the document written by those plugins will be included in the result in the \`pluginData\` and \`sharedPluginData\` properties. |
+| branch\_data | BooleanoptionalReturns branch metadata for the requested file. If the file is a branch, the main file's key will be included in the returned response. If the file has branches, their metadata will be included in the returned response. Default: false. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 404 | The specified file was not found |
+
+Return value
+
+```text
+{  "name": String,  "role": String,  "lastModified": String,  "editorType": String,  "thumbnailUrl": String,  "version": String,  "document": Node,  "components": Map<String, Component>,  "componentSets": Map<String, ComponentSet>,  "schemaVersion": 0,  "styles": Map<String, Style>  "mainFileKey": String,  "branches": [   {    "key": String,    "name": String,    "thumbnail_url": String,    "last_modified": String,   }  ]}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key'Submit API Request
+
+```text
+Loading...
+```
+
+GET file nodes
+
+Returns the nodes referenced to by :ids as a JSON object. The nodes are retrieved from the Figma file referenced to by :key.  
+  
+The node Id and file key can be parsed from any Figma node url: https://www.figma.com/file/:key/:title?node-id=:id.  
+  
+The name, lastModified, thumbnailUrl, editorType, and version attributes are all metadata of the specified file.  
+  
+The document attribute contains a Node of type [DOCUMENT](https://www.figma.com/developers/api#document-props).  
+  
+The components key contains a mapping from node IDs to component metadata. This is to help you determine which components each instance comes from.  
+  
+By default, no vector data is returned. To return vector data, pass the geometry=paths parameter to the endpoint.  
+Each node can also inherit properties from applicable styles. The styles key contains a mapping from style IDs to style metadata.  
+  
+Important: the nodes map may contain values that are null . This may be due to the node id not existing within the specified file.
+
+HTTP Endpoint
+
+GET/v1/files/:key/nodes
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringFile to export JSON from |
+
+| Query parameters | Description |
+| :--- | :--- |
+| ids | StringA comma separated list of node IDs to retrieve and convert |
+| version | StringoptionalA specific version ID to get. Omitting this will get the current version of the file |
+| depth | NumberoptionalPositive integer representing how deep into the document tree to traverse. For example, setting this to 1 returns only Pages, setting it to 2 returns Pages and all top level objects on each page. Not setting this parameter returns all nodes |
+| geometry | StringoptionalSet to "paths" to export vector data |
+| plugin\_data | StringoptionalA comma separated list of plugin IDs and/or the string "shared". Any data present in the document written by those plugins will be included in the result in the \`pluginData\` and \`sharedPluginData\` properties. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Invalid parameter, the "err" property will indicate which parameter is invalid |
+| 404 | The specified file was not found |
+
+Return value
+
+```text
+{  "name": String,  "role": String,  "lastModified": String,  "editorType": String,  "thumbnailUrl": String,  "err": String,  "nodes": {     "id": {      "document": Node,      "components": Map<String, Component>,      "schemaVersion": 0,      "styles": Map<String, Style>       ...    }  }}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/nodes'Submit API Request
+
+```text
+Loading...
+```
+
+GET image
+
+Renders images from a file.  
+  
+If no error occurs, "images" will be populated with a map from node IDs to URLs of the rendered images, and "status" will be omitted. The image assets will expire after 30 days.  
+  
+Important: the image map may contain values that are null. This indicates that rendering of that specific node has failed. This may be due to the node id not existing, or other reasons such has the node having no renderable components. It is guaranteed that any node that was requested for rendering will be represented in this map whether or not the render succeeded.
+
+HTTP Endpoint
+
+GET/v1/images/:key
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringFile to export images from |
+
+| Query parameters | Description |
+| :--- | :--- |
+| ids | StringA comma separated list of node IDs to render |
+| scale | NumberoptionalA number between 0.01 and 4, the image scaling factor |
+| format | StringoptionalA string enum for the image output format, can be jpg, png, svg, or pdf |
+| svg\_include\_id | BooleanoptionalWhether to include id attributes for all SVG elements. Default: false. |
+| svg\_simplify\_stroke | BooleanoptionalWhether to simplify inside/outside strokes and use stroke attribute if possible instead of &lt;mask&gt;. Default: true. |
+| use\_absolute\_bounds | BooleanoptionalUse the full dimensions of the node regardless of whether or not it is cropped or the space around it is empty. Use this to export text nodes without cropping. Default: false. |
+| version | StringoptionalA specific version ID to use. Omitting this will use the current version of the file |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Invalid parameter, the "err" property will indicate which parameter is invalid |
+| 404 | The specified file was not found |
+| 500 | Unexpected rendering error, render could not be completed |
+
+Return value
+
+```text
+{  "err": String,  "images": Map<String, String>,  "status": Number}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/images/:file\_key'Submit API Request
+
+```text
+Loading...
+```
+
+GET image fills
+
+Returns download links for all images present in image fills in a document. Image fills are how Figma represents any user supplied images. When you drag an image into Figma, we create a rectangle with a single fill that represents the image, and the user is able to transform the rectangle \(and properties on the fill\) as they wish.  
+  
+This endpoint returns a mapping from image references to the URLs at which the images may be download. Image URLs will expire after no more than 14 days. Image references are located in the output of the [GET files](https://www.figma.com/developers/api#files-endpoint) endpoint under the imageRef attribute in a [Paint](https://www.figma.com/developers/api#paint-type).
+
+HTTP Endpoint
+
+GET/v1/files/:key/images
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringFile to get image URLs from |
+
+| Error codes | Description |
+| :--- | :--- |
+| 404 | The specified file was not found |
+
+Return value
+
+```text
+{  "images": {    "$(imageRef)": String,    ...   },}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/images'Submit API Request
+
+```text
+Loading...
+```
+
+CommentsFigma’s _Commenting mode_ allows users to leave comments directly on layers or objects on the canvas. This is useful for collaboration when you want to suggest an adjustment, provide feedback, or critique a specific object or layout. You can use the Figma API to access a whole host of information about a comment, from when the comment was made and by whom, to its exact location on the canvas.TypesThere are a number of different properties associated with a comment, that help to give us more context. The following is a list of all the properties a comment will have:
+
+| Type | Properties |
+| :--- | :--- |
+| CommentA comment or reply left by a user | idStringUnique identifier for commentclient\_meta[Vector](https://www.figma.com/developers/api#vector-type) \| [FrameOffset](https://www.figma.com/developers/api#frameoffset-type)The position of the comment. Either the absolute coordinates on the canvas or a relative offset within a framefile\_keyStringThe file in which the comment livesparent\_idStringIf present, the id of the comment to which this is the replyuser[User](https://www.figma.com/developers/api#user-type)The user who left the commentcreated\_atStringThe UTC ISO 8601 time at which the comment was leftresolved\_atStringIf set, the UTC ISO 8601 time the comment was resolvedorder\_idNumberOnly set for top level comments. The number displayed with the comment in the UI |
+
+EndpointsUnlike the other endpoints associated with the Figma API, you are able to _post_ comments to a Figma file - in addition to being able to view existing comments on a file. This means that there are both GET and POST endpoints available for comments.GET comments
+
+A list of comments left on the file.HTTP Endpoint
+
+GET/v1/files/:key/comments
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringFile to get comments from |
+
+| Error codes | Description |
+| :--- | :--- |
+| 404 | The specified file was not found |
+
+Return value
+
+```text
+{  "comments": Comment[],}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/comments'Submit API Request
+
+```text
+Loading...
+```
+
+POST comments
+
+Posts a new comment on the file.HTTP Endpoint
+
+POST/v1/files/:file\_key/comments
+
+| Path parameters | Description |
+| :--- | :--- |
+| file\_key | StringFile to get comments from |
+
+| Body parameters | Description |
+| :--- | :--- |
+| message | StringThe text contents of the comment to post |
+| comment\_id | String\(Optional\) The comment to reply to, if any. This must be a root comment, that is, you cannot reply to a comment that is a reply itself \(a reply has a parent\_id\). |
+| client\_meta | [Vector](https://www.figma.com/developers/api#vector-type) \| [FrameOffset](https://www.figma.com/developers/api#frameoffset-type)The position of where to place the comment. This can either be an absolute canvas position or the relative position within a frame. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 404 | The specified file was not found |
+
+Return value
+
+```text
+The Comment that was successfully posted
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -X POST -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/comments'Submit API Request
+
+```text
+Loading...
+```
+
+DELETE comments
+
+Deletes a specific comment. Only the person who made the comment is allowed to delete it.HTTP Endpoint
+
+DELETE/v1/files/:file\_key/comments/:comment\_id
+
+| Path parameters | Description |
+| :--- | :--- |
+| file\_key | StringFile to delete comment from |
+| comment\_id | StringComment id of comment to delete |
+
+| Error codes | Description |
+| :--- | :--- |
+| 404 | The specified comment / file was not found |
+
+Return value
+
+```text
+Nothing is returned from this endpoint
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -X DELETE -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/comments/:comment\_id'Submit API Request
+
+```text
+Loading...
+```
+
+UsersA user is a Figma account of an individual that has signed up for Figma and created an account.TypesEvery user will have recorded―and can be identified by―the following four properties:
+
+| Type | Properties |
+| :--- | :--- |
+| UserA description of a user | idStringUnique stable id of the userhandleStringName of the userimg\_urlStringURL link to the user's profile imageemailStringEmail associated with the user's account. This will only be present on the /v1/me endpoint |
+
+EndpointsYou can use the users endpoint to access information regarding the currently authenticated user. When using OAuth 2, the user in question must be authenticated through the Figma API to access their information.GET me
+
+If you are using OAuth for authentication, this endpoint can be used to get user information for the authenticated user.HTTP Endpoint
+
+GET/v1/meReturn value
+
+```text
+User
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/me'Submit API Request
+
+```text
+Loading...
+```
+
+Version historyFigma allows you to distinguish different stages or Versions of a file, as the file evolves over time. This is all recorded in the Version history, which allows users to view, track and restore previous versions of a File.TypesFigma will record some basic information about the file, like the who and when, as well as allow the user to determine a title and description for the version. These form the basis of the properties associated with version history.
+
+| Type | Properties |
+| :--- | :--- |
+| VersionA version of a file | idStringUnique identifier for versioncreated\_atStringThe UTC ISO 8601 time at which the version was createdlabelStringThe label given to the version in the editordescriptionStringThe description of the version as entered in the editoruser[User](https://www.figma.com/developers/api#user-type)The user that created the version |
+
+EndpointsThis endpoint fetches the version history of a file, allowing you to see the progression of a file over time. You can then use this information to render a specific version of the file, via another endpoint.GET file versions
+
+A list of the versions of a file.HTTP Endpoint
+
+GET/v1/files/:key/versions
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringFile to get version history from |
+
+| Error codes | Description |
+| :--- | :--- |
+| 404 | The specified file was not found |
+
+Return value
+
+```text
+{  "versions": Version[],}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/versions'Submit API Request
+
+```text
+Loading...
+```
+
+ProjectsProjects are collections of files that belong to a user, or more commonly a team. They can be accessed by collaborators and can be made up of multiple files.Types
+
+| Type | Properties |
+| :--- | :--- |
+| ProjectA Project can be identified by both the Project name, and the ProjectID. | idNumberThe ID of the projectnameStringThe name of the project |
+
+EndpointsSee information about your projects and files within a project.GET team projects
+
+You can use this Endpoint to get a list of all the Projects within the specified team. This will only return projects visible to the authenticated user or owner of the developer token. Note: it is not currently possible to programmatically obtain the team id of a user just from a token. To obtain a team id, navigate to a team page of a team you are a part of. The team id will be present in the URL after the word team and before your team name.HTTP Endpoint
+
+GET/v1/teams/:team\_id/projects
+
+| Path parameters | Description |
+| :--- | :--- |
+| team\_id | StringId of the team to list projects from |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+
+Return value
+
+```text
+{  "name": String  "projects": [    {     "id": Number,     "name": String    },    ...  ]}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/teams/:team\_id/projects'Submit API Request
+
+```text
+Loading...
+```
+
+GET project files
+
+List the files in a given project.HTTP Endpoint
+
+GET/v1/projects/:project\_id/files
+
+| Path parameters | Description |
+| :--- | :--- |
+| project\_id | StringId of the project to list files from |
+| branch\_data | BooleanoptionalReturns branch metadata in the response for each main file with a branch inside the project. Default: false. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+
+Return value
+
+```text
+{  "name": String  "files": [    {     "key": String,     "name": String,     "thumbnail_url": String,     "last_modified": String     "branches": [      {       "key": String,       "name": String,       "thumbnail_url": String,       "last_modified": String,      }     ]    },    ...  ]}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/projects/:project\_id/files'Submit API Request
+
+```text
+Loading...
+```
+
+Components and stylesFigma provides a way to fetch metadata on published components and styles in a team library.Types
+
+| Type | Properties |
+| :--- | :--- |
+| ComponentAn arrangement of published UI elements that can be instantiated across figma files | keyStringThe unique identifier of the componentfile\_keyStringThe unique identifier of the figma file which contains the componentnode\_idStringId of the component node within the figma filethumbnail\_urlStringURL link to the component's thumbnail imagenameStringName of the componentdescriptionStringThe description of the component as entered by the publishercreated\_atStringThe UTC ISO 8601 time at which the component was createdupdated\_atStringThe UTC ISO 8601 time at which the component was updateduser[User](https://www.figma.com/developers/api#user-type)The user who last updated the componentcontaining\_frame[FrameInfo](https://www.figma.com/developers/api#frameinfo-type) default: {}Data on component's containing frame, if component resides within a framecontaining\_page[PageInfo](https://www.figma.com/developers/api#pageinfo-type) default: {}Data on component's containing page, if component resides in a multi-page file |
+| ComponentSetA node containing a set of variants of a component | keyStringThe unique identifier of the component setfile\_keyStringThe unique identifier of the figma file which contains the component setnode\_idStringId of the component set node within the figma filethumbnail\_urlStringURL link to the component set's thumbnail imagenameStringName of the component setdescriptionStringThe description of the component set as entered by the publishercreated\_atStringThe UTC ISO 8601 time at which the component set was createdupdated\_atStringThe UTC ISO 8601 time at which the component set was updateduser[User](https://www.figma.com/developers/api#user-type)The user who last updated the component setcontaining\_frame[FrameInfo](https://www.figma.com/developers/api#frameinfo-type) default: {}Data on component set's containing frame, if component set resides within a framecontaining\_page[PageInfo](https://www.figma.com/developers/api#pageinfo-type) default: {}Data on component set's containing page, if component set resides in a multi-page file |
+| StyleA set of published properties that can be applied to nodes | keyStringThe unique identifier of the stylefile\_keyStringThe unique identifier of the file which contains the stylenode\_idStringId of the style node within the figma filestyle\_type[StyleType](https://www.figma.com/developers/api#styletype-type)The type of stylethumbnail\_urlStringURL link to the style's thumbnail imagenameStringName of the styledescriptionStringThe description of the style as entered by the publishercreated\_atStringThe UTC ISO 8601 time at which the style was createdupdated\_atStringThe UTC ISO 8601 time at which the style was updateduser[User](https://www.figma.com/developers/api#user-type)The user who last updated the stylesort\_positionStringA user specified order number by which the style can be sorted |
+| FrameInfoData on the frame a component resides in | nodeIdStringId of the frame node within the filenameStringName of the framebackgroundColorStringBackground color of the framepageIdStringId of the frame's residing pagepageNameStringName of the frame's residing page |
+
+EndpointsComponents and styles endpoints allow several ways to get information about published components and styles in a team library. You can get a list of components or styles using a team\_id, or a specific component or style using a key.GET team components
+
+Get a paginated list of published components within a team libraryHTTP Endpoint
+
+GET/v1/teams/:team\_id/components
+
+| Path parameters | Description |
+| :--- | :--- |
+| team\_id | StringId of the team to list components from |
+
+| Query parameters | Description |
+| :--- | :--- |
+| page\_size | NumberNumber of items in a paged list of results. Defaults to 30. |
+| after | NumberCursor indicating which id after which to start retrieving components for. Exclusive with before. The cursor value is an internally tracked integer that doesn't correspond to any Ids |
+| before | NumberCursor indicating which id before which to start retrieving components for. Exclusive with after. The cursor value is an internally tracked integer that doesn't correspond to any Ids |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {     "components": [      {       "key": String,       "file_key": String,       "node_id": String,       "thumbnail_url": String,       "name": String,       "description": String,       "updated_at": String,       "created_at": String,       "user": User,        "containing_frame": FrameInfo,       },      ...    ],    "cursor": {       "before": Number,      "after": Number,    },    }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/teams/:team\_id/components'Submit API Request
+
+```text
+Loading...
+```
+
+GET file components
+
+Get a list of published components within a file libraryHTTP Endpoint
+
+GET/v1/files/:file\_key/components
+
+| Path parameters | Description |
+| :--- | :--- |
+| file\_key | StringId of the team to list components from |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {     "components": [      {       "key": String,       "file_key": String,       "node_id": String,       "thumbnail_url": String,       "name": String,       "description": String,       "updated_at": String,       "created_at": String,       "user": User,        "containing_frame": FrameInfo,       },      ...    ],   }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/components'Submit API Request
+
+```text
+Loading...
+```
+
+GET component
+
+Get metadata on a component by key.HTTP Endpoint
+
+GET/v1/components/:key
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringThe unique identifier of the component. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {      "key": String,     "file_key": String,     "node_id": String,     "thumbnail_url": String,     "name": String,     "description": String,     "updated_at": String,     "created_at": String,     "user": User,      "containing_frame": FrameInfo,    }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/components/:key'Submit API Request
+
+```text
+Loading...
+```
+
+GET team component sets
+
+Get a paginated list of published component\_sets within a team libraryHTTP Endpoint
+
+GET/v1/teams/:team\_id/component\_sets
+
+| Path parameters | Description |
+| :--- | :--- |
+| team\_id | StringId of the team to list component\_sets from |
+
+| Query parameters | Description |
+| :--- | :--- |
+| page\_size | NumberNumber of items in a paged list of results. Defaults to 30. |
+| after | NumberCursor indicating which id after which to start retrieving components for. Exclusive with before. The cursor value is an internally tracked integer that doesn't correspond to any Ids |
+| before | NumberCursor indicating which id before which to start retrieving components for. Exclusive with after. The cursor value is an internally tracked integer that doesn't correspond to any Ids |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {     "component_sets": [      {       "key": String,       "file_key": String,       "node_id": String,       "thumbnail_url": String,       "name": String,       "description": String,       "updated_at": String,       "created_at": String,       "user": User,        "containing_frame": FrameInfo,       },      ...    ],    "cursor": {       "before": Number,      "after": Number,    },    }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/teams/:team\_id/component\_sets'Submit API Request
+
+```text
+Loading...
+```
+
+GET file component sets
+
+Get a list of published component\_sets within a file libraryHTTP Endpoint
+
+GET/v1/files/:file\_key/component\_sets
+
+| Path parameters | Description |
+| :--- | :--- |
+| file\_key | StringId of the team to list component\_sets from |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {     "component_sets": [      {       "key": String,       "file_key": String,       "node_id": String,       "thumbnail_url": String,       "name": String,       "description": String,       "updated_at": String,       "created_at": String,       "user": User,        "containing_frame": FrameInfo,       },      ...    ],   }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/component\_sets'Submit API Request
+
+```text
+Loading...
+```
+
+GET component set
+
+Get metadata on a component\_set by key.HTTP Endpoint
+
+GET/v1/component\_sets/:key
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringThe unique identifier of the component\_set. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {      "key": String,     "file_key": String,     "node_id": String,     "thumbnail_url": String,     "name": String,     "description": String,     "updated_at": String,     "created_at": String,     "user": User,      "containing_frame": FrameInfo,    }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/component\_sets/:key'Submit API Request
+
+```text
+Loading...
+```
+
+GET team styles
+
+Get a paginated list of published styles within a team libraryHTTP Endpoint
+
+GET/v1/teams/:team\_id/styles
+
+| Path parameters | Description |
+| :--- | :--- |
+| team\_id | StringId of the team to list styles from |
+
+| Query parameters | Description |
+| :--- | :--- |
+| page\_size | NumberNumber of items in a paged list of results. Defaults to 30. |
+| after | NumberCursor indicating which id after which to start retrieving components for. Exclusive with before. The cursor value is an internally tracked integer that doesn't correspond to any Ids |
+| before | NumberCursor indicating which id before which to start retrieving components for. Exclusive with after. The cursor value is an internally tracked integer that doesn't correspond to any Ids |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {     "styles": [      {       "key": String,       "file_key": String,       "node_id": String,       "style_type": StyleType,       "thumbnail_url": String,       "name": String,       "description": String,       "updated_at": String,       "created_at": String,       "sort_position": String,       "user": User,        },      ...    ],    "cursor": {       "before": Number,      "after": Number,    },    }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/teams/:team\_id/styles'Submit API Request
+
+```text
+Loading...
+```
+
+GET file styles
+
+Get a list of published styles within a file libraryHTTP Endpoint
+
+GET/v1/files/:file\_key/styles
+
+| Path parameters | Description |
+| :--- | :--- |
+| file\_key | StringId of the team to list styles from |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {     "styles": [      {       "key": String,       "file_key": String,       "node_id": String,       "style_type": StyleType,       "thumbnail_url": String,       "name": String,       "description": String,       "updated_at": String,       "created_at": String,       "sort_position": String,       "user": User,        },      ...    ],   }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/files/:file\_key/styles'Submit API Request
+
+```text
+Loading...
+```
+
+GET style
+
+Get metadata on a style by key.HTTP Endpoint
+
+GET/v1/styles/:key
+
+| Path parameters | Description |
+| :--- | :--- |
+| key | StringThe unique identifier of the style. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Error with the request. The "message" param on the response will describe the error. |
+| 403 | Insufficient permission on the team. |
+| 404 | Requested resource was not found. |
+
+Return value
+
+```text
+{  "status": Number,  "error": Boolean,  "meta": {      "key": String,     "file_key": String,     "node_id": String,     "style_type": StyleType,     "thumbnail_url": String,     "name": String,     "description": String,     "updated_at": String,     "created_at": String,     "sort_position": String,     "user": User,    }, }
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v1/styles/:key'Submit API Request
+
+```text
+Loading...
+```
+
+Webhooks V2Getting started
+
+IMPORTANT: Webhooks V2 is still in open beta. Features and functions may change as we respond to feedback. Figma will attempt to keep APIs backwards compatible.
+
+Webhooks allow you to observe when specific events happen in files. For example: a collaborator comments on a file, or you add a new version to a file's history.  
+Using these events as triggers, you can build integrations with other applications. This can help to improve workflows, or extend the functionality of your design system.
+
+Webhooks are attached to a specific team. All admins of that team can create and manage webhooks for the team. There is a limit of 20 webhooks per team. You can assign a certain event trigger to each webhook.
+
+* Webhooks will notify for files that are available to everyone on the team, or are in[ view-only projects](https://help.figma.com/hc/en-us/articles/360038512473).
+* Webhooks will not notify for files in [invite-only projects.](https://help.figma.com/hc/en-us/articles/360038512473)
+
+Every payload \(expect for PING\) will contain the file name, file key and information related to the event triggered. This allows you to see which file triggered the event. Figma does not currently have an interface for webhooks. At the moment, you must create, modify, and delete webhooks through the webhooks API.
+
+To get started with webhooks:  
+  
+Setup your local webserver and expose the endpoint  
+Figma recommends using a tool similar to [ngrok](https://ngrok.com/) to expose a public URL for your local webserver.  
+  
+Configure your server to handle POST requests with a JSON payload  
+Your server should return the status code 200 OK when it receives a webhook request. If it returns another status code, or takes too long, the Figma API will treat this as an error. Figma retries failed requests 3 times with an exponential backoff strategy.
+
+* The first retry occurs 5 minutes after the first failure.
+* The second retry occurs 30 minutes after the second failure.
+* The final retry occurs 3 hours after the third failure.
+
+Figma does not currently deactivate endpoints with frequent errors.  
+  
+Create your webhook  
+Use the [POST Webhook](https://www.figma.com/developers/api#webhooks-v2-post-endpoint) endpoint to attach a webhook to a team. You will need to be an admin of the team to create a webhook. If you are successful, you will receive a PING event. This means your webhook is working and will receive any updates.
+
+If you are having problems with your webhook, you can query the[webhook requests endpoint](https://www.figma.com/developers/api#webhooks-v2-requests-endpoint). This will list all requests and responses within the past seven days.Events
+
+| Event name | Trigger condition |
+| :--- | :--- |
+| PING | Triggers when a webhook is created. Used for debugging. Cannot be subscribed to, all webhooks will recieve PING events. |
+| FILE\_UPDATE | Triggers whenever a file saves. This occurs whenever a file is closed or within 30 seconds after changes have been made. |
+| FILE\_VERSION\_UPDATE | Triggers whenever a named version is created in the version history of a file. |
+| FILE\_DELETE | Triggers whenever a file has been deleted. If you subscribe to FILE\_UPDATE, you automatically get these notifications. Note that this does not trigger on all files within a folder, if the folder is deleted. |
+| LIBRARY\_PUBLISH | Triggers whenever a library file is published. |
+| FILE\_COMMENT | Triggers when someone comments on a file. |
+
+Payloads
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Properties</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">PING</td>
+      <td style="text-align:left">Debug event triggered whenever a webhook is created. Use this to verify
+        that your endpoint was setup correctly.event_typeStringThe type of event
+        that triggered this webhook callpasscodeStringThe passcode specified when
+        the webhook was created, should match what was initially providedtimestampStringUTC
+        ISO 8601 timestamp of when the event was triggered.webhook_idNumberThe
+        id of the webhook that caused the callback&gt; Example</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">FILE_UPDATE</td>
+      <td style="text-align:left">
+        <p>Triggers whenever a file is saved. This occurs if a file is closed or
+          within 30 seconds after changes are made.</p>
+        <p>This is useful when you want to stay up-to-date with the contents of a
+          file. For example, you could generate a static website from your Figma
+          document and keep it always up-to-date with this webhook.event_typeStringThe
+          type of event that triggered this webhook callfile_keyStringThe key of
+          the file that was updatedfile_nameStringThe name of the file that was updatedpasscodeStringThe
+          passcode specified when the webhook was created, should match what was
+          initially providedtimestampStringUTC ISO 8601 timestamp of when the event
+          was triggered.webhook_idNumberThe id of the webhook that caused the callback&gt;
+          Example</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">FILE_DELETE</td>
+      <td style="text-align:left">
+        <p>Triggers whenever a file is trashed. Note if a folder is deleted, this
+          event will not trigger for files within the folder.</p>
+        <p>This event will also be sent out to webhooks that subscribe to FILE_UPDATE.event_typeStringThe
+          type of event that triggered this webhook callfile_keyStringThe key of
+          the file that was updatedfile_nameStringThe name of the file that was updatedpasscodeStringThe
+          passcode specified when the webhook was created, should match what was
+          initially providedtimestampStringUTC ISO 8601 timestamp of when the event
+          was triggered.triggered_by<a href="https://www.figma.com/developers/api#user-type">User</a>The
+          user that deleted the file and triggered this eventwebhook_idNumberThe
+          id of the webhook that caused the callback&gt; Example</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">FILE_VERSION_UPDATE</td>
+      <td style="text-align:left">
+        <p>Triggers whenever a user creates a named version in the version history
+          of a file.</p>
+        <p>This is useful for workflow integrations. For example, suppose you have
+          a Figma document with icon assets. When the design for an asset is updated
+          and ready to publish, you can have a member of the team tag that version
+          in the version history and then use this webhook event to generate and
+          deploy your new asset version.created_atStringUTC ISO 8601 timestamp of
+          when the version was createddescriptionStringDesciption of the version
+          in the version historyevent_typeStringThe type of event that triggered
+          this webhook callfile_keyStringThe key of the file that was updatedfile_nameStringThe
+          name of the file that was updatedlabelStringLable of the version in the
+          version historypasscodeStringThe passcode specified when the webhook was
+          created, should match what was initially providedtimestampStringUTC ISO
+          8601 timestamp of when the event was triggeredtriggered_by<a href="https://www.figma.com/developers/api#user-type">User</a>The
+          user that created the named version and triggered this eventversion_idStringId
+          of the published versionwebhook_idNumberThe id of the webhook that caused
+          the callback&gt; Example</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">LIBRARY_PUBLISH</td>
+      <td style="text-align:left">
+        <p>Triggers whenever a user publishes a library file.</p>
+        <p>This is useful for workflow integrations. This webhook could integrate
+          with Slack, Asana or Jira, notifying designers to modify their assets when
+          new components are published.created_components<a href="https://www.figma.com/developers/api#componentdata-type">ComponentData[]</a>Components
+          that were created by library publishdeleted_components<a href="https://www.figma.com/developers/api#componentdata-type">ComponentData[]</a>Components
+          that were deleted by library publishdescriptionStringDescription of the
+          library publishevent_typeStringThe type of event that triggered this webhook
+          callfile_keyStringThe key of the file that was updatedfile_nameStringThe
+          name of the file that was updatedmodified_components<a href="https://www.figma.com/developers/api#componentdata-type">ComponentData[]</a>Components
+          that were modified by the library publishpasscodeStringThe passcode specified
+          when the webhook was created, should match what was initially providedtimestampStringUTC
+          ISO 8601 timestamp of when the event was triggeredtriggered_by<a href="https://www.figma.com/developers/api#user-type">User</a>The
+          user that published the library and triggered this event&gt; Example</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">FILE_COMMENT</td>
+      <td style="text-align:left">
+        <p>Triggers whenever a user comments on a file.</p>
+        <p>This webhook could integrate with Asana or Jira and automatically create
+          tasks whenever a user comments. It could also integrate with Slack and
+          notify mentioned users.</p>
+        <p>The contents of a comment is returned in an array of CommentFragment.
+          A CommentFragment either contains a text of mention field. A text field
+          contains raw comment text with formatting derivatives, newlines will be
+          encoded as \n, etc.
+          <br />Text fields can also contain emojis, which are always encoded as a separate
+          fragment and are surrounded by two : characters. Mention fields occur if
+          a user types @OtherUser in their comment. A mention contains the userid
+          of the mentioned user. All mentioned users are added to the mentioned array
+          field, where additional user information is included.comment<a href="https://www.figma.com/developers/api#commentfragment-type">CommentFragment[]</a>Contents
+          of the comment itselfcomment_idNumberUnique identifier for commentcreated_atStringThe
+          UTC ISO 8601 time at which the comment was leftevent_typeStringThe type
+          of event that triggered this webhook callfile_keyStringThe key of the file
+          that was updatedfile_nameStringThe name of the file that was updatedmentions
+          <a
+          href="https://www.figma.com/developers/api#user-type">User[]</a>Users that were mentioned in the commentorder_idNumberOnly set
+            for top level comments. The number displayed with the comment in the UIparent_idNumberIf
+            present, the id of the comment to which this is the replypasscodeStringThe
+            passcode specified when the webhook was created, should match what was
+            initially providedresolved_atStringIf set, the UTC ISO 8601 time the comment
+            was resolvedtimestampStringUTC ISO 8601 timestamp of when the event was
+            triggeredtriggered_by<a href="https://www.figma.com/developers/api#user-type">User</a>The
+            user that made the comment and triggered the event&gt; Example</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+Types
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Properties</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">WebhookV2A description of an HTTP webhook (from Figma back to your application)</td>
+      <td
+      style="text-align:left">idStringThe ID of the webhookevent_type<a href="https://www.figma.com/developers/api#webhookv2event-type">WebhookV2Event</a>The
+        event this webhook triggers onteam_idStringThe team id you are subscribed
+        to for updatesstatus<a href="https://www.figma.com/developers/api#webhookv2status-type">WebhookV2Status</a>The
+        current status of the webhookclient_idStringThe client ID of the OAuth
+        application that registered this webhook, if anypasscodeStringThe passcode
+        that will be passed back to the webhook endpointendpointStringThe endpoint
+        that will be hit when the webhook is triggereddescriptionStringOptional
+        user-provided description or name for the webhook. This is provided to
+        help make maintaining a number of webhooks more convenient. Max length
+        140 characters.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">WebhookV2RequestInformation regarding the most recent interactions sent
+        to a webhook endpoint</td>
+      <td style="text-align:left">webhook_idStringThe ID of the webhook the requests were sent torequest_info
+        <a
+        href="https://www.figma.com/developers/api#webhookv2requestinfo-type">WebhookV2RequestInfo</a>Information regarding the request sent to the
+          webhook endpointresponse_info<a href="https://www.figma.com/developers/api#webhookv2responseinfo-type">WebhookV2ResponseInfo</a>Information
+          regarding the response sent back from the webhook endpoint. NULL if no
+          response was received.error_msgStringError message for this request. NULL
+          if no error occured.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">WebhookV2RequestInfoInformation regarding the request sent to a webhook
+        endpoint</td>
+      <td style="text-align:left">endpointStringThe actual endpoint the request was sent topayload<a href="https://www.figma.com/developers/api#payload-type">Payload</a>The
+        contents of the request that was sent to the endpointsent_atStringUTC ISO
+        8601 timestamp of when the request was sent</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">WebhookV2ResponseInfoInformation regarding the reply sent back from a
+        webhook endpoint</td>
+      <td style="text-align:left">statusStringHTTP status code of the responsereceived_atStringThe UTC ISO
+        8601 time when the response was received</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">WebhookV2EventAn enum representing the possible events that a webhook
+        can subscribe to</td>
+      <td style="text-align:left">A webhook can subscribe to all events listed in the events section except
+        the PING event.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">WebhookV2StatusAn enum representing the possible statuses you can set
+        a webhook to</td>
+      <td style="text-align:left">
+        <p>ACTIVE: The webhook is healthy and receive all events</p>
+        <p>PAUSED: The webhook is paused and will not receive any events</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">ComponentDataAn object representing the component information in the payload
+        of the LIBRARY_PUBLISH event</td>
+      <td style="text-align:left">keyStringUnique identifier of componentnameStringName of component</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">CommentFragmentAn object representing a fragment of a comment left by
+        a user, used in the payload of the FILE_COMMENT event. Note only ONE of
+        the fields below will be set</td>
+      <td style="text-align:left">textStringComment text that is set if a fragment is text basedmentionStringUser
+        id that is set if a fragment refers to a user mention</td>
+    </tr>
+  </tbody>
+</table>
+
+EndpointsYou can use the following Webhooks via the Figma API:POST webhook
+
+Create a new webhook which will call the specified endpoint when the event triggers. By default, this webhook will automatically send a PING event to the endpoint when it is created. If this behavior is not desired, you can create the webhook and set the status to PAUSED and reactivate it later.
+
+HTTP Endpoint
+
+POST/v2/webhooks
+
+| Body parameters | Description |
+| :--- | :--- |
+| event\_type | [WebhookV2Event](https://www.figma.com/developers/api#webhookv2event-type)The type of event that will trigger this webhook to fire |
+| team\_id | StringTeam id to receive updates about |
+| endpoint | StringThe HTTP endpoint that will receive a POST request when the event triggers. Max length 2048 characters. |
+| passcode | StringString that will be passed back to your webhook endpoint to verify that it is being called by Figma. Max length 100 characters. |
+| status | [WebhookV2Status](https://www.figma.com/developers/api#webhookv2status-type)optionalState of the webhook, including any error state it may be in |
+| description | StringoptionalUser provided description or name for the webhook. Max length 150 characters. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Required parameter missing or invalid |
+
+Return value
+
+```text
+The WebhookV2 that was successfully posted
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -X POST -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v2/webhooks'Submit API Request
+
+```text
+Loading...
+```
+
+GET webhook
+
+Returns the [WebhookV2](https://www.figma.com/developers/api#webhookv2-type) corresponding to the ID provided, if it exists.
+
+HTTP Endpoint
+
+GET/v2/webhooks/:webhook\_id
+
+| Path parameters | Description |
+| :--- | :--- |
+| webhook\_id | StringThe id of the webhook you want to query for |
+
+| Error codes | Description |
+| :--- | :--- |
+| 404 | Webhook does not exist or you do not have permissions to access this webhook |
+
+Return value
+
+```text
+The WebhookV2 requested
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v2/webhooks/:webhook\_id'Submit API Request
+
+```text
+Loading...
+```
+
+PUT webhook
+
+Updates the webhook with the specified properties.
+
+HTTP Endpoint
+
+PUT/v2/webhooks/:webhook\_id
+
+| Path parameters | Description |
+| :--- | :--- |
+| webhook\_id | StringThe id of the webhook you want to update |
+
+| Body parameters | Description |
+| :--- | :--- |
+| event\_type | [WebhookV2Event](https://www.figma.com/developers/api#webhookv2event-type)optionalThe type of event that will trigger this webhook to fire |
+| endpoint | StringoptionalThe HTTP endpoint that will receive a POST request when the event triggers |
+| passcode | StringoptionalString that will be passed back to your webhook endpoint to verify that it is being called by Figma |
+| status | [WebhookStatus](https://www.figma.com/developers/api#webhookstatus-type)optionalState to put the webhook in, either to make the webhook ACTIVE or PAUSED. The webhook cannot be put into an error state this way. |
+| description | StringoptionalUser provided description or name for the webhook. Max length 140 characters. Providing a description '' \(empty string\) will delete the description. |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Required parameter missing or invalid |
+| 404 | Webhook does not exist or you do not have permissions to access this webhook |
+
+Return value
+
+```text
+The WebhookV2 that was successfully updated
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -X PUT -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v2/webhooks/:webhook\_id'Submit API Request
+
+```text
+Loading...
+```
+
+DELETE webhook
+
+Deletes the specified webhook. This operation cannot be reversed.
+
+HTTP Endpoint
+
+DELETE/v2/webhooks/:webhook\_id
+
+| Path parameters | Description |
+| :--- | :--- |
+| webhook\_id | StringThe id of the webhook you want to delete |
+
+| Error codes | Description |
+| :--- | :--- |
+| 400 | Required parameter missing or invalid |
+| 404 | Webhook does not exist or you do not have permissions to access this webhook |
+
+Return value
+
+```text
+The WebhookV2 that was successfully deleted
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -X DELETE -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v2/webhooks/:webhook\_id'Submit API Request
+
+```text
+Loading...
+```
+
+GET team webhooks
+
+Returns all webhooks registered under the specified team.
+
+HTTP Endpoint
+
+GET/v2/teams/:team\_id/webhooks
+
+| Path parameters | Description |
+| :--- | :--- |
+| team\_id | StringThe team id you wish to query for |
+
+Return value
+
+```text
+{  "webhooks": WebhookV2[]}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v2/teams/:team\_id/webhooks'Submit API Request
+
+```text
+Loading...
+```
+
+GET webhook requests
+
+Returns all webhook requests sent within the last week. Useful for debugging.
+
+HTTP Endpoint
+
+GET/v2/webhooks/:webhook\_id/requests
+
+| Path parameters | Description |
+| :--- | :--- |
+| webhook\_id | StringThe id of the webhook you wish to query for |
+
+Return value
+
+```text
+{  "requests": WebhookV2Request[]}
+```
+
+Try it out for yourself+ Get personal access token[What's this?](https://www.figma.com/developers/api#access-tokens)Your cURL commandcurl -H 'X-FIGMA-TOKEN: &lt;personal access token&gt;' 'https://api.figma.com/v2/teams/:team\_id/webhooks'Submit API Request
+
+```text
+Loading...
+```
+
+Security
+
+### Securing your webhook
+
+IMPORTANT: When creating a webhook you are required to pass in a passcode. The purpose of the passcode field is so that your application can verify that Figma is actually what is calling your endpoint \(as opposed to some attacker trying to make you believe something about your users' Figma files\).
+
+We would recommend comparing the passcode we pass back to you with the passcode originally provided when creating the endpoint to make sure they match before acting on the webhook trigger. If you receive a request with the wrong passcode, you should respond with a 400 Bad Request HTTP response which will immediately stop the webhook.Errors
+
+This section outlines the common error codes and resolutions you may encounter while using the Figma API.
+
+| Error code | Description |
+| :--- | :--- |
+| 400Bad request | Parameters are invalid or malformed. Please check the input formats. |
+| 404Not found | The requested file or resource was not found. |
+| 429Rate limit | In some cases API requests may be throttled or rate limited. Please wait a while before attempting the request again \(typically a minute\). |
+| 500Internal server error | This most commonly occurs for very large image render requests, which may time out our server and return a 500. Please reduce the number and size of objects requested. |
+
