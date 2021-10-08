@@ -8,7 +8,7 @@
 
 {% page-ref page="roadmap.md" %}
 
-{% page-ref page="overview.md" %}
+{% page-ref page="../standup-notes/meeting-notes/overview.md" %}
 
 {% page-ref page="team-members.md" %}
 

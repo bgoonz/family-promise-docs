@@ -8,7 +8,6 @@
 * [Calendar](navigation/calendar.md)
 * [Youtube:](navigation/youtube.md)
 * [Roadmap:](navigation/roadmap.md)
-* [Stakeholder Meeting 1](navigation/overview.md)
 * [TEAM MEMBERS](navigation/team-members.md)
 * [Running List Of Notes Links & Pertinent Info From Meetings](navigation/running-list-of-notes-links-and-pertinent-info-from-meetings.md)
 * [Trello](navigation/trello/README.md)
@@ -85,6 +84,7 @@
 ## Standup Notes
 
 * [Meeting Notes](standup-notes/meeting-notes/README.md)
+  * [Stakeholder Meeting 1](standup-notes/meeting-notes/overview.md)
   * [9/29/2021](standup-notes/meeting-notes/9-29-2021.md)
 
 ## GitHub & Project Practice
