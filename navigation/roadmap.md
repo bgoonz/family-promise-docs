@@ -8,6 +8,8 @@
 
 **Web \(Node\) + DS** \(Build-on\)
 
+![](../.gitbook/assets/image%20%2812%29.png)
+
 ### Overview
 
 Family Promise helps local communities coordinate their compassion to address the root causes of family homelessness. They tap existing local resources to empower families towards economic stability. Families come to them in crisis; they help them rebuild their lives with new skills and ongoing support. They address the issue holistically, providing prevention services before families reach crisis, shelter and case management when they become homeless, and stabilization programs once they have secured housing to ensure they remain independent.
@@ -23,6 +25,8 @@ For the first round, students laid a solid foundation for the application. They 
 The next round focused on ensuring individual services can be tracked for recipients at the household and individual level.
 
 This round, we'll pick up the previous team's work building out **metrics** to serve as the main window our users will have into conducting monitoring and evaluation of their programs and services. Then we'll let Administrators and Program Managers define **Goals** based on one or more metrics, and provide **analytics** and **visualizations** to display relevant data for each user type.
+
+![](../.gitbook/assets/image%20%287%29.png)
 
 ### Contacts
 
@@ -46,6 +50,8 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 * **Service Providers:** Manage one or more services.
 
 [Feature List](https://www.notion.so/649befae354f455abbd7b642f8f0a120)
+
+![](../.gitbook/assets/image%20%2821%29.png)
 
 ### Resources
 
@@ -91,7 +97,7 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 * Let Program Managers select an area on a map and name it as a neighborhood/area
   * Let Program Managers add in insider knowledge/community resources per neighborhood/area
 
-
+![](../.gitbook/assets/image%20%288%29.png)
 
 ## Labs Engineering Docs
 
@@ -142,7 +148,7 @@ Don't ignore or hide mistakes! If you mess up, it's fine! The only thing that ma
 
 
 
-
+![](../.gitbook/assets/image%20%2811%29.png)
 
 ## Roadmap: Family Promise Homeless Shelter Intake System \(Labs 29\)
 

@@ -21,6 +21,8 @@ This document will guide you through a step-by-step process to integrate your Tr
 
 !!! Note You can also associate multiple repositories to one board. This is useful in a case where you are working on both frontend and backend from the same board.
 
+![](../../.gitbook/assets/image%20%286%29.png)
+
 #### Add Github Power-Up to your Trello board
 
 ![Github Power-up](https://github.com/Lambda-School-Labs/gitbook-labs-guides/tree/1b9f095385cbf02520a451e3ea7ed75d8d417963/assets/images/github-trello/add-github-powerup.png)

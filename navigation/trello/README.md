@@ -2,13 +2,15 @@
 
 {% embed url="https://trello.com/b/U8UUCBeb/family-promise-service-tracker" %}
 
-
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 ## Lambda School Labs and Trello
 
 In this section, you will learn about Trello and how your teams will utilize it. Trello is a collaboration tool that organizes your projects into boards. One glance, Trello tells you tasks actively worked on, who's working on what, and where something is in a process.
 
 Imagine a whiteboard filled with lists of sticky notes, with each section as a task for you and your team. Now imagine that each of those sticky notes has photos, attachments from other data sources like BitBucket or Salesforce, documents, and a place to comment and collaborate with your teammates.
+
+![](../../.gitbook/assets/image%20%2810%29.png)
 
 ### Objective
 
@@ -24,7 +26,7 @@ Cards - The basic unit of the Trello board. Cards represent user stories, featur
 
 ![](../../.gitbook/assets/image%20%285%29.png)
 
-
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 | Trello Template & Card Guides |
 | :--- |
