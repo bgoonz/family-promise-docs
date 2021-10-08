@@ -18,11 +18,11 @@ Teams will be required to use Trello in labs. Trello brings clarity to each team
 
 List - Trello is made of lists that the teams will work off of. A list is a collection of vertically arranged cards. They may represent a collection of ideas, things to remember, or different stages of a workflow. For labs, your team will use lists to manage your progress.
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29.png)
 
 Cards - The basic unit of the Trello board. Cards represent user stories, features, notes, and tasks. Your team will be able to drag cards from list to list to indicate progression, status, or what-have-you. You can add people to cards, label them, vote, attach files, start conversations, and create a task checklist.
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 
 
