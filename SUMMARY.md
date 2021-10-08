@@ -33,6 +33,8 @@
 
 * [Design](canvas/design/README.md)
   * [What's Inclusive Design?](canvas/design/whats-inclusive-design.md)
+  * [Accessibility](canvas/design/accessibility.md)
+  * [What are Design Systems?](canvas/design/what-are-design-systems.md)
 * [Canvas](canvas/canvas.md)
 * [Notes](canvas/notes/README.md)
   * [User Experience Design](canvas/notes/user-experience-design.md)
