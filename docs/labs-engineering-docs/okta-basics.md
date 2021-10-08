@@ -1,3 +1,9 @@
+---
+description: >-
+  Okta is an identity management service that's used in Labs to provide
+  centralized authentication for Labs applications.
+---
+
 # Okta Basics
 
 ## Okta Basics
