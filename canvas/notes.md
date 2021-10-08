@@ -81,3 +81,13 @@ Happy achieving! 🚀
 
 **From here, you can view all the modules by clicking `Modules` in the left course menu.**
 
+\*\*\*\*
+
+\*\*\*\*
+
+\*\*\*\*
+
+\*\*\*\*
+
+\*\*\*\*
+
