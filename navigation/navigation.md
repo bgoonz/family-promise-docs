@@ -1,22 +1,44 @@
 # NAVIGATION
 
+{% content-ref url="../" %}
+[..](../)
+{% endcontent-ref %}
+
+{% content-ref url="../docs/untitled.md" %}
+[untitled.md](../docs/untitled.md)
+{% endcontent-ref %}
+
+{% content-ref url="calendar.md" %}
+[calendar.md](calendar.md)
+{% endcontent-ref %}
+
+{% content-ref url="youtube.md" %}
+[youtube.md](youtube.md)
+{% endcontent-ref %}
+
+{% content-ref url="roadmap.md" %}
+[roadmap.md](roadmap.md)
+{% endcontent-ref %}
+
+{% content-ref url="../standup-notes/meeting-notes/overview.md" %}
+[overview.md](../standup-notes/meeting-notes/overview.md)
+{% endcontent-ref %}
+
+{% content-ref url="team-members.md" %}
+[team-members.md](team-members.md)
+{% endcontent-ref %}
+
+{% content-ref url="running-list-of-notes-links-and-pertinent-info-from-meetings.md" %}
+[running-list-of-notes-links-and-pertinent-info-from-meetings.md](running-list-of-notes-links-and-pertinent-info-from-meetings.md)
+{% endcontent-ref %}
+
+{% content-ref url="trello/" %}
+[trello](trello/)
+{% endcontent-ref %}
+
+![](<../.gitbook/assets/image (9).png>)
 
 
-{% page-ref page="calendar.md" %}
-
-{% page-ref page="youtube.md" %}
-
-{% page-ref page="roadmap.md" %}
-
-{% page-ref page="../standup-notes/meeting-notes/overview.md" %}
-
-{% page-ref page="team-members.md" %}
-
-{% page-ref page="running-list-of-notes-links-and-pertinent-info-from-meetings.md" %}
-
-{% page-ref page="trello/" %}
-
-![](../.gitbook/assets/image%20%289%29.png)
 
 
 
@@ -30,9 +52,7 @@
 
 
 
-
-
-![](../.gitbook/assets/image%20%2817%29.png)
+![](<../.gitbook/assets/image (17).png>)
 
 ## Table of contents
 
@@ -51,7 +71,7 @@
 
 ### UX
 
-* [UX\_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
+* [UX_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
   * [Accessibility](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/accessibility)
   * [Figma Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/README)
     * [Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/notes)
@@ -62,7 +82,7 @@
     * [ANT Components](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/README)
       * [Buttons](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/buttons)
     * [ANT DOCS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-docs)
-    * [Application \(Codesandbox\)](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/application-codesandbox)
+    * [Application (Codesandbox)](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/application-codesandbox)
   * [Examples](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/examples)
 
 ### CANVAS
@@ -93,7 +113,7 @@
   * [PTM](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/ptm)
   * [General](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/general)
 
-### DS\_API
+### DS_API
 
 * [Data Science API](https://lambda-labs.gitbook.io/lambda-labs/ds_api/untitled)
 
@@ -151,7 +171,7 @@
   * [Basic Node API](https://lambda-labs.gitbook.io/lambda-labs/docs/project-docs/basic-node-api)
   * [Contributing to this scaffold project](https://lambda-labs.gitbook.io/lambda-labs/docs/project-docs/contributing-to-this-scaffold-project)
   * [Examples:](https://lambda-labs.gitbook.io/lambda-labs/docs/project-docs/examples)
-* [PROJECT DESCRIPTION \(Feature List\)](https://lambda-labs.gitbook.io/lambda-labs/docs/project-description)
+* [PROJECT DESCRIPTION (Feature List)](https://lambda-labs.gitbook.io/lambda-labs/docs/project-description)
 * [Labs Learners Guide](https://lambda-labs.gitbook.io/lambda-labs/docs/labs-learners-guide)
 * [REACT](https://lambda-labs.gitbook.io/lambda-labs/docs/react/README)
   * [Create React App](https://lambda-labs.gitbook.io/lambda-labs/docs/react/untitled)
@@ -176,4 +196,3 @@
     * [Amplify-DNS](https://lambda-labs.gitbook.io/lambda-labs/aws/aws/amplify/amplify-dns)
 * [Account Basics](https://lambda-labs.gitbook.io/lambda-labs/aws/untitled-1)
 * [AWS-Networking](https://lambda-labs.gitbook.io/lambda-labs/aws/aws-networking)
-
