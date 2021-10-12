@@ -1,8 +1,8 @@
 # Quiz
 
-Question 1 1 / 1 pts UX Engineers serve as the _**\_\_**_ for their team. lead researcher product owner design lead surveyor
+Question 1 1 / 1 pts UX Engineers serve as the _**\__**_ for their team. lead researcher product owner design lead surveyor
 
-PartialQuestion 2 0.67 / 1 pts Which of the following are you responsible for as a UX Engineer? Working directly with backend engineers and data engineers to develop API contracts for the features you deliver. Working to generate, prioritize, and achieve shippable implementation of tickets in your product's design backlog. Communicating the UI/UX vision to your TPM\(s\) and your team. Generating and maintaining design artifacts \(including user flows and wireframes\) to plan and document UI/UX.
+PartialQuestion 2 0.67 / 1 pts Which of the following are you responsible for as a UX Engineer? Working directly with backend engineers and data engineers to develop API contracts for the features you deliver. Working to generate, prioritize, and achieve shippable implementation of tickets in your product's design backlog. Communicating the UI/UX vision to your TPM(s) and your team. Generating and maintaining design artifacts (including user flows and wireframes) to plan and document UI/UX.
 
 Question 3 1 / 1 pts As a UX Engineer, you'll work closely with the **\_** on your team to scope realistic design goals for each sprint, and then with **\_** to implement your plan and achieve them. Technical Project Managers; Frontend Engineers Frontend Engineers; Backend Engineers Backend Engineers; Frontend Engineers Technical Project Managers; Backend Engineers
 
@@ -23,8 +23,6 @@ IncorrectQuestion 10 0 / 1 pts Who will be in your Product Reviews? Your product
 
 
 {% embed url="https://imgur.com/5NWegDU" %}
-
-
 
 
 

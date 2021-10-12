@@ -13,13 +13,13 @@ There are really _lots_ of useful ways to categorize and talk about design. You 
 
 For our purposes, we're going to focus on **seven principles of design** that combine to give us a solid foundation for approaching problems:
 
-1. [ ] Unity
-2. [ ] Balance
-3. [ ] Alignment
-4. [ ] Hierarchy
-5. [ ] Emphasis
-6. [ ] Proportion
-7. [ ] White Space
+* [ ] Unity
+* [ ] Balance
+* [ ] Alignment
+* [ ] Hierarchy
+* [ ] Emphasis
+* [ ] Proportion
+* [ ] White Space
 
 In this module, we'll dive into each of these design principles. We'll refer to each of them throughout the rest of this course, during our Design Critiques, and throughout Labs.
 
@@ -29,7 +29,7 @@ In this module, we'll dive into each of these design principles. We'll refer to 
 
 **Unity** is **oneness**.
 
-It's not so much about grouping things into one group, but more **making things** _**one**_ **thing**. When we're talking about a group of truly independent things, unity means they fit together into a clear, logical, simple whole.
+It's not so much about grouping things into one group, but more **making things **_**one**_** thing**. When we're talking about a group of truly independent things, unity means they fit together into a clear, logical, simple whole.
 
 In a way, unity encapsulates all the other design principles—the rest of the concepts we'll explore need to work together to **present one seamless user experience**.
 
@@ -47,7 +47,7 @@ One example would be first focusing on developing a user flow for a product, the
 
 ### Types of Unity
 
-Note that the design artifact workflow we just described \(user flow → wireframes → components\) incorporates two kinds of unity: **conceptual** and **visual** unity.
+Note that the design artifact workflow we just described (user flow → wireframes → components) incorporates two kinds of unity: **conceptual** and **visual** unity.
 
 #### Conceptual Unity
 
@@ -69,7 +69,7 @@ Using a design system like Ant Design helps us achieve both conceptual and visua
 
 ### What's Balance?
 
-Let's turn to Merriam Webster's for this one: balance is "a state in which different things occur in equal or proper amounts or have an equal or proper amount of importance" \([source \(Links to an external site.\)](https://www.merriam-webster.com/dictionary/balance)\).
+Let's turn to Merriam Webster's for this one: balance is "a state in which different things occur in equal or proper amounts or have an equal or proper amount of importance" ([source (Links to an external site.)](https://www.merriam-webster.com/dictionary/balance)).
 
 Note a key distinction here: balance doesn't necessarily mean that all sides of something are _equal_—it could just mean that everything involved has the _proper_ amount of _x_, where _x_ is something we care about. _x_ might itself be a principle of design!
 
@@ -79,7 +79,7 @@ Note a key distinction here: balance doesn't necessarily mean that all sides of 
 
 ![Screen%20Shot%202021-08-29%20at%207.45.52%20PM.png](https://lambdaschool.instructure.com/courses/1562/files/388974/preview)
 
-Symmetry can be visual \(e.g., both columns of a page are the same height\) or conceptual \(e.g., if there are two major topics addressed in a web application, I can navigate a similar structure for each one\).
+Symmetry can be visual (e.g., both columns of a page are the same height) or conceptual (e.g., if there are two major topics addressed in a web application, I can navigate a similar structure for each one).
 
 ### Achieving Balance
 
@@ -103,7 +103,7 @@ Achieving alignment results from paying conscious attention to those imaginary l
 
 ![Screen%20Shot%202021-08-29%20at%207.51.13%20PM.png](https://lambdaschool.instructure.com/courses/1562/files/388975/preview)
 
-A very common pattern for achieving alignment in a web application is to ensure you've got **consistent margins**. For example, let's say you've got a header, a main block of content, and a footer. Impose a maximum width for the total content of the page—then make sure the left edges of each content container line up with all the rest, and likewise with the right edges. Then do the same for the **vertical space** \(padding + margin\) within and between each container. See how we can draw lines here?
+A very common pattern for achieving alignment in a web application is to ensure you've got **consistent margins**. For example, let's say you've got a header, a main block of content, and a footer. Impose a maximum width for the total content of the page—then make sure the left edges of each content container line up with all the rest, and likewise with the right edges. Then do the same for the **vertical space** (padding + margin) within and between each container. See how we can draw lines here?
 
 ![Screen%20Shot%202021-08-29%20at%207.55.21%20PM.png](https://lambdaschool.instructure.com/courses/1562/files/388976/preview)
 
@@ -185,7 +185,7 @@ Notice how principles like hierarchy, proportion, and balance factor into levera
 
 ### What's White Space?
 
-**White space** \(or **negative space**\) is the space between and around elements.
+**White space** (or **negative space**) is the space between and around elements.
 
 The concept of white space has been explored and leveraged by artists for millennia—the conscious use of "nothing" is a way to incorporate all the other design principles.
 
@@ -197,5 +197,4 @@ Notice how white space influences our attention and our perception in the follow
 
 The key to using white space is to remember to use it in the first place!
 
-Since white space is the absence of an element, you can use it to direct your user's attention to the elements that _are_present. Ensure there's enough space between elements to make each stand out \(emphasis!\), that your patterns of using white space are consistent \(unity and balance!\), and that any visual hierarchies \(!\) use spacing in predictable ways.
-
+Since white space is the absence of an element, you can use it to direct your user's attention to the elements that _are_present. Ensure there's enough space between elements to make each stand out (emphasis!), that your patterns of using white space are consistent (unity and balance!), and that any visual hierarchies (!) use spacing in predictable ways.

@@ -6,7 +6,7 @@
 
 Instead of Sprint Challenges, Labs uses **Objectives** to assess your understanding and your contributions to your project.
 
-Objectives are your ticket to graduation—achieve them all, and you'll be ready to graduate! \(Note that it will take a minimum of four sprints to achieve all your objectives, and you'll have up to eight sprints to do it.\)
+Objectives are your ticket to graduation—achieve them all, and you'll be ready to graduate! (Note that it will take a minimum of four sprints to achieve all your objectives, and you'll have up to eight sprints to do it.)
 
 Your objectives are tailored to your role—another way to arm you with an experience more relevant to you.
 
@@ -16,16 +16,16 @@ Here's an example set of objectives:
 
 ![List of Labs objectives:
 
-- \[ \]  Attend at least two Stakeholder Meetings for your product
-- \[ \]  Attend at least two Product Reviews for your product
-- \[ \]  Attend at least four Design Critique sessions
-- \[ \]  Pass \`Labs\` course
-- \[ \]  Pass \`Labs: UX Engineer\` course
-- \[ \]  Pass \`Career Readiness\` course
-- \[ \]  Peer-review at least six teammates on Searchlight
-- \[ \]  Submit at least six qualified pull requests
-- \[ \]  Review at least 10 pull requests from your team
-- \[ \]  Have at least one pull request merged](https://lambdaschool.instructure.com/courses/1544/files/384468/preview)
+\- \[ \]  Attend at least two Stakeholder Meetings for your product
+\- \[ \]  Attend at least two Product Reviews for your product
+\- \[ \]  Attend at least four Design Critique sessions
+\- \[ \]  Pass \`Labs\` course
+\- \[ \]  Pass \`Labs: UX Engineer\` course
+\- \[ \]  Pass \`Career Readiness\` course
+\- \[ \]  Peer-review at least six teammates on Searchlight
+\- \[ \]  Submit at least six qualified pull requests
+\- \[ \]  Review at least 10 pull requests from your team
+\- \[ \]  Have at least one pull request merged](https://lambdaschool.instructure.com/courses/1544/files/384468/preview)
 
 Note that generally, there are a few types of objectives:
 
@@ -33,7 +33,7 @@ Note that generally, there are a few types of objectives:
 * Attend meetings
 * Submit or review pull requests
 * Peer-review teammates in Searchlight
-* Other \(role-specific\)
+* Other (role-specific)
 
 Continue to the next page for information on **how to use this course to track your Objectives throughout Labs**.
 
@@ -43,7 +43,7 @@ Continue to the next page for information on **how to use this course to track y
 
 This course houses and tracks all your objectives in Labs. You can visit it throughout Labs to track your progress toward graduation.
 
-You'll find multiple modules in this course: this **Introduction** \(you are here!\), **Graduation Objectives** for your role, and **Sprint Milestones**.
+You'll find multiple modules in this course: this **Introduction** (you are here!), **Graduation Objectives** for your role, and **Sprint Milestones**.
 
 At any time, you can return to view all the modules by clicking `Modules` in the left course menu.
 
@@ -81,11 +81,11 @@ Happy achieving! 🚀
 
 **From here, you can view all the modules by clicking `Modules` in the left course menu.**
 
-\*\*\*\*
+****
 
-\*\*\*\*
+****
 
-\*\*\*\*
+****
 
 ## UX Principles
 
@@ -99,17 +99,17 @@ We can hear you from here: "Well, that's vague." An apt observation! "UX" is a _
 
 You've likely seen these terms bandied about, used interchangeably, or even in combination with each other: UI, UX, UI/UX, design, interaction design, UI design, UX design...
 
-UI stands for **user interface** \(though _sometimes_ it can stand for "user interaction"—this isn't helping, is it...\)
+UI stands for **user interface** (though _sometimes_ it can stand for "user interaction"—this isn't helping, is it...)
 
 Ultimately, the distinction between these terms does matter, but **it doesn't matter too much**. What matters is that you understand that they represent various areas of focus that are ultimately trying to get at the same thing from different angles—**how is a thing used**?
 
-**User experience \(UX\) design** focuses on what happens to the user when they use the thing.
+**User experience (UX) design** focuses on what happens to the user when they use the thing.
 
-**User interface \(UI\) design** focuses on the pieces of the thing the user interacts with—hopefully informed by an anticipation and understanding of what their experience will or should be.
+**User interface (UI) design** focuses on the pieces of the thing the user interacts with—hopefully informed by an anticipation and understanding of what their experience will or should be.
 
 ### UX Principles
 
-in 2004, [Peter Morville \(Links to an external site.\)](http://semanticstudios.com/user_experience_design/) defined a core set of seven UX principles determining whether users will get value out of an experience:
+in 2004, [Peter Morville (Links to an external site.)](http://semanticstudios.com/user_experience_design/) defined a core set of seven UX principles determining whether users will get value out of an experience:
 
 * useful
 * usable
@@ -121,5 +121,4 @@ in 2004, [Peter Morville \(Links to an external site.\)](http://semanticstudios.
 
 Like our seven principles of design, these seven principles of UX certainly aren't the only way to break up and talk about UX. But they do give us a helpful anchor for discussion!
 
-\*\*\*\*
-
+****

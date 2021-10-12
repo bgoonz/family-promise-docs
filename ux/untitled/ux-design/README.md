@@ -4,8 +4,6 @@
 
 A curated list of design resources from design templates, stock photos, icons, colors, and much more
 
-![Repository banner](thumbnail.png)
-
 ### Table of Contents
 
 * General
@@ -16,78 +14,78 @@ A curated list of design resources from design templates, stock photos, icons, c
 
 #### General
 
-| Website | Description |
-| :--- | :--- |
-| [Freebiesbug](https://freebiesbug.com/) | Hand-picked resources for web designer and developers, constantly updated. |
-| [Sketch App Sources](https://www.sketchappsources.com/) | Icons, UI Kits, Wireframes, iOS, Android Templates for Sketch |
-| [Figma Community](https://www.figma.com/community) | Explore, install, use, and remix thousands of files and plugins |
-| [Uplabs](https://www.uplabs.com/) | Unlimited UI Kits, Icons, Templates, Themes and More \(free & premium \) |
-| [GrapicBurger](https://graphicburger.com/) | Tasty design resources made with care for each pixel. Free for both personal & commercial use |
-| [InvisionApp](https://www.invisionapp.com/inside-design/design-resources/) | Browse our library of free, high-quality UI kits, icon packs, and mockups |
-| [Freebiesketch](https://freebiesketch.com/) | The best collection of free resources for UX / UI Designer |
-| [100 Daily UI](https://100dailyui.webflow.io/) | Free Figma library of products, elements, and screens |
-| [Figma Resources](https://www.figmabox.com/) | A curated Figma resources, UI kits, templates & freebies to save you time and speed up your workflow |
-| [UI Space](https://uispace.net/) | Free PSD, AI, Fonts and more |
-| [CodeMyUI](https://codemyui.com) | Handpicked collection of web design & UI inspiration with code snippets. |
-| [Hero Patterns](https://www.heropatterns.com/) | A collection of repeatable SVG background patterns for you to use on your web projects. |
+| Website                                                                    | Description                                                                                          |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Freebiesbug](https://freebiesbug.com)                                     | Hand-picked resources for web designer and developers, constantly updated.                           |
+| [Sketch App Sources](https://www.sketchappsources.com)                     | Icons, UI Kits, Wireframes, iOS, Android Templates for Sketch                                        |
+| [Figma Community](https://www.figma.com/community)                         | Explore, install, use, and remix thousands of files and plugins                                      |
+| [Uplabs](https://www.uplabs.com)                                           | Unlimited UI Kits, Icons, Templates, Themes and More (free & premium )                               |
+| [GrapicBurger](https://graphicburger.com)                                  | Tasty design resources made with care for each pixel. Free for both personal & commercial use        |
+| [InvisionApp](https://www.invisionapp.com/inside-design/design-resources/) | Browse our library of free, high-quality UI kits, icon packs, and mockups                            |
+| [Freebiesketch](https://freebiesketch.com)                                 | The best collection of free resources for UX / UI Designer                                           |
+| [100 Daily UI](https://100dailyui.webflow.io)                              | Free Figma library of products, elements, and screens                                                |
+| [Figma Resources](https://www.figmabox.com)                                | A curated Figma resources, UI kits, templates & freebies to save you time and speed up your workflow |
+| [UI Space](https://uispace.net)                                            | Free PSD, AI, Fonts and more                                                                         |
+| [CodeMyUI](https://codemyui.com)                                           | Handpicked collection of web design & UI inspiration with code snippets.                             |
+| [Hero Patterns](https://www.heropatterns.com)                              | A collection of repeatable SVG background patterns for you to use on your web projects.              |
 
  **↥ Back To Top**
 
 #### Colors
 
-| Website | Description |
-| :--- | :--- |
-| [Adobe Color](https://color.adobe.com/) | A color palette generator |
-| [Coolors](https://coolors.co/) | Generate or browse beautiful color combinations for your designs |
-| [Colormind](http://colormind.io/) | Colormind is a color scheme generator that uses deep learning. It can learn color styles from photographs, movies, and popular art. |
-| [Color Hunt](https://colorhunt.co/) | a free and open platform for color inspiration with thousands of trendy hand-picked color palettes |
-| [Google Material Color Tool](https://material.io/resources/color/) | Create and share color palettes for your UI, and measure the accessibility of any color combination. |
-| [ColorSpace](https://mycolor.space/) | Generate nice color palettes from one color |
+| Website                                                            | Description                                                                                                                         |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| [Adobe Color](https://color.adobe.com)                             | A color palette generator                                                                                                           |
+| [Coolors](https://coolors.co)                                      | Generate or browse beautiful color combinations for your designs                                                                    |
+| [Colormind](http://colormind.io)                                   | Colormind is a color scheme generator that uses deep learning. It can learn color styles from photographs, movies, and popular art. |
+| [Color Hunt](https://colorhunt.co)                                 | a free and open platform for color inspiration with thousands of trendy hand-picked color palettes                                  |
+| [Google Material Color Tool](https://material.io/resources/color/) | Create and share color palettes for your UI, and measure the accessibility of any color combination.                                |
+| [ColorSpace](https://mycolor.space)                                | Generate nice color palettes from one color                                                                                         |
 
  **↥ Back To Top**
 
 #### Illustrations
 
-| Website | Description |
-| :--- | :--- |
-| [unDraw](https://undraw.co/illustrations) | Open-source illustrations for any idea you can imagine and create. |
-| [DrawKit](https://www.drawkit.io/) | Hand-drawn vector illustration and icon resources, perfect for your next project. |
-| [Blush](https://blush.design/) | Free customizable illustrations with Figma Plugin |
-| [404 illustrations](https://error404.fun/) | Free illustrations for 404 pages |
-| [Open Peeps](https://www.openpeeps.com/) | Hand drawn illustration library |
-| [Absurd Design](https://absurd.design/) | Free surrealist illustrations and vector art |
-| [Manypixels](https://www.manypixels.co/gallery) | 2,500+ royalty-free and editable illustrations to power up your design projects |
-| [Avataaars](https://avataaars.com) | Avatar Illustrations Sketch Library |
-| [Freellustrations](https://freellustrations.com/) | Collection of high-resolution vector or illustrations background images for modern websites and landing pages |
+| Website                                          | Description                                                                                                   |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| [unDraw](https://undraw.co/illustrations)        | Open-source illustrations for any idea you can imagine and create.                                            |
+| [DrawKit](https://www.drawkit.io)                | Hand-drawn vector illustration and icon resources, perfect for your next project.                             |
+| [Blush](https://blush.design)                    | Free customizable illustrations with Figma Plugin                                                             |
+| [404 illustrations](https://error404.fun)        | Free illustrations for 404 pages                                                                              |
+| [Open Peeps](https://www.openpeeps.com)          | Hand drawn illustration library                                                                               |
+| [Absurd Design](https://absurd.design)           | Free surrealist illustrations and vector art                                                                  |
+| [Manypixels](https://www.manypixels.co/gallery)  | 2,500+ royalty-free and editable illustrations to power up your design projects                               |
+| [Avataaars](https://avataaars.com)               | Avatar Illustrations Sketch Library                                                                           |
+| [Freellustrations](https://freellustrations.com) | Collection of high-resolution vector or illustrations background images for modern websites and landing pages |
 
  **↥ Back To Top**
 
 #### Stock Photos
 
-| Website | Description |
-| :--- | :--- |
-| [Unsplash](https://unsplash.com/) | Beautiful, free images and photos that you can download and use for any project |
-| [Pexels](https://www.pexels.com/) | Download and use the best free stock photos and videos. |
-| [Stock Snap](https://stocksnap.io/) | The \#1 source for beautiful free photos. High quality and high resolution stock images free from all copyright restrictions \(CC0\) |
-| [Pixabay](https://pixabay.com/) | More than 2.2 million Stunning Free Images and video to Use Anywhere |
-| [Burst](https://burst.shopify.com/) | Free stock photos for websites and commercial use |
-| [PicJumbo](https://picjumbo.com/) | free stock photos, backgrounds and free high-resolution images for personal and commercial use |
+| Website                            | Description                                                                                                                       |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [Unsplash](https://unsplash.com)   | Beautiful, free images and photos that you can download and use for any project                                                   |
+| [Pexels](https://www.pexels.com)   | Download and use the best free stock photos and videos.                                                                           |
+| [Stock Snap](https://stocksnap.io) | The #1 source for beautiful free photos. High quality and high resolution stock images free from all copyright restrictions (CC0) |
+| [Pixabay](https://pixabay.com)     | More than 2.2 million Stunning Free Images and video to Use Anywhere                                                              |
+| [Burst](https://burst.shopify.com) | Free stock photos for websites and commercial use                                                                                 |
+| [PicJumbo](https://picjumbo.com)   | free stock photos, backgrounds and free high-resolution images for personal and commercial use                                    |
 
  **↥ Back To Top**
 
 #### Icons
 
-| Website | Description |
-| :--- | :--- |
-| [Feather Icons](https://feathericons.com/) | Simply beautiful open source icons |
-| [Streamline Icons](https://streamlineicons.com/) | Download 30,000 free PNG icons for website, web app, software, web design |
-| [Material Icons](https://fonts.google.com/icons) | Delightful, beautifully crafted symbols for common actions and items |
-| [Font Awesome](https://fontawesome.com) | The world’s most popular and easiest to use icon set |
-| [Remix Icon](https://remixicon.com/) | set of open-source neutral-style system symbols elaborately crafted for designers and developers |
-| [Noun Project](https://thenounproject.com) | Browse over 3 million art-quality icons and photos |
-| [CSS.gg](https://css.gg/) | Open-source CSS, SVG and Figma UI Icons that are available in SVG Sprite, styled-components, NPM & API |
-| [Ikonate](https://ikonate.com/) | fully customisable & accessible vector icons |
-| [Tabler Icons](https://tabler-icons.io) | A set of over 1250 free MIT-licensed high-quality SVG icons for you to use in your web projects. |
+| Website                                          | Description                                                                                            |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| [Feather Icons](https://feathericons.com)        | Simply beautiful open source icons                                                                     |
+| [Streamline Icons](https://streamlineicons.com)  | Download 30,000 free PNG icons for website, web app, software, web design                              |
+| [Material Icons](https://fonts.google.com/icons) | Delightful, beautifully crafted symbols for common actions and items                                   |
+| [Font Awesome](https://fontawesome.com)          | The world’s most popular and easiest to use icon set                                                   |
+| [Remix Icon](https://remixicon.com)              | set of open-source neutral-style system symbols elaborately crafted for designers and developers       |
+| [Noun Project](https://thenounproject.com)       | Browse over 3 million art-quality icons and photos                                                     |
+| [CSS.gg](https://css.gg)                         | Open-source CSS, SVG and Figma UI Icons that are available in SVG Sprite, styled-components, NPM & API |
+| [Ikonate](https://ikonate.com)                   | fully customisable & accessible vector icons                                                           |
+| [Tabler Icons](https://tabler-icons.io)          | A set of over 1250 free MIT-licensed high-quality SVG icons for you to use in your web projects.       |
 
  **↥ Back To Top**
 
@@ -131,9 +129,9 @@ Error messages should be expressed in plain language, indicate the problem, and 
 
 Any necessary help documentation should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large
 
-## 
+##
 
-## 
+##
 
 ## UX Patterns
 
@@ -149,19 +147,19 @@ But let's start by considering the general ways we can understand and start to m
 
 ### Jakob's Law
 
-In 2000, Jakob Nielsen of the Nielsen Norman Group [posited \(Links to an external site.\)](https://www.nngroup.com/articles/end-of-web-design/):
+In 2000, Jakob Nielsen of the Nielsen Norman Group [posited (Links to an external site.)](https://www.nngroup.com/articles/end-of-web-design/):
 
-> **Users spend most of their time on** _**other**_ **sites.** This means that users prefer your site to work the same way as all the other sites they already know.
+> **Users spend most of their time on **_**other**_** sites.** This means that users prefer your site to work the same way as all the other sites they already know.
 
 Note that Nielsen isn't just talking about the way websites _look_—he's referring to how they _work_. In other words, in general, a user's experience with a website will be better if they don't have to learn new ways to interact with it. What's the takeaway here? **Use UX patterns!**
 
-Naturally, there's [some controversy \(Links to an external site.\)](https://medium.cobeisfresh.com/jakobs-law-e368d03c7636) about taking Jakob's Law to its absolute conclusion. If we all want users to avoid having to experience different sites differently, then will all websites end up exactly the same?
+Naturally, there's [some controversy (Links to an external site.)](https://medium.cobeisfresh.com/jakobs-law-e368d03c7636) about taking Jakob's Law to its absolute conclusion. If we all want users to avoid having to experience different sites differently, then will all websites end up exactly the same?
 
 Nonetheless, when you're designing a product and thinking about your user's experience, it can be a very useful rule of thumb: _**don't reinvent the wheel**_. Default to the "boring" way to let your user experience your product—_then_ think about ways to tweak that experience if it makes sense for your product's goals.
 
 ### The Hook Model
 
-In his influential 2014 book _Hooked: How to Build Habit-Forming Products_, Nir Eyal proposed [**the Hook Model \(Links to an external site.\)**](https://www.nirandfar.com/how-to-manufacture-desire/).
+In his influential 2014 book _Hooked: How to Build Habit-Forming Products_, Nir Eyal proposed [**the Hook Model (Links to an external site.)**](https://www.nirandfar.com/how-to-manufacture-desire/).
 
 The Hook model divides a user's interaction and experience with a product into four phases:
 
@@ -178,7 +176,7 @@ One thing to note here, however—the Hook Model focuses on optimizing products 
 
 **Gamification** is incorporating game-like reward features into a product that isn't nominally a game.
 
-One example of gamification is the Wikimedia Foundation's [donation badges \(Links to an external site.\)](https://donate.wikimedia.org/wiki/Template:DonationBadges)—users who donate get recognized with a public badge \(this also incorporates another useful concept: **social proof**—giving your users examples of other people using your product in a certain way to encourage them to do so, too\). Another frequent example is giving users points for completing certain actions, like filling in their profile information.
+One example of gamification is the Wikimedia Foundation's [donation badges (Links to an external site.)](https://donate.wikimedia.org/wiki/Template:DonationBadges)—users who donate get recognized with a public badge (this also incorporates another useful concept: **social proof**—giving your users examples of other people using your product in a certain way to encourage them to do so, too). Another frequent example is giving users points for completing certain actions, like filling in their profile information.
 
 To drive positive product experiences, you'll want to ensure you're **motivating** your users, not manipulating them—and that you're not relying on gamification alone to make the user experience great.
 
@@ -190,11 +188,11 @@ There are hundreds of UX patterns out there, like:
 * ways to increase or decrease choices for the user
 * ways to rely on or assist users' memory
 
-If you want to read more about UX patterns, check out [**Laws of UX \(Links to an external site.\)**](https://lawsofux.com/), a really cool site laying out a bunch of research-driven UX principles and best practices.
+If you want to read more about UX patterns, check out [**Laws of UX (Links to an external site.)**](https://lawsofux.com), a really cool site laying out a bunch of research-driven UX principles and best practices.
 
 We've barely scratched the surface—but hopefully, these examples give you an idea of the work that has been done to understand user experiences, and to synthesize that knowledge into formulas for product success.
 
-## 
+##
 
 ## UI Patterns
 
@@ -220,7 +218,7 @@ Note that to implement pagination, your product will often need to adjust the wa
 
 **Progressive disclosure** is waiting to show content and/or prompt the user for action until it's needed. As the user continues toward a goal, they complete the process gradually. Pagination is an example of progressive disclosure!
 
-Another example of progressive disclosure is using **lazy forms**—forms whose fields only appear once the user has filled in the previous field \(or set of fields\):
+Another example of progressive disclosure is using **lazy forms**—forms whose fields only appear once the user has filled in the previous field (or set of fields):
 
 ![Screen%20Shot%202021-08-29%20at%208.35.39%20PM.png](https://lambdaschool.instructure.com/courses/1562/files/388984/preview)
 
@@ -234,13 +232,13 @@ Progressive disclosure prevents users from being intimidated by having to go thr
 
 **Breadcrumbs** are a very common UI pattern where we display a "secondary" navigation system to the user based on where they are in a hierarchy of pages or screens.
 
-Note the breadcrumbs below \(`New Items` → `Popular` → `On Sale`\):
+Note the breadcrumbs below (`New Items` → `Popular` → `On Sale`):
 
 ![Screen%20Shot%202021-08-29%20at%208.46.56%20PM.png](https://lambdaschool.instructure.com/courses/1562/files/388986/preview)
 
 Breadcrumbs both **orient the user** and allow them to **navigate in context**.
 
-In order to be usefully orienting, breadcrumbs should be based on the actual page or screen hierarchy \(the way the content is actually organized\) rather than whatever way the user has happened to navigate around \(their **history**\). That's because showing the hierarchy gives the user more information about how your product's content is structured.
+In order to be usefully orienting, breadcrumbs should be based on the actual page or screen hierarchy (the way the content is actually organized) rather than whatever way the user has happened to navigate around (their **history**). That's because showing the hierarchy gives the user more information about how your product's content is structured.
 
 #### Empty States
 
@@ -258,15 +256,15 @@ There's no way we could list out all the possible UI patterns available—there 
 
 To see more and learn more about UI patterns, check out these resources:
 
-* [**ui-patterns.com \(Links to an external site.\)**](http://ui-patterns.com/): A library of UI design patterns
-* [**uipatterns.io \(Links to an external site.\)**](http://uipatterns.io/): An interactive list of UI design patterns
-* [**Map UI Patterns \(Links to an external site.\)**](https://www.mapuipatterns.com/): A big collection of UI design patterns specific to maps
+* [**ui-patterns.com (Links to an external site.)**](http://ui-patterns.com): A library of UI design patterns
+* [**uipatterns.io (Links to an external site.)**](http://uipatterns.io): An interactive list of UI design patterns
+* [**Map UI Patterns (Links to an external site.)**](https://www.mapuipatterns.com): A big collection of UI design patterns specific to maps
 
-## 
+##
 
 ## Accessibility:
 
-This checklist uses [The Web Content Accessibility Guidelines \(WCAG\)](https://www.w3.org/WAI/standards-guidelines/wcag/) as a reference point. The WCAG is a shared standard for web content accessibility for individuals, organizations, and governments.
+This checklist uses [The Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) as a reference point. The WCAG is a shared standard for web content accessibility for individuals, organizations, and governments.
 
 There are three levels of accessibility compliance in the WCAG, which reflect the priority of support:
 
@@ -320,15 +318,15 @@ Terms like "click here" and "read more" do not provide any context. Some people 
 
 [SHARE LINKTO CHECKLIST ITEM: MAKE SURE THAT `BUTTON`, `A`, AND `LABEL` ELEMENT CONTENT IS UNIQUE AND DESCRIPTIVE.](https://www.a11yproject.com/checklist/#make-sure-that-button-a-and-label-element-content-is-unique-and-descriptive)
 
-Task: Use left-aligned text for left-to-right \(LTR\) languages, and right-aligned text for right-to-left \(RTL\) languages.
+Task: Use left-aligned text for left-to-right (LTR) languages, and right-aligned text for right-to-left (RTL) languages.
 
-Use left-aligned text for left-to-right \(LTR\) languages, and right-aligned text for right-to-left \(RTL\) languages.
+Use left-aligned text for left-to-right (LTR) languages, and right-aligned text for right-to-left (RTL) languages.
 
 [1.4.8 VISUAL PRESENTATION](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html)
 
 Centered-aligned or justified text is difficult to read.
 
-[SHARE LINKTO CHECKLIST ITEM: USE LEFT-ALIGNED TEXT FOR LEFT-TO-RIGHT \(LTR\) LANGUAGES, AND RIGHT-ALIGNED TEXT FOR RIGHT-TO-LEFT \(RTL\) LANGUAGES.](https://www.a11yproject.com/checklist/#use-left-aligned-text-for-left-to-right-ltr-languages-and-right-aligned-text-for-right-to-left-rtl-languages)
+[SHARE LINKTO CHECKLIST ITEM: USE LEFT-ALIGNED TEXT FOR LEFT-TO-RIGHT (LTR) LANGUAGES, AND RIGHT-ALIGNED TEXT FOR RIGHT-TO-LEFT (RTL) LANGUAGES.](https://www.a11yproject.com/checklist/#use-left-aligned-text-for-left-to-right-ltr-languages-and-right-aligned-text-for-right-to-left-rtl-languages)
 
 ### Global code
 
@@ -432,19 +430,19 @@ Make sure that all `img` elements have an `alt` attribute.
 
 [1.1.1 NON-TEXT CONTENT](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 
-`alt` attributes \(alt text\) give a description of an image for people who may not be able to view them. When an `alt` attribute isn't present on an image, a screen reader may announce the image's file name and path instead. This fails to communicate the image's content.
+`alt` attributes (alt text) give a description of an image for people who may not be able to view them. When an `alt` attribute isn't present on an image, a screen reader may announce the image's file name and path instead. This fails to communicate the image's content.
 
 [SHARE LINKTO CHECKLIST ITEM: MAKE SURE THAT ALL `IMG` ELEMENTS HAVE AN `ALT` ATTRIBUTE.](https://www.a11yproject.com/checklist/#make-sure-that-all-img-elements-have-an-alt-attribute)
 
-Task: Make sure that decorative images use null `alt` \(empty\) attribute values.
+Task: Make sure that decorative images use null `alt` (empty) attribute values.
 
-Make sure that decorative images use null `alt` \(empty\) attribute values.
+Make sure that decorative images use null `alt` (empty) attribute values.
 
 [1.1.1 NON-TEXT CONTENT](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 
 Null `alt` attributes are also sometimes known as empty `alt` attributes. They are made by including no information between the opening and closing quotes of an `alt` attribute. Decorative images do not communicate information that is required to understand the website's overall meaning. Historically they were used for flourishes and [spacer gif](https://en.wikipedia.org/wiki/Spacer_GIF) images, but tend to be less relevant for modern websites and web apps.
 
-[SHARE LINKTO CHECKLIST ITEM: MAKE SURE THAT DECORATIVE IMAGES USE NULL `ALT` \(EMPTY\) ATTRIBUTE VALUES.](https://www.a11yproject.com/checklist/#make-sure-that-decorative-images-use-null-alt-empty-attribute-values)
+[SHARE LINKTO CHECKLIST ITEM: MAKE SURE THAT DECORATIVE IMAGES USE NULL `ALT` (EMPTY) ATTRIBUTE VALUES.](https://www.a11yproject.com/checklist/#make-sure-that-decorative-images-use-null-alt-empty-attribute-values)
 
 Task: Provide a text alternative for complex images such as charts, graphs, and maps.
 
@@ -468,7 +466,7 @@ For example, the FedEx logo should have an alt value of "FedEx."
 
 ### Headings
 
-Heading elements \(h1, h2, h3, etc.\) help break up the content of the page into related "chunks" of information. They are incredibly important for helping people who use assistive technology to understand the meaning of a page or view.
+Heading elements (h1, h2, h3, etc.) help break up the content of the page into related "chunks" of information. They are incredibly important for helping people who use assistive technology to understand the meaning of a page or view.
 
 Task: Use heading elements to introduce content.
 
@@ -486,7 +484,7 @@ Use only one `h1` element per page or view.
 
 [2.4.6 HEADINGS OR LABELS](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html)
 
-The `h1` element should be used to communicate the high-level purpose of the page or view. Do not use the `h1` element for a heading that does not change between pages or views \(for example, the site's name\).
+The `h1` element should be used to communicate the high-level purpose of the page or view. Do not use the `h1` element for a heading that does not change between pages or views (for example, the site's name).
 
 [SHARE LINKTO CHECKLIST ITEM: USE ONLY ONE `H1` ELEMENT PER PAGE OR VIEW.](https://www.a11yproject.com/checklist/#use-only-one-h1-element-per-page-or-view)
 
@@ -514,15 +512,15 @@ For example, don't jump from a `h2` to a `h4`, skipping a `h3` element. If headi
 
 Lists elements let people know a collection of items are related and if they are sequential, and how many items are present in the list grouping.
 
-Task: Use list elements \(`ol`, `ul`, and `dl` elements\) for list content.
+Task: Use list elements (`ol`, `ul`, and `dl` elements) for list content.
 
-Use list elements \(`ol`, `ul`, and `dl` elements\) for list content.
+Use list elements (`ol`, `ul`, and `dl` elements) for list content.
 
 [1.3.1 INFO AND RELATIONSHIPS](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
 
 This may include sections of related content, items visually displayed in a grid-like layout, or sibling a elements.
 
-[SHARE LINKTO CHECKLIST ITEM: USE LIST ELEMENTS \(`OL`, `UL`, AND `DL` ELEMENTS\) FOR LIST CONTENT.](https://www.a11yproject.com/checklist/#use-list-elements-ol-ul-and-dl-elements-for-list-content)
+[SHARE LINKTO CHECKLIST ITEM: USE LIST ELEMENTS (`OL`, `UL`, AND `DL` ELEMENTS) FOR LIST CONTENT.](https://www.a11yproject.com/checklist/#use-list-elements-ol-ul-and-dl-elements-for-list-content)
 
 ### Controls
 
@@ -534,7 +532,7 @@ Use the `a` element for links.
 
 [1.3.1 INFO AND RELATIONSHIPS](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
 
-Links should always have a `href` attribute, even when used in Single Page Applications \(SPAs\). Without a `href` attribute, the link will not be properly exposed to assistive technology. An example of this would be a link that uses an `onclick` event, in place of a `href` attribute.
+Links should always have a `href` attribute, even when used in Single Page Applications (SPAs). Without a `href` attribute, the link will not be properly exposed to assistive technology. An example of this would be a link that uses an `onclick` event, in place of a `href` attribute.
 
 [SHARE LINKTO CHECKLIST ITEM: USE THE `A` ELEMENT FOR LINKS.](https://www.a11yproject.com/checklist/#use-the-a-element-for-links)
 
@@ -602,15 +600,15 @@ Do you need to display data in rows and columns? Use the `table` element.
 
 [SHARE LINKTO CHECKLIST ITEM: USE THE `TABLE` ELEMENT TO DESCRIBE TABULAR DATA.](https://www.a11yproject.com/checklist/#use-the-table-element-to-describe-tabular-data)
 
-Task: Use the `th` element for table headers \(with appropriate `scope` attributes\).
+Task: Use the `th` element for table headers (with appropriate `scope` attributes).
 
-Use the `th` element for table headers \(with appropriate `scope` attributes\).
+Use the `th` element for table headers (with appropriate `scope` attributes).
 
 [4.1.1 PARSING](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html)
 
 Depending on [how complex your table is](https://www.w3.org/WAI/tutorials/tables/), you may also consider using `scope="col"` for column headers, and `scope="row"` for row headers. Many different kinds of assistive technology still use the `scope` attribute to help them understand and describe the structure of a table.
 
-[SHARE LINKTO CHECKLIST ITEM: USE THE `TH` ELEMENT FOR TABLE HEADERS \(WITH APPROPRIATE `SCOPE` ATTRIBUTES\).](https://www.a11yproject.com/checklist/#use-the-th-element-for-table-headers-with-appropriate-scope-attributes)
+[SHARE LINKTO CHECKLIST ITEM: USE THE `TH` ELEMENT FOR TABLE HEADERS (WITH APPROPRIATE `SCOPE` ATTRIBUTES).](https://www.a11yproject.com/checklist/#use-the-th-element-for-table-headers-with-appropriate-scope-attributes)
 
 Task: Use the `caption` element to provide a title for the table.
 
@@ -652,7 +650,7 @@ Inputs use `autocomplete` where appropriate.
 
 [1.3.5 IDENTIFY INPUT PURPOSE](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html)
 
-[Providing a mechanism](https://www.w3.org/TR/html52/sec-forms.html#sec-autofill) to help people more quickly, easily, and accurately fill in form fields that ask for common information \(for example, name, address, phone number\).
+[Providing a mechanism](https://www.w3.org/TR/html52/sec-forms.html#sec-autofill) to help people more quickly, easily, and accurately fill in form fields that ask for common information (for example, name, address, phone number).
 
 [SHARE LINKTO CHECKLIST ITEM: INPUTS USE `AUTOCOMPLETE` WHERE APPROPRIATE.](https://www.a11yproject.com/checklist/#inputs-use-autocomplete-where-appropriate)
 
@@ -788,7 +786,7 @@ Double-check that good proximity between content is maintained.
 
 [1.3.3 SENSORY CHARACTERISTICS](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
 
-Use [the straw test](https://www.youtube.com/watch?v=S1j6CYT3kWA&feature=youtu.be) to ensure people who depend on screen zoom software can still easily discover all content.
+Use [the straw test](https://www.youtube.com/watch?v=S1j6CYT3kWA\&feature=youtu.be) to ensure people who depend on screen zoom software can still easily discover all content.
 
 [SHARE LINKTO CHECKLIST ITEM: DOUBLE-CHECK THAT GOOD PROXIMITY BETWEEN CONTENT IS MAINTAINED.](https://www.a11yproject.com/checklist/#double-check-that-good-proximity-between-content-is-maintained)
 
@@ -808,7 +806,7 @@ Make sure instructions are not visual or audio-only.
 
 [1.3.3 SENSORY CHARACTERISTICS](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 
-Use a combination of characteristics to write cues, particularly the actual names of sections and elements, rather than just descriptions like location \("on the right"\) or audio \("after the tone"\).
+Use a combination of characteristics to write cues, particularly the actual names of sections and elements, rather than just descriptions like location ("on the right") or audio ("after the tone").
 
 [SHARE LINKTO CHECKLIST ITEM: MAKE SURE INSTRUCTIONS ARE NOT VISUAL OR AUDIO-ONLY.](https://www.a11yproject.com/checklist/#make-sure-instructions-are-not-visual-or-audio-only)
 
@@ -890,15 +888,15 @@ Level AA compliance requires a contrast ratio of 3.0:1.
 
 [SHARE LINKTO CHECKLIST ITEM: CHECK THE CONTRAST FOR ALL ICONS.](https://www.a11yproject.com/checklist/#check-the-contrast-for-all-icons)
 
-Task: Check the contrast of borders for input elements \(text input, radio buttons, checkboxes, etc.\).
+Task: Check the contrast of borders for input elements (text input, radio buttons, checkboxes, etc.).
 
-Check the contrast of borders for input elements \(text input, radio buttons, checkboxes, etc.\).
+Check the contrast of borders for input elements (text input, radio buttons, checkboxes, etc.).
 
 [1.4.11 NON-TEXT CONTRAST](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
 
 Level AA compliance requires a contrast ratio of 3.0:1.
 
-[SHARE LINKTO CHECKLIST ITEM: CHECK THE CONTRAST OF BORDERS FOR INPUT ELEMENTS \(TEXT INPUT, RADIO BUTTONS, CHECKBOXES, ETC.\).](https://www.a11yproject.com/checklist/#check-the-contrast-of-borders-for-input-elements-text-input-radio-buttons-checkboxes-etc)
+[SHARE LINKTO CHECKLIST ITEM: CHECK THE CONTRAST OF BORDERS FOR INPUT ELEMENTS (TEXT INPUT, RADIO BUTTONS, CHECKBOXES, ETC.).](https://www.a11yproject.com/checklist/#check-the-contrast-of-borders-for-input-elements-text-input-radio-buttons-checkboxes-etc)
 
 Task: Check text that overlaps images or video.
 
@@ -972,7 +970,7 @@ Remember to periodically check your site to ensure it is still accessible. The A
 
 TetraLogical has a good in-depth, yet still [high-level explanation of the WCAG](https://tetralogical.com/articles/wcag-primer/). Check it out if you want to learn more about its history and principles.
 
-[![InVision Design Forward Fund. Apply now.](https://www.a11yproject.com/img/sponsors/invision-design-forward-fund.svg)](https://www.invisionapp.com/design-forward-fund)[![Go make things. Learn Vanilla JavaScript. Get daily developer tips.](https://www.a11yproject.com/img/sponsors/go-make-things.svg)](https://vanillajsacademy.com/)[![Assistiv Labs. Instantly test with real screen readers and more. Get started.](https://www.a11yproject.com/img/sponsors/assistiv-labs.svg)](https://assistivlabs.com/?utm_source=the_a11y_project&utm_medium=sponsored_ad)[![Fable.](https://www.a11yproject.com/img/sponsors/fable.png)](https://makeitfable.com/?utm_source=partnerships&utm_medium=website&utm_campaign=a11yproject)[![A11Y Collective. Online courses in web accessibility. Increase your knowledge base and add accessible code, design, or content to your skill set. Sign up for a course.](https://www.a11yproject.com/img/sponsors/a11y-collective.svg)](https://a11y-collective.com/?utm_medium=website&utm_source=a11y_project&utm_campaign=banner)[![Be Inclusive. Tired of tracking audits in spreadsheets? Focus on what really matters, let us simplify the rest. Try it free for a week!](https://www.a11yproject.com/img/sponsors/be-inclusive.svg)](https://beinclusive.app/?mtm_campaign=Sponsorship&mtm_kwd=A11yProject)[![Sponsor The A11Y Project. Learn how.](https://www.a11yproject.com/img/sponsors/sponsor-the-a11y-project.svg)](https://www.a11yproject.com/sponsorship/)
+[![InVision Design Forward Fund. Apply now.](https://www.a11yproject.com/img/sponsors/invision-design-forward-fund.svg)](https://www.invisionapp.com/design-forward-fund)[![Go make things. Learn Vanilla JavaScript. Get daily developer tips.](https://www.a11yproject.com/img/sponsors/go-make-things.svg)](https://vanillajsacademy.com)[![Assistiv Labs. Instantly test with real screen readers and more. Get started.](https://www.a11yproject.com/img/sponsors/assistiv-labs.svg)](https://assistivlabs.com)[![Fable.](https://www.a11yproject.com/img/sponsors/fable.png)](https://makeitfable.com)[![A11Y Collective. Online courses in web accessibility. Increase your knowledge base and add accessible code, design, or content to your skill set. Sign up for a course.](https://www.a11yproject.com/img/sponsors/a11y-collective.svg)](https://a11y-collective.com)[![Be Inclusive. Tired of tracking audits in spreadsheets? Focus on what really matters, let us simplify the rest. Try it free for a week!](https://www.a11yproject.com/img/sponsors/be-inclusive.svg)](https://beinclusive.app/?mtm_campaign=Sponsorship\&mtm_kwd=A11yProject)[![Sponsor The A11Y Project. Learn how.](https://www.a11yproject.com/img/sponsors/sponsor-the-a11y-project.svg)](https://www.a11yproject.com/sponsorship/)
 
 ### FEATURES
 
@@ -1013,4 +1011,3 @@ TetraLogical has a good in-depth, yet still [high-level explanation of the WCAG]
 * [Write for Us](https://www.a11yproject.com/write-for-us/)
 * [Good First Issues](https://github.com/a11yproject/a11yproject.com/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+First+Issue%22)
 * [Project Roadmap](https://github.com/a11yproject/a11yproject.com/projects/1)
-

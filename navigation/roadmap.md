@@ -2,13 +2,13 @@
 
 ## Roadmap
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](<../.gitbook/assets/image (1).png>)
 
 ### Type
 
-**Web \(Node\) + DS** \(Build-on\)
+**Web (Node) + DS** (Build-on)
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](<../.gitbook/assets/image (12).png>)
 
 ### Overview
 
@@ -16,7 +16,7 @@ Family Promise helps local communities coordinate their compassion to address th
 
 Family Promise needs a way to **track and visualize the services they provide external to the shelter to gain actionable insights**.
 
-Our goal is to build a _**generalizable**_ **monitoring and evaluation \(M&E\) platform** that meets Family Promise's needs, with an eye toward additional potential use cases that would be useful for many other organizations.
+Our goal is to build a _**generalizable**_** monitoring and evaluation (M\&E) platform** that meets Family Promise's needs, with an eye toward additional potential use cases that would be useful for many other organizations.
 
 This product will take multiple Labs cohorts to complete.
 
@@ -26,7 +26,7 @@ The next round focused on ensuring individual services can be tracked for recipi
 
 This round, we'll pick up the previous team's work building out **metrics** to serve as the main window our users will have into conducting monitoring and evaluation of their programs and services. Then we'll let Administrators and Program Managers define **Goals** based on one or more metrics, and provide **analytics** and **visualizations** to display relevant data for each user type.
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](<../.gitbook/assets/image (7).png>)
 
 ### Contacts
 
@@ -51,7 +51,7 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 [Feature List](https://www.notion.so/649befae354f455abbd7b642f8f0a120)
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](<../.gitbook/assets/image (21).png>)
 
 ### Resources
 
@@ -65,10 +65,10 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 **Family Promise Colors:**
 
-* Purple: \#472D5B
-* Blue: \#006FBA
-* Lilac: \#8D4982
-* Yellow: \#FEC357
+* Purple: #472D5B
+* Blue: #006FBA
+* Lilac: #8D4982
+* Yellow: #FEC357
 
 #### Recordings
 
@@ -76,7 +76,7 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 📼 [**Labs 34 Playlist**](https://youtube.com/playlist?list=PLWX9jswdDQ0VP4avK4t33TMpOz_AnBnw7)
 
-📼 [**Labs 35 Playlist**](https://youtube.com/playlist?list=PLWX9jswdDQ0V0521r_6qoVRdkjc4NItEl)
+📼 [**Labs 35 Playlist**](https://youtube.com/playlist?list=PLWX9jswdDQ0V0521r\_6qoVRdkjc4NItEl)
 
 #### Previous Team Pages
 
@@ -97,24 +97,24 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 * Let Program Managers select an area on a map and name it as a neighborhood/area
   * Let Program Managers add in insider knowledge/community resources per neighborhood/area
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](<../.gitbook/assets/image (8).png>)
 
 ## Labs Engineering Docs
 
-## Labs Guides <a id="labs-guides"></a>
+## Labs Guides <a href="labs-guides" id="labs-guides"></a>
 
 * ​[Labs Engineering Standards](https://docs.labs.lambdaschool.com/standards/)​
 * ​[Labs Engineering Guide](https://docs.labs.lambdaschool.com/guides/)​
 * ​[Labs Data Science Guide](https://docs.labs.lambdaschool.com/data-science/)​
 
-## Labs Scaffolding <a id="labs-scaffolding"></a>
+## Labs Scaffolding <a href="labs-scaffolding" id="labs-scaffolding"></a>
 
 * ​[Labs SPA Starter](https://docs.labs.lambdaschool.com/labs-spa-starter/)​
 * ​[Labs API Starter](https://docs.labs.lambdaschool.com/api/)​
 
-## Please read this carefully! <a id="please-read-this-carefully"></a>
+## Please read this carefully! <a href="please-read-this-carefully" id="please-read-this-carefully"></a>
 
-The internet is full of very powerful platforms for supporting your application \(AWS, Heroku, etc.\). These platforms require the use of secrets \(passwords, keys, tokens, etc.\) to access and use their services.
+The internet is full of very powerful platforms for supporting your application (AWS, Heroku, etc.). These platforms require the use of secrets (passwords, keys, tokens, etc.) to access and use their services.
 
 🎗 It is your responsibility to always protect the secret keys and tokens you use to access these platforms. A single compromise of your application resources can have major a significant impact on the life of your application and potentially on the lives of people affected.
 
@@ -132,7 +132,7 @@ The AWS security team scans for AWS keys in public repositories. If they find th
 
 If you cannot think of a way to get your secrets to your application without hardcoding... stop! Talk to your TPL, APL or an Engineering Manager for a solution. Please do not ever commit your secret keys into your code repository or expose them in any other way.
 
-Install git-secrets right now! All students using Git are required to install git-secrets \([https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)\) which will greatly reduce the possibility of pushing secrets to your code repository. All students are should install and use git-secrets while working in Labs. Of course, it's also a good idea to use git-secrets whenever and wherever you're writing code. Be sure to follow the Advanced Configuration steps to be sure that all current and new repos have git-secrets enabled.
+Install git-secrets right now! All students using Git are required to install git-secrets ([https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)) which will greatly reduce the possibility of pushing secrets to your code repository. All students are should install and use git-secrets while working in Labs. Of course, it's also a good idea to use git-secrets whenever and wherever you're writing code. Be sure to follow the Advanced Configuration steps to be sure that all current and new repos have git-secrets enabled.
 
 Install dotenv right now! You can use dotenv or another similar tool to automatically load secrets and other runtime parameters as your application starts. These tools help to keep secrets safe by ensuring they can be easily loaded without needing to hardcode them. Be sure to that the .env file is in your .gitignore file.
 
@@ -142,19 +142,19 @@ Add the line`.env*` to your`.gitignore`file to be sure you never accidentally co
 
 Never hardcode any secrets! Don't do it! Not even for a minute for a quick test! Chances are you'll be so happy your code works you'll forget about the hardcoded key, commit the code, push it to GitHub and will get your app shutdown or pwned and all your data exposed and your commit of a secret key will be forever tied to your GitHub ID. Use dotenv to be make managing secrets easier and use git-secrets to prevent accidents.
 
-Don't ignore or hide mistakes! If you mess up, it's fine! The only thing that makes it not fine is if you try to hide your mistake. We might not find it, but someone will. If you expose a secret by pushing it to a repo, let your TPL or APL know immediately. We can then invalidate the secret \(change the password, rotate the key\) and move on.
+Don't ignore or hide mistakes! If you mess up, it's fine! The only thing that makes it not fine is if you try to hide your mistake. We might not find it, but someone will. If you expose a secret by pushing it to a repo, let your TPL or APL know immediately. We can then invalidate the secret (change the password, rotate the key) and move on.
 
 
 
 
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](<../.gitbook/assets/image (11).png>)
 
-## Roadmap: Family Promise Homeless Shelter Intake System \(Labs 29\)
+## Roadmap: Family Promise Homeless Shelter Intake System (Labs 29)
 
 ### Type
 
-**Web \(Node\), DS** \(Greenfield\)
+**Web (Node), DS** (Greenfield)
 
 ### Overview
 
@@ -193,22 +193,21 @@ This is a **user experience-heavy challenge**. We can't present the model in the
 
 ### Resources
 
-\(Work with stakeholder for canonical versions\)
+(Work with stakeholder for canonical versions)
 
-[Exit Destination Model](https://colab.research.google.com/drive/15Y1WTWgVKQN8pKLTWCqWKJs_ZQnDKpmT?usp=sharing) \[Google Colaboratory\]
+[Exit Destination Model](https://colab.research.google.com/drive/15Y1WTWgVKQN8pKLTWCqWKJs_ZQnDKpmT?usp=sharing) \[Google Colaboratory]
 
-[Data](https://drive.google.com/file/d/1faYmEHN0Braa-Gyc-fLpQjBjHw8SjixD/view?usp=sharing) \(2 years, redacted, "semi-"cleaned\)
+[Data](https://drive.google.com/file/d/1faYmEHN0Braa-Gyc-fLpQjBjHw8SjixD/view?usp=sharing) (2 years, redacted, "semi-"cleaned)
 
-[Current Intake Packet](https://drive.google.com/file/d/1iLUgQtalpiRlW1x_nNg75CcIO09hunAr/view?usp=sharing) \[Google Drive\]
+[Current Intake Packet](https://drive.google.com/file/d/1iLUgQtalpiRlW1x_nNg75CcIO09hunAr/view?usp=sharing) \[Google Drive]
 
-[Currently Deployed Prediction Model](https://fp-prediction.herokuapp.com) \(binary classification\)
+[Currently Deployed Prediction Model](https://fp-prediction.herokuapp.com) (binary classification)
 
 **FamilyPromise Colors:**
 
-* Purple: \#472D5B
-* Blue: \#006FBA
-* Lilac: \#8D4982
-* Yellow: \#FEC357
+* Purple: #472D5B
+* Blue: #006FBA
+* Lilac: #8D4982
+* Yellow: #FEC357
 
 [PAIR People + AI Guidebook](https://pair.withgoogle.com/guidebook/)
-

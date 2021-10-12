@@ -6,7 +6,9 @@ description: >-
 
 # Home
 
-{% page-ref page="docs/untitled.md" %}
+{% content-ref url="docs/untitled.md" %}
+[untitled.md](docs/untitled.md)
+{% endcontent-ref %}
 
 
 
@@ -18,30 +20,48 @@ description: >-
 
 ## Team Contact Info:
 
-| Name | Role | Github | Linkedin | Number | Time Zone |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| ​Ash Tilawat | Release Manager | [https://github.com/ashtilawat23](https://github.com/ashtilawat23) | ​[https://www.linkedin.com/in/ashtilawat23/](https://www.linkedin.com/in/ashtilawat23/) | ​Content | ​EST |
-| Jim Liberi | TPM |  |  |  |  |
-| Michael Quint | TPM |  |  |  |  |
-| Bryan Guner | UX | ​[https://github.com/bgoonz](https://github.com/bgoonz)​ | ​[https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)​ | 551-254-5505 | EST |
-| ​Joe Park \| Jong Seo Park | ​UX  | ​Content | ​Content | ​Content | ​Content |
-| Abraham Mirambeaux​ | Front End | ​Content | ​Content | ​Content |  |
-| Andrew Castillo | Front End |  |  |  |  |
-| ​Murray Warnock | ​Backend | ​Content | ​Content | ​Content | ​Content |
-| Dave Dwight  | ​Backend | ​Content | ​Content | ​Content | ​Content |
-|  Salomon Maldonado  ​ | ​Backend | ​Content | ​Content |  |  |
+| Name                       | Role            | Github                                                             | Linkedin                                                                                                   | Number       | Time Zone |
+| -------------------------- | --------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------ | --------- |
+| ​Ash Tilawat               | Release Manager | [https://github.com/ashtilawat23](https://github.com/ashtilawat23) | ​[https://www.linkedin.com/in/ashtilawat23/](https://www.linkedin.com/in/ashtilawat23/)                    | ​Content     | ​EST      |
+| Jim Liberi                 | TPM             |                                                                    |                                                                                                            |              |           |
+| Michael Quint              | TPM             |                                                                    |                                                                                                            |              |           |
+| Bryan Guner                | UX              | ​[https://github.com/bgoonz](https://github.com/bgoonz)​           | ​[https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)​ | 551-254-5505 | EST       |
+| ​Joe Park \| Jong Seo Park | ​UX             | ​Content                                                           | ​Content                                                                                                   | ​Content     | ​Content  |
+| Abraham Mirambeaux​        | Front End       | ​Content                                                           | ​Content                                                                                                   | ​Content     |           |
+| Andrew Castillo            | Front End       |                                                                    |                                                                                                            |              |           |
+| ​Murray Warnock            | ​Backend        | ​Content                                                           | ​Content                                                                                                   | ​Content     | ​Content  |
+| Dave Dwight                | ​Backend        | ​Content                                                           | ​Content                                                                                                   | ​Content     | ​Content  |
+|  Salomon Maldonado  ​      | ​Backend        | ​Content                                                           | ​Content                                                                                                   |              |           |
 
 ‌
 
-{% page-ref page="navigation/youtube.md" %}
+{% content-ref url="navigation/youtube.md" %}
+[youtube.md](navigation/youtube.md)
+{% endcontent-ref %}
 
-{% page-ref page="navigation/roadmap.md" %}
+{% content-ref url="navigation/roadmap.md" %}
+[roadmap.md](navigation/roadmap.md)
+{% endcontent-ref %}
 
-{% page-ref page="navigation/team-members.md" %}
+{% content-ref url="navigation/team-members.md" %}
+[team-members.md](navigation/team-members.md)
+{% endcontent-ref %}
 
-{% page-ref page="docs/untitled.md" %}
+{% content-ref url="docs/untitled.md" %}
+[untitled.md](docs/untitled.md)
+{% endcontent-ref %}
 
-{% page-ref page="ux/untitled/" %}
+{% content-ref url="ux/untitled/" %}
+[untitled](ux/untitled/)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 
 
@@ -55,7 +75,9 @@ description: >-
 
 {% embed url="https://docs.google.com/spreadsheets/d/1x2TSzeIDw2-YkumhJ4F7IW2EVkA7NVeZo-pez1Fkn7s/edit?usp=sharing" %}
 
-{% page-ref page="docs/untitled.md" %}
+{% content-ref url="docs/untitled.md" %}
+[untitled.md](docs/untitled.md)
+{% endcontent-ref %}
 
 ## Current Deployment:
 
@@ -75,31 +97,33 @@ description: >-
 
 {% embed url="https://codepen.io/bgoonz/pen/QWgYoBp" %}
 
-{% embed url="https://calendar.google.com/calendar/embed?src=c\_f16bvhnsdsp8epckcinsu4978g%40group.calendar.google.com&ctz=America%2FNew\_York" %}
+{% embed url="https://calendar.google.com/calendar/embed?src=c_f16bvhnsdsp8epckcinsu4978g%40group.calendar.google.com&ctz=America%2FNew_York" %}
 
 ![](https://i.imgur.com/pW28AXn.png)
 
-{% page-ref page="docs/untitled.md" %}
+{% content-ref url="docs/untitled.md" %}
+[untitled.md](docs/untitled.md)
+{% endcontent-ref %}
 
 ![](https://i.imgur.com/pW28AXn.png)
 
-## **App Login Info** Name: Abigail Administrator Username: [fp.servicetracker+admin@gmail.com](mailto:fp.servicetracker+admin@gmail.com) Pw: ILoveLambdaL4bz!Name: Sally Service Username: [fp.servicetracker+service@gmail.com](mailto:fp.servicetracker+service@gmail.com) Pw: ILoveLambdaL4bz!Name: Patty Program Username: [fp.servicetracker+program@gmail.com](mailto:fp.servicetracker+program@gmail.com) Pw: ILoveLambdaL4bz!Name: Gary Jerry Username: [fp.servicetracker+unassigned@gmail.com](mailto:fp.servicetracker+unassigned@gmail.com) Pw: ILoveLambdaL4bz!Name: BG User Username: [bg\_user@gmail.com](mailto:bg_user@gmail.com) Pw: ILoveLambdaL4bz!
+## **App Login Info** Name: Abigail Administrator Username: [fp.servicetracker+admin@gmail.com](mailto:fp.servicetracker+admin@gmail.com) Pw: ILoveLambdaL4bz!Name: Sally Service Username: [fp.servicetracker+service@gmail.com](mailto:fp.servicetracker+service@gmail.com) Pw: ILoveLambdaL4bz!Name: Patty Program Username: [fp.servicetracker+program@gmail.com](mailto:fp.servicetracker+program@gmail.com) Pw: ILoveLambdaL4bz!Name: Gary Jerry Username: [fp.servicetracker+unassigned@gmail.com](mailto:fp.servicetracker+unassigned@gmail.com) Pw: ILoveLambdaL4bz!Name: BG User Username: [bg_user@gmail.com](mailto:bg_user@gmail.com) Pw: ILoveLambdaL4bz!
 
 ![](https://i.imgur.com/pW28AXn.png)
 
 ## Team Contact Info:
 
-| Name | Role | Github | Linkedin | Number | Time Zone |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-|  |  |  |  |  |  |
-| Bryan Guner | UX | [https://github.com/bgoonz](https://github.com/bgoonz) | [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/) | 551-254-5505 | EST |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
+| Name        | Role | Github                                                 | Linkedin                                                                                                 | Number       | Time Zone |
+| ----------- | ---- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | ------------ | --------- |
+|             |      |                                                        |                                                                                                          |              |           |
+| Bryan Guner | UX   | [https://github.com/bgoonz](https://github.com/bgoonz) | [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/) | 551-254-5505 | EST       |
+|             |      |                                                        |                                                                                                          |              |           |
+|             |      |                                                        |                                                                                                          |              |           |
+|             |      |                                                        |                                                                                                          |              |           |
+|             |      |                                                        |                                                                                                          |              |           |
+|             |      |                                                        |                                                                                                          |              |           |
 
-## 
+##
 
 ## Table of contents
 
@@ -118,7 +142,7 @@ description: >-
 
 ### UX
 
-* [UX\_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
+* [UX_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
   * [Accessibility](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/accessibility)
   * [Figma Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/README)
     * [Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/notes)
@@ -129,7 +153,7 @@ description: >-
     * [ANT Components](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/README)
       * [Buttons](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/buttons)
     * [ANT DOCS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-docs)
-    * [Application \(Codesandbox\)](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/application-codesandbox)
+    * [Application (Codesandbox)](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/ant-design/application-codesandbox)
   * [Examples](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/examples)
 
 ### CANVAS
@@ -160,7 +184,7 @@ description: >-
   * [PTM](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/ptm)
   * [General](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/general)
 
-### DS\_API
+### DS_API
 
 * [Data Science API](https://lambda-labs.gitbook.io/lambda-labs/ds_api/untitled)
 
@@ -218,7 +242,7 @@ description: >-
   * [Basic Node API](https://lambda-labs.gitbook.io/lambda-labs/docs/project-docs/basic-node-api)
   * [Contributing to this scaffold project](https://lambda-labs.gitbook.io/lambda-labs/docs/project-docs/contributing-to-this-scaffold-project)
   * [Examples:](https://lambda-labs.gitbook.io/lambda-labs/docs/project-docs/examples)
-* [PROJECT DESCRIPTION \(Feature List\)](https://lambda-labs.gitbook.io/lambda-labs/docs/project-description)
+* [PROJECT DESCRIPTION (Feature List)](https://lambda-labs.gitbook.io/lambda-labs/docs/project-description)
 * [Labs Learners Guide](https://lambda-labs.gitbook.io/lambda-labs/docs/labs-learners-guide)
 * [REACT](https://lambda-labs.gitbook.io/lambda-labs/docs/react/README)
   * [Create React App](https://lambda-labs.gitbook.io/lambda-labs/docs/react/untitled)
@@ -243,4 +267,3 @@ description: >-
     * [Amplify-DNS](https://lambda-labs.gitbook.io/lambda-labs/aws/aws/amplify/amplify-dns)
 * [Account Basics](https://lambda-labs.gitbook.io/lambda-labs/aws/untitled-1)
 * [AWS-Networking](https://lambda-labs.gitbook.io/lambda-labs/aws/aws-networking)
-

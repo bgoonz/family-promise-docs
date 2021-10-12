@@ -6,7 +6,7 @@ This guide contains information, policies, and guidelines specific to Labs. You 
 
 You should bookmark this page as it will be _very_ useful for you during your time in Labs.
 
-Please be aware that infrastructure components for Labs projects will _not_ be maintained after you complete Labs. This includes online servers and domain names. You should expect your application to either stop working or drastically change \(as new teams continue to make enhancements\) soon after your Labs session ends. All learner-developed source code is released under the MIT license, so if you want or need to your application to be running after Labs, you can fork the repository and deploy to the infrastructure of your choosing.
+Please be aware that infrastructure components for Labs projects will _not_ be maintained after you complete Labs. This includes online servers and domain names. You should expect your application to either stop working or drastically change (as new teams continue to make enhancements) soon after your Labs session ends. All learner-developed source code is released under the MIT license, so if you want or need to your application to be running after Labs, you can fork the repository and deploy to the infrastructure of your choosing.
 
 Please do not link to your Labs project on your resume as those links will likely be broken soon after Labs ends!
 
@@ -108,7 +108,7 @@ If you need technical support from a Labs Manager, you can use the daily pulse c
 
 ## Support Hotline
 
-**24/7 Hotline support for emotional distress: 1-800-273-8255 \(TALK\)**
+**24/7 Hotline support for emotional distress: 1-800-273-8255 (TALK)**
 
 Note: I called them, they are here to talk, to listen, and help people find local resources for dealing with suicide crises, suicidal ideation and any kind of emotional distress. The representative I spoke with recommended not being cautious with referring people to them, and made a point to reassure that asking if someone is considering self-harm is not a trigger for them to cause self-harm.
 
@@ -116,5 +116,4 @@ Note: I called them, they are here to talk, to listen, and help people find loca
 
 **Crisis Text Line:** Text "START" to 741-741
 
--
-
+\-

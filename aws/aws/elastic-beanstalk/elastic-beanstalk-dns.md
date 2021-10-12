@@ -8,7 +8,7 @@ When your application is deployed to Elastic Beanstalk, you'll get an automatica
 
 This name follows our naming standards and is easier to remember and to share.
 
-First, open the AWS Route 53 console at [https://console.aws.amazon.com/route53/](https://console.aws.amazon.com/route53/). Route 53 is Amazon's [Domain Name System \(DNS\)](https://simple.wikipedia.org/wiki/Domain_Name_System) web service.
+First, open the AWS Route 53 console at [https://console.aws.amazon.com/route53/](https://console.aws.amazon.com/route53/). Route 53 is Amazon's [Domain Name System (DNS)](https://simple.wikipedia.org/wiki/Domain_Name_System) web service.
 
 Then follow these instructions:
 
@@ -25,10 +25,8 @@ Then follow these instructions:
 9. Click 'Define Simple Record'
 10. Click 'Create Records'
 
-![](../../.gitbook/assets/image%20%284%29.png)
-
 {% hint style="info" %}
-Your A record will now have been created and you can start using it to access your API endpoint. For example: [http://c-ds.bridgestoprosperity.dev/](http://c-ds.bridgestoprosperity.dev/)
+Your A record will now have been created and you can start using it to access your API endpoint. For example: [http://c-ds.bridgestoprosperity.dev/](http://c-ds.bridgestoprosperity.dev)
 {% endhint %}
 
 ### Configuring SSL Termination
@@ -57,15 +55,12 @@ The basic flow for hooking a proper domain name up to your environment is as fol
 
 ### How it works...
 
-When a machine \(or human\) wants to connect to your API, they first need to find the IP address of the endpoint where your API is hosted.
+When a machine (or human) wants to connect to your API, they first need to find the IP address of the endpoint where your API is hosted.
 
-This is step one, where the caller \(aka client\) asks the name servers in your hosted zone to translate your domain name \(e.g. c-ds.ecosoap.dev\) to a proper IP address.
+This is step one, where the caller (aka client) asks the name servers in your hosted zone to translate your domain name (e.g. c-ds.ecosoap.dev) to a proper IP address.
 
 Once the client has the IP address, it will connect to your API, which is hosted in your Elastic Beanstalk environment. We've made this connection secure by adding an SSL certificate to your load balancer and enabling HTTPS.
 
-The client will then send encrypted traffic over the internet to your API. Then, the load balancer sends the traffic to your actual API instances, running on servers or in containers. Since your load balance and application instances are on the same private network \(not on the internet\) we don't need to keep the traffic encrypted, which adds cost and reduces performance.
+The client will then send encrypted traffic over the internet to your API. Then, the load balancer sends the traffic to your actual API instances, running on servers or in containers. Since your load balance and application instances are on the same private network (not on the internet) we don't need to keep the traffic encrypted, which adds cost and reduces performance.
 
 The traffic is decrypted by the load-balancer and sent to your application as unencrypted HTTP traffic on port 80.
-
-![](../../.gitbook/assets/image%20%281%29.png)
-

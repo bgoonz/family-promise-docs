@@ -1,6 +1,6 @@
 # Figma Notes
 
-{% embed url="https://www.figma.com/embed?embed\_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbOwyinWBikQ5jdEpSx5WcI%2FFamily-Promise-Copy%3Fnode-id%3D0%253A1" %}
+{% embed url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbOwyinWBikQ5jdEpSx5WcI%2FFamily-Promise-Copy%3Fnode-id%3D0%253A1" %}
 
 
 
@@ -58,7 +58,7 @@
 
 ### Community
 
-* [Figma Plugins Slack](https://figmaplugins.slack.com/)
+* [Figma Plugins Slack](https://figmaplugins.slack.com)
 * [Figma Spectrum](https://spectrum.chat/figma?tab=posts)
 
 ### Open-Source Plugins
@@ -115,18 +115,17 @@
 
 ### Clients
 
-* [Figmac](https://figmac.com/) - A super lightweight Figma desktop app that delivers a more natural Mac experience.
-* [figma-app-ubuntu](https://github.com/302bis/figma-app-ubuntu) - Figma, Snap Package \(unofficial\).
-* [figma-linux](https://github.com/ChugunovRoman/figma-linux) - Figma electron app \(unofficial\).
+* [Figmac](https://figmac.com) - A super lightweight Figma desktop app that delivers a more natural Mac experience.
+* [figma-app-ubuntu](https://github.com/302bis/figma-app-ubuntu) - Figma, Snap Package (unofficial).
+* [figma-linux](https://github.com/ChugunovRoman/figma-linux) - Figma electron app (unofficial).
 
 ### Converters
 
-* [Aeux](https://aeux.io/) - Easily move Figma designs to Adobe After Effects.
-* [Figma to Sketch/XD Converter](https://xd2sketch.com/) - Allows you to convert and open Figma designs in Sketch and Adobe XD.
+* [Aeux](https://aeux.io) - Easily move Figma designs to Adobe After Effects.
+* [Figma to Sketch/XD Converter](https://xd2sketch.com) - Allows you to convert and open Figma designs in Sketch and Adobe XD.
 
-{% embed url="https://www.figma.com/embed?embed\_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCznIKrVmbIaXUh40BSj1ca%2FFamily-Promise-Copy%3Fnode-id%3D0%253A1" %}
+{% embed url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCznIKrVmbIaXUh40BSj1ca%2FFamily-Promise-Copy%3Fnode-id%3D0%253A1" %}
 
 {% embed url="https://youtu.be/jk1T0CdLxwU" %}
 
-\
-
+\\

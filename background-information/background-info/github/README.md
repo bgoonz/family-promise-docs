@@ -4,16 +4,16 @@
 
 ## Git subtree: the alternative to Git submodule
 
-\*\*\*\*
+****
 
 The Internet is full of articles on why you shouldn’t use Git submodules. While submodules are useful for a few use cases, they do have several drawbacks.
 
-Are there alternatives? The answer is: yes! There are \(at least\) two tools that can help track the history of software dependencies in your project while allowing you to keep using Git:
+Are there alternatives? The answer is: yes! There are (at least) two tools that can help track the history of software dependencies in your project while allowing you to keep using Git:
 
 * `git subtree`
 * Google repo
 
-In this post we will look at `git subtree` and show why it is an improvement – albeit not perfect – over git submodule.
+In this post we will look at `git subtree `and show why it is an improvement – albeit not perfect – over git submodule.
 
 ### What is `git subtree`, and why should I use it?
 
@@ -22,15 +22,15 @@ In this post we will look at `git subtree` and show why it is an improvement –
 Why you may want to consider `git subtree`
 
 * Management of a simple workflow is easy.
-* Older version of Git are supported \(even older than v1.5.2\).
+* Older version of Git are supported (even older than v1.5.2).
 * The sub-project’s code is available right after the clone of the super project is done.
 * `git subtree` does not require users of your repository to learn anything new. They can ignore the fact that you are using `git subtree` to manage dependencies.
-* `git subtree` does not add new metadata files like git submodule does \(i.e., .gitmodule\).
+* `git subtree` does not add new metadata files like git submodule does (i.e., .gitmodule).
 * Contents of the module can be modified without having a separate repository copy of the dependency somewhere else.
 
-Drawbacks \(but in our opinion they're largely acceptable\):
+Drawbacks (but in our opinion they're largely acceptable):
 
-* You must learn about a new merge strategy \(i.e.`git subtree`\).
+* You must learn about a new merge strategy (i.e.`git subtree`).
 * Contributing code back upstream for the sub-projects is slightly more complicated.
 * The responsibility of not mixing super and sub-project code in commits lies with you.
 
@@ -44,15 +44,15 @@ Here is a canonical example of tracking a vim plug-in using `git subtree.`
 
 If you just want a couple of one-liners to cut and paste, read this paragraph. First add `git subtree` at a specified prefix folder:
 
-```text
+```
  git subtree add --prefix .vim/bundle/tpope-vim-surround https://bitbucket.org/vim-plugins-mirror/vim-surround.git main --squash
 ```
 
-\(The common practice is to not store the entire history of the subproject in your main repository, but If you want to preserve it just omit the _–squash_ flag.\)
+(The common practice is to not store the entire history of the subproject in your main repository, but If you want to preserve it just omit the _–squash_ flag.)
 
 The above command produces this output:
 
-```text
+```
 git fetch https://bitbucket.org/vim-plugins-mirror/vim-surround.git main
 warning: no common commits
 remote: Counting objects: 338, done.
@@ -67,14 +67,14 @@ Added dir '.vim/bundle/tpope-vim-surround'
 
 As you can see this records a merge commit by squashing the whole history of the vim-surround repository into a single one:
 
-```text
+```
 1bda0bd [3 minutes ago] (HEAD, stree) Merge commit 'ca1f4da9f0b93346bba9a430c889a95f75dc0a83' as '.vim/bundle/tpope-vim-surround' [Nicola Paolucci]
 ca1f4da [3 minutes ago] Squashed '.vim/bundle/tpope-vim-surround/' content from commit 02199ea [Nicola Paolucci]
 ```
 
 If after a while you want to update the code of the plugin from the upstream repository you can just do a `git subtree` pull:
 
-```text
+```
 git subtree pull --prefix .vim/bundle/tpope-vim-surround https://bitbucket.org/vim-plugins-mirror/vim-surround.git main --squash
 ```
 
@@ -84,19 +84,19 @@ This is very quick and painless, but the commands are slightly lengthy and hard 
 
 Adding the subtree as a remote allows us to refer to it in shorter form:
 
-```text
+```
 git remote add -f tpope-vim-surround https://bitbucket.org/vim-plugins-mirror/vim-surround.git
 ```
 
-Now we can add the subtree \(as before\), but now we can refer to the remote in short form:
+Now we can add the subtree (as before), but now we can refer to the remote in short form:
 
-```text
+```
 git subtree add --prefix .vim/bundle/tpope-vim-surround tpope-vim-surround main --squash
 ```
 
 The command to update the sub-project at a later date becomes:
 
-```text
+```
 git fetch tpope-vim-surround main
 git subtree pull --prefix .vim/bundle/tpope-vim-surround tpope-vim-surround main --squash
 ```
@@ -105,13 +105,13 @@ git subtree pull --prefix .vim/bundle/tpope-vim-surround tpope-vim-surround main
 
 We can freely commit our fixes to the sub-project in our local working directory now. When it’s time to contribute back to the upstream project, we need to fork the project and add it as another remote:
 
-```text
+```
 git remote add durdn-vim-surround ssh://git@bitbucket.org/durdn/vim-surround.git
 ```
 
 Now we can use the _subtree push_ command like the following:
 
-```text
+```
 git subtree push --prefix=.vim/bundle/tpope-vim-surround/ durdn-vim-surround main
 git push using: durdn-vim-surround main
 Counting objects: 5, done.
@@ -131,42 +131,41 @@ Yes! Yes you can. `git subtree` is different from the subtree merge strategy. Yo
 
 Add the dependency as a simple `git remote`:
 
-```text
+```
 git remote add -f tpope-vim-surround https://bitbucket.org/vim-plugins-mirror/vim-surround.git
 ```
 
 Before reading the contents of the dependency into the repository, it’s important to record a merge so that we can track the entire tree history of the plug-in up to this point:
 
-```text
+```
 git merge -s ours --no-commit tpope-vim-surround/main
 ```
 
 Which outputs:
 
-```text
+```
 Automatic merge went well; stopped before committing as requested
 ```
 
 We then read the content of the latest tree-object into the plugin repository into our working directory ready to be committed:
 
-```text
+```
 git read-tree --prefix=.vim/bundle/tpope-vim-surround/ -u tpope-vim-surround/main
 ```
 
-Now we can commit \(and it will be a merge commit that will preserve the history of the tree we read\):
+Now we can commit (and it will be a merge commit that will preserve the history of the tree we read):
 
-```text
+```
 git ci -m"[subtree] adding tpope-vim-surround"
 [stree 779b094] [subtree] adding tpope-vim-surround
 ```
 
 When we want to update the project we can now pull using the `git subtree` merge strategy:
 
-```text
+```
 git pull -s subtree tpope-vim-surround main
 ```
 
 ### `Git subtree` is a great alternative
 
 After having used git submodules for a while, you'll see `git subtree` solves lots of the problems with git submodule. As usual, with all things Git, there is a learning curve to make the most of the feature.
-

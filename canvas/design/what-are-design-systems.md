@@ -12,7 +12,7 @@ A **design system** is a comprehensive recipe of the user-facing elements that w
 
 You can think of a design system as a **single source of truth** for all the design-related things that go into designing and building a product.
 
-At the core, a design system will contain **definitions of components** \(technical documentation\) and information on **how those components will be used** \(functional documentation\).
+At the core, a design system will contain **definitions of components** (technical documentation) and information on **how those components will be used** (functional documentation).
 
 A design system can include a one or more design languages, style guides, and pattern libraries.
 
@@ -56,7 +56,7 @@ Not having to focus as much time on building, quality assurance, and maintenance
 
 ### Industry Example: Shopify
 
-Check out [Shopify's design system \(Links to an external site.\)](https://polaris.shopify.com/) for an example from the industry.
+Check out [Shopify's design system (Links to an external site.)](https://polaris.shopify.com) for an example from the industry.
 
 
 
@@ -72,24 +72,24 @@ Design languages often include style guides and documentation.
 
 ### Industry Example: IBM
 
-Check out [IBM's design language \(Links to an external site.\)](https://www.ibm.com/design/language/) for an example from the industry. It contains everything from the use of typography and color, to data visualization and layout, to the [philosophy \(Links to an external site.\)](https://www.ibm.com/design/language/philosophy/pov) behind [the decisions they made \(Links to an external site.\)](https://www.ibm.com/design/language/philosophy/principles).
+Check out [IBM's design language (Links to an external site.)](https://www.ibm.com/design/language/) for an example from the industry. It contains everything from the use of typography and color, to data visualization and layout, to the [philosophy (Links to an external site.)](https://www.ibm.com/design/language/philosophy/pov) behind [the decisions they made (Links to an external site.)](https://www.ibm.com/design/language/philosophy/principles).
 
 
 
 
 
-* [ Modules](https://lambdaschool.instructure.com/courses/1562/modules)
+* [\
+  Modules](https://lambdaschool.instructure.com/courses/1562/modules)
 * [Grades](https://lambdaschool.instructure.com/courses/1562/grades)
 
 ## Pattern Libraries
 
 ### What's a Pattern Library?
 
-A **pattern library** or \(**component library**\) is a collection of components and design patterns that lay out how to implement the design language **specifically for a user interface**. These can be symbols and assets themselves, along with descriptions of when and how to use them.
+A **pattern library** or (**component library**) is a collection of components and design patterns that lay out how to implement the design language **specifically for a user interface**. These can be symbols and assets themselves, along with descriptions of when and how to use them.
 
 A pattern library might include code snippets for components and documentation related to each. For example, an entry for a button component in React might describe what props are available to be passed in, such as color and values for button states.
 
 ### Industry Example: Ant Design
 
-Check out [Ant Design's pattern library \(Links to an external site.\)](https://ant.design/docs/spec/overview) for an example from the industry. Notice how the pattern library fits in with the rest of their design documentation. Getting very familiar with the Ant Design docs will pay off in Labs!
-
+Check out [Ant Design's pattern library (Links to an external site.)](https://ant.design/docs/spec/overview) for an example from the industry. Notice how the pattern library fits in with the rest of their design documentation. Getting very familiar with the Ant Design docs will pay off in Labs!

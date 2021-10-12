@@ -15,7 +15,7 @@
 
 ## UX
 
-* [UX\_TOPICS](ux/untitled/README.md)
+* [UX_TOPICS](ux/untitled/README.md)
   * [Accessibility](ux/untitled/accessibility.md)
   * [Figma Notes](ux/untitled/figma-notes/README.md)
     * [Notes](ux/untitled/figma-notes/notes.md)
@@ -26,7 +26,7 @@
     * [ANT Components](ux/untitled/ant-design/ant-components/README.md)
       * [Buttons](ux/untitled/ant-design/ant-components/buttons.md)
     * [ANT DOCS](ux/untitled/ant-design/ant-docs.md)
-    * [Application \(Codesandbox\)](ux/untitled/ant-design/application-codesandbox.md)
+    * [Application (Codesandbox)](ux/untitled/ant-design/application-codesandbox.md)
   * [Examples](ux/untitled/examples.md)
 
 ## CANVAS
@@ -67,7 +67,7 @@
   * [PTM](research/untitled/ptm.md)
   * [General](research/untitled/general.md)
 
-## DS\_API
+## DS_API
 
 * [Data Science API](ds_api/untitled.md)
 
@@ -127,7 +127,7 @@
   * [Basic Node API](docs/project-docs/basic-node-api.md)
   * [Contributing to this scaffold project](docs/project-docs/contributing-to-this-scaffold-project.md)
   * [Examples:](docs/project-docs/examples.md)
-* [PROJECT DESCRIPTION \(Feature List\)](docs/project-description.md)
+* [PROJECT DESCRIPTION (Feature List)](docs/project-description.md)
 * [Labs Learners Guide](docs/labs-learners-guide.md)
 * [REACT](docs/react/README.md)
   * [Create React App](docs/react/untitled.md)
@@ -157,3 +157,6 @@
 
 * [Career](career-and-job-hunt/career.md)
 
+## Group 1
+
+* [Live Implementation](group-1/live-implementation.md)

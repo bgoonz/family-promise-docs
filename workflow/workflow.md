@@ -17,7 +17,7 @@ We will walk through the basic steps of starting and finishing a feature or task
 
 **References**
 
-* [git-scm.com](https://git-scm.com/)
+* [git-scm.com](https://git-scm.com)
 * [GitHub Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 
 #### Getting Started
@@ -28,38 +28,32 @@ So, you're ready to start work on a new Trello card, let's get started
 Obviously, you can't do anything with git until you’ve cloned the team repo. After that always make sure you start with a recent copy of the repo.
 {% endhint %}
 
-```text
+```
     > git checkout main
     > git pull origin main
 ```
 
 So, to get started on your first task let’s make a branch. Making sure you are on the `main` branch, start a new branch with a name that matches or correlates to the task you are about to begin. The trick here is to think beyond yourself when naming the branch, stay aligned with your Trello board so you **AND** others can easily make sense of it.
 
-> git checkout -b \[new\_branch\_name\]
-
-![](../.gitbook/assets/git-checkout-1.png)
+> git checkout -b \[new_branch_name]
 
 #### Sharing Is Good
 
 Now you have a branch to make all your awesome commits to. However, since you just had your team in mind while naming the branch, let’s take a minute or two to do something extra nice for them. Let's us the “Early Pull Strategy” to allow team members to follow along but not be nagged by our ongoing commits. This is done simply by pushing our new branch to the **origin** then create a draft **PR** in GitHub.
 
-> git push -u origin ${git\_current\_branch}
+> git push -u origin ${git_current_branch}
 
 or
 
-> git push --set-upstream origin ${git\_current\_branch}
+> git push --set-upstream origin ${git_current_branch}
 
 {% hint style="info" %}
-The -u \(--set-upstream\) will save the tracking info for the remote branch to your git config. Yay. Now you can easily push your commits to the remote branch by git push. Easy.
+The -u (--set-upstream) will save the tracking info for the remote branch to your git config. Yay. Now you can easily push your commits to the remote branch by git push. Easy.
 {% endhint %}
 
-![](../.gitbook/assets/git-push-1.png)
+The next step is to create a draft PR _(Pull Request)_ **after you’ve created your first commit**. GitHub created this mode so that notifications will be turned off by default until you decide to turn off the draft and want to have the team give you a code review. Back when we traveled uphill both ways, we called this a WIP, putting these initials at the beginning of the title and we’d have to ignore notifications that had WIP in the title. 🤮 Now we have it good.
 
-The next step is to create a draft PR _\(Pull Request\)_ **after you’ve created your first commit**. GitHub created this mode so that notifications will be turned off by default until you decide to turn off the draft and want to have the team give you a code review. Back when we traveled uphill both ways, we called this a WIP, putting these initials at the beginning of the title and we’d have to ignore notifications that had WIP in the title. 🤮 Now we have it good.
-
-Making sure to use the template to provide a professional description \(seriously copy the description from the Trello card, right\) summarizing the actual work in the PR, let’s create a PR using the **main** branch as the **base**.
-
-![](../.gitbook/assets/github-draft-pr.gif)
+Making sure to use the template to provide a professional description (seriously copy the description from the Trello card, right) summarizing the actual work in the PR, let’s create a PR using the **main** branch as the **base**.
 
 #### We have lift off
 
@@ -73,8 +67,6 @@ Do your best to be a great team member by making commit messages as succinct as 
 
 When you feel you’ve completed the task you’ve been working on it’s time to update the description, take the PR out of draft mode and make it **“ready for review”**.
 
-![](../.gitbook/assets/github-ready-pr.png)
-
 And just like that, the team will be notified of the PR and they can start a review and it can be merged.
 
 {% hint style="info" %}
@@ -87,9 +79,6 @@ It’s really good practice to take the time to make comments in the code, even 
 
 Since you branched off of main your PR should be tested on stage prior to approving and merging. If there are no issues found on stage and no conflicts to be resolved in the code choose “Rebase and merge” or "Squash and merge" from the merge button and let's get onto main.
 
-![](../.gitbook/assets/github-merge.png)
-
 If you find yourself with a merge conflict there are a number of ways to solve it. The GitHub tools are very handy or you can do it locally. When going down the local path there is a good set of instructions at [About pull request merges](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges)
 
-And now your code changes are on the main branch, ready to wow users with your updates. Deploy your code \(if not automatically handled by GitHub events\) and be ready to support any issues that arise.
-
+And now your code changes are on the main branch, ready to wow users with your updates. Deploy your code (if not automatically handled by GitHub events) and be ready to support any issues that arise.

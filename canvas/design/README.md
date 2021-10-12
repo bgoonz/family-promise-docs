@@ -10,7 +10,6 @@ As a UX designer, in some contexts, you might not write any code—you'll develo
 
 Here are some great resources to reference as you design and build products to ensure you're incorporating accessibility from the ground up:
 
-* [W3C provides a wide variety of information and resources \(Links to an external site.\)](https://www.w3.org/WAI/fundamentals/) for building accessibly on the web.
-  * **The W3C's** [**Web Contrast Accessibility Guidelines 2.0 \(Links to an external site.\)**](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) **are something you should reference throughout Labs to continuously audit your product's accessibility!**
-* This [article by Smashing Magazine \(Links to an external site.\)](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/) compiles a long list of of ways to build accessible frontend components.
-
+* [W3C provides a wide variety of information and resources (Links to an external site.)](https://www.w3.org/WAI/fundamentals/) for building accessibly on the web.
+  * **The W3C's **[**Web Contrast Accessibility Guidelines 2.0 (Links to an external site.)**](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)** are something you should reference throughout Labs to continuously audit your product's accessibility!**
+* This [article by Smashing Magazine (Links to an external site.)](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/) compiles a long list of of ways to build accessible frontend components.
