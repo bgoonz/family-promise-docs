@@ -18,6 +18,48 @@
 |                                             |                                                                                                                                                        |             |
 |                                             |                                                                                                                                                        |             |
 
+{% content-ref url="../" %}
+[..](../)
+{% endcontent-ref %}
+
+{% content-ref url="../navigation/calendar.md" %}
+[calendar.md](../navigation/calendar.md)
+{% endcontent-ref %}
+
+{% content-ref url="untitled.md" %}
+[untitled.md](untitled.md)
+{% endcontent-ref %}
+
+{% content-ref url="../navigation/youtube.md" %}
+[youtube.md](../navigation/youtube.md)
+{% endcontent-ref %}
+
+{% content-ref url="../navigation/roadmap.md" %}
+[roadmap.md](../navigation/roadmap.md)
+{% endcontent-ref %}
+
+{% content-ref url="../ux/untitled/ux-design/" %}
+[ux-design](../ux/untitled/ux-design/)
+{% endcontent-ref %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
