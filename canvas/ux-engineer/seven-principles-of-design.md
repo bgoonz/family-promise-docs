@@ -107,8 +107,6 @@ A very common pattern for achieving alignment in a web application is to ensure 
 
 ![Screen%20Shot%202021-08-29%20at%207.55.21%20PM.png](https://lambdaschool.instructure.com/courses/1562/files/388976/preview)
 
-
-
 ## Proportion
 
 ### What's Proportion?
@@ -128,10 +126,6 @@ So for proportion, we want similar elements that change size or show up in diffe
 One way to work to achieve proportion in your product is to ensure **responsiveness**. Responsive design attempts to adjust content fluidly as the screen size changes. You could call this an example of **dynamic** proportion.
 
 Another way to work toward proportion is with what you might call **static** proportion. If one set of elements shows up in multiple places in different sizes, the way that size has changed across instances should be consistent and balanced.
-
-
-
-
 
 ## Hierarchy
 
@@ -197,11 +191,4 @@ Notice how white space influences our attention and our perception in the follow
 
 The key to using white space is to remember to use it in the first place!
 
-Since white space is the absence of an element, you can use it to direct your user's attention to the elements that _are_present. Ensure there's enough space between elements to make each stand out (emphasis!), that your patterns of using white space are consistent (unity and balance!), and that any visual hierarchies (!) use spacing in predictable ways.
-
-
-
-## QUIZ:
-
-![](<../../.gitbook/assets/image (25).png>)
-
+Since white space is the absence of an element, you can use it to direct your user's attention to the elements that \_are_present. Ensure there's enough space between elements to make each stand out (emphasis!), that your patterns of using white space are consistent (unity and balance!), and that any visual hierarchies (!) use spacing in predictable ways.

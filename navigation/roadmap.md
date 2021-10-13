@@ -8,7 +8,7 @@
 
 **Web (Node) + DS** (Build-on)
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (12).png>)
 
 ### Overview
 
@@ -16,7 +16,7 @@ Family Promise helps local communities coordinate their compassion to address th
 
 Family Promise needs a way to **track and visualize the services they provide external to the shelter to gain actionable insights**.
 
-Our goal is to build a _**generalizable**_** monitoring and evaluation (M\&E) platform** that meets Family Promise's needs, with an eye toward additional potential use cases that would be useful for many other organizations.
+Our goal is to build a _**generalizable**_\*\* monitoring and evaluation (M\&E) platform\*\* that meets Family Promise's needs, with an eye toward additional potential use cases that would be useful for many other organizations.
 
 This product will take multiple Labs cohorts to complete.
 
@@ -26,7 +26,7 @@ The next round focused on ensuring individual services can be tracked for recipi
 
 This round, we'll pick up the previous team's work building out **metrics** to serve as the main window our users will have into conducting monitoring and evaluation of their programs and services. Then we'll let Administrators and Program Managers define **Goals** based on one or more metrics, and provide **analytics** and **visualizations** to display relevant data for each user type.
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (7).png>)
 
 ### Contacts
 
@@ -51,7 +51,7 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 
 [Feature List](https://www.notion.so/649befae354f455abbd7b642f8f0a120)
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (21).png>)
 
 ### Resources
 
@@ -97,7 +97,7 @@ This round, we'll pick up the previous team's work building out **metrics** to s
 * Let Program Managers select an area on a map and name it as a neighborhood/area
   * Let Program Managers add in insider knowledge/community resources per neighborhood/area
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 ## Labs Engineering Docs
 
@@ -144,11 +144,7 @@ Never hardcode any secrets! Don't do it! Not even for a minute for a quick test!
 
 Don't ignore or hide mistakes! If you mess up, it's fine! The only thing that makes it not fine is if you try to hide your mistake. We might not find it, but someone will. If you expose a secret by pushing it to a repo, let your TPL or APL know immediately. We can then invalidate the secret (change the password, rotate the key) and move on.
 
-
-
-
-
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (11).png>)
 
 ## Roadmap: Family Promise Homeless Shelter Intake System (Labs 29)
 

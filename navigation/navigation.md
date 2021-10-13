@@ -36,23 +36,9 @@
 [trello](trello/)
 {% endcontent-ref %}
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (9).png>)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (17).png>)
 
 ## Table of contents
 

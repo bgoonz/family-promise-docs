@@ -6,13 +6,19 @@ description: >-
 
 # Home
 
+<mark style="color:red;">https://trello.com/b/U8UUCBeb/family-promise-service-tracker</mark>
+
+<mark style="color:red;"></mark>[<mark style="color:red;">https://www.figma.com/file/bOwyinWBikQ5jdEpSx5WcI/Family-Promise-(Copy)?node-id=0%3A1</mark>](https://www.figma.com/file/bOwyinWBikQ5jdEpSx5WcI/Family-Promise-\(Copy\)?node-id=0%3A1)<mark style="color:red;"></mark>
+
+{% embed url="https://trello.com/b/U8UUCBeb/family-promise-service-tracker" %}
+
+
+
+
+
 {% content-ref url="docs/untitled.md" %}
 [untitled.md](docs/untitled.md)
 {% endcontent-ref %}
-
-## WEBSITE:
-
-{% embed url="https://bryan-guner.gitbook.io/lambda-labs" %}
 
 ![](https://i.imgur.com/pW28AXn.png)
 
@@ -33,7 +39,7 @@ description: >-
 | Andrew Castillo            | Front End       |                                                                    |                                                                                                            |              |           |
 | ​Murray Warnock            | ​Backend        | ​Content                                                           | ​Content                                                                                                   | ​Content     | ​Content  |
 | Dave Dwight                | ​Backend        | ​Content                                                           | ​Content                                                                                                   | ​Content     | ​Content  |
-|  Salomon Maldonado  ​      | ​Backend        | ​Content                                                           | ​Content                                                                                                   |              |           |
+| Salomon Maldonado ​        | ​Backend        | ​Content                                                           | ​Content                                                                                                   |              |           |
 
 ‌
 
@@ -57,15 +63,13 @@ description: >-
 [untitled](ux/untitled/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
-
-
 
 ## Loom:
 
@@ -87,11 +91,7 @@ description: >-
 
 ![](https://i.imgur.com/Tyz2jrJ.png)
 
-
-
 {% embed url="https://codepen.io/bgoonz/embed/qBjggOR?default-tab=html%2Cresult" %}
-
-
 
 ![](https://i.imgur.com/pW28AXn.png)
 
