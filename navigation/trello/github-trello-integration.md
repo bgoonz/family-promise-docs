@@ -21,7 +21,7 @@ This document will guide you through a step-by-step process to integrate your Tr
 
 !!! Note You can also associate multiple repositories to one board. This is useful in a case where you are working on both frontend and backend from the same board.
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](<../../.gitbook/assets/image (24).png>)
 
 #### Add Github Power-Up to your Trello board
 
@@ -48,4 +48,3 @@ This document will guide you through a step-by-step process to integrate your Tr
 ### Conclusion
 
 Trello is a powerful but easy to use communication tool for your team. You can extend it's capabilities by further integrating your Github repository using other platforms such as [Zapier](https://zapier.com/apps/github/integrations/trello) to automatically create tasks from Github issues, among other features.
-

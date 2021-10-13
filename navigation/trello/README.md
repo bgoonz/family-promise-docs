@@ -14,7 +14,7 @@ description: trello board
 
 
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (21).png>)
 
 ## Lambda School Labs and Trello
 
@@ -22,7 +22,7 @@ In this section, you will learn about Trello and how your teams will utilize it.
 
 Imagine a whiteboard filled with lists of sticky notes, with each section as a task for you and your team. Now imagine that each of those sticky notes has photos, attachments from other data sources like BitBucket or Salesforce, documents, and a place to comment and collaborate with your teammates.
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (22).png>)
 
 ### Objective
 
@@ -38,7 +38,7 @@ Cards - The basic unit of the Trello board. Cards represent user stories, featur
 
 ![](<../../.gitbook/assets/image (5).png>)
 
-![](<../../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (23).png>)
 
 | Trello Template & Card Guides                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

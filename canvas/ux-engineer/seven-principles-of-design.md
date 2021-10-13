@@ -198,3 +198,10 @@ Notice how white space influences our attention and our perception in the follow
 The key to using white space is to remember to use it in the first place!
 
 Since white space is the absence of an element, you can use it to direct your user's attention to the elements that _are_present. Ensure there's enough space between elements to make each stand out (emphasis!), that your patterns of using white space are consistent (unity and balance!), and that any visual hierarchies (!) use spacing in predictable ways.
+
+
+
+## QUIZ:
+
+![](<../../.gitbook/assets/image (25).png>)
+
