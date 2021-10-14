@@ -10,13 +10,11 @@
 | Whimsical                                  | [https://whimsical.com/family-promise-W1z8vmBUSmA3mjreyZuFo2](https://whimsical.com/family-promise-W1z8vmBUSmA3mjreyZuFo2)                                       |                                 |
 | Family Promise Service Tracker **Backend** | [https://github.com/Lambda-School-Labs/family-promise-service-tracker-be-a](https://github.com/Lambda-School-Labs/family-promise-service-tracker-be-a)           |                                 |
 
-
-
-|                     Name                    |                                                                          Link                                                                          |                                           Description                                          |
-| :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
-| Family Promise Service Tracker **Frontend** | [https://github.com/Lambda-School-Labs/family-promise-service-tracker-fe-a](https://github.com/Lambda-School-Labs/family-promise-service-tracker-fe-a) |                                                                                                |
-|            Family Promise Website           |                                                 [https://familypromise.org/](https://familypromise.org)                                                | The website that family promise had predating this project.... made with wordpress I suspect.  |
-|                                             |                                                                                                                                                        |                                                                                                |
+|                     Name                    |                                                                          Link                                                                          |                                          Description                                          |
+| :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+| Family Promise Service Tracker **Frontend** | [https://github.com/Lambda-School-Labs/family-promise-service-tracker-fe-a](https://github.com/Lambda-School-Labs/family-promise-service-tracker-fe-a) |                                                                                               |
+|            Family Promise Website           |                                                 [https://familypromise.org/](https://familypromise.org)                                                | The website that family promise had predating this project.... made with wordpress I suspect. |
+|                                             |                                                                                                                                                        |                                                                                               |
 
 {% content-ref url="../" %}
 [..](../)
@@ -42,13 +40,7 @@
 [ux-design](../ux/untitled/ux-design/)
 {% endcontent-ref %}
 
-
-
 ## Github Links:
-
-
-
-
 
 * [Home](../)
 
@@ -86,7 +78,7 @@
   * [What's Inclusive Design?](../canvas/design/whats-inclusive-design.md)
   * [Accessibility](../canvas/design/accessibility.md)
   * [What are Design Systems?](../canvas/design/what-are-design-systems.md)
-* [Canvas](../canvas/canvas.md)
+* [Canvas](../canvas/canvas/)
 * [Notes](../canvas/notes/)
   * [User Experience Design](../canvas/notes/user-experience-design.md)
   * [User Research](../canvas/notes/user-research.md)
@@ -212,34 +204,7 @@
 
 * [Live Implementation](../group-1/live-implementation.md)
 
-\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\\
 
 ##
 
