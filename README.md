@@ -6,6 +6,8 @@ description: >-
 
 # Home
 
+<mark style="color:red;"></mark>[<mark style="color:red;">https://bryan-guner.gitbook.io/lambda-labs/</mark>](https://bryan-guner.gitbook.io/lambda-labs/)      <mark style="color:red;"></mark><mark style="color:red;">**(self link)**</mark>
+
 <mark style="color:red;">https://trello.com/b/U8UUCBeb/family-promise-service-tracker</mark>
 
 <mark style="color:red;"></mark>[<mark style="color:red;">https://www.figma.com/file/bOwyinWBikQ5jdEpSx5WcI/Family-Promise-(Copy)?node-id=0%3A1</mark>](https://www.figma.com/file/bOwyinWBikQ5jdEpSx5WcI/Family-Promise-\(Copy\)?node-id=0%3A1)<mark style="color:red;"></mark>
