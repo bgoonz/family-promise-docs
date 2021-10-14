@@ -4,6 +4,7 @@
 
 ## navigation
 
+* [My Notes:](navigation/my-notes.md)
 * [NAVIGATION](navigation/navigation.md)
 * [Calendar](navigation/calendar.md)
 * [Youtube:](navigation/youtube.md)
