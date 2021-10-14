@@ -1,20 +1,44 @@
 # GitHub
 
-Think of commits on GitHub as elements of a linked list. 
+Think of commits on GitHub as elements of a linked list.
 
 {% embed url="https://lambdaschool.enterprise.slack.com/files/U02CA71AVQV/F02GB1KFAE8/git_and_trello_walkthrough.mp4" %}
 
-{% embed url="https://www.loom.com/share/173f03d6a3f24925ba6c742f36f686a4" %}
+Steps for Pull Request\
 
 
+1. Git Status - to see what files were updated
+2. Git Add (by filename) - to add the files that are relevant to the push
+3. Git commit 'insert message here'
+4. Git push origin \<branch name> - name branch after the funtion being created
+5. Open the PR in github
+6. Invite and Get 2 reviewers to approve the code
+7. Ash will then watch your loom video and merge the request – He's the “Release Manager”
+
+As an alternative to merging, you can rebase the feature branch onto main branch using the following commands:git checkout feature\
+git rebase mainThis moves the entire feature branch to begin on the tip of the main branch, effectively incorporating all of the new commits in main. But, instead of using a merge commit, rebasing re-writes the project history by creating brand new commits for each commit in the original branch.**Fill out In PR**### Description\*\*Invited Collaborator(s) to Review\
+\- Added person to review relating to feature/bug\
+\- If not available, ask another reviewer on team\*\*What work was done?\*\*\
+\- Describe in detail what's been modified/created\*\*Why was this work done?\*\*\
+\- What is the purpose of the feature?\*\*What feature / user story is it for?\*\*\
+(Link if possible)\
+\*\*Any relevant links or images / screenshots\*\*### Type of change\
+Please delete options that are not relevant.\
+\- New feature (non-breaking change which adds functionality)Testing\
+\- Has this feature been tested before conflict?\
+\- Has this feature been tested after conflict?Change Status\
+\- Completed, ready to review and merge### Checklist\
+\- My code follows the style guidelines of this project\
+\- I have performed a self-review of my own code\
+\- My code has been reviewed by at least one peer\
+\- I have commented my code, particularly in hard-to-understand areas\
+\- I have made corresponding changes to the documentation\
+\- My changes generate no new warnings\
+\- There are no merge conflicts
 
 
 
 {% file src="../../.gitbook/assets/image (2).png" %}
-
-
-
-
 
 {% embed url="https://familypromise.org/" %}
 
@@ -23,7 +47,7 @@ Think of commits on GitHub as elements of a linked list.
 * [ ] Git Status - to see what files were updated
 * [ ] Git Add (by filename) - to add the files that are relevant to the push
 * [ ] Git commit 'insert message here'
-* [ ] Git push origin 
+* [ ] Git push origin
 * [ ] Open the PR in github
 * [ ] Get 2 reviews
 * [ ] I will then watch your loom video and merge
@@ -40,10 +64,6 @@ Think of commits on GitHub as elements of a linked list.
 | [Code is idiomatic](https://www.notion.so/Code-is-idiomatic-c8d7786458b9430d9b6bad50cd904c9c)                                                                 | Does the code follow industry standards for the language, framework, and libraries used?                                                                                                                           | Code consistently does not adhere to best practices for the language, framework or libraries used.                                                                                     | Code has apparent minor deviations from industry standards.                                                                                      | Code follows best practices of language, framework and libraries use. Effort has been made to improve on those practices.                                                                                      |
 
 ![](https://i.imgur.com/GkA8KdP.png)
-
-
-
-
 
 ## Pull Request Template
 
@@ -88,8 +108,6 @@ Change Status
 * I have made corresponding changes to the documentation
 * My changes generate no new warnings
 * There are no merge conflicts
-
-
 
 ## GitHub Basics
 
