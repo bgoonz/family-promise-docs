@@ -1,5 +1,13 @@
 # Action Items:
 
+{% embed url="https://plotly.com/javascript/react" %}
+
+Reports... create a pie chart for a type of service / total services 
+
+{% embed url="http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_services_given_services_given_get" %}
+
+
+
 \<div>\<br class="Apple-interchange-newline">Programs Page | UI/UX\</div>
 
 in list [In Progress](https://trello.com/c/7B2MLCv7/96-programs-page-ui-ux#)
