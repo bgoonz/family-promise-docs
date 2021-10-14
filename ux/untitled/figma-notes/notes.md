@@ -2,6 +2,127 @@
 
 
 
+* [Figma: Learn Auto-Layout](https://medium.com/@mo.jahanii/figma-learn-auto-layout-7d50b5b42218)
+* [Figma: Design a Loading Spinner Animation](https://medium.com/@mo.jahanii/figma-design-a-loading-spinner-animation-718b7e3a7f15)
+* [Design Flexible Cards with Figma](https://medium.com/@mo.jahanii/design-flexible-cards-with-figma-a80aada2646f?source=your_stories_page---------------------------)
+* [Design Scrollable Lists: Adobe XD Vs. Figma](https://medium.com/@mo.jahanii/design-scrollable-lists-adobe-xd-vs-figma-1ede20d6090)
+* [Learn Figma: The future of design tools (Part 1)](https://medium.com/@mo.jahanii/learn-figma-the-future-of-design-tools-part-1-313d7e76b4ab)
+* [UX Rules: Learn simple (Part 1)](https://medium.com/@mo.jahanii/ux-rules-learn-simple-part-1-2-e62f1c5b800d)
+* [Adobe XD: Everything about resizable components](https://blog.prototypr.io/adobe-xd-everything-about-resizable-components-f84105910428)
+* [Figma: How to recreate the most useful interactions](https://blog.prototypr.io/figma-recreate-most-useful-interactions-using-figmotion-50ea813f8ebc)
+* [InVision Studio: Design a circular loading bar](https://blog.prototypr.io/invision-studio-how-to-design-a-circular-loading-bar-b03cdca53554)
+
+Now, you’re here, please read my previous articles:
+
+* [Figma: Recreate the most useful interactions](https://medium.com/p/figma-recreate-most-useful-interactions-using-figmotion-50ea813f8ebc)
+* [Figma: Design a Loading Spinner Animation](https://medium.com/p/figma-design-a-loading-spinner-animation-718b7e3a7f15)
+
+The key to designing advanced prototypes on Figma is the “Smart Animate”. Like the previous example, I published two articles about this feature which you can use and learn the “Smart Animate” feature very well.
+
+![](https://miro.medium.com/freeze/max/27/0\*cgppCGSlR51F8ksb.gif?q=20)![](https://miro.medium.com/max/630/0\*cgppCGSlR51F8ksb.gif)
+
+## 10- Design Advanced Prototypes <a href="5156" id="5156"></a>
+
+The auto-layout feature will help you to design flexible elements, Like Buttons, Pages and …!
+
+* [Figma: Learn Auto-Layout](https://medium.com/p/figma-learn-auto-layout-7d50b5b42218)
+* [Design Flexible Cards with Figma](https://medium.com/p/design-flexible-cards-with-figma-a80aada2646f)
+
+I wrote many articles about this feature and I think it’s not necessary to have another article for it. So, I just refer you to those articles which would be helpful:
+
+![](https://miro.medium.com/max/27/0\*LnN30d7bHnEMDoV0.png?q=20)![](https://miro.medium.com/max/545/0\*LnN30d7bHnEMDoV0.png)If you read my articles, you will learn how to design the default messenger of iOS on Figma using the “Auto-Layout” feature.
+
+## 9- Auto-Layout <a href="d992" id="d992"></a>
+
+Watch the above .gif to learn this trick.
+
+![](https://miro.medium.com/freeze/max/27/0\*Dl77j_z1CgsXXfqB.gif?q=20)![](https://miro.medium.com/max/630/0\*Dl77j_z1CgsXXfqB.gif)
+
+Figma was the first design tool which allowed designers to set the space between different elements automatically, It doesn’t matter if the layers are aligned vertically or horizontally!
+
+## 8- Define The Space Between Different Elements <a href="0e5b" id="0e5b"></a>
+
+![](https://miro.medium.com/freeze/max/27/0\*mWj-j7TY_pEnMZt8.gif?q=20)![](https://miro.medium.com/max/630/0\*mWj-j7TY_pEnMZt8.gif)
+
+Hold the “Shift” button and try to draw your desired object. This trick works if you want to draw squares or circles (Not Ovals!).
+
+## 7- Create Objects with Equal Height and Width <a href="1369" id="1369"></a>
+
+![](https://miro.medium.com/freeze/max/27/0\*XscPDecc6A5-CvIk.gif?q=20)![](https://miro.medium.com/max/630/0\*XscPDecc6A5-CvIk.gif)
+
+Follow the below .gif to learn this trick:
+
+One of the most important things for designers who work on dashboards or analytical tools is the ability to create semi-circles. Figma allows you to do this easily.
+
+## 6- Create Semi-Circles / Circular Progress Bars <a href="9794" id="9794"></a>
+
+![](https://miro.medium.com/freeze/max/27/0\*UOllDTx4LRwtA26w.gif?q=20)![](https://miro.medium.com/max/630/0\*UOllDTx4LRwtA26w.gif)
+
+There a few plugins for Figma which allow you to find similar layers and apply changes to them. But if you are looking to reduce your usage to 3rd-plugins, you can find similar layers easily by heading to **Edit / Select all …**. There different options which you can use to select similar text styles together or select similar layers with the same properties.
+
+## **5- Find Similar Layers Without Plugins!** <a href="ecb9" id="ecb9"></a>
+
+> We use same style of naming for colours. For example,** Sort the colors based on their usage:**\
+> Buttons — Blue / Buttons — Red / Alert — Yellow / Texts — Black / Texts- Black (70%)
+
+![](https://miro.medium.com/freeze/max/27/0\*vy7b62kmphVvpH2f.gif?q=20)![](https://miro.medium.com/max/630/0\*vy7b62kmphVvpH2f.gif)
+
+and the result would be something like this on Figma:
+
+Roboto / Body
+
+Roboto / Headline 1
+
+SF Pro / Body
+
+SF Pro / Headline 1
+
+Now, we want to sort these text styles based on their font family. This is how we do it:
+
+**Body — 16 px:** SF text / Roboto
+
+**Headline 1–36 px :**SF Pro / Roboto
+
+Imagine we have these text styles:
+
+This trick works for designers who think about having a design system or creating a UI kit for their projects. As Sketch does, Figma allows you to sort your text styles by grouping them using “/”.
+
+## **4- Sort Font Styles / Color Styles** <a href="3869" id="3869"></a>
+
+* Double-click on the layer’s name will allow you to change the name of the layer!
+
+![](https://miro.medium.com/max/630/0\*aGOQSFEE3cIh7Xx4.gif)
+
+If you have worked on a design system, you probably have some problems to find layers. On Figma, you just need to double-click on the layer’s thumbnail to find it:
+
+## 3- Locate Layers <a href="04ab" id="04ab"></a>
+
+To move an object easily and on a straight line, just hold “Shift” button on your keyboard and then try to relocate it. By doing this, Figma will limit you to the vertical axis or horizontal axis.
+
+![](https://miro.medium.com/max/540/0\*5DYJ44fJSSWLqytk.gif)
+
+If you are one of the designers who play with pixels to draw a straight line, you need to learn this trick. Just select the “Pen Tool” or “Line” and hold “Shift” button on your keyboard. Now, you can draw a straight line easily!
+
+## 2- Draw Straight Lines / Move Objects on a Straight Line <a href="1971" id="1971"></a>
+
+File → Place Images and then select the images. Now, click on the shapes and Figma will fill shapes with images automatically.
+
+![](https://miro.medium.com/max/540/0\*1qkHFwhHE_IqmtiW.gif)
+
+Follow these steps:
+
+Imagine you want to fill different shapes with multiple images at once. Beginners will start filling shapes one by one but professionals will use the “Batch Image Import” feature which Figma provides.
+
+## 1- Batch Filling Shapes With Images <a href="3ea5" id="3ea5"></a>
+
+In this article, we will learn the most useful shortcuts of Figma which can speed up your workflow.
+
+![](https://miro.medium.com/max/630/0\*khNOraPxGAbsUMe8)
+
+Hello again, It’s Em!
+
+Figma is one of the amazing design tools and if you use it as your daily design app, you need to learn its shortcuts which speeds up your workflow.
+
 Introduction
 
 Welcome to Figma, the world's first collaborative interface design tool. Figma allows designers to create and prototype their digital experiences - together in real-time and in one place - helping them turn their ideas and visions into products, faster. Figma's mission is to make design accessible to everyone. The Figma API is one of the ways we aim to do that.What can I do with the Figma API?
@@ -92,8 +213,7 @@ Registering an app establishes a link between your existing Figma user account(s
    1. Enter the name and website for your app.
    2. Upload a logo for your application users will be able to see this).
    3. Specify the Callback. This can be any endpoint/URL of your choosing. You must specify at least one callback and only callbacks appearing in this list will be allowed to receive the access token.
-   4. \
-
+   4. \\
    5. What is a Callback?
    6. When a user attempts to allow your application access to the API, our authentication servers will make a request (a Callback) to the endpoint you specified, with the access token included.
 4. Click Save to create the app.
