@@ -1,5 +1,33 @@
 # UX_TOPICS
 
+##
+
+{% content-ref url="action-items.md" %}
+[action-items.md](action-items.md)
+{% endcontent-ref %}
+
+{% content-ref url="accessibility.md" %}
+[accessibility.md](accessibility.md)
+{% endcontent-ref %}
+
+{% content-ref url="figma-notes/" %}
+[figma-notes](figma-notes/)
+{% endcontent-ref %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## The UX Engineer Role
@@ -38,8 +66,6 @@ As a **UX Engineer**, here's what you'll need to achieve to pass Labs and gradua
 
 For more information, visit [the Labs Docs (Links to an external site.)](https://docs.labs.lambdaschool.com)!
 
-
-
 ## Design Tools in Labs
 
 As a UX Engineer, you'll be using various industry tools to generate and maintain **design artifacts** (things you create for use by your team).
@@ -66,13 +92,7 @@ Figma has a steeper learning curve than Whimsical, but you may still use it in L
 
 If you'll be using Figma,[here's a useful playlist of tutorials (Links to an external site.)](https://www.youtube.com/watch?v=Cx2dkpBxst8\&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4)
 
-
-
 {% embed url="https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4" %}
-
-
-
-
 
 ### Ant Design
 
