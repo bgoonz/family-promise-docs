@@ -19,6 +19,7 @@
   * [Action Items:](ux/untitled/action-items.md)
   * [Accessibility](ux/untitled/accessibility.md)
   * [Figma Notes](ux/untitled/figma-notes/README.md)
+    * [Tables In Figma](ux/untitled/figma-notes/tables-in-figma.md)
     * [Notes](ux/untitled/figma-notes/notes.md)
     * [Frames in Figma](ux/untitled/figma-notes/frames-in-figma.md)
     * [Prototyping In Figma](ux/untitled/figma-notes/prototyping-in-figma.md)
@@ -35,6 +36,7 @@
 
 ## CANVAS
 
+* [Intervi](canvas/intervi.md)
 * [Design](canvas/design/README.md)
   * [What's Inclusive Design?](canvas/design/whats-inclusive-design.md)
   * [Accessibility](canvas/design/accessibility.md)
