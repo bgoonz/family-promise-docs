@@ -119,7 +119,8 @@
 ## Background Information
 
 * [Background Info](background-information/background-info/README.md)
-  * [Swagger OPEN API SPECIFICATION](background-information/background-info/swagger-open-api-specification.md)
+  * [Swagger OPEN API SPECIFICATION](background-information/background-info/swagger-open-api-specification/README.md)
+    * [Swagger Docs (General)](background-information/background-info/swagger-open-api-specification/swagger-docs-general.md)
   * [GITHUB:](background-information/background-info/github/README.md)
     * [Git Bash](background-information/background-info/github/git-bash.md)
     * [Git Prune:](background-information/background-info/github/git-prune.md)
@@ -127,7 +128,7 @@
 ## DOCS
 
 * [DS AP](docs/ds-ap.md)
-* [Coding](docs/coding/README.md)
+* [What is JSON Web Token?](docs/coding/README.md)
   * [Environment Variables](docs/coding/environment-variables.md)
   * [Git Rebase:](docs/coding/git-rebase.md)
   * [Git Workflow:](docs/coding/git-workflow.md)
@@ -170,3 +171,5 @@
 ## Group 1
 
 * [Live Implementation](group-1/live-implementation.md)
+
+## Group 2

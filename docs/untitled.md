@@ -153,7 +153,7 @@
 ### Background Information
 
 * [Background Info](../background-information/background-info/)
-  * [Swagger OPEN API SPECIFICATION](../background-information/background-info/swagger-open-api-specification.md)
+  * [Swagger OPEN API SPECIFICATION](../background-information/background-info/swagger-open-api-specification/)
   * [GITHUB:](../background-information/background-info/github/)
     * [Git Bash](../background-information/background-info/github/git-bash.md)
     * [Git Prune:](../background-information/background-info/github/git-prune.md)
