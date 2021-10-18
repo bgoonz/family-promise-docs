@@ -16,7 +16,7 @@
 
 ## UX
 
-* [UX_TOPICS](ux/untitled/README.md)
+* [UX\_TOPICS](ux/untitled/README.md)
   * [Action Items:](ux/untitled/action-items.md)
   * [Accessibility](ux/untitled/accessibility.md)
   * [Figma Notes](ux/untitled/figma-notes/README.md)
@@ -37,7 +37,7 @@
 
 ## CANVAS
 
-* [Intervi](canvas/intervi.md)
+* [Interview](canvas/interview.md)
 * [Design](canvas/design/README.md)
   * [What's Inclusive Design?](canvas/design/whats-inclusive-design.md)
   * [Accessibility](canvas/design/accessibility.md)
@@ -76,9 +76,9 @@
   * [PTM](research/untitled/ptm.md)
   * [General](research/untitled/general.md)
 
-## DS_API
+## DS\_API
 
-* [Data Science API](ds_api/untitled.md)
+* [Data Science API](ds\_api/untitled.md)
 
 ## ROLES
 
