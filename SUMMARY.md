@@ -51,6 +51,7 @@
 * [UX-Engineer](canvas/ux-engineer/README.md)
   * [Patterns](canvas/ux-engineer/patterns.md)
   * [Design Tools](canvas/ux-engineer/design-tools.md)
+  * [UX Principles](canvas/ux-engineer/ux-principles.md)
   * [Design Critiques](canvas/ux-engineer/design-critiques.md)
   * [Product Review](canvas/ux-engineer/product-review.md)
   * [Quiz](canvas/ux-engineer/quiz.md)
