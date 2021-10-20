@@ -2,7 +2,7 @@
 
 ### DS API - Family Promise
 
-#### [http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get_latitude_longitude_geocode\_\_post](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get_latitude_longitude_geocode\_\_post)
+#### [http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get\_latitude\_longitude\_geocode\_\_post](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get\_latitude\_longitude\_geocode\_\_post)
 
 {% embed url="http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get_latitude_longitude_geocode__post" %}
 
@@ -14,7 +14,7 @@
 
 #### [Database](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Database) <a href="operations-tag-database" id="operations-tag-database"></a>
 
-GET[/info](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Database/get_url_info_get)Get Url
+GET[/info](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Database/get\_url\_info\_get)Get Url
 
 Verify we can connect to the database, and return the database URL in this format: dialect://user:password@host/dbname The password will be hidden with \*\*\*
 
@@ -58,13 +58,13 @@ http://family-promise-dev.us-east-1.elasticbeanstalk.com/info
 
 #### [Visualizations](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Visualizations) <a href="operations-tag-visualizations" id="operations-tag-visualizations"></a>
 
-POST[/vizmap/{query_json}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Visualizations/visual_vizmap\_\_query_json\_\_post)Visual
+POST[/vizmap/{query\_json}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Visualizations/visual\_vizmap\_\_query\_json\_\_post)Visual
 
 Creates an interactive map with dots pertaining to location of service. The dots on the map are color coded by service. Because there is no latitude or longitude in BE database, we geocode in order to get latitude and longitude. With the acquired latitude and longitude, the map visualization can be created and sent to the BE in JSON form.
 
 ### Input:
 
-query_json : JSON object Sent to DS API from BE
+query\_json : JSON object Sent to DS API from BE
 
 ### Output:
 
@@ -74,9 +74,9 @@ JSON object sent back to BE
 
 Cancel
 
-| Name                | Description |
-| ------------------- | ----------- |
-| query_json \*(path) |             |
+| Name                 | Description |
+| -------------------- | ----------- |
+| query\_json \*(path) |             |
 
 Execute
 
@@ -97,7 +97,7 @@ Execute
   ]
 }</code></pre> | _No links_ |
 
-POST[/veteran_counts/{query_json}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Visualizations/veteran_counts_veteran_counts\_\_query_json\_\_post)Veteran Counts
+POST[/veteran\_counts/{query\_json}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Visualizations/veteran\_counts\_veteran\_counts\_\_query\_json\_\_post)Veteran Counts
 
 This function will return a bar chart of the count of veterans being served by Family Promise, in JSON form.
 
@@ -105,9 +105,9 @@ This function will return a bar chart of the count of veterans being served by F
 
 Cancel
 
-| Name                | Description |
-| ------------------- | ----------- |
-| query_json \*(path) |             |
+| Name                 | Description |
+| -------------------- | ----------- |
+| query\_json \*(path) |             |
 
 Execute
 
@@ -128,7 +128,7 @@ Execute
   ]
 }</code></pre> | _No links_ |
 
-POST[/age_metric/{query_json}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Visualizations/age_metric_age_metric\_\_query_json\_\_post)Age Metric
+POST[/age\_metric/{query\_json}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Visualizations/age\_metric\_age\_metric\_\_query\_json\_\_post)Age Metric
 
 This function will return a table visual of the count of recipients by age group being served by Family Promise, in JSON form.
 
@@ -136,9 +136,9 @@ This function will return a table visual of the count of recipients by age group
 
 Cancel
 
-| Name                | Description |
-| ------------------- | ----------- |
-| query_json \*(path) |             |
+| Name                 | Description |
+| -------------------- | ----------- |
+| query\_json \*(path) |             |
 
 Execute
 
@@ -161,7 +161,7 @@ Execute
 
 #### [Eligibility](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Eligibility) <a href="operations-tag-eligibility" id="operations-tag-eligibility"></a>
 
-POST[/eligibility/{household_id}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Eligibility/check_eligibility_eligibility\_\_household_id\_\_post)Check Eligibility
+POST[/eligibility/{household\_id}](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Eligibility/check\_eligibility\_eligibility\_\_household\_id\_\_post)Check Eligibility
 
 Checks for eligibility for services based on service provider data.
 
@@ -169,21 +169,21 @@ Checks for eligibility for services based on service provider data.
 
 ***
 
-id A household_id entry from the households table.
+id A household\_id entry from the households table.
 
 #### Returns
 
 ***
 
-JSON "resident_assistance_eligibility": bool "reduced_bus_fare_eligibility": bool
+JSON "resident\_assistance\_eligibility": bool "reduced\_bus\_fare\_eligibility": bool
 
 **Parameters**
 
 Cancel
 
-| Name                        | Description |
-| --------------------------- | ----------- |
-| household_id \*string(path) |             |
+| Name                         | Description |
+| ---------------------------- | ----------- |
+| household\_id \*string(path) |             |
 
 Execute
 
@@ -206,7 +206,7 @@ Execute
 
 #### [Metrics](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics) <a href="operations-tag-metrics" id="operations-tag-metrics"></a>
 
-GET[/total_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_total_served_total_served_get)Get Total Served
+GET[/total\_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_total\_served\_total\_served\_get)Get Total Served
 
 Returns the total number of recipients TODO: Return recipients relavent to user
 
@@ -214,7 +214,7 @@ Returns the total number of recipients TODO: Return recipients relavent to user
 
 ***
 
-int total_served
+int total\_served
 
 **Parameters**
 
@@ -252,7 +252,7 @@ http://family-promise-dev.us-east-1.elasticbeanstalk.com/total_served
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/families_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_families_served_families_served_get)Get Families Served
+GET[/families\_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_families\_served\_families\_served\_get)Get Families Served
 
 Returns the total number of families TODO: Return only those relavent to the user
 
@@ -260,7 +260,7 @@ Returns the total number of families TODO: Return only those relavent to the use
 
 ***
 
-int families_served
+int families\_served
 
 **Parameters**
 
@@ -276,7 +276,7 @@ Execute
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/children_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_children_served_children_served_get)Get Children Served
+GET[/children\_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_children\_served\_children\_served\_get)Get Children Served
 
 Returns the number of recipients under 18, not inclusive.
 
@@ -284,7 +284,7 @@ Returns the number of recipients under 18, not inclusive.
 
 ***
 
-int children_served
+int children\_served
 
 **Parameters**
 
@@ -322,7 +322,7 @@ http://family-promise-dev.us-east-1.elasticbeanstalk.com/children_served
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/genders_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_genders_served_genders_served_get)Get Genders Served
+GET[/genders\_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_genders\_served\_genders\_served\_get)Get Genders Served
 
 Returns the count of each gender served.
 
@@ -330,7 +330,7 @@ Returns the count of each gender served.
 
 ***
 
-list genders_served
+list genders\_served
 
 **Parameters**
 
@@ -449,7 +449,7 @@ http://family-promise-dev.us-east-1.elasticbeanstalk.com/genders_served
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/races_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_races_served_races_served_get)Get Races Served
+GET[/races\_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_races\_served\_races\_served\_get)Get Races Served
 
 Returns the count of each race served.
 
@@ -457,7 +457,7 @@ Returns the count of each race served.
 
 ***
 
-list races_served
+list races\_served
 
 **Parameters**
 
@@ -473,7 +473,7 @@ Execute
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/ethnicities_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_ethnicities_served_ethnicities_served_get)Get Ethnicities Served
+GET[/ethnicities\_served](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_ethnicities\_served\_ethnicities\_served\_get)Get Ethnicities Served
 
 Returns the count of each ethnicity served.
 
@@ -481,7 +481,7 @@ Returns the count of each ethnicity served.
 
 ***
 
-list ethnicities_served
+list ethnicities\_served
 
 **Parameters**
 
@@ -532,7 +532,7 @@ http://family-promise-dev.us-east-1.elasticbeanstalk.com/ethnicities_served
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/program_enrollment](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_program_enrollment_program_enrollment_get)Get Program Enrollment
+GET[/program\_enrollment](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_program\_enrollment\_program\_enrollment\_get)Get Program Enrollment
 
 Returns the count of services done for each program.
 
@@ -540,7 +540,7 @@ Returns the count of services done for each program.
 
 ***
 
-list program_enrollment
+list program\_enrollment
 
 **Parameters**
 
@@ -595,7 +595,7 @@ http://family-promise-dev.us-east-1.elasticbeanstalk.com/program_enrollment
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/services_given](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_services_given_services_given_get)Get Services Given
+GET[/services\_given](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_services\_given\_services\_given\_get)Get Services Given
 
 Returns the count of each service provided.
 
@@ -603,7 +603,7 @@ Returns the count of each service provided.
 
 ***
 
-list services_given
+list services\_given
 
 **Parameters**
 
@@ -617,7 +617,7 @@ No parameters
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 200  | <p>Successful Response</p><p>Media typeapplication/jsonControls <code>Accept</code> header.</p><ul><li>Example Value</li><li>Schema</li></ul><pre class="language-json"><code class="lang-json">"string"</code></pre> | _No links_ |
 
-GET[/locations_of_service](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get_locations_locations_of_service_get)Get Locations
+GET[/locations\_of\_service](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_locations\_locations\_of\_service\_get)Get Locations
 
 Returns the count of services at each type of location.
 
@@ -625,7 +625,7 @@ Returns the count of services at each type of location.
 
 ***
 
-list locations_of_service
+list locations\_of\_service
 
 **Parameters**
 
@@ -682,13 +682,13 @@ http://family-promise-dev.us-east-1.elasticbeanstalk.com/locations_of_service
 
 #### [Geocode](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode) <a href="operations-tag-geocode" id="operations-tag-geocode"></a>
 
-POST[/geocode/](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get_latitude_longitude_geocode\_\_post)Get Latitude Longitude
+POST[/geocode/](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Geocode/get\_latitude\_longitude\_geocode\_\_post)Get Latitude Longitude
 
 ```
 Please post an address as a JSON object with this format:
 ```
 
-{"address": "123 Gilman Dr W", "address_line2": "", "city": "Seattle", "state": "WA", "zip": "98119", "country": "United States"}
+{"address": "123 Gilman Dr W", "address\_line2": "", "city": "Seattle", "state": "WA", "zip": "98119", "country": "United States"}
 
 ```
 The output will be a JSON object with the following format:
@@ -774,4 +774,4 @@ HTTPValidationError{
 
 
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (26) (1).png>)
