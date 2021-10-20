@@ -58,6 +58,7 @@
   * [Quiz](canvas/ux-engineer/quiz.md)
   * [Seven Principles of Design](canvas/ux-engineer/seven-principles-of-design.md)
   * [Other Articles](canvas/ux-engineer/other-articles.md)
+* [Labs](canvas/labs.md)
 
 ## Front End
 
