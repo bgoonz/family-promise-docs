@@ -49,6 +49,7 @@
   * [User Research](canvas/notes/user-research.md)
   * [Interaction Design](canvas/notes/interaction-design.md)
 * [UX-Engineer](canvas/ux-engineer/README.md)
+  * [Accessibility](canvas/ux-engineer/accessibility.md)
   * [Patterns](canvas/ux-engineer/patterns.md)
   * [Design Tools](canvas/ux-engineer/design-tools.md)
   * [UX Principles](canvas/ux-engineer/ux-principles.md)
