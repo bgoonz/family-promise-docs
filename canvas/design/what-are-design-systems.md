@@ -25,8 +25,6 @@ It can also include things like:
 
 Why use design systems? Glad you asked! Read on to find out 🙂
 
-
-
 ## Why Use Design Systems?
 
 Design systems are used to make sure there's one set of standard elements used everywhere, and everyone knows how to use them.
@@ -58,8 +56,6 @@ Not having to focus as much time on building, quality assurance, and maintenance
 
 Check out [Shopify's design system (Links to an external site.)](https://polaris.shopify.com) for an example from the industry.
 
-
-
 ## Design Languages
 
 ### What's a Design Language?
@@ -73,10 +69,6 @@ Design languages often include style guides and documentation.
 ### Industry Example: IBM
 
 Check out [IBM's design language (Links to an external site.)](https://www.ibm.com/design/language/) for an example from the industry. It contains everything from the use of typography and color, to data visualization and layout, to the [philosophy (Links to an external site.)](https://www.ibm.com/design/language/philosophy/pov) behind [the decisions they made (Links to an external site.)](https://www.ibm.com/design/language/philosophy/principles).
-
-
-
-
 
 * [\
   Modules](https://lambdaschool.instructure.com/courses/1562/modules)
@@ -92,4 +84,12 @@ A pattern library might include code snippets for components and documentation r
 
 ### Industry Example: Ant Design
 
+
+
 Check out [Ant Design's pattern library (Links to an external site.)](https://ant.design/docs/spec/overview) for an example from the industry. Notice how the pattern library fits in with the rest of their design documentation. Getting very familiar with the Ant Design docs will pay off in Labs!
+
+
+
+
+
+![](../../.gitbook/assets/screencapture-lambdaschool-instructure-courses-1562-quizzes-42315-2021-10-20-03\_50\_51.png)
