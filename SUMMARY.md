@@ -175,4 +175,6 @@
 
 * [Live Implementation](group-1/live-implementation.md)
 
-## Group 2
+## LABS
+
+* [Introduction](labs/introduction.md)
