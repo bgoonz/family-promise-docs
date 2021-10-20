@@ -84,7 +84,13 @@ Common tools for exploration include:
 
 #### Testing & Feedback
 
-**Testing** is checking the performance of your application with specific metrics in mind; **feedback** is putting something in front of users to see how they react and/or what they say about their experience.
+**Testing** is checking the performance of your application with specific metrics in mind;&#x20;
+
+****
+
+**feedback** is putting something in front of users to see how they react and/or what they say about their experience.
+
+####
 
 Common tools for testing & feedback include:
 
