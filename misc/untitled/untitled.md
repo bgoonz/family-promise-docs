@@ -19,193 +19,193 @@
 |          **Family Promise Website**         |                                                                                     [https://familypromise.org/](https://familypromise.org)                                                                                    | The website that family promise had predating this project.... made with wordpress I suspect. |
 |            **DS API Endpoints:**            | [http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_services\_given\_services\_given\_get](http://family-promise-dev.us-east-1.elasticbeanstalk.com/#/Metrics/get\_services\_given\_services\_given\_get) |                                                                                               |
 
-{% content-ref url="../" %}
-[..](../)
+{% content-ref url="../../" %}
+[..](../../)
 {% endcontent-ref %}
 
-{% content-ref url="../navigation/calendar.md" %}
-[calendar.md](../navigation/calendar.md)
+{% content-ref url="../../navigation/calendar.md" %}
+[calendar.md](../../navigation/calendar.md)
 {% endcontent-ref %}
 
 {% content-ref url="untitled.md" %}
 [untitled.md](untitled.md)
 {% endcontent-ref %}
 
-{% content-ref url="../navigation/youtube.md" %}
-[youtube.md](../navigation/youtube.md)
+{% content-ref url="../../navigation/youtube.md" %}
+[youtube.md](../../navigation/youtube.md)
 {% endcontent-ref %}
 
-{% content-ref url="../navigation/roadmap.md" %}
-[roadmap.md](../navigation/roadmap.md)
+{% content-ref url="../../navigation/roadmap.md" %}
+[roadmap.md](../../navigation/roadmap.md)
 {% endcontent-ref %}
 
-{% content-ref url="../ux/untitled/ux-design/" %}
-[ux-design](../ux/untitled/ux-design/)
+{% content-ref url="../../ux/untitled/ux-design/" %}
+[ux-design](../../ux/untitled/ux-design/)
 {% endcontent-ref %}
 
 ## Github Links:
 
-* [Home](../)
+* [Home](../../)
 
 ### navigation
 
-* [NAVIGATION](../navigation/navigation.md)
-* [Calendar](../navigation/calendar.md)
-* [Youtube:](../navigation/youtube.md)
-* [Roadmap:](../navigation/roadmap.md)
-* [TEAM MEMBERS](../navigation/team-members.md)
-* [Running List Of Notes Links & Pertinent Info From Meetings](../navigation/running-list-of-notes-links-and-pertinent-info-from-meetings.md)
-* [Trello](../navigation/trello/)
-  * [Github/Trello Integration](../navigation/trello/github-trello-integration.md)
+* [NAVIGATION](../../navigation/navigation.md)
+* [Calendar](../../navigation/calendar.md)
+* [Youtube:](../../navigation/youtube.md)
+* [Roadmap:](../../navigation/roadmap.md)
+* [TEAM MEMBERS](../../navigation/team-members.md)
+* [Running List Of Notes Links & Pertinent Info From Meetings](../../navigation/running-list-of-notes-links-and-pertinent-info-from-meetings.md)
+* [Trello](../../navigation/trello/)
+  * [Github/Trello Integration](../../navigation/trello/github-trello-integration.md)
 
 ### UX
 
-* [UX\_TOPICS](../ux/untitled/)
-  * [Action Items:](../ux/untitled/action-items.md)
-  * [Accessibility](../ux/untitled/accessibility.md)
-  * [Figma Notes](../ux/untitled/figma-notes/)
-    * [Notes](../ux/untitled/figma-notes/notes.md)
-    * [More Notes](../ux/untitled/figma-notes/more-notes.md)
-  * [UX-Design](../ux/untitled/ux-design/)
-    * [Facebook Graph API](../ux/untitled/ux-design/facebook-graph-api.md)
-  * [Ant Design](../ux/untitled/ant-design/)
-    * [ANT Components](../ux/untitled/ant-design/ant-components/)
-      * [Buttons](../ux/untitled/ant-design/ant-components/buttons.md)
-    * [ANT DOCS](../ux/untitled/ant-design/ant-docs.md)
-    * [Application (Codesandbox)](../ux/untitled/ant-design/application-codesandbox.md)
-  * [Examples](../ux/untitled/examples.md)
+* [UX\_TOPICS](../../ux/untitled/)
+  * [Action Items:](../../ux/untitled/action-items.md)
+  * [Accessibility](../../ux/untitled/accessibility.md)
+  * [Figma Notes](../../ux/untitled/figma-notes/)
+    * [Notes](../../ux/untitled/figma-notes/notes.md)
+    * [More Notes](../../ux/untitled/figma-notes/more-notes.md)
+  * [UX-Design](../../ux/untitled/ux-design/)
+    * [Facebook Graph API](../../ux/untitled/ux-design/facebook-graph-api.md)
+  * [Ant Design](../../ux/untitled/ant-design/)
+    * [ANT Components](../../ux/untitled/ant-design/ant-components/)
+      * [Buttons](../../ux/untitled/ant-design/ant-components/buttons.md)
+    * [ANT DOCS](../../ux/untitled/ant-design/ant-docs.md)
+    * [Application (Codesandbox)](../../ux/untitled/ant-design/application-codesandbox.md)
+  * [Examples](../../ux/untitled/examples.md)
 
 ### CANVAS
 
-* [Design](../canvas/design/)
-  * [What's Inclusive Design?](../canvas/design/whats-inclusive-design.md)
-  * [Accessibility](../canvas/design/accessibility.md)
-  * [What are Design Systems?](../canvas/design/what-are-design-systems.md)
-* [Canvas](../canvas/canvas/)
-* [Notes](../canvas/notes/)
-  * [User Experience Design](../canvas/notes/user-experience-design.md)
-  * [User Research](../canvas/notes/user-research.md)
-  * [Interaction Design](../canvas/notes/interaction-design.md)
-* [UX-Engineer](../canvas/ux-engineer/)
-  * [Patterns](../canvas/ux-engineer/patterns.md)
-  * [Design Tools](../canvas/ux-engineer/design-tools.md)
-  * [Design Critiques](../canvas/ux-engineer/design-critiques.md)
-  * [Product Review](../canvas/ux-engineer/product-review.md)
-  * [Quiz](../canvas/ux-engineer/quiz.md)
-  * [Seven Principles of Design](../canvas/ux-engineer/seven-principles-of-design.md)
+* [Design](../../canvas/design/)
+  * [What's Inclusive Design?](../../canvas/design/whats-inclusive-design.md)
+  * [Accessibility](../../canvas/design/accessibility.md)
+  * [What are Design Systems?](../../canvas/design/what-are-design-systems.md)
+* [Canvas](../../canvas/canvas/)
+* [Notes](../../canvas/notes/)
+  * [User Experience Design](../../canvas/notes/user-experience-design.md)
+  * [User Research](../../canvas/notes/user-research.md)
+  * [Interaction Design](../../canvas/notes/interaction-design.md)
+* [UX-Engineer](../../canvas/ux-engineer/)
+  * [Patterns](../../canvas/ux-engineer/patterns.md)
+  * [Design Tools](../../canvas/ux-engineer/design-tools.md)
+  * [Design Critiques](../../canvas/ux-engineer/design-critiques.md)
+  * [Product Review](../../canvas/ux-engineer/product-review.md)
+  * [Quiz](../../canvas/ux-engineer/quiz.md)
+  * [Seven Principles of Design](../../canvas/ux-engineer/seven-principles-of-design.md)
 
 ### Front End
 
-* [Frontend:](../front-end/untitled.md)
-* [Redux](../front-end/redux.md)
+* [Frontend:](../../front-end/untitled.md)
+* [Redux](../../front-end/redux.md)
 
 ### Back End
 
-* [Backend:](../back-end/untitled/)
-  * [API](../back-end/untitled/api.md)
+* [Backend:](../../back-end/untitled/)
+  * [API](../../back-end/untitled/api.md)
 
 ### Research
 
-* [Research Navigation](../research/untitled/)
-  * [Front End](../research/untitled/front-end.md)
-  * [Back End](../research/untitled/back-end.md)
-  * [UX](../research/untitled/ux.md)
-  * [PTM](../research/untitled/ptm.md)
-  * [General](../research/untitled/general.md)
+* [Research Navigation](../../research/untitled/)
+  * [Front End](../../research/untitled/front-end.md)
+  * [Back End](../../research/untitled/back-end.md)
+  * [UX](../../research/untitled/ux.md)
+  * [PTM](../../research/untitled/ptm.md)
+  * [General](../../research/untitled/general.md)
 
 ### DS\_API
 
-* [Data Science API](../ds\_api/untitled.md)
+* [Data Science API](../../ds\_api/untitled.md)
 
 ### ROLES
 
-* [TEAM ROLES](../roles/untitled/)
-  * [Bryan Guner](../roles/untitled/bryan-guner.md)
+* [TEAM ROLES](../../roles/untitled/)
+  * [Bryan Guner](../../roles/untitled/bryan-guner.md)
 
 ### Action Items
 
-* [Trello](../action-items/untitled.md)
-* [Maps](../action-items/maps.md)
+* [Trello](../../action-items/untitled.md)
+* [Maps](../../action-items/maps.md)
 
 ### ARCHITECTURE
 
-* [DNS](../architecture/dns.md)
-* [AWS](../architecture/aws.md)
-* [Heroku](../architecture/heroku.md)
+* [DNS](../../architecture/dns.md)
+* [AWS](../../architecture/aws.md)
+* [Heroku](../../architecture/heroku.md)
 
 ### Questions
 
-* [From Previous Cohort](../questions/from-previous-cohort.md)
+* [From Previous Cohort](../../questions/from-previous-cohort.md)
 
 ### Standup Notes
 
-* [Meeting Notes](../standup-notes/meeting-notes/)
-  * [Stakeholder Meeting 1](../standup-notes/meeting-notes/overview.md)
-  * [9/29/2021](../standup-notes/meeting-notes/9-29-2021.md)
+* [Meeting Notes](../../standup-notes/meeting-notes/)
+  * [Stakeholder Meeting 1](../../standup-notes/meeting-notes/overview.md)
+  * [9/29/2021](../../standup-notes/meeting-notes/9-29-2021.md)
 
 ### GitHub & Project Practice
 
-* [GitHub](../github-and-project-practice/untitled/)
-  * [Github Guide](../github-and-project-practice/untitled/untitled.md)
-  * [Github Actions:](../github-and-project-practice/untitled/github-actions.md)
+* [GitHub](../../github-and-project-practice/untitled/)
+  * [Github Guide](../../github-and-project-practice/untitled/untitled.md)
+  * [Github Actions:](../../github-and-project-practice/untitled/github-actions.md)
 
 ### MISC
 
-* [MISCELLANEOUS](../misc/untitled.md)
+* [MISCELLANEOUS](./)
 
 ### Background Information
 
-* [Background Info](../background-information/background-info/)
-  * [Swagger OPEN API SPECIFICATION](../background-information/background-info/swagger-open-api-specification/)
-  * [GITHUB:](../background-information/background-info/github/)
-    * [Git Bash](../background-information/background-info/github/git-bash.md)
-    * [Git Prune:](../background-information/background-info/github/git-prune.md)
+* [Background Info](../../background-information/background-info/)
+  * [Swagger OPEN API SPECIFICATION](../../background-information/background-info/swagger-open-api-specification/)
+  * [GITHUB:](../../background-information/background-info/github/)
+    * [Git Bash](../../background-information/background-info/github/git-bash.md)
+    * [Git Prune:](../../background-information/background-info/github/git-prune.md)
 
 ### DOCS
 
-* [Coding](coding/)
-  * [Environment Variables](coding/environment-variables.md)
-  * [Git Rebase:](coding/git-rebase.md)
-  * [Git Workflow:](coding/git-workflow.md)
-  * [Linting and Formatting](coding/linting-and-formatting.md)
-* [Project Docs](project-docs/)
-  * [Eng-Docs-Home](project-docs/eng-docs-home.md)
-  * [Basic Node API](project-docs/basic-node-api.md)
-  * [Contributing to this scaffold project](project-docs/contributing-to-this-scaffold-project.md)
-  * [Examples:](project-docs/examples.md)
-* [PROJECT DESCRIPTION (Feature List)](project-description.md)
-* [Labs Learners Guide](labs-learners-guide.md)
-* [REACT](react/)
-  * [Create React App](react/untitled.md)
-  * [Awesome React](react/awesome-react.md)
+* [Coding](../../docs/coding/)
+  * [Environment Variables](../../docs/coding/environment-variables.md)
+  * [Git Rebase:](../../docs/coding/git-rebase.md)
+  * [Git Workflow:](../../docs/coding/git-workflow.md)
+  * [Linting and Formatting](../../docs/coding/linting-and-formatting.md)
+* [Project Docs](../../docs/project-docs/)
+  * [Eng-Docs-Home](../../docs/project-docs/eng-docs-home.md)
+  * [Basic Node API](../../docs/project-docs/basic-node-api.md)
+  * [Contributing to this scaffold project](../../docs/project-docs/contributing-to-this-scaffold-project.md)
+  * [Examples:](../../docs/project-docs/examples.md)
+* [PROJECT DESCRIPTION (Feature List)](../../docs/project-description.md)
+* [Labs Learners Guide](../../docs/labs-learners-guide.md)
+* [REACT](../../docs/react/)
+  * [Create React App](../../docs/react/untitled.md)
+  * [Awesome React](../../docs/react/awesome-react.md)
 * [Links](untitled.md)
-* [Labs Engineering Docs](labs-engineering-docs/)
-  * [Okta Basics](labs-engineering-docs/okta-basics.md)
-  * [Roadmap](labs-engineering-docs/roadmap.md)
-  * [Repositories](labs-engineering-docs/repositories.md)
+* [Labs Engineering Docs](../../docs/labs-engineering-docs/)
+  * [Okta Basics](../../docs/labs-engineering-docs/okta-basics.md)
+  * [Roadmap](../../docs/labs-engineering-docs/roadmap.md)
+  * [Repositories](../../docs/labs-engineering-docs/repositories.md)
 
 ### Workflow
 
-* [Workflow](../workflow/workflow.md)
-* [Advice](../workflow/advice.md)
+* [Workflow](../../workflow/workflow.md)
+* [Advice](../../workflow/advice.md)
 
 ### AWS
 
-* [AWS](../aws/aws/)
-  * [Elastic Beanstalk](../aws/aws/elastic-beanstalk/)
-    * [Elastic Beanstalk DNS](../aws/aws/elastic-beanstalk/elastic-beanstalk-dns.md)
-  * [Amplify:](../aws/aws/amplify/)
-    * [Amplify-DNS](../aws/aws/amplify/amplify-dns.md)
-* [Account Basics](../aws/untitled-1.md)
-* [AWS-Networking](../aws/aws-networking.md)
+* [AWS](../../aws/aws/)
+  * [Elastic Beanstalk](../../aws/aws/elastic-beanstalk/)
+    * [Elastic Beanstalk DNS](../../aws/aws/elastic-beanstalk/elastic-beanstalk-dns.md)
+  * [Amplify:](../../aws/aws/amplify/)
+    * [Amplify-DNS](../../aws/aws/amplify/amplify-dns.md)
+* [Account Basics](../../aws/untitled-1.md)
+* [AWS-Networking](../../aws/aws-networking.md)
 
 ### Career & Job Hunt
 
-* [Career](../career-and-job-hunt/career.md)
+* [Career](../../career-and-job-hunt/career.md)
 
 ### Group 1
 
-* [Live Implementation](../group-1/live-implementation.md)
+* [Live Implementation](../../github-and-project-practice/untitled/live-implementation.md)
 
 \\
 

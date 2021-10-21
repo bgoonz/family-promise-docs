@@ -16,10 +16,10 @@ description: >-
 
 
 
-![](.gitbook/assets/chrome_xRVQDfpVtg.png)
+![](.gitbook/assets/chrome\_xRVQDfpVtg.png)
 
-{% content-ref url="docs/untitled.md" %}
-[untitled.md](docs/untitled.md)
+{% content-ref url="misc/untitled/untitled.md" %}
+[untitled.md](misc/untitled/untitled.md)
 {% endcontent-ref %}
 
 ![](https://i.imgur.com/pW28AXn.png)
@@ -57,8 +57,8 @@ description: >-
 [team-members.md](navigation/team-members.md)
 {% endcontent-ref %}
 
-{% content-ref url="docs/untitled.md" %}
-[untitled.md](docs/untitled.md)
+{% content-ref url="misc/untitled/untitled.md" %}
+[untitled.md](misc/untitled/untitled.md)
 {% endcontent-ref %}
 
 {% content-ref url="ux/untitled/" %}
@@ -83,8 +83,8 @@ description: >-
 
 {% embed url="https://docs.google.com/spreadsheets/d/1x2TSzeIDw2-YkumhJ4F7IW2EVkA7NVeZo-pez1Fkn7s/edit?usp=sharing" %}
 
-{% content-ref url="docs/untitled.md" %}
-[untitled.md](docs/untitled.md)
+{% content-ref url="misc/untitled/untitled.md" %}
+[untitled.md](misc/untitled/untitled.md)
 {% endcontent-ref %}
 
 ## Current Deployment:
@@ -105,13 +105,13 @@ description: >-
 
 ![](https://i.imgur.com/pW28AXn.png)
 
-{% content-ref url="docs/untitled.md" %}
-[untitled.md](docs/untitled.md)
+{% content-ref url="misc/untitled/untitled.md" %}
+[untitled.md](misc/untitled/untitled.md)
 {% endcontent-ref %}
 
 ![](https://i.imgur.com/pW28AXn.png)
 
-## **App Login Info** Name: Abigail Administrator Username: [fp.servicetracker+admin@gmail.com](mailto:fp.servicetracker+admin@gmail.com) Pw: ILoveLambdaL4bz!Name: Sally Service Username: [fp.servicetracker+service@gmail.com](mailto:fp.servicetracker+service@gmail.com) Pw: ILoveLambdaL4bz!Name: Patty Program Username: [fp.servicetracker+program@gmail.com](mailto:fp.servicetracker+program@gmail.com) Pw: ILoveLambdaL4bz!Name: Gary Jerry Username: [fp.servicetracker+unassigned@gmail.com](mailto:fp.servicetracker+unassigned@gmail.com) Pw: ILoveLambdaL4bz!Name: BG User Username: [bg_user@gmail.com](mailto:bg_user@gmail.com) Pw: ILoveLambdaL4bz!
+## **App Login Info** Name: Abigail Administrator Username: [fp.servicetracker+admin@gmail.com](mailto:fp.servicetracker+admin@gmail.com) Pw: ILoveLambdaL4bz!Name: Sally Service Username: [fp.servicetracker+service@gmail.com](mailto:fp.servicetracker+service@gmail.com) Pw: ILoveLambdaL4bz!Name: Patty Program Username: [fp.servicetracker+program@gmail.com](mailto:fp.servicetracker+program@gmail.com) Pw: ILoveLambdaL4bz!Name: Gary Jerry Username: [fp.servicetracker+unassigned@gmail.com](mailto:fp.servicetracker+unassigned@gmail.com) Pw: ILoveLambdaL4bz!Name: BG User Username: [bg\_user@gmail.com](mailto:bg\_user@gmail.com) Pw: ILoveLambdaL4bz!
 
 ![](https://i.imgur.com/pW28AXn.png)
 
@@ -148,7 +148,7 @@ description: >-
 
 ### UX
 
-* [UX_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
+* [UX\_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
   * [Accessibility](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/accessibility)
   * [Figma Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/README)
     * [Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/notes)
@@ -190,9 +190,9 @@ description: >-
   * [PTM](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/ptm)
   * [General](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/general)
 
-### DS_API
+### DS\_API
 
-* [Data Science API](https://lambda-labs.gitbook.io/lambda-labs/ds_api/untitled)
+* [Data Science API](https://lambda-labs.gitbook.io/lambda-labs/ds\_api/untitled)
 
 ### ROLES
 

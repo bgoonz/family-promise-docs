@@ -114,10 +114,12 @@
 * [GitHub](github-and-project-practice/untitled/README.md)
   * [Github Guide](github-and-project-practice/untitled/untitled.md)
   * [Github Actions:](github-and-project-practice/untitled/github-actions.md)
+  * [Live Implementation](github-and-project-practice/untitled/live-implementation.md)
 
 ## MISC
 
-* [MISCELLANEOUS](misc/untitled.md)
+* [MISCELLANEOUS](misc/untitled/README.md)
+  * [Links](misc/untitled/untitled.md)
 
 ## Background Information
 
@@ -146,7 +148,6 @@
 * [REACT](docs/react/README.md)
   * [Create React App](docs/react/untitled.md)
   * [Awesome React](docs/react/awesome-react.md)
-* [Links](docs/untitled.md)
 * [Labs Engineering Docs](docs/labs-engineering-docs/README.md)
   * [Okta Basics](docs/labs-engineering-docs/okta-basics.md)
   * [Roadmap](docs/labs-engineering-docs/roadmap.md)
@@ -173,8 +174,6 @@
 
 ## Group 1
 
-* [Live Implementation](group-1/live-implementation.md)
-
 ## LABS
 
 * [Introduction](labs/introduction.md)
@@ -182,7 +181,7 @@
 * [Why Pairing?](labs/why-pairing.md)
 * [GitHub](labs/github.md)
 * [Planning as an Engineer](labs/planning-as-an-engineer.md)
-* [Authentication and Authorization](labs/authentication-and-authorization/README.md)
+* [Authentication and Authorization](labs/authentication-and-authorization.md)
   * [Authentication VS Authorization](labs/authentication-and-authorization/authentication-vs-authorization.md)
 * [Giving Feedback](labs/giving-feedback.md)
 * [Modules Grades Understanding Your ISA](labs/modules-grades-understanding-your-isa.md)

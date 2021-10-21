@@ -4,8 +4,8 @@
 [..](../)
 {% endcontent-ref %}
 
-{% content-ref url="../docs/untitled.md" %}
-[untitled.md](../docs/untitled.md)
+{% content-ref url="../misc/untitled/untitled.md" %}
+[untitled.md](../misc/untitled/untitled.md)
 {% endcontent-ref %}
 
 {% content-ref url="calendar.md" %}
@@ -57,7 +57,7 @@
 
 ### UX
 
-* [UX_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
+* [UX\_TOPICS](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/README)
   * [Accessibility](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/accessibility)
   * [Figma Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/README)
     * [Notes](https://lambda-labs.gitbook.io/lambda-labs/ux/untitled/figma-notes/notes)
@@ -99,9 +99,9 @@
   * [PTM](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/ptm)
   * [General](https://lambda-labs.gitbook.io/lambda-labs/research/untitled/general)
 
-### DS_API
+### DS\_API
 
-* [Data Science API](https://lambda-labs.gitbook.io/lambda-labs/ds_api/untitled)
+* [Data Science API](https://lambda-labs.gitbook.io/lambda-labs/ds\_api/untitled)
 
 ### ROLES
 
