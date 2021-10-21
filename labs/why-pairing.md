@@ -29,3 +29,40 @@ In each pull request you make, be sure to document the following:
 * Who you paired with
 * What pairing method(s) you used
 * How did it go? What did you learn?
+
+## How to Pair Program
+
+There are a few methods you and your teammates can use to pair program. Try out a few and see how things go naturally as you get better and better at the practice. One of the main principles to live by is "one screen, two devs." In pairing, you always want to be focused on the same screen, same code, same problem together.
+
+### **Driver & Navigator**
+
+The driver and navigator technique is probably the most commonly used. You may apply these "role definitions" however you see fit—and ensure that you switch roles as you see fit. And **don't forget to **[**co-author your commits (Links to an external site.)**](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors) so you both get the contributions you deserve.
+
+* **The driver** in this scenario would have their hands on the keyboard, and in a remote setting will share the screen from which the pair operate. The driver should always be talking through whatever it is they're doing.
+* **The navigator** sits in the observer's seat as the driver is driving development. This role gives directions as the pair move toward solutions. They confidently debug and fix code on the fly.
+
+The benefits of the **Driver & Navigator** technique are that it allows the pair to:
+
+* apply specific yet different perspectives to the task at hand.
+* have one developer (driver) focused on implementing features, while the other (navigator) focuses on the bigger picture of the features being implemented.
+* communicate thoughts, ideas, key learnings, and foundational concepts in a clear and concise manner.
+
+### **Ping Pong**
+
+For those interested in flexing their Test Driven Development (TDD) muscles, the **Ping Pong** method is perfect. If you want to implement features in a test-driven way, then it's recommended you pair using this method.
+
+A common flow for the **Ping Pong** method can be:
+
+* Developer A writes a failing test. _**Ping!**_
+* Developer B writes the implementation to make the test pass. _**Pong!**_
+* After each pong, both have a short retrospective where they may refactor the code together and augment the test to reflect the refactor. Now would be a good point to also switch the ping/pong roles.
+
+### **Strong-Style**
+
+When one developer is more advanced than the other, this technique helps with that knowledge gap-fill.
+
+> The rule: "For an idea to go from your head into the computer, it MUST go through someone else's hands".
+
+In this style of pairing, you'll commonly see a **Driver & Navigator** setup, with the **navigator** being the "_**stronger**_" developer of the two.
+
+As a **driver** in this scenario, be sure that you do your best to learn and understand the knowledge of the stronger developer. You most likely won't be able to grasp everything, so it's ok to attain "partial or incomplete" knowledge. Learn how to become comfortable with having a lack of understanding in the knowledge transfer. Ask questions like, "Why did you choose this technique over xyz?" Stay curious and positive—and have fun!
