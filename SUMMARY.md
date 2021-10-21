@@ -186,3 +186,4 @@
   * [Authentication VS Authorization](labs/authentication-and-authorization/authentication-vs-authorization.md)
 * [Giving Feedback](labs/giving-feedback.md)
 * [Modules Grades Understanding Your ISA](labs/modules-grades-understanding-your-isa.md)
+* [Rest Architecture](labs/rest-architecture.md)
