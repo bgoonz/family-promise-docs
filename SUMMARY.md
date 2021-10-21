@@ -182,6 +182,7 @@
 * [Why Pairing?](labs/why-pairing.md)
 * [GitHub](labs/github.md)
 * [Planning as an Engineer](labs/planning-as-an-engineer.md)
-* [Authentication and Authorization](labs/authentication-and-authorization.md)
+* [Authentication and Authorization](labs/authentication-and-authorization/README.md)
+  * [Authentication VS Authorization](labs/authentication-and-authorization/authentication-vs-authorization.md)
 * [Giving Feedback](labs/giving-feedback.md)
 * [Modules Grades Understanding Your ISA](labs/modules-grades-understanding-your-isa.md)
